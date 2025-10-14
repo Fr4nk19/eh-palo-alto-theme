@@ -635,6 +635,26 @@
   {%- endif -%}
 </div>
 
+<style>
+  @font-face {
+  font-family: 'Calmsie';
+  src: url('{{ "Calmsie.ttf" | asset_url }}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.slide__subheading .subheading-text{
+  font-family: 'Calmsie', sans-serif;
+  text-transform:none;
+  font-size: {{section.settings.font_size_subhead }}px;
+  line-height: 1;
+  margin: 10px 0;
+}
+span.text-highlight__break.aos-animate{
+  color:{{section.settings.color_heading }};
+}
+</style>
+
 {% schema %}
 {
   "name": "Slideshow",
@@ -772,6 +792,26 @@
       "label": "Increase border radius",
       "default": true,
       "info": "Applied to the next section's upper corners only when card scrolling effect is enabled"
+    },
+    {
+      "type": "header",
+      "content": "Heading Custom Style"
+    },
+     {
+          "type": "color",
+          "id":"color_heading",
+          "label": "Color Heading",
+          "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id":"font_size_subhead",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20,
+      "label": "Font Size Sub Heading"
     }
   ],
   "blocks": [

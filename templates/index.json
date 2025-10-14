@@ -23,12 +23,12 @@
             "text_alignment": "text-left",
             "text_color": "text-light",
             "subheading": "Your Skin's Favorite Treat",
-            "title": "<p>FREE Full-Size<br/>Aurora Ampoule Orders $80+</p>",
+            "title": "<p>FREE Full-Size<br/>Aurora Ampoule <br/>Orders $80+</p>",
             "heading_size": 150,
             "heading_highlight_type": "italics",
             "highlight_color": "#ffffff",
             "highlight_text_color": "#ffffff",
-            "text": "FREE New! Full-size CELESTINE Hydra-Peptide<br> Serum, orders $75+.",
+            "text": "",
             "text_size": 100,
             "stacked_button": false,
             "button_1_text": "SHOP NOW",
@@ -64,7 +64,9 @@
         "transition": "zoom-out",
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,
-        "increase_border_radius": true
+        "increase_border_radius": true,
+        "color_heading": "#ffffff",
+        "font_size_subhead": 50
       }
     },
     "section_text_KMDfPE": {
