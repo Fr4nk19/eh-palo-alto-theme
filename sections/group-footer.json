@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-block-0": {
+          "type": "text",
+          "settings": {
+            "alignment": "text-left",
+            "title": "Our Mission",
+            "footer_text": "<p>As the only self-care company founded by a toxicologist, we harness the natural power of Ocean & Earth to bring you safe, ethical, sustainable products. We deliver effective, plant-sourced skincare to help you achieve your skin and lifestyle goals.</p>",
+            "column_width": "25"
+          }
+        },
+        "footer-block-1": {
+          "type": "divider",
+          "settings": {
+            "show_border_line": false,
+            "column_width": "25"
+          }
+        },
+        "footer-block-2": {
+          "type": "link",
+          "settings": {
+            "alignment": "text-left",
+            "menu": "shop",
+            "title": "Shop",
+            "column_width": "25"
+          }
+        },
+        "footer-block-3": {
+          "type": "link",
+          "settings": {
+            "alignment": "text-left",
+            "menu": "support-1",
+            "title": "Support",
+            "column_width": "25"
+          }
+        },
+        "link_wholesale_tyaPay": {
+          "type": "link_wholesale",
+          "settings": {
+            "alignment_wholesale": "text-left",
+            "menu_wholesale": "shop-all",
+            "title_wholesale": "Shop All",
+            "column_width_wholesale": "25"
+          }
+        },
+        "link_wholesale_GTCz9U": {
+          "type": "link_wholesale",
+          "settings": {
+            "alignment_wholesale": "text-left",
+            "menu_wholesale": "supportw",
+            "title_wholesale": "Support",
+            "column_width_wholesale": "25"
+          }
+        },
+        "logo_full_PEh9di": {
+          "type": "logo_full",
+          "settings": {
+            "alignment": "text-center",
+            "image": "shopify://shop_images/Recurso_3_4x_1_3.png",
+            "logo_width": 25,
+            "padding_top": 40
+          }
+        }
+      },
+      "block_order": [
+        "footer-block-0",
+        "footer-block-1",
+        "footer-block-2",
+        "footer-block-3",
+        "link_wholesale_tyaPay",
+        "link_wholesale_GTCz9U",
+        "logo_full_PEh9di"
+      ],
+      "custom_css": [],
+      "settings": {
+        "show_footer_wave": false,
+        "enable_footer_parallax": false,
+        "increase_border_radius": true,
+        "bottom_bar_alignment": "text-left",
+        "show_social_links": true,
+        "enable_follow_on_shop": false,
+        "show_payment_icons": true,
+        "enable_greyscale": false,
+        "bottom_menu": "",
+        "color_text": "#0b0b0b",
+        "color_bg": "#f4efeb",
+        "color_border": "#ffffff",
+        "show_locale_selector": true,
+        "show_country_selector": true,
+        "show_country_flag": false,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

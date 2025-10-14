@@ -1,0 +1,75 @@
+<div class="custom_list-collection {{ section.settings.custom_class }}">
+  <div class="section__header">
+        <h2 class="section__heading h2 aos-animate">{{ section.settings.title }}</h2>
+  </div>
+    <div class="collection-grid">
+    {% for block in section.blocks %}
+      {% if block.type == 'collection-list' %}
+        <div class="collection-item list-collections__item {{ block.settings.gclass }}">
+          <a class="list-collections__item__outer" href="{{ block.settings.collection_link.url }}">
+            <div class="collection-title">{{ block.settings.collection_title }}</div>
+            <div class="list-collections_image">
+            <img src="{{ block.settings.collection_image | img_url:'master' }}" width="" height="">
+            </div>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Collection List",
+    "settings": [
+          {
+      "type": "header",
+      "content": "Custom Class to Section"
+    },
+     {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Add Class",
+      "info":"For Developer Use Only"
+    },
+   {
+      "type": "richtext",
+      "id": "title",
+      "label": "Add Section Title"
+    }
+    ],
+  "blocks": [
+    {
+      "type": "collection-list",
+      "name": "Collection List",
+      "settings": [
+          {
+          "type": "text",
+          "id": "gclass",
+          "label": "Add Class to Block"
+        },
+        {
+          "type": "collection",
+          "id": "collection_link",
+          "label": "Select Collection"
+        },
+         {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Add Collection Title"
+        },
+         {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Add Collection Image"
+        }
+      ]
+    }
+  ],
+        "presets": [
+      {
+        "name": "Custom Collection List",
+
+      }
+    ]
+  }
+{% endschema %}
