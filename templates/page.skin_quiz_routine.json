@@ -35,7 +35,7 @@
         "heading_HNaLP4": {
           "type": "heading",
           "settings": {
-            "title": "<p>Not Sure Where to Begin?</p>",
+            "title": "<p>Not Sure Where to Begin?<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -47,7 +47,7 @@
         "text_AF3Gpw": {
           "type": "text",
           "settings": {
-            "text": "<p>Dive into your best skin yet! Take our Skin Quiz to discover the perfect skincare gems for your unique ritual.</p>",
+            "text": "<p>Dive into your best skin yet! Take our Skin Quiz to discover the perfect skincare gems for your unique ritual.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -57,7 +57,7 @@
           "type": "button",
           "settings": {
             "button_text": "TAKE THE QUIZ",
-            "button_link": "shopify://pages/skin-quiz",
+            "button_link": "shopify:\/\/pages\/skin-quiz",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -84,7 +84,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/6f1b5f0bc3a9ea6a485d19b1a2a6d00c.png",
+        "image": "shopify:\/\/shop_images\/6f1b5f0bc3a9ea6a485d19b1a2a6d00c.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -102,13 +102,13 @@
           "type": "text_block",
           "settings": {
             "gclass": "step-one",
-            "image": "shopify://shop_images/Frame_128.png",
+            "image": "shopify:\/\/shop_images\/Frame_128.png",
             "title": "1. Cleanse",
             "heading_size": 120,
-            "text": "<p>Wash away impurities and refresh your skin with our nourishing cleansers.</p>",
+            "text": "<p>Wash away impurities and refresh your skin with our nourishing cleansers.<\/p>",
             "text_size": 100,
             "button_text": "SHOP CLEANSERS",
-            "button_link": "shopify://collections/cleansers",
+            "button_link": "shopify:\/\/collections\/cleansers",
             "button_color": "btn--black",
             "button_style": "btn--outline",
             "button_size": "btn--medium",
@@ -120,13 +120,13 @@
           "type": "text_block",
           "settings": {
             "gclass": "step-two",
-            "image": "shopify://shop_images/Frame_128.png",
+            "image": "shopify:\/\/shop_images\/Frame_128.png",
             "title": "2. Tone",
             "heading_size": 120,
-            "text": "<p>Balance, hydrate, and prep your skin with toners crafted to restore harmony.</p>",
+            "text": "<p>Balance, hydrate, and prep your skin with toners crafted to restore harmony.<\/p>",
             "text_size": 100,
             "button_text": "SHOP TONERS",
-            "button_link": "shopify://collections/toners",
+            "button_link": "shopify:\/\/collections\/toners",
             "button_color": "btn--black",
             "button_style": "btn--outline",
             "button_size": "btn--medium",
@@ -138,13 +138,13 @@
           "type": "text_block",
           "settings": {
             "gclass": "step-three",
-            "image": "shopify://shop_images/Frame_128.png",
+            "image": "shopify:\/\/shop_images\/Frame_128.png",
             "title": "3. Treat",
             "heading_size": 120,
-            "text": "<p>Target your skin’s unique concerns with serums, masks, concentrates or exfoliators that deliver deep results.</p>",
+            "text": "<p>Target your skin’s unique concerns with serums, masks, concentrates or exfoliators that deliver deep results.<\/p>",
             "text_size": 100,
             "button_text": "SHOP TREATMENTS",
-            "button_link": "shopify://collections/serums",
+            "button_link": "shopify:\/\/collections\/serums",
             "button_color": "btn--black",
             "button_style": "btn--outline",
             "button_size": "btn--medium",
@@ -156,13 +156,13 @@
           "type": "text_block",
           "settings": {
             "gclass": "step-four",
-            "image": "shopify://shop_images/Frame_128.png",
+            "image": "shopify:\/\/shop_images\/Frame_128.png",
             "title": "4. Moisturize",
             "heading_size": 120,
-            "text": "<p>Seal in hydration and nourish your skin with moisturizers as lightweight or rich as your skin needs.</p>",
+            "text": "<p>Seal in hydration and nourish your skin with moisturizers as lightweight or rich as your skin needs.<\/p>",
             "text_size": 100,
             "button_text": "SHOP MOISTURIZERS",
-            "button_link": "shopify://collections/moisturizers",
+            "button_link": "shopify:\/\/collections\/moisturizers",
             "button_color": "btn--black",
             "button_style": "btn--outline",
             "button_size": "btn--medium",
@@ -174,13 +174,13 @@
           "type": "text_block",
           "settings": {
             "gclass": "step-five",
-            "image": "shopify://shop_images/Frame_128.png",
+            "image": "shopify:\/\/shop_images\/Frame_128.png",
             "title": "5. Protect",
             "heading_size": 120,
-            "text": "<p>Shield your skin from UV rays and environmental stressors with our clean, effective sunscreen.</p>",
+            "text": "<p>Shield your skin from UV rays and environmental stressors with our clean, effective sunscreen.<\/p>",
             "text_size": 100,
             "button_text": "SHOP SUNSCREEN",
-            "button_link": "shopify://collections/sunscreen",
+            "button_link": "shopify:\/\/collections\/sunscreen",
             "button_color": "btn--black",
             "button_style": "btn--outline",
             "button_size": "btn--medium",
@@ -225,7 +225,7 @@
         "heading_g8LnQb": {
           "type": "heading",
           "settings": {
-            "text": "<p>Personalize Your Ritual</p>",
+            "text": "<p>Personalize Your Ritual<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -235,7 +235,7 @@
         "text_hd69zi": {
           "type": "text",
           "settings": {
-            "text": "<p>Every skin story is different—discover products designed to meet your specific concerns and goals.</p>",
+            "text": "<p>Every skin story is different—discover products designed to meet your specific concerns and goals.<\/p>",
             "size": 80
           }
         }
@@ -265,7 +265,7 @@
             "gclass": "main-blue-bg",
             "collection_link": "dullness-and-uneven-tone",
             "collection_title": "Dullness & Uneven Tone",
-            "collection_image": "shopify://shop_images/Image_20_21ed1eea-3d90-4f8d-b702-6ad8eea5a3ff.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_20_21ed1eea-3d90-4f8d-b702-6ad8eea5a3ff.png"
           }
         },
         "collection_list_mKpcTT": {
@@ -274,7 +274,7 @@
             "gclass": "velvet-pink-bg",
             "collection_link": "pores-oil-control",
             "collection_title": "Pores & Oil Control",
-            "collection_image": "shopify://shop_images/Image_21_968896a6-1a1d-4cbc-a66d-bef4d40d5705.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_21_968896a6-1a1d-4cbc-a66d-bef4d40d5705.png"
           }
         },
         "collection_list_nAcFg3": {
@@ -283,7 +283,7 @@
             "gclass": "sand-bg",
             "collection_link": "fine-lines-wrinkles",
             "collection_title": "Fine Lines & Wrinkles",
-            "collection_image": "shopify://shop_images/Image_22_720cc186-0b63-40d0-8d62-824248cdc3ae.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_22_720cc186-0b63-40d0-8d62-824248cdc3ae.png"
           }
         },
         "collection_list_CBzDJz": {
@@ -292,7 +292,7 @@
             "gclass": "teal-bg",
             "collection_link": "breakouts-acne",
             "collection_title": "Breakouts & Acne",
-            "collection_image": "shopify://shop_images/Image_23.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_23.png"
           }
         },
         "collection_list_Aq4iPe": {
@@ -301,7 +301,7 @@
             "gclass": "pale-silver-bg",
             "collection_link": "redness-sensitivity",
             "collection_title": "Redness & Sensitivity",
-            "collection_image": "shopify://shop_images/Image_24.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_24.png"
           }
         },
         "collection_list_zgqVa6": {
@@ -310,7 +310,7 @@
             "gclass": "soft-pink-bg",
             "collection_link": "dry-and-rough-skin",
             "collection_title": "Dry & Rough Skin",
-            "collection_image": "shopify://shop_images/Image_25.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_25.png"
           }
         }
       },
@@ -324,7 +324,7 @@
       ],
       "settings": {
         "custom_class": "skincare-shop-by-sec",
-        "title": "<p>Shop by Concern</p>"
+        "title": "<p>Shop by Concern<\/p>"
       }
     },
     "custom_collection_nzKJGV": {
@@ -336,7 +336,7 @@
             "gclass": "soft-pink-bg",
             "collection_link": "hydrating",
             "collection_title": "Hydrating",
-            "collection_image": "shopify://shop_images/Image_8_5ea26b17-5396-46eb-8336-e671dcb2ccc5.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_8_5ea26b17-5396-46eb-8336-e671dcb2ccc5.png"
           }
         },
         "collection_list_khRpbw": {
@@ -345,7 +345,7 @@
             "gclass": "sand-bg",
             "collection_link": "healthy-aging",
             "collection_title": "Healthy Aging",
-            "collection_image": "shopify://shop_images/Image_9_18411060-bdac-4f66-9d98-219b23a9d595.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_9_18411060-bdac-4f66-9d98-219b23a9d595.png"
           }
         },
         "collection_list_aURtpw": {
@@ -354,7 +354,7 @@
             "gclass": "teal-bg",
             "collection_link": "balancing",
             "collection_title": "Balancing",
-            "collection_image": "shopify://shop_images/Image_10_f5f6d4c0-d4ef-4621-8afe-ce5252c76590.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_10_f5f6d4c0-d4ef-4621-8afe-ce5252c76590.png"
           }
         },
         "collection_list_G6aCAt": {
@@ -363,7 +363,7 @@
             "gclass": "main-blue-bg",
             "collection_link": "brightening",
             "collection_title": "Brightening",
-            "collection_image": "shopify://shop_images/Image_11.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_11.png"
           }
         },
         "collection_list_BdPedm": {
@@ -372,7 +372,7 @@
             "gclass": "velvet-pink-bg",
             "collection_link": "pore-refining",
             "collection_title": "Pore-Refining",
-            "collection_image": "shopify://shop_images/Image_12_12e6f574-eda6-4973-9d87-2d26e301f903.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_12_12e6f574-eda6-4973-9d87-2d26e301f903.png"
           }
         },
         "collection_list_DBfVmd": {
@@ -381,7 +381,7 @@
             "gclass": "pale-silver-bg",
             "collection_link": "soothing",
             "collection_title": "Soothing",
-            "collection_image": "shopify://shop_images/Image_13_5f2216b1-476f-409d-8ee1-16e2221582a2.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_13_5f2216b1-476f-409d-8ee1-16e2221582a2.png"
           }
         }
       },
@@ -395,7 +395,7 @@
       ],
       "settings": {
         "custom_class": "skincare-shop-by-sec",
-        "title": "<p>Shop by Benefit</p>"
+        "title": "<p>Shop by Benefit<\/p>"
       }
     },
     "custom_collection_wq673j": {
@@ -407,7 +407,7 @@
             "gclass": "main-blue-bg",
             "collection_link": "cleansers",
             "collection_title": "Cleansers",
-            "collection_image": "shopify://shop_images/Image_26.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_26.png"
           }
         },
         "collection_list_k9cUrB": {
@@ -416,7 +416,7 @@
             "gclass": "soft-pink-bg",
             "collection_link": "toners",
             "collection_title": "Toners",
-            "collection_image": "shopify://shop_images/Image_27.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_27.png"
           }
         },
         "collection_list_Ry4kUg": {
@@ -425,7 +425,7 @@
             "gclass": "sand-bg",
             "collection_link": "serums",
             "collection_title": "Treatments",
-            "collection_image": "shopify://shop_images/Image_28.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_28.png"
           }
         },
         "collection_list_QCHXy7": {
@@ -434,7 +434,7 @@
             "gclass": "teal-bg",
             "collection_link": "moisturizers",
             "collection_title": "Moisturizers",
-            "collection_image": "shopify://shop_images/Image_29.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_29.png"
           }
         },
         "collection_list_WX6nLW": {
@@ -443,7 +443,7 @@
             "gclass": "main-blue-bg",
             "collection_link": "sunscreen",
             "collection_title": "Sunscreen",
-            "collection_image": "shopify://shop_images/Image_30.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_30.png"
           }
         },
         "collection_list_QcxFrt": {
@@ -452,7 +452,7 @@
             "gclass": "velvet-pink-bg",
             "collection_link": "kits",
             "collection_title": "Kits & Sets",
-            "collection_image": "shopify://shop_images/Image_31.png"
+            "collection_image": "shopify:\/\/shop_images\/Image_31.png"
           }
         }
       },
@@ -466,7 +466,7 @@
       ],
       "settings": {
         "custom_class": "skincare-shop-by-sec",
-        "title": "<p>Shop by Product Type</p>"
+        "title": "<p>Shop by Product Type<\/p>"
       }
     },
     "section_text_C7GXer": {
@@ -475,7 +475,7 @@
         "heading_WMFrzz": {
           "type": "heading",
           "settings": {
-            "text": "<p>How to Apply Your Skincare</p>",
+            "text": "<p>How to Apply Your Skincare<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -485,7 +485,7 @@
         "text_CPAxMj": {
           "type": "text",
           "settings": {
-            "text": "<p>Make the most of your routine with our step-by-step guide to layering and applying products for maximum results.</p>",
+            "text": "<p>Make the most of your routine with our step-by-step guide to layering and applying products for maximum results.<\/p>",
             "size": 100
           }
         },
@@ -493,7 +493,7 @@
           "type": "button",
           "settings": {
             "button_text": "LAYERING GUIDE",
-            "button_link": "shopify://pages/how-to-apply",
+            "button_link": "shopify:\/\/pages\/how-to-apply",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -523,14 +523,14 @@
         "image_cFCca6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_1_97561ea6-72b3-49d2-b3a7-cf78c14ffc07.png",
+            "image": "shopify:\/\/shop_images\/Frame_1_97561ea6-72b3-49d2-b3a7-cf78c14ffc07.png",
             "overlay_opacity": 0,
             "content_width": 80,
             "text_position": "left",
             "text_alignment": "text-left",
             "text_color": "text-light",
             "subheading": "",
-            "title": "<p>Welcome aboard!</p>",
+            "title": "<p>Welcome aboard!<\/p>",
             "heading_size": 150,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -555,14 +555,14 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/13d719591b8ffeecb15a12994cc5c0dfa5755910.jpg",
+            "image": "shopify:\/\/shop_images\/13d719591b8ffeecb15a12994cc5c0dfa5755910.jpg",
             "overlay_opacity": 10,
             "content_width": 80,
             "text_position": "left",
             "text_alignment": "text-left",
             "text_color": "text-light",
             "subheading": "",
-            "title": "<p>Welcome aboard!</p>",
+            "title": "<p>Welcome aboard!<\/p>",
             "heading_size": 150,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",

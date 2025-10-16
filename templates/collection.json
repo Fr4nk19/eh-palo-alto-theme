@@ -57,7 +57,7 @@
         "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "<p>{{ collection.title }}<\/p>",
+            "text": "<p>{{ collection.title }}</p>",
             "size": 100,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
@@ -67,7 +67,7 @@
         "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.title }}<\/p>",
+            "text": "<p>{{ collection.title }}</p>",
             "size": 100
           }
         }
@@ -110,23 +110,23 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Picture_27.png",
+            "image": "shopify://shop_images/Picture_27.png",
             "position": 5,
             "width": "half",
-            "title": "<p>Promotion title<\/p>",
+            "title": "<p>Shop Our Bestsellers</p>",
             "heading_size": 100,
             "heading_highlight_type": "circle",
             "highlight_color": "#fbcaff",
             "highlight_text_color": "#ffffff",
-            "content": "Advertise a promotion or a sale",
+            "content": "Gems your skin (and the planet) will love.",
             "text_size": 100,
             "text_color": "text-light",
             "text_position": "bottom-left",
             "layout": "stacked",
-            "overlay_opacity": 10,
+            "overlay_opacity": 15,
             "bg_color": "#f5f4f1",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/bestsellers",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--small"

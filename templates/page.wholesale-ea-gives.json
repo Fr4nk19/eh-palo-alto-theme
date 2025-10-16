@@ -29,20 +29,20 @@
         "text_alignment": "center",
         "images_width": 750,
         "images_offset": 60,
-        "image_1": "shopify://shop_images/ea-1.jpg",
+        "image_1": "shopify:\/\/shop_images\/ea-1.jpg",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/ea-2.jpg",
+        "image_2": "shopify:\/\/shop_images\/ea-2.jpg",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Earth Harbor Gives Back</p>",
+        "title": "<p>Earth Harbor Gives Back<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "description": "<p>We’ve partnered with <strong>1% For The Planet®</strong> to dedicate <strong>1% of all sales</strong> (not just profits) to protecting the world’s oceans and solving the global water crisis—a much larger contribution than profits alone.</p>",
+        "description": "<p>We’ve partnered with <strong>1% For The Planet®<\/strong> to dedicate <strong>1% of all sales<\/strong> (not just profits) to protecting the world’s oceans and solving the global water crisis—a much larger contribution than profits alone.<\/p>",
         "text_size": 100,
-        "signature_image": "shopify://shop_images/1ftp_EnvironmentalPartner_Horizontal_FullColor_1.png",
+        "signature_image": "shopify:\/\/shop_images\/1ftp_EnvironmentalPartner_Horizontal_FullColor_1.png",
         "button_text": "",
         "button_link": "",
         "button_color": "btn--black",
@@ -65,7 +65,7 @@
         "heading_8KdzjR": {
           "type": "heading",
           "settings": {
-            "title": "<p>Every Dollar Makes a Difference</p>",
+            "title": "<p>Every Dollar Makes a Difference<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -77,7 +77,7 @@
         "text_WhmJEe": {
           "type": "text",
           "settings": {
-            "text": "<p>With your support, we contribute to organizations focused on <strong>ocean conservation, clean water</strong>, and <strong>environmental social justice</strong>. Every dollar you spend helps make a tangible impact.</p>",
+            "text": "<p>With your support, we contribute to organizations focused on <strong>ocean conservation, clean water<\/strong>, and <strong>environmental social justice<\/strong>. Every dollar you spend helps make a tangible impact.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -99,7 +99,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "wide",
-        "image": "shopify://shop_images/sea.jpg",
+        "image": "shopify:\/\/shop_images\/sea.jpg",
         "block_bg_color": "#ffffff",
         "text_color": "text-dark",
         "bg_color": "",
@@ -116,7 +116,7 @@
         "heading_K4PLbj": {
           "type": "heading",
           "settings": {
-            "text": "<p>\"Our values are rooted in our <strong>commitment to the human family</strong>, our stewardship of the Earth, and our mission to promote a <strong>more loving existence</strong>. I believe it is each of our callings to help take on the world’s most pressing <strong>environmental</strong> and <strong>social justice challenges.</strong>\"</p>",
+            "text": "<p>\"Our values are rooted in our <strong>commitment to the human family<\/strong>, our stewardship of the Earth, and our mission to promote a <strong>more loving existence<\/strong>. I believe it is each of our callings to help take on the world’s most pressing <strong>environmental<\/strong> and <strong>social justice challenges.<\/strong>\"<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -145,7 +145,7 @@
         "heading_iVFNRw": {
           "type": "heading",
           "settings": {
-            "title": "<p>Going Beyond the Sale</p>",
+            "title": "<p>Going Beyond the Sale<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -157,7 +157,7 @@
         "text_6NLt4h": {
           "type": "text",
           "settings": {
-            "text": "<p>In addition to our partnership with <strong>1% For The Planet®</strong>, we also support l<strong>ocal community initiatives</strong> and <strong>charitable organizations</strong>—from shelters to environmental justice causes, as needs arise. By doing everything <strong>in-house</strong>, we also provide <strong>local jobs</strong>, contributing to the economic growth of our community. Giving back is at the heart of our mission, and we’re committed to creating positive change in both our community and the world.</p>",
+            "text": "<p>In addition to our partnership with <strong>1% For The Planet®<\/strong>, we also support l<strong>ocal community initiatives<\/strong> and <strong>charitable organizations<\/strong>—from shelters to environmental justice causes, as needs arise. By doing everything <strong>in-house<\/strong>, we also provide <strong>local jobs<\/strong>, contributing to the economic growth of our community. Giving back is at the heart of our mission, and we’re committed to creating positive change in both our community and the world.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -179,7 +179,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "wide",
-        "image": "shopify://shop_images/Picture4.jpg",
+        "image": "shopify:\/\/shop_images\/Picture4.jpg",
         "block_bg_color": "#ffffff",
         "text_color": "text-dark",
         "bg_color": "",
@@ -196,7 +196,7 @@
         "heading_ya7RmN": {
           "type": "heading",
           "settings": {
-            "text": "<p>Our Partners in Change</p>",
+            "text": "<p>Our Partners in Change<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -206,7 +206,7 @@
         "text_cjaXRg": {
           "type": "text",
           "settings": {
-            "text": "<ul><li><strong>1% For The Planet</strong>®</li><li><strong>Waterkeeper Alliance®</strong></li><li><strong>Water For People®</strong></li><li><strong>Change Climate Project®</strong></li><li><strong>Plastic Credit Exchange®</strong></li><li>& many more</li></ul>",
+            "text": "<ul><li><strong>1% For The Planet<\/strong>®<\/li><li><strong>Waterkeeper Alliance®<\/strong><\/li><li><strong>Water For People®<\/strong><\/li><li><strong>Change Climate Project®<\/strong><\/li><li><strong>Plastic Credit Exchange®<\/strong><\/li><li>& many more<\/li><\/ul>",
             "size": 100
           }
         }
@@ -234,7 +234,7 @@
           "type": "button",
           "settings": {
             "heading": "SHOP WHOLESALE",
-            "button_link": "shopify://collections/qa-wholesale",
+            "button_link": "shopify:\/\/collections\/qa-wholesale",
             "overlay_opacity": 100,
             "block_text_color": "#ffffff",
             "bg_color": "#000000",

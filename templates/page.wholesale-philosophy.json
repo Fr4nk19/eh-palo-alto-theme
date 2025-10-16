@@ -29,18 +29,18 @@
         "text_alignment": "left",
         "images_width": 750,
         "images_offset": 60,
-        "image_1": "shopify://shop_images/Picture_8.png",
+        "image_1": "shopify:\/\/shop_images\/Picture_8.png",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/Picture_9.png",
+        "image_2": "shopify:\/\/shop_images\/Picture_9.png",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Sea the Difference: Our Ingredient Philosophy</p>",
+        "title": "<p>Sea the Difference: Our Ingredient Philosophy<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "description": "<p>At Earth Harbor, we believe that beauty should be truly clean, safe, and results-driven. Our products are carefully formulated with nature’s best ingredients and grounded in science. We use only what your skin needs and exclude what it doesn’t. Everything we create is designed to promote the long-term health of your skin and the planet—because clean beauty means a clean conscience.</p>",
+        "description": "<p>At Earth Harbor, we believe that beauty should be truly clean, safe, and results-driven. Our products are carefully formulated with nature’s best ingredients and grounded in science. We use only what your skin needs and exclude what it doesn’t. Everything we create is designed to promote the long-term health of your skin and the planet—because clean beauty means a clean conscience.<\/p>",
         "text_size": 100,
         "button_text": "",
         "button_link": "",
@@ -74,7 +74,7 @@
         "heading_8KdzjR": {
           "type": "heading",
           "settings": {
-            "title": "<p>100% Nature-Identical</p>",
+            "title": "<p>100% Nature-Identical<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -86,7 +86,7 @@
         "text_WhmJEe": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Definition of Natural— Every ingredient is plant-based, mineral-based, or bio-identical, mimicking nature to deliver safe and effective results. All of our ingredients meet the standards for natural skincare as recognized by international guidelines. They come from renewable resources and only undergo changes through biological processes like fermentation, distillation, and cold processing. Our products are purely natural, minimally processed, and designed to be healthy for your skin.</p>",
+            "text": "<p>Our Definition of Natural— Every ingredient is plant-based, mineral-based, or bio-identical, mimicking nature to deliver safe and effective results. All of our ingredients meet the standards for natural skincare as recognized by international guidelines. They come from renewable resources and only undergo changes through biological processes like fermentation, distillation, and cold processing. Our products are purely natural, minimally processed, and designed to be healthy for your skin.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -101,7 +101,7 @@
             "heading": "Frequently asked question",
             "type_style": "font-heading",
             "heading_size": 120,
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>",
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>",
             "text_size": 75,
             "tabs_bg_color": "",
             "line_thickness": "normal",
@@ -141,7 +141,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_10.png",
+        "image": "shopify:\/\/shop_images\/Picture_10.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -158,7 +158,7 @@
         "heading_nGNkPQ": {
           "type": "heading",
           "settings": {
-            "text": "<p>Made With</p>",
+            "text": "<p>Made With<\/p>",
             "size": 90,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -168,7 +168,7 @@
         "text_mw9FWM": {
           "type": "text",
           "settings": {
-            "text": "<p>We go beyond clean beauty by combining nature and science to create products that truly work for your skin. As a toxicologist-herbalist founded brand, we carefully select ingredients that are safe, effective, and beneficial for both your skin and the planet. We use pure, plant-based, bio-identical ingredients that are sustainably sourced, scientifically proven, and ethically formulated to provide long-lasting, real results.</p>",
+            "text": "<p>We go beyond clean beauty by combining nature and science to create products that truly work for your skin. As a toxicologist-herbalist founded brand, we carefully select ingredients that are safe, effective, and beneficial for both your skin and the planet. We use pure, plant-based, bio-identical ingredients that are sustainably sourced, scientifically proven, and ethically formulated to provide long-lasting, real results.<\/p>",
             "size": 85
           }
         }
@@ -196,10 +196,10 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Image_1be66bba-6bf1-440e-8779-d087265c6009.png",
+            "image": "shopify:\/\/shop_images\/Image_1be66bba-6bf1-440e-8779-d087265c6009.png",
             "title": "Pure, Premium Ingredients",
             "heading_size": 120,
-            "text": "<p>Certified organic, non-GMO, wildcrafted, and/or sustainably sourced for the highest efficacy and purity.</p>",
+            "text": "<p>Certified organic, non-GMO, wildcrafted, and\/or sustainably sourced for the highest efficacy and purity.<\/p>",
             "text_size": 100,
             "button_text": "",
             "button_link": "",
@@ -214,10 +214,10 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Image_1_66b4cb48-fd8d-46d2-9da6-5f58cd3a6872.png",
+            "image": "shopify:\/\/shop_images\/Image_1_66b4cb48-fd8d-46d2-9da6-5f58cd3a6872.png",
             "title": "Ocean & Earth Actives:",
             "heading_size": 120,
-            "text": "<p>Plant-based, bioidentical, mineral-rich botanicals, and upcycled oils, harnessing the power of both land and sea to nourish your skin.</p>",
+            "text": "<p>Plant-based, bioidentical, mineral-rich botanicals, and upcycled oils, harnessing the power of both land and sea to nourish your skin.<\/p>",
             "text_size": 100,
             "button_text": "",
             "button_link": "",
@@ -232,10 +232,10 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Image_2_0fdb8a76-0897-46db-9652-fc92c51431ef.png",
+            "image": "shopify:\/\/shop_images\/Image_2_0fdb8a76-0897-46db-9652-fc92c51431ef.png",
             "title": "Eco-Conscious Packaging",
             "heading_size": 120,
-            "text": "<p>Zero-waste, plastic-neutral, recyclable, reusable, and plastic-free options to minimize environmental impact.</p>",
+            "text": "<p>Zero-waste, plastic-neutral, recyclable, reusable, and plastic-free options to minimize environmental impact.<\/p>",
             "text_size": 100,
             "button_text": "",
             "button_link": "",
@@ -250,10 +250,10 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Picture_11.png",
+            "image": "shopify:\/\/shop_images\/Picture_11.png",
             "title": "Safe Formulations",
             "heading_size": 120,
-            "text": "<p>Use this text to describe products, share details on availability and style, etc</p>",
+            "text": "<p>Use this text to describe products, share details on availability and style, etc<\/p>",
             "text_size": 100,
             "button_text": "",
             "button_link": "",
@@ -301,7 +301,7 @@
           "type": "subheading",
           "disabled": true,
           "settings": {
-            "text": "<p>Subheading</p>",
+            "text": "<p>Subheading<\/p>",
             "size": 100,
             "margin_bottom": 16
           }
@@ -309,7 +309,7 @@
         "heading_K4PLbj": {
           "type": "heading",
           "settings": {
-            "text": "<p>We believe in the <strong>long-term health</strong> of both your skin and the planet, which is why our formulations focus on the highest-quality, sustainable ingredients—<strong>crafted with care for real, lasting results</strong>.</p>",
+            "text": "<p>We believe in the <strong>long-term health<\/strong> of both your skin and the planet, which is why our formulations focus on the highest-quality, sustainable ingredients—<strong>crafted with care for real, lasting results<\/strong>.<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -320,7 +320,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "size": 100
           }
         },
@@ -361,56 +361,56 @@
           "type": "text",
           "settings": {
             "title": "Artificial Additives",
-            "text": "<ul><li>No Artificial Fragrances or Dyes</li><li>No Synthetic Musks</li><li>No PEGs (Polyethylene Glycols)</li><li>No Polysorbates (e.g., Polysorbate-20)</li><li>No EDTA & Related Compounds</li></ul>"
+            "text": "<ul><li>No Artificial Fragrances or Dyes<\/li><li>No Synthetic Musks<\/li><li>No PEGs (Polyethylene Glycols)<\/li><li>No Polysorbates (e.g., Polysorbate-20)<\/li><li>No EDTA & Related Compounds<\/li><\/ul>"
           }
         },
         "text_TdNJcL": {
           "type": "text",
           "settings": {
             "title": "Harmful Preservatives",
-            "text": "<ul><li>No Parabens</li><li>No Phenoxyethanol</li><li>No Formaldehyde or Formaldehyde Releasers (e.g., Quaternium-15, DMDM Hydantoin)</li><li>No Methylisothiazolinone</li><li>No BHA/BHT</li><li>No Sodium Benzoate</li><li>No Chlorphenesin</li></ul>"
+            "text": "<ul><li>No Parabens<\/li><li>No Phenoxyethanol<\/li><li>No Formaldehyde or Formaldehyde Releasers (e.g., Quaternium-15, DMDM Hydantoin)<\/li><li>No Methylisothiazolinone<\/li><li>No BHA\/BHT<\/li><li>No Sodium Benzoate<\/li><li>No Chlorphenesin<\/li><\/ul>"
           }
         },
         "text_Yyr3CX": {
           "type": "text",
           "settings": {
             "title": "Silicones & Petrochemicals",
-            "text": "<ul><li>No Dimethicone or Other Silicones (e.g., Cyclopentasiloxane)</li><li>No Petroleum, Mineral Oils, or Paraffin</li><li>No Isododecane</li><li>No Polybutene</li><li>No Petroleum Jelly</li></ul>"
+            "text": "<ul><li>No Dimethicone or Other Silicones (e.g., Cyclopentasiloxane)<\/li><li>No Petroleum, Mineral Oils, or Paraffin<\/li><li>No Isododecane<\/li><li>No Polybutene<\/li><li>No Petroleum Jelly<\/li><\/ul>"
           }
         },
         "text_qtyPWN": {
           "type": "text",
           "settings": {
             "title": "Common Allergens",
-            "text": "<ul><li>No Gluten or Soy Ingredients (Any soy compounds used are non-soy-derived)</li><li>Nut Oils Carefully Selected for Safety & Efficacy (Always listed for transparency)</li><li>No Dairy or Animal-Derived Ingredients (100% Vegan)</li><li>No Excessive Essential Oils (Gentle concentrations safe for sensitive skin, GC/MS tested for purity)</li></ul>"
+            "text": "<ul><li>No Gluten or Soy Ingredients (Any soy compounds used are non-soy-derived)<\/li><li>Nut Oils Carefully Selected for Safety & Efficacy (Always listed for transparency)<\/li><li>No Dairy or Animal-Derived Ingredients (100% Vegan)<\/li><li>No Excessive Essential Oils (Gentle concentrations safe for sensitive skin, GC\/MS tested for purity)<\/li><\/ul>"
           }
         },
         "text_w9eJqX": {
           "type": "text",
           "settings": {
             "title": "Skin Irritants",
-            "text": "<ul><li>No Benzalkonium Chloride</li><li>No Sodium Laureth Sulfate (SLES)</li><li>No Sodium Lauryl Sulfate (SLS)</li><li>No Hydroquinone</li><li>No DEA/TEA/MEA (Ethanolamines)</li></ul>"
+            "text": "<ul><li>No Benzalkonium Chloride<\/li><li>No Sodium Laureth Sulfate (SLES)<\/li><li>No Sodium Lauryl Sulfate (SLS)<\/li><li>No Hydroquinone<\/li><li>No DEA\/TEA\/MEA (Ethanolamines)<\/li><\/ul>"
           }
         },
         "text_EQrfcJ": {
           "type": "text",
           "settings": {
             "title": "Environmental & Marine Toxins",
-            "text": "<ul><li>No Artificial UV Filters (e.g., Oxybenzone, Octinoxate, Avobenzone, Homosalate)</li><li>No Non-Biodegradable Plastic Microbeads</li><li>No Vinyl or Nylon</li><li>No Talc</li><li>No Nanoparticles</li></ul>"
+            "text": "<ul><li>No Artificial UV Filters (e.g., Oxybenzone, Octinoxate, Avobenzone, Homosalate)<\/li><li>No Non-Biodegradable Plastic Microbeads<\/li><li>No Vinyl or Nylon<\/li><li>No Talc<\/li><li>No Nanoparticles<\/li><\/ul>"
           }
         },
         "text_MbcCyE": {
           "type": "text",
           "settings": {
             "title": "Palm Oil",
-            "text": "<ul><li>No Palm Oil (We use coconut derivatives instead of palm derivatives wherever possible and adhere to the strictest sustainable sourcing standards.)</li></ul>"
+            "text": "<ul><li>No Palm Oil (We use coconut derivatives instead of palm derivatives wherever possible and adhere to the strictest sustainable sourcing standards.)<\/li><\/ul>"
           }
         },
         "text_d4JxXi": {
           "type": "text",
           "settings": {
             "title": "Unnecessary Fillers",
-            "text": "<ul><li>We do not use ingredients that dilute performance or provide no benefit to your skin.</li></ul>"
+            "text": "<ul><li>We do not use ingredients that dilute performance or provide no benefit to your skin.<\/li><\/ul>"
           }
         }
       },
@@ -434,7 +434,7 @@
         "title": "Made Without",
         "type_style": "font-heading",
         "heading_size": 120,
-        "text": "<p>Our founder—a toxicologist—leads the way in creating nontoxic products that prioritize safety for both people and the planet. We adhere to the world’s strictest ingredient standards, avoiding over 2,700 ingredients that are banned or restricted globally. Additionally, we exclude entire classes of harmful and unnecessary ingredients to ensure our formulations are truly clean, effective, and transparent.</p>",
+        "text": "<p>Our founder—a toxicologist—leads the way in creating nontoxic products that prioritize safety for both people and the planet. We adhere to the world’s strictest ingredient standards, avoiding over 2,700 ingredients that are banned or restricted globally. Additionally, we exclude entire classes of harmful and unnecessary ingredients to ensure our formulations are truly clean, effective, and transparent.<\/p>",
         "tabs_bg_color": "#f4efeb",
         "bg_color": "",
         "gradient": "",
@@ -461,7 +461,7 @@
         "heading_iVFNRw": {
           "type": "heading",
           "settings": {
-            "title": "<p>Why It Matters</p>",
+            "title": "<p>Why It Matters<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -473,7 +473,7 @@
         "text_6NLt4h": {
           "type": "text",
           "settings": {
-            "text": "<p>Earth Harbor is committed to complete transparency, creating products that are gentle and high-performing. Our rigorous standards ensure every product is free from harmful ingredients, supports your skin’s health, and protects our planet.</p>",
+            "text": "<p>Earth Harbor is committed to complete transparency, creating products that are gentle and high-performing. Our rigorous standards ensure every product is free from harmful ingredients, supports your skin’s health, and protects our planet.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -488,7 +488,7 @@
             "heading": "Frequently asked question",
             "type_style": "font-heading",
             "heading_size": 120,
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>",
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>",
             "text_size": 75,
             "tabs_bg_color": "",
             "line_thickness": "normal",
@@ -528,7 +528,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_11.png",
+        "image": "shopify:\/\/shop_images\/Picture_11.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -546,18 +546,18 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/eco_friendly_1.svg",
+            "icon_image": "shopify:\/\/shop_images\/eco_friendly_1.svg",
             "title": "Sustainability at Every Step",
-            "text": "<p>By keeping all aspects of our operations—from manufacturing and production to fulfillment and beyond—in-house, we control every touchpoint of our products. This includes everything from zero-waste packaging to ethically sourced ingredients, ensuring minimal environmental impact and maximum care.</p>"
+            "text": "<p>By keeping all aspects of our operations—from manufacturing and production to fulfillment and beyond—in-house, we control every touchpoint of our products. This includes everything from zero-waste packaging to ethically sourced ingredients, ensuring minimal environmental impact and maximum care.<\/p>"
           }
         },
         "text_KiQ6iN": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Recurso_5_1.svg",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_5_1.svg",
             "title": "pH-Optimized & Bioavailable Formulas",
-            "text": "<p>Designed for maximum absorption and gentle effectiveness for all skin types.</p>"
+            "text": "<p>Designed for maximum absorption and gentle effectiveness for all skin types.<\/p>"
           }
         }
       },
@@ -601,7 +601,7 @@
           "type": "button",
           "settings": {
             "heading": "SHOP WHOLESALE",
-            "button_link": "shopify://pages/wholesale",
+            "button_link": "shopify:\/\/pages\/wholesale",
             "overlay_opacity": 100,
             "block_text_color": "#ffffff",
             "bg_color": "#000000",

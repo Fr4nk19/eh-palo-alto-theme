@@ -26,7 +26,7 @@
         "heading_QFfWC4": {
           "type": "heading",
           "settings": {
-            "title": "<p>Pioneers in Sustainability</p>",
+            "title": "<p>Pioneers in Sustainability<\/p>",
             "size": 120,
             "text_position": "left",
             "heading_highlight_type": "underline-hand-drawn",
@@ -38,7 +38,7 @@
         "text_YbqcCK": {
           "type": "text",
           "settings": {
-            "text": "<p>At Earth Harbor, sustainability isn’t just a trend—it’s been our mission from the beginning. Founded by a toxicologist with a background in environmental health, we combine science-backed expertise with the transformative power of ocean and earth. As the first skincare brand to be <strong>Climate Neutral, Plastic Negative, and 1% for the Planet® Certified</strong>, we’ve pioneered a <strong>first-of-its-kind plastic-free refill program</strong>.</p>",
+            "text": "<p>At Earth Harbor, sustainability isn’t just a trend—it’s been our mission from the beginning. Founded by a toxicologist with a background in environmental health, we combine science-backed expertise with the transformative power of ocean and earth. As the first skincare brand to be <strong>Climate Neutral, Plastic Negative, and 1% for the Planet® Certified<\/strong>, we’ve pioneered a <strong>first-of-its-kind plastic-free refill program<\/strong>.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -48,7 +48,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP REFILLS & PLASTIC-FREE",
-            "button_link": "/collections/refills-plastic-free",
+            "button_link": "\/collections\/refills-plastic-free",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -60,7 +60,7 @@
         "text_N8Fawx": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"https://pact-collective.myshopify.com/products/mailback-earthharbor\" title=\"https://pact-collective.myshopify.com/products/mailback-earthharbor\">Recycle through Pact Collective</a></p>",
+            "text": "<p><a href=\"https:\/\/pact-collective.myshopify.com\/products\/mailback-earthharbor\" title=\"https:\/\/pact-collective.myshopify.com\/products\/mailback-earthharbor\">Recycle through Pact Collective<\/a><\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -84,7 +84,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/c4657aecadc97b257238d57f82db4755.png",
+        "image": "shopify:\/\/shop_images\/c4657aecadc97b257238d57f82db4755.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -104,21 +104,21 @@
         "text_alignment": "center",
         "images_width": 750,
         "images_offset": 60,
-        "image_1": "shopify://shop_images/Picture_20.png",
+        "image_1": "shopify:\/\/shop_images\/Picture_20.png",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/Picture_21.png",
+        "image_2": "shopify:\/\/shop_images\/Picture_21.png",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Our Commitment Runs Deep</p>",
+        "title": "<p>Our Commitment Runs Deep<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#041010",
         "highlight_text_color": "",
-        "description": "<p>Transparency is key to our approach, and we invite you to explore our ever-evolving <strong>Sustainability Transparency Program</strong>, which covers everything from packaging and sourcing to manufacturing and charitable giving. Our commitment to sustainability means we’re always improving—and we want you to be part of this journey.</p>",
+        "description": "<p>Transparency is key to our approach, and we invite you to explore our ever-evolving <strong>Sustainability Transparency Program<\/strong>, which covers everything from packaging and sourcing to manufacturing and charitable giving. Our commitment to sustainability means we’re always improving—and we want you to be part of this journey.<\/p>",
         "text_size": 100,
         "button_text": "LEARN MORE ABOUT OUR STANDARDS",
-        "button_link": "shopify://pages/skincare-quiz-routine",
+        "button_link": "shopify:\/\/pages\/skincare-quiz-routine",
         "button_color": "btn--black",
         "button_style": "btn--outline",
         "button_size": "btn--medium",
@@ -140,28 +140,28 @@
           "type": "text",
           "settings": {
             "title": "Packaging",
-            "text": "<ul><li>100% reusable and recyclable packaging</li><li>Zero-waste refills + plastic-free option</li><li> First-of-its-kind reusable product dispenser</li><li>Recycling program through Pact Collective</li><li>Flint glass containers (including recycled glass)</li><li>Aluminum & post-consumer resin closures, including ocean waste plastic</li><li>100% compostable shipping materials (including tape)</li><li>No unnecessary packaging ever</li><li>Eco-friendly ink and labels</li><li>Sourced from sustainable forests and post-consumer materials</li></ul>"
+            "text": "<ul><li>100% reusable and recyclable packaging<\/li><li>Zero-waste refills + plastic-free option<\/li><li> First-of-its-kind reusable product dispenser<\/li><li>Recycling program through Pact Collective<\/li><li>Flint glass containers (including recycled glass)<\/li><li>Aluminum & post-consumer resin closures, including ocean waste plastic<\/li><li>100% compostable shipping materials (including tape)<\/li><li>No unnecessary packaging ever<\/li><li>Eco-friendly ink and labels<\/li><li>Sourced from sustainable forests and post-consumer materials<\/li><\/ul>"
           }
         },
         "text_TtQK9e": {
           "type": "text",
           "settings": {
             "title": "Sourcing",
-            "text": "<ul><li> Nearly 100% locally sourced packaging (within 50 miles)</li><li>Responsible, in-house ingredient sourcing with ethical trade practices</li><li>Partnering with local farmers to repurpose waste</li><li>Upcycled ingredients whenever possible</li><li>100% non-GMO ingredients, focusing on organic and EcoCert-certified</li><li>Only work with companies that prioritize sustainability</li><li>Carbon-neutral shipping whenever possible</li></ul>"
+            "text": "<ul><li> Nearly 100% locally sourced packaging (within 50 miles)<\/li><li>Responsible, in-house ingredient sourcing with ethical trade practices<\/li><li>Partnering with local farmers to repurpose waste<\/li><li>Upcycled ingredients whenever possible<\/li><li>100% non-GMO ingredients, focusing on organic and EcoCert-certified<\/li><li>Only work with companies that prioritize sustainability<\/li><li>Carbon-neutral shipping whenever possible<\/li><\/ul>"
           }
         },
         "text_C33ip8": {
           "type": "text",
           "settings": {
             "title": "Manufacturing",
-            "text": "<ul><li>Proudly make 95%+ of products in-house</li><li>Solar-powered, small-batch production</li><li>Terracycle® Zero-Waste Program</li><li>In-house Sustainability Committee</li><li>Mindful of full product lifecycles</li><li>Strive for zero-waste wherever possible</li></ul>"
+            "text": "<ul><li>Proudly make 95%+ of products in-house<\/li><li>Solar-powered, small-batch production<\/li><li>Terracycle® Zero-Waste Program<\/li><li>In-house Sustainability Committee<\/li><li>Mindful of full product lifecycles<\/li><li>Strive for zero-waste wherever possible<\/li><\/ul>"
           }
         },
         "text_eVjn9W": {
           "type": "text",
           "settings": {
             "title": "Formulas",
-            "text": "<ul><li>Overseen by an environmental health specialist/toxicologist</li><li>100% non-GMO, organic, or wildcrafted ingredients</li><li>Ocean-friendly formulas</li><li>Modular formulas for low-waste, conscious consumerism</li><li>100% vegan, soy-free, gluten-free</li></ul>"
+            "text": "<ul><li>Overseen by an environmental health specialist\/toxicologist<\/li><li>100% non-GMO, organic, or wildcrafted ingredients<\/li><li>Ocean-friendly formulas<\/li><li>Modular formulas for low-waste, conscious consumerism<\/li><li>100% vegan, soy-free, gluten-free<\/li><\/ul>"
           }
         }
       },
@@ -198,7 +198,7 @@
         "heading_VkHiVr": {
           "type": "heading",
           "settings": {
-            "title": "<p>Certifications & Partnerships</p>",
+            "title": "<p>Certifications & Partnerships<\/p>",
             "size": 120,
             "text_position": "left",
             "heading_highlight_type": "underline-hand-drawn",
@@ -210,7 +210,7 @@
         "text_h7FAnk": {
           "type": "text",
           "settings": {
-            "text": "<ul><li><strong>1% for the Planet</strong>®</li><li><strong>Carbon Neutral </strong>(Change Climate Project®)</li><li><strong>Plastic Negative</strong> (Plastic Credit Exchange®)</li><li><strong>EU Certified</strong></li><li><strong>Leaping Bunny</strong>®</li><li><strong>PETA® Vegan & Cruelty-Free</strong></li><li><strong>Forest Stewardship Council</strong>®</li><li><strong>ISO Good Manufacturing Practices</strong></li><li><strong>Local Sourcing</strong> (ECOCERT®; Utah’s Own®; Georgia Grown®)</li><li><strong>USDA Organic & Non-GMO</strong> (for individual ingredients)</li></ul>",
+            "text": "<ul><li><strong>1% for the Planet<\/strong>®<\/li><li><strong>Carbon Neutral <\/strong>(Change Climate Project®)<\/li><li><strong>Plastic Negative<\/strong> (Plastic Credit Exchange®)<\/li><li><strong>EU Certified<\/strong><\/li><li><strong>Leaping Bunny<\/strong>®<\/li><li><strong>PETA® Vegan & Cruelty-Free<\/strong><\/li><li><strong>Forest Stewardship Council<\/strong>®<\/li><li><strong>ISO Good Manufacturing Practices<\/strong><\/li><li><strong>Local Sourcing<\/strong> (ECOCERT®; Utah’s Own®; Georgia Grown®)<\/li><li><strong>USDA Organic & Non-GMO<\/strong> (for individual ingredients)<\/li><\/ul>",
             "size": 100,
             "text_position": "left",
             "spacing_bottom": 12
@@ -232,7 +232,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_22.png",
+        "image": "shopify:\/\/shop_images\/Picture_22.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -267,7 +267,7 @@
           "disabled": true,
           "settings": {
             "width": "50",
-            "image": "shopify://shop_images/Frame_13.png",
+            "image": "shopify:\/\/shop_images\/Frame_13.png",
             "custom_link": "",
             "custom_btn_text1": "",
             "overlay_opacity": 0,
@@ -286,7 +286,7 @@
           "type": "image",
           "settings": {
             "width": "50",
-            "image": "shopify://shop_images/cd1dff48a10018198d37ac41e47bb796.png",
+            "image": "shopify:\/\/shop_images\/cd1dff48a10018198d37ac41e47bb796.png",
             "custom_link": "",
             "custom_btn_text1": "",
             "overlay_opacity": 0,
@@ -338,10 +338,10 @@
         "promo_873tDC": {
           "type": "promo",
           "settings": {
-            "image": "shopify://shop_images/19577fe69c354d10cbe9549d748f37d2.png",
+            "image": "shopify:\/\/shop_images\/19577fe69c354d10cbe9549d748f37d2.png",
             "position": 1,
             "width": "auto",
-            "title": "<p>Real results</p>",
+            "title": "<p>Real results<\/p>",
             "heading_size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -354,7 +354,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "Shop All",
-            "button_link": "shopify://collections/qa-wholesale",
+            "button_link": "shopify:\/\/collections\/qa-wholesale",
             "button_color": "btn--white",
             "button_style": "btn--solid",
             "button_size": "btn--small"
@@ -373,12 +373,12 @@
         "products_per_row_on_desktop": 4,
         "columns_mobile": "1",
         "text_alignment": "text-left",
-        "title": "<p>Shop Wholesale</p>",
+        "title": "<p>Shop Wholesale<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "text": "<p>Our most-loved gems.</p>",
+        "text": "<p>Our most-loved gems.<\/p>",
         "text_size": 100,
         "button_position": "top",
         "button_text": "",

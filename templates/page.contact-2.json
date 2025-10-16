@@ -26,7 +26,7 @@
         "heading_LJUKN9": {
           "type": "heading",
           "settings": {
-            "text": "<p>Hey Merbabe</p>",
+            "text": "<p>Hey Merbabe<\/p>",
             "size": 180,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -36,7 +36,7 @@
         "subheading_i3rYfb": {
           "type": "subheading",
           "settings": {
-            "text": "<p>(here's how to get in touch with us)</p>",
+            "text": "<p>(here's how to get in touch with us)<\/p>",
             "size": 100
           }
         },
@@ -44,7 +44,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand, describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Share information about your brand, describe a product, share announcements, or welcome customers to your store.<\/p>",
             "size": 100
           }
         },
@@ -54,7 +54,7 @@
           "settings": {
             "stacked_button": false,
             "button_1_text": "Shop All",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify:\/\/collections\/all",
             "button_1_color": "btn--white",
             "button_1_style": "btn--solid-border",
             "button_1_size": "btn--medium",
@@ -77,7 +77,7 @@
         "height": "one-third-height",
         "enable_mobile_height": false,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/1f8aef58c1b562eba909a861675c2606.png",
+        "image": "shopify:\/\/shop_images\/1f8aef58c1b562eba909a861675c2606.png",
         "overlay_opacity": 0,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
@@ -101,7 +101,7 @@
           "settings": {
             "icon_name": "none",
             "title": "Orders, Returns + Skin Support",
-            "text": "<p><a href=\"mailto:hello@earthharbor.com\" target=\"_blank\" title=\"mailto:hello@earthharbor.com\">hello@earthharbor.com</a></p>"
+            "text": "<p><a href=\"mailto:hello@earthharbor.com\" target=\"_blank\" title=\"mailto:hello@earthharbor.com\">hello@earthharbor.com<\/a><\/p>"
           }
         },
         "text_UQdzhw": {
@@ -109,7 +109,7 @@
           "settings": {
             "icon_name": "none",
             "title": "Wholesale + Vendors",
-            "text": "<p><a href=\"mailto:wholesale@earthharbor.com\" target=\"_blank\" title=\"mailto:wholesale@earthharbor.com\">wholesale@earthharbor.com</a></p>"
+            "text": "<p><a href=\"mailto:wholesale@earthharbor.com\" target=\"_blank\" title=\"mailto:wholesale@earthharbor.com\">wholesale@earthharbor.com<\/a><\/p>"
           }
         },
         "text_tBqcxk": {
@@ -117,7 +117,7 @@
           "settings": {
             "icon_name": "none",
             "title": "Editors + Publications",
-            "text": "<p><a href=\"mailto:pr@earthharbor.com\" target=\"_blank\" title=\"mailto:pr@earthharbor.com\">pr@earthharbor.com</a></p>"
+            "text": "<p><a href=\"mailto:pr@earthharbor.com\" target=\"_blank\" title=\"mailto:pr@earthharbor.com\">pr@earthharbor.com<\/a><\/p>"
           }
         },
         "text_cBHDAG": {
@@ -125,7 +125,7 @@
           "settings": {
             "icon_name": "none",
             "title": "Collab Requests",
-            "text": "<p><a href=\"#\" title=\"#\">click here</a></p>"
+            "text": "<p><a href=\"#\" title=\"#\">click here<\/a><\/p>"
           }
         }
       },
@@ -171,27 +171,27 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/fluent_phone-32-light.png",
+            "icon_image": "shopify:\/\/shop_images\/fluent_phone-32-light.png",
             "title": "Text us anytime at",
-            "text": "<p><a href=\"tel:1-833-884-5817\" title=\"tel:1-833-884-5817\">1-833-884-5817</a></p>"
+            "text": "<p><a href=\"tel:1-833-884-5817\" title=\"tel:1-833-884-5817\">1-833-884-5817<\/a><\/p>"
           }
         },
         "text_jwGRJt": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/ph_question-thin_1.png",
+            "icon_image": "shopify:\/\/shop_images\/ph_question-thin_1.png",
             "title": "FAQs",
-            "text": "<p><a href=\"/pages/faq\" title=\"FAQ\">learn more</a></p>"
+            "text": "<p><a href=\"\/pages\/faq\" title=\"FAQ\">learn more<\/a><\/p>"
           }
         },
         "text_Ep6j8K": {
           "type": "text",
           "settings": {
             "icon_name": "eco-friendly",
-            "icon_image": "shopify://shop_images/hugeicons_delivery-return-01.png",
+            "icon_image": "shopify:\/\/shop_images\/hugeicons_delivery-return-01.png",
             "title": "Return Policy",
-            "text": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">View here </a></p>"
+            "text": "<p><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">View here <\/a><\/p>"
           }
         }
       },

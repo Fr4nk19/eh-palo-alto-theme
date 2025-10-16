@@ -17,7 +17,7 @@
         "text_AU8Cbk": {
           "type": "text",
           "settings": {
-            "text": "<p>Free US Shipping orders $200+ <a href=\"/collections/all\" title=\"All products\"><strong>SHOP NOW</strong></a></p>",
+            "text": "<p>Free US Shipping orders $200+ <a href=\"\/collections\/all\" title=\"All products\"><strong>SHOP NOW<\/strong><\/a><\/p>",
             "text_color": "",
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -67,7 +67,7 @@
           "settings": {
             "position": "1",
             "position_submenu": "3",
-            "image": "shopify://shop_images/sets-menu-thumb.jpg",
+            "image": "shopify:\/\/shop_images\/sets-menu-thumb.jpg",
             "aspect_ratio": 1,
             "wide_image": false
           }
@@ -78,13 +78,13 @@
           "settings": {
             "position": "1",
             "image_second_menu": false,
-            "image": "shopify://shop_images/Image_4_4aa06f62-4291-4788-913b-d07681bfb373.png",
+            "image": "shopify:\/\/shop_images\/Image_4_4aa06f62-4291-4788-913b-d07681bfb373.png",
             "aspect_ratio": 1,
             "wide_image": false,
             "title": "Shop All",
             "heading_size": 100,
             "link_text": "",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "image_BKtAGQ": {
@@ -93,13 +93,13 @@
           "settings": {
             "position": "1",
             "image_second_menu": false,
-            "image": "shopify://shop_images/Image_5_112254b5-42e2-4da4-956d-a072760b3eb8.png",
+            "image": "shopify:\/\/shop_images\/Image_5_112254b5-42e2-4da4-956d-a072760b3eb8.png",
             "aspect_ratio": 1,
             "wide_image": false,
             "title": "Bestsellers",
             "heading_size": 100,
             "link_text": "",
-            "link": "shopify://collections/bestsellers"
+            "link": "shopify:\/\/collections\/bestsellers"
           }
         },
         "image_gqhCrW": {
@@ -108,13 +108,13 @@
           "settings": {
             "position": "1",
             "image_second_menu": false,
-            "image": "shopify://shop_images/Image_6_df5a97e2-7f43-4a30-bdd2-f35402265468.png",
+            "image": "shopify:\/\/shop_images\/Image_6_df5a97e2-7f43-4a30-bdd2-f35402265468.png",
             "aspect_ratio": 1,
             "wide_image": false,
             "title": "Sets",
             "heading_size": 100,
             "link_text": "",
-            "link": "shopify://collections/sets"
+            "link": "shopify:\/\/collections\/sets"
           }
         }
       },
@@ -131,7 +131,7 @@
         "header_border": false,
         "header_border_color": "",
         "border_opacity": 50,
-        "logo_not_home": "shopify://shop_images/site-logo.png",
+        "logo_not_home": "shopify:\/\/shop_images\/site-logo.png",
         "logo_max_width": 130,
         "main-menu": "header-menu-current",
         "main_menu_secondary": "nav-right-rewards",
@@ -160,7 +160,7 @@
         "header_border": false,
         "header_border_color": "",
         "border_opacity": 50,
-        "logo_not_home": "shopify://shop_images/Recurso_3_4x_1.png",
+        "logo_not_home": "shopify:\/\/shop_images\/Recurso_3_4x_1.png",
         "logo_max_width": 100,
         "main-menu-wholesale": "wholesale",
         "untagged-customer-menu": "untagged-men",
@@ -186,7 +186,7 @@
         "announcement-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Free US Shipping orders $50+ <a href=\"/collections/all\" title=\"All products\"><strong>SHOP NOW</strong></a></p>",
+            "text": "<p>Free US Shipping orders $50+ <a href=\"\/collections\/all\" title=\"All products\"><strong>SHOP NOW<\/strong><\/a><\/p>",
             "text_color": "",
             "heading_highlight_type": "circle",
             "highlight_color": "#d43747",

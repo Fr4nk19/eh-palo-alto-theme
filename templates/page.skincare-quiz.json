@@ -26,7 +26,7 @@
         "image_cFCca6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/20240611_Earth_Harbor_Beauty23452_df4f3add-916b-4760-98b2-2eebd3b23d6b.jpg",
+            "image": "shopify://shop_images/skin_quiz.jpg",
             "overlay_opacity": 0,
             "content_width": 80,
             "text_position": "left",
@@ -42,7 +42,9 @@
             "text_size": 100,
             "stacked_button": false,
             "button_1_text": "TAKE 1-MINUTE QUIZ",
+            "button_1_text_untagged": "Apply Now",
             "button_1_link": "#",
+            "button_1_link_untagged": "",
             "button_1_color": "btn--black",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--medium",
@@ -74,7 +76,9 @@
             "text_size": 100,
             "stacked_button": false,
             "button_1_text": "TAKE 1-MINUTE QUIZ",
+            "button_1_text_untagged": "Apply Now",
             "button_1_link": "#",
+            "button_1_link_untagged": "",
             "button_1_color": "btn--black",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--medium",
@@ -106,7 +110,9 @@
         "transition": "wipe",
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,
-        "increase_border_radius": true
+        "increase_border_radius": true,
+        "color_heading": "#000000",
+        "font_size_subhead": 20
       }
     },
     "section_custom_html_RjGzdH": {

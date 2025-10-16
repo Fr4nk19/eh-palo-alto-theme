@@ -66,9 +66,9 @@
   {%- capture left_to_spend -%}
     <span data-left-to-spend>
       {%- if settings.currency_code_enable -%}
-        {{- limit_currency | minus: cart_total_price | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code -}}
+        <span class="wh-original-cart-total"><span class='wh-original-price'>{{- limit_currency | minus: cart_total_price | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code -}}</span></span><span class="wh-cart-total"></span><span class="additional-notes"><span class="wh-minimums-note"></span><span class="wh-extra-note"></span></span>
       {%- else -%}
-        {{- limit_currency | minus: cart_total_price | money_without_trailing_zeros -}}
+        <span class="wh-original-cart-total"><span class='wh-original-price'>{{- limit_currency | minus: cart_total_price | money_without_trailing_zeros -}}</span></span><span class="wh-cart-total"></span><span class="additional-notes"><span class="wh-minimums-note"></span><span class="wh-extra-note"></span></span>
       {%- endif -%}
     </span>
   {%- endcapture -%}
