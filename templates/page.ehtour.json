@@ -1,0 +1,259 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "hero_image_pzbzAN": {
+      "type": "hero-image",
+      "name": "Hero Image",
+      "settings": {
+        "banner_image": "shopify://shop_images/IMG_6301.png",
+        "logo1": "shopify://shop_images/whole-foods-market-1_1.png",
+        "logo12": "shopify://shop_images/Recurso_3_4x_2.png",
+        "title_hero": "The Sea-to-Shelf Tour",
+        "description": "Experience our products live—find out when we’ll be near you.",
+        "label_cta": "SEE LOCATIONS",
+        "link_cta": "#events"
+      }
+    },
+    "image_with_link_JDEdre": {
+      "type": "image-with-link",
+      "custom_css": [
+        "html {scroll-behavior: smooth;}"
+      ],
+      "name": "Imagen con enlace simple",
+      "settings": {
+        "image": "shopify://shop_images/Group_7.png",
+        "link": "#events",
+        "open_new_tab": false,
+        "alt_text": "",
+        "id_section": "map"
+      }
+    },
+    "events_section_Yta6Ke": {
+      "type": "events-section",
+      "blocks": {
+        "location_UXPH9d": {
+          "type": "location",
+          "settings": {
+            "city": "NYC",
+            "event_date": "October 19",
+            "location_name": "Fort Greene",
+            "address": "292 Ashland Pl",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        },
+        "location_DrP9h9": {
+          "type": "location",
+          "settings": {
+            "city": "NYC",
+            "event_date": "October 19",
+            "location_name": "63 Madison",
+            "address": "63 Madison Ave",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_DMfaAJ": {
+          "type": "location",
+          "settings": {
+            "city": "NYC",
+            "event_date": "October 26",
+            "location_name": "63 Madison",
+            "address": "63 Madison Ave",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        },
+        "location_Y4MHRV": {
+          "type": "location",
+          "settings": {
+            "city": "NYC",
+            "event_date": "October 26",
+            "location_name": "Fort Greene",
+            "address": "292 Ashland Pl",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_Hkpfdr": {
+          "type": "location",
+          "settings": {
+            "city": "Metro SLC",
+            "event_date": "October 17",
+            "location_name": "Sugarhouse",
+            "address": "1131 E Wilmington Ave",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        },
+        "location_tfJD4B": {
+          "type": "location",
+          "settings": {
+            "city": "Metro SLC",
+            "event_date": "October 27",
+            "location_name": "Troley Square",
+            "address": "544 S 700 E",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        },
+        "location_aViABQ": {
+          "type": "location",
+          "settings": {
+            "city": "South Florida",
+            "event_date": "October 16",
+            "location_name": "Delray Beach",
+            "address": "680 Linton Blvd",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_ijhBWN": {
+          "type": "location",
+          "settings": {
+            "city": "South Florida",
+            "event_date": "October 21",
+            "location_name": "Fort Lauderdale",
+            "address": "2000 N Federal Hwy",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_A8VXgR": {
+          "type": "location",
+          "settings": {
+            "city": "South Florida",
+            "event_date": "October 29",
+            "location_name": "Fort Lauderdale",
+            "address": "2000 N Federal Hwy",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_cABLGa": {
+          "type": "location",
+          "settings": {
+            "city": "South Florida",
+            "event_date": "October 30",
+            "location_name": "Delray Beach",
+            "address": "680 Linton Blvd",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_REyrM8": {
+          "type": "location",
+          "settings": {
+            "city": "Metro Las Vegas",
+            "event_date": "October 25",
+            "location_name": "Las Vegas Blvd",
+            "address": "6689 S Las Vegas Blvd",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        },
+        "location_fpm6Bk": {
+          "type": "location",
+          "settings": {
+            "city": "Orange Country, CA",
+            "event_date": "October 19",
+            "location_name": "Laguna Niguel",
+            "address": "23932 Aliso Creek Rd",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_RykmKj": {
+          "type": "location",
+          "settings": {
+            "city": "Orange Country, CA",
+            "event_date": "October 30",
+            "location_name": "Laguna Niguel",
+            "address": "23932 Aliso Creek Rd",
+            "event_window": "3pm to 7pm",
+            "map_link": "#map"
+          }
+        },
+        "location_7PPzam": {
+          "type": "location",
+          "settings": {
+            "city": "Metro Dallas",
+            "event_date": "October 17",
+            "location_name": "Forest",
+            "address": "11700 Preston Rd Ste 714",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        },
+        "location_MEqBNb": {
+          "type": "location",
+          "settings": {
+            "city": "Metro Dallas",
+            "event_date": "October 30",
+            "location_name": "Forest",
+            "address": "11700 Preston Rd Ste 714",
+            "event_window": "10am to 2pm",
+            "map_link": "#map"
+          }
+        }
+      },
+      "block_order": [
+        "location_UXPH9d",
+        "location_DrP9h9",
+        "location_DMfaAJ",
+        "location_Y4MHRV",
+        "location_Hkpfdr",
+        "location_tfJD4B",
+        "location_aViABQ",
+        "location_ijhBWN",
+        "location_A8VXgR",
+        "location_cABLGa",
+        "location_REyrM8",
+        "location_fpm6Bk",
+        "location_RykmKj",
+        "location_7PPzam",
+        "location_MEqBNb"
+      ],
+      "name": "Events Schedule",
+      "settings": {
+        "id_section": "events",
+        "logo1": "shopify://shop_images/whole-foods-market-1_1.png",
+        "logo2": "shopify://shop_images/Recurso_3_4x_2.png"
+      }
+    },
+    "text_section_x3BVwa": {
+      "type": "text-section",
+      "name": "Text Section",
+      "settings": {
+        "title_section": "Stop by select stores this October to:",
+        "content_section": "<ul><li>Try our sea-powered skincare IRL</li><li>Chat with our skin experts</li><li>Grab free deluxe samples</li><li>Show this page at our booth—first 5 win a full-size gem!</li></ul>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_image_pzbzAN",
+    "text_section_x3BVwa",
+    "image_with_link_JDEdre",
+    "events_section_Yta6Ke"
+  ]
+}
