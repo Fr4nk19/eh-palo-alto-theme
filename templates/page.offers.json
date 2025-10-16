@@ -74,7 +74,7 @@
         "height": "seven-fifty-height",
         "enable_mobile_height": true,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/d3155de623c9210b847e916af762923ex805fb043.jpg",
+        "image": "shopify://shop_images/banner_offers.jpg",
         "overlay_opacity": 10,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
@@ -161,7 +161,7 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Picture_28.png",
+            "image": "shopify://shop_images/offers_section.jpg",
             "title": "Save 25% when you build a set",
             "heading_size": 120,
             "text": "",
@@ -358,10 +358,10 @@
             "overlay_opacity": 10,
             "text_position": "bottom-center",
             "subheading": "new to earth harbor?",
-            "title": "Get 15$ off your first order",
+            "title": "Get $15 off your first order",
             "text": "Your skin will thank you.",
             "button_1_text": "Let's Text",
-            "button_1_link": "",
+            "button_1_link": "https://ctrk.klclick.com/l/01K7FJ5CATW7YPXM4PB7JE4E5Z_3",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-dark"
@@ -432,7 +432,7 @@
             "size": 180,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
-            "highlight_text_color": ""
+            "highlight_text_color": "#ffffff"
           }
         },
         "text_b3YJtG": {
@@ -464,6 +464,9 @@
         "heading_EEeWzQ",
         "text_b3YJtG",
         "button_eeTRVf"
+      ],
+      "custom_css": [
+        ".text-highlight__break {color: #fff;}"
       ],
       "settings": {
         "height": "six-fifty-height",

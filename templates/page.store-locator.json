@@ -24,7 +24,7 @@
       "type": "apps",
       "blocks": {
         "amai_promap_storelocator_page_block_6kA3HE": {
-          "type": "shopify://apps/promap-rp/blocks/storelocator-page-block/acff8fd9-34cc-4a4d-98ed-d7fdb5d3605f",
+          "type": "shopify:\/\/apps\/promap-rp\/blocks\/storelocator-page-block\/acff8fd9-34cc-4a4d-98ed-d7fdb5d3605f",
           "settings": {}
         }
       },
@@ -46,7 +46,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/ulta_6dd30cbf-bddf-4fc1-97d3-27d5e17d7331_240x240_1.png",
+            "press_logo": "shopify:\/\/shop_images\/ulta_6dd30cbf-bddf-4fc1-97d3-27d5e17d7331_240x240_1.png",
             "logo_width": 110
           }
         },
@@ -55,7 +55,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/wfm_da32c781-4e34-40e9-9848-d89bdb8770d1_240x240_1.png",
+            "press_logo": "shopify:\/\/shop_images\/wfm_da32c781-4e34-40e9-9848-d89bdb8770d1_240x240_1.png",
             "logo_width": 110
           }
         },
@@ -64,7 +64,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/Sprouts_Logo_1C_Black-640x166_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Sprouts_Logo_1C_Black-640x166_1_1.png",
             "logo_width": 150
           }
         }
@@ -96,7 +96,7 @@
         "heading_Q9PnAj": {
           "type": "heading",
           "settings": {
-            "text": "<p>Europe, Australia and beyond?</p>",
+            "text": "<p>Europe, Australia and beyond?<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -106,7 +106,7 @@
         "text_4DUTwr": {
           "type": "text",
           "settings": {
-            "text": "<p>Shop our partner <a href=\"https://www.zalando.com/\" title=\"https://www.zalando.com/\">Zalando</a> or <a href=\"https://naturelleshop.com/\" title=\"https://naturelleshop.com/\">NaturelleShop.com</a> for super fast shipping or from <a href=\"https://earthharbor.com/\" title=\"https://earthharbor.com/\">earthharbor.com</a></p>",
+            "text": "<p>Shop our partner <a href=\"https:\/\/www.zalando.com\/\" title=\"https:\/\/www.zalando.com\/\">Zalando<\/a> or <a href=\"https:\/\/naturelleshop.com\/\" title=\"https:\/\/naturelleshop.com\/\">NaturelleShop.com<\/a> for super fast shipping or from <a href=\"https:\/\/earthharbor.com\/\" title=\"https:\/\/earthharbor.com\/\">earthharbor.com<\/a><\/p>",
             "size": 100
           }
         }

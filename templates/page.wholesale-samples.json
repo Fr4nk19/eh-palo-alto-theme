@@ -26,7 +26,7 @@
         "heading_GhjDga": {
           "type": "heading",
           "settings": {
-            "text": "<p>Samples</p>",
+            "text": "<p>Samples<\/p>",
             "size": 50,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -36,7 +36,7 @@
         "text_TVx6M8": {
           "type": "text",
           "settings": {
-            "text": "<p>Not sure which gems to get? We've got you covered. All new partners receive <br/><strong>three free samples,</strong> just pay the shipping! Samples must be a mix of different products and are not for resale. </p>",
+            "text": "<p>Not sure which gems to get? We've got you covered. All new partners receive <br\/><strong>three free samples,<\/strong> just pay the shipping! Samples must be a mix of different products and are not for resale. <\/p>",
             "size": 95
           }
         }
@@ -63,7 +63,7 @@
         "promo_FtbNa8": {
           "type": "promo",
           "settings": {
-            "image": "shopify://shop_images/samples.jpg",
+            "image": "shopify:\/\/shop_images\/samples.jpg",
             "position": 1,
             "width": "auto",
             "title": "",

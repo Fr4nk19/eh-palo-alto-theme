@@ -26,15 +26,15 @@
         "image_JzmTw8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Hero.jpg",
-            "wholesale_image": "shopify://shop_images/Figma_Design_Image_1.jpg",
+            "image": "shopify:\/\/shop_images\/Hero.jpg",
+            "wholesale_image": "shopify:\/\/shop_images\/Figma_Design_Image_1.jpg",
             "overlay_opacity": 10,
             "content_width": 80,
             "text_position": "center",
             "text_alignment": "text-center",
             "text_color": "text-dark",
             "subheading": "",
-            "title": "<p>Down to Earth Skincare</p>",
+            "title": "<p>Down to Earth Skincare<\/p>",
             "heading_size": 190,
             "heading_highlight_type": "italics",
             "highlight_color": "#ffffff",
@@ -44,8 +44,8 @@
             "stacked_button": false,
             "button_1_text": "SHOP NOW",
             "button_1_text_untagged": "APPLY NOW",
-            "button_1_link": "shopify://pages/wholesale-register-1",
-            "button_1_link_untagged": "shopify://pages/wholesale-register-1",
+            "button_1_link": "shopify:\/\/pages\/wholesale-register-1",
+            "button_1_link_untagged": "shopify:\/\/pages\/wholesale-register-1",
             "button_1_color": "btn--primary",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--medium",
@@ -83,9 +83,9 @@
         "press_ezHNyc": {
           "type": "press",
           "settings": {
-            "text": "<p> </p>",
+            "text": "<p> <\/p>",
             "link": "",
-            "press_logo": "shopify://shop_images/Recurso_4_3x_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Recurso_4_3x_1.png",
             "logo_width": 120
           }
         },
@@ -94,7 +94,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/allure-vector-logo_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/allure-vector-logo_1_1.png",
             "logo_width": 110
           }
         },
@@ -103,7 +103,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/Recurso_2_3x_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Recurso_2_3x_1.png",
             "logo_width": 120
           }
         },
@@ -112,7 +112,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/Recurso_5_3x_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Recurso_5_3x_1.png",
             "logo_width": 120
           }
         }
@@ -144,7 +144,7 @@
         "heading_X3bcWU": {
           "type": "heading",
           "settings": {
-            "title": "<p>Become a Stockist</p>",
+            "title": "<p>Become a Stockist<\/p>",
             "size": 125,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -156,7 +156,7 @@
         "text_rzxNeK": {
           "type": "text",
           "settings": {
-            "text": "<p>We partner with over 2000 stockists across North America and internationally. We offer samples, back bar sizes, free trainings, promotional support and more. Ready to add some color to your shelfie?</p>",
+            "text": "<p>We partner with over 2000 stockists across North America and internationally. We offer samples, back bar sizes, free trainings, promotional support and more. Ready to add some color to your shelfie?<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -166,7 +166,7 @@
           "type": "button",
           "settings": {
             "button_text": "Apply now",
-            "button_link": "shopify://pages/wholesale-register-1",
+            "button_link": "shopify:\/\/pages\/wholesale-register-1",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -191,7 +191,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture.jpg",
+        "image": "shopify:\/\/shop_images\/Picture.jpg",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -208,7 +208,7 @@
         "heading_HnNjeE": {
           "type": "heading",
           "settings": {
-            "title": "<p>Built with Care, Crafted with Purpose</p>",
+            "title": "<p>Built with Care, Crafted with Purpose<\/p>",
             "size": 125,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -220,7 +220,7 @@
         "text_Lt8pdY": {
           "type": "text",
           "settings": {
-            "text": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Pioneers in grassroots values and adding magic to everyday rituals, Earth Harbor is artisan skincare for real life.</p>",
+            "text": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Pioneers in grassroots values and adding magic to everyday rituals, Earth Harbor is artisan skincare for real life.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -230,7 +230,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP WHOLESALE",
-            "button_link": "/pages/skincare-quiz-earth-harbor",
+            "button_link": "\/pages\/skincare-quiz-earth-harbor",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--large",
@@ -255,7 +255,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Figma_Design_Image_2.jpg",
+        "image": "shopify:\/\/shop_images\/Figma_Design_Image_2.jpg",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -274,22 +274,22 @@
         "text_alignment": "center",
         "images_width": 750,
         "images_offset": 115,
-        "image_1": "shopify://shop_images/Picture.png",
+        "image_1": "shopify:\/\/shop_images\/Picture.png",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/Picture_1.png",
+        "image_2": "shopify:\/\/shop_images\/Picture_1.png",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Our Grassroots Story</p>",
+        "title": "<p>Our Grassroots Story<\/p>",
         "heading_size": 90,
         "heading_highlight_type": "italics",
         "highlight_color": "#000000",
         "highlight_text_color": "#000000",
-        "description": "<p>I’m Ali Perry-Hatch, MPH: toxicologist + herbalist. I created Earth Harbor out of my treehouse kitchen & we got our start in farmers' markets. My biggest struggle with having a natural lifestyle was finding a comprehensive range of premium beauty products that was versatile and that lived up to my strict standards.</p>",
+        "description": "<p>I’m Ali Perry-Hatch, MPH: toxicologist + herbalist. I created Earth Harbor out of my treehouse kitchen & we got our start in farmers' markets. My biggest struggle with having a natural lifestyle was finding a comprehensive range of premium beauty products that was versatile and that lived up to my strict standards.<\/p>",
         "text_size": 100,
-        "signature_image": "shopify://shop_images/68ff83765232b12744acbdc32e4565d8.png",
+        "signature_image": "shopify:\/\/shop_images\/68ff83765232b12744acbdc32e4565d8.png",
         "button_text": "LEARN MORE",
-        "button_link": "shopify://pages/wholesale-our-story",
+        "button_link": "shopify:\/\/pages\/wholesale-our-story",
         "button_color": "btn--black",
         "button_style": "btn--solid-border",
         "button_size": "btn--medium",
@@ -312,7 +312,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/1ftp_EnvironmentalPartner_Horizontal_Black_1.png",
+            "press_logo": "shopify:\/\/shop_images\/1ftp_EnvironmentalPartner_Horizontal_Black_1.png",
             "logo_width": 150
           }
         },
@@ -321,7 +321,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/Screenshot_27_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Screenshot_27_1.png",
             "logo_width": 150
           }
         },
@@ -330,7 +330,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/climate-neutral-logo-brandlogos.net_t5avaql7k_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/climate-neutral-logo-brandlogos.net_t5avaql7k_1_1.png",
             "logo_width": 150
           }
         },
@@ -339,7 +339,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/plastic_neutral_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/plastic_neutral_1_1.png",
             "logo_width": 150
           }
         },
@@ -348,7 +348,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/pngwing.com-1_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/pngwing.com-1_1_1.png",
             "logo_width": 150
           }
         },
@@ -357,7 +357,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/PACT_LOGO-01_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/PACT_LOGO-01_1_1.png",
             "logo_width": 150
           }
         }
@@ -391,10 +391,10 @@
         "promo_bq9nkE": {
           "type": "promo",
           "settings": {
-            "image": "shopify://shop_images/Frame1.png",
+            "image": "shopify:\/\/shop_images\/Frame1.png",
             "position": 1,
             "width": "auto",
-            "title": "<p>Real results</p>",
+            "title": "<p>Real results<\/p>",
             "heading_size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -407,7 +407,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "SHOP ALL",
-            "button_link": "shopify://collections/bestsellers",
+            "button_link": "shopify:\/\/collections\/bestsellers",
             "button_color": "btn--white",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -425,12 +425,12 @@
         "products_per_row_on_desktop": 4,
         "columns_mobile": "2",
         "text_alignment": "text-left",
-        "title": "<p>Best sellers</p>",
+        "title": "<p>Best sellers<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "text": "<p>Our most-loved gems.</p>",
+        "text": "<p>Our most-loved gems.<\/p>",
         "text_size": 100,
         "button_position": "top",
         "button_text": "",
@@ -450,7 +450,7 @@
         "heading_aRKeXz": {
           "type": "heading",
           "settings": {
-            "title": "<p> Dive into Earth Harbor Wholesale Updates!</p>",
+            "title": "<p> Dive into Earth Harbor Wholesale Updates!<\/p>",
             "size": 160,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -462,7 +462,7 @@
         "text_FG7HDB": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up to receive exclusive updates on product launches, special promos, and restocks!</p>",
+            "text": "<p>Sign up to receive exclusive updates on product launches, special promos, and restocks!<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -472,7 +472,7 @@
           "type": "newsletter",
           "settings": {
             "newsletter_heading": "Subscribe to our newsletter",
-            "newsletter_text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "newsletter_text": "<p>Be the first to know about new collections and exclusive offers.<\/p>",
             "show_name_field": true,
             "button_text": "SUBSCRIBE",
             "button_color": "btn--black",
@@ -497,7 +497,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_b7f90868-c09c-45c2-aaee-e21863487ba6.jpg",
+        "image": "shopify:\/\/shop_images\/Picture_b7f90868-c09c-45c2-aaee-e21863487ba6.jpg",
         "block_bg_color": "#fff7f2",
         "text_color": "text-dark",
         "bg_color": "",
@@ -514,7 +514,7 @@
         "heading_HTJgVm": {
           "type": "heading",
           "settings": {
-            "title": "<p><strong>We’re excited to partner with you!</strong></p>",
+            "title": "<p><strong>We’re excited to partner with you!<\/strong><\/p>",
             "size": 125,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -526,7 +526,7 @@
         "text_xmjypd": {
           "type": "text",
           "settings": {
-            "text": "<p>Bring your customers clean beauty with purpose.</p>",
+            "text": "<p>Bring your customers clean beauty with purpose.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -536,7 +536,7 @@
           "type": "button",
           "settings": {
             "button_text": "APPLY NOW",
-            "button_link": "shopify://pages/wholesale-register-1",
+            "button_link": "shopify:\/\/pages\/wholesale-register-1",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -561,7 +561,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_9c912c9e-55f0-48d7-b80d-39d7c0daab8c.jpg",
+        "image": "shopify:\/\/shop_images\/Picture_9c912c9e-55f0-48d7-b80d-39d7c0daab8c.jpg",
         "block_bg_color": "#fff7f2",
         "text_color": "text-dark",
         "bg_color": "",

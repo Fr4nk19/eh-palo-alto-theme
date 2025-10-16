@@ -21,7 +21,7 @@
             "position": "center-center",
             "height": "four-fifty-height",
             "title": "Sign up for 10% off",
-            "text": "<p>Let’s keep in touch. We promise we won’t bug you too much - just promotions and new releases.</p>",
+            "text": "<p>Let’s keep in touch. We promise we won’t bug you too much - just promotions and new releases.<\/p>",
             "show_newsletter_form": true,
             "extra_fields": "",
             "button_text": "",

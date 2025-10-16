@@ -114,7 +114,7 @@
             "line_thickness": "normal",
             "accordion_heading": "Product Details",
             "heading_style": "font-body",
-            "accordion_text": "<p>{{ product.description }}</p>",
+            "accordion_text": "{{ product.metafields.custom.product_details_new_copy | metafield_tag }}",
             "accordion_page": "",
             "padding_bottom": 0
           }
@@ -131,7 +131,7 @@
             "line_thickness": "normal",
             "accordion_heading": "How to use",
             "heading_style": "font-body",
-            "accordion_text": "<p><a href=\"/pages/how-to-apply\" title=\"How to Apply\">How to apply</a></p>",
+            "accordion_text": "{{ product.metafields.custom.how_to_use | metafield_tag }}",
             "accordion_page": "",
             "padding_bottom": 10
           }
@@ -183,7 +183,7 @@
             "line_thickness": "normal",
             "accordion_heading": "Standards",
             "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_text": "<p><strong>Our Commitment to Quality</strong></p><ul><li>100% Nature-Identical</li><li>No Harsh Synthetics</li><li>No Fillers, Only Actives</li><li>Clinically & Scientifically Proven</li><li>Dermatologist Tested</li><li>Certified Safe for Sensitive Skin</li><li>Non-Toxic (Toxicologist Audited)</li><li>Third-Party Safety & Stability Tested<br/></li></ul><p><strong>Clean & Ethical Practices</strong></p><ul><li>Ultra-Clean Ingredients</li><li>Free from Artificial Fragrances & Dyes</li><li>Traceable, Ethical, Premium Ingredients</li><li>Non-GMO Verified Ingredients</li><li>Sustainably Sourced & Verified</li><li>Cruelty-Free & Vegan Certified</li><li>European Union Certified<br/></li></ul><p><strong>Sustainability at Heart</strong></p><ul><li>Plastic Neutral Certified</li><li>Carbon Neutral Certified</li><li>Zero-Waste Refills</li><li>Ocean-Friendly</li><li>1% for the Planet Member</li><li>Reusable & Biodegradable Packaging<br/></li></ul><p><strong>Crafted with Care</strong></p><ul><li>Artisan Small Batches</li><li>In-House Lab Made</li><li>Herbalist-Chemist Formulated</li><li>Good Manufacturing Practices Certified<br/></li></ul><p><strong>Proudly Independent</strong></p><ul><li>Small Family Business</li><li>Woman-Owned</li><li>Independently Operated, Never Outsourced</li></ul>",
             "accordion_page": "",
             "padding_bottom": 20
           }
@@ -200,7 +200,7 @@
             "line_thickness": "normal",
             "accordion_heading": "Earth First",
             "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
+            "accordion_text": "<p><strong>Packaging</strong><br/>Our glass containers are 100% recyclable, and closures use 50% PCR plastic (varies by availability). Boxes, inserts, and shipping materials are compostable, made with FSC-certified/recycled paper and soy-based ink. Every product also has a plastic-free option and zero-waste refills.<br/><br/><strong>How to recycle</strong><br/>For a zero-waste choice, get a refill—each comes in a glass bottle with an aluminum lid. Swap your old closure onto the new bottle, then recycle the empty glass and lid! If not refilling, wash, remove the label, and recycle the glass. Take apart closures and check local recycling guidelines—small pieces (like closure elements and label backing) can be recycled through <a href=\"https://www.pactcollective.org/\" title=\"https://www.pactcollective.org/\">PACT Collective</a> or be discarded. All boxes and shipping materials can be composted, reused, or recycled.<br/><br/><a href=\"/collections/refills-plastic-free\" title=\"Refills + Plastic-Free\"><strong>Plastic Free & Refill Option  </strong></a></p>",
             "accordion_page": "",
             "padding_bottom": 0
           }

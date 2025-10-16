@@ -8,135 +8,6 @@
  * ------------------------------------------------------------
  */
 {
-  "general": {
-    "ie11_support_message": "This site has limited support for your browser. We recommend switching to Edge, Chrome, Safari, or Firefox.",
-    "swatches": {
-      "color": "Color, Colour",
-      "color_variant": "color variant",
-      "more_colors": "+ {{ number }} more"
-    },
-    "siblings": {
-      "label": "Color",
-      "swatches": "Color, Colour"
-    },
-    "size_chart": {
-      "button": "Size guide",
-      "size": "Size"
-    },
-    "accessibility": {
-      "skip_to_content": "Skip to content",
-      "select_variant": "Select variant dropdown",
-      "show_submenu": "Show submenu",
-      "product": "Product",
-      "show_products": "Show products",
-      "hide_products": "Hide products",
-      "dismiss": "Dismiss",
-      "close": "Close",
-      "close_drawer": "Close",
-      "close_search_bar": "Close search bar",
-      "open_search_bar": "Open search bar",
-      "submit_search_request": "Submit your search request",
-      "search-field": "Search text field",
-      "mobile_menu_toggle": "Open navigation menu",
-      "open_cart": "Open cart",
-      "increase": "Increase Quantity",
-      "decrease": "Decrease Quantity",
-      "submit_email": "Submit",
-      "subscribe_to_newsletter": "Subscribe to Our Newsletter",
-      "link_copied": "Link copied",
-      "logo_image": "Logo image",
-      "unit_price_separator": "per",
-      "my_account": "My Account",
-      "view": "View",
-      "product_image_lightbox": "Open image lightbox",
-      "close_form_message": "Close thank you message",
-      "scroll_to_top": "Scroll to top",
-      "quick_tip": "Quick tip"
-    },
-    "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
-    },
-    "404": {
-      "title": "404",
-      "subtext_html": "This page does not exist.",
-      "button_text": "Return to Home"
-    },
-    "newsletter_form": {
-      "heading": "Newsletter",
-      "name": "Your name",
-      "first_name": "First name",
-      "last_name": "Last name",
-      "email": "Your email",
-      "email_label": "Please enter your email and we will let you know when your selected item becomes available.",
-      "sign_up": "Sign up",
-      "notify": "Notify Me",
-      "notification_success": "Your email has been received.",
-      "newsletter_success": "Thank you for signing up!",
-      "newsletter_error": "Email is invalid or already taken.",
-      "newsletter_product_availability": "Notify Me When It’s Available",
-      "product_notification_for": "Product notification for"
-    },
-    "cookies": {
-      "title": "Can we store cookies?",
-      "cookies_link": "cookies",
-      "text_html": "Palo Alto uses {{ cookies }} to improve your browsing experience.",
-      "accept": "Ok",
-      "decline": "No Thanks"
-    },
-    "search": {
-      "title": "Search for products on our site",
-      "search": "Search",
-      "no_results": "No results for \"{{ terms }}\"",
-      "results_for": "Results for \"{{ terms }}\"",
-      "results_with_count": {
-        "one": "{{ count }} result",
-        "other": "{{ count }} results"
-      },
-      "results_pages_and_blogs_with_count": {
-        "one": "{{ count }} page",
-        "other": "{{ count }} pages and blog posts"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} products"
-      },
-      "results_suggestions_with_count": {
-        "one": "{{ count }} suggestion",
-        "other": "{{ count }} suggestions"
-      },
-      "submit": "Search",
-      "placeholder": "Search our store",
-      "view_all_results": "View All Results",
-      "quick_tip": "Press enter",
-      "browse_categories": "Browse categories",
-      "popular_searches": "Suggested search terms",
-      "products": "Products",
-      "articles": "Blogs",
-      "pages": "Pages",
-      "suggestions": "Suggestions",
-      "pages_and_blogs": "Pages and blog posts",
-      "search_actions": "Search actions"
-    },
-    "pagination": {
-      "previous": "Previous page",
-      "next": "Next page",
-      "current_page": "Page {{ current }} of {{ total }}",
-      "shop_the_look_quick_view": "Product {{ current }} of {{ total }}"
-    },
-    "upsell": {
-      "out_of_stock": "Out of stock",
-      "error_info": "Select products from the Upsell block setting",
-      "error_no_product": "No upsell product selected",
-      "pair_products": "Buy It With",
-      "quick_view": "Quick Buy",
-      "add_to_cart": "Add to Cart"
-    },
-    "complementary": {
-      "products_title": "Pairs well with",
-      "pair_products": "Bought together"
-    }
-  },
   "blogs": {
     "article": {
       "by_author": "By {{ author }}",
@@ -279,6 +150,14 @@
       "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   },
+  "countdown": {
+    "heading": "Shop before it ends.",
+    "ends": "Ends",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
   "customer": {
     "account": {
       "title": "My Account",
@@ -383,21 +262,160 @@
       "cancel": "Return to Store"
     }
   },
-  "password": {
-    "page": {
-      "title": "Opening Soon"
+  "date_formats": {
+    "month_day_year": "%B %d, %Y"
+  },
+  "footer": {
+    "socials": {
+      "title": "View {{ shop_name }} on {{ social }}",
+      "rss": "RSS"
     },
-    "form": {
-      "success": "Thank you for signing up!",
-      "newsletter_title": "Subscribe for Updates",
-      "placeholder": "email@example.com",
-      "login": "Password"
+    "country": "Country",
+    "language": "Language",
+    "update": "Update",
+    "powered_by": "Powered by"
+  },
+  "general": {
+    "404": {
+      "title": "404",
+      "subtext_html": "This page does not exist.",
+      "button_text": "Return to Home"
     },
-    "buttons": {
+    "ie11_support_message": "This site has limited support for your browser. We recommend switching to Edge, Chrome, Safari, or Firefox.",
+    "swatches": {
+      "color": "Color, Colour",
+      "color_variant": "color variant",
+      "more_colors": "+ {{ number }} more"
+    },
+    "siblings": {
+      "label": "Color",
+      "swatches": "Color, Colour"
+    },
+    "size_chart": {
+      "button": "Size guide",
+      "size": "Size"
+    },
+    "accessibility": {
+      "skip_to_content": "Skip to content",
+      "select_variant": "Select variant dropdown",
+      "show_submenu": "Show submenu",
+      "product": "Product",
+      "show_products": "Show products",
+      "hide_products": "Hide products",
+      "dismiss": "Dismiss",
+      "close": "Close",
+      "close_drawer": "Close",
+      "close_search_bar": "Close search bar",
+      "open_search_bar": "Open search bar",
+      "submit_search_request": "Submit your search request",
+      "search-field": "Search text field",
+      "mobile_menu_toggle": "Open navigation menu",
+      "open_cart": "Open cart",
+      "increase": "Increase Quantity",
+      "decrease": "Decrease Quantity",
+      "submit_email": "Submit",
+      "subscribe_to_newsletter": "Subscribe to Our Newsletter",
+      "link_copied": "Link copied",
+      "logo_image": "Logo image",
+      "unit_price_separator": "per",
+      "my_account": "My Account",
+      "view": "View",
+      "product_image_lightbox": "Open image lightbox",
+      "close_form_message": "Close thank you message",
+      "scroll_to_top": "Scroll to top",
+      "quick_tip": "Quick tip"
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "newsletter_form": {
+      "heading": "Newsletter",
+      "name": "Your name",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "email": "Your email",
+      "email_label": "Please enter your email and we will let you know when your selected item becomes available.",
       "sign_up": "Sign up",
-      "store_login": "Store Login",
-      "newsletter_signup": "Newsletter Signup",
-      "login": "Login"
+      "notify": "Notify Me",
+      "notification_success": "Your email has been received.",
+      "newsletter_success": "Thank you for signing up!",
+      "newsletter_error": "Email is invalid or already taken.",
+      "newsletter_product_availability": "Notify Me When It’s Available",
+      "product_notification_for": "Product notification for"
+    },
+    "cookies": {
+      "title": "Can we store cookies?",
+      "cookies_link": "cookies",
+      "text_html": "Palo Alto uses {{ cookies }} to improve your browsing experience.",
+      "accept": "Ok",
+      "decline": "No Thanks"
+    },
+    "search": {
+      "title": "Search for products on our site",
+      "search": "Search",
+      "no_results": "No results for \"{{ terms }}\"",
+      "results_for": "Results for \"{{ terms }}\"",
+      "results_with_count": {
+        "one": "{{ count }} result",
+        "other": "{{ count }} results"
+      },
+      "results_pages_and_blogs_with_count": {
+        "one": "{{ count }} page",
+        "other": "{{ count }} pages and blog posts"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} suggestion",
+        "other": "{{ count }} suggestions"
+      },
+      "submit": "Search",
+      "placeholder": "Search our store",
+      "view_all_results": "View All Results",
+      "quick_tip": "Press enter",
+      "browse_categories": "Browse categories",
+      "popular_searches": "Suggested search terms",
+      "products": "Products",
+      "articles": "Blogs",
+      "pages": "Pages",
+      "suggestions": "Suggestions",
+      "pages_and_blogs": "Pages and blog posts",
+      "search_actions": "Search actions"
+    },
+    "pagination": {
+      "previous": "Previous page",
+      "next": "Next page",
+      "current_page": "Page {{ current }} of {{ total }}",
+      "shop_the_look_quick_view": "Product {{ current }} of {{ total }}"
+    },
+    "upsell": {
+      "out_of_stock": "Out of stock",
+      "error_info": "Select products from the Upsell block setting",
+      "error_no_product": "No upsell product selected",
+      "pair_products": "Buy It With",
+      "quick_view": "Quick Buy",
+      "add_to_cart": "Add to Cart"
+    },
+    "complementary": {
+      "products_title": "Pairs well with",
+      "pair_products": "Bought together"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Here's your gift card!",
+      "disabled": "Disabled",
+      "expired": "Expired on {{ expiry }}",
+      "active": "Expires on {{ expiry }}",
+      "redeem": "Use this code at checkout to redeem your gift card",
+      "shop_link": "Start Shopping",
+      "print": "Print",
+      "add_to_apple_wallet": "Add to Apple Wallet",
+      "gift_card": "Gift Card"
     }
   },
   "homepage": {
@@ -491,6 +509,23 @@
       "my_account": "My Account"
     }
   },
+  "password": {
+    "page": {
+      "title": "Opening Soon"
+    },
+    "form": {
+      "success": "Thank you for signing up!",
+      "newsletter_title": "Subscribe for Updates",
+      "placeholder": "email@example.com",
+      "login": "Password"
+    },
+    "buttons": {
+      "sign_up": "Sign up",
+      "store_login": "Store Login",
+      "newsletter_signup": "Newsletter Signup",
+      "login": "Login"
+    }
+  },
   "products": {
     "general": {
       "catalog": "Catalog",
@@ -549,20 +584,6 @@
       "variant_option_image": "Size"
     }
   },
-  "gift_cards": {
-    "issued": {
-      "title": "Here's your {{ value }} gift card for {{ shop }}!",
-      "subtext": "Here's your gift card!",
-      "disabled": "Disabled",
-      "expired": "Expired on {{ expiry }}",
-      "active": "Expires on {{ expiry }}",
-      "redeem": "Use this code at checkout to redeem your gift card",
-      "shop_link": "Start Shopping",
-      "print": "Print",
-      "add_to_apple_wallet": "Add to Apple Wallet",
-      "gift_card": "Gift Card"
-    }
-  },
   "recipient": {
     "form": {
       "checkbox": "I want to send this as a gift",
@@ -578,26 +599,10 @@
       "send_on_label": "Send on (optional)"
     }
   },
-  "countdown": {
-    "heading": "Shop before it ends.",
-    "ends": "Ends",
-    "days": "Days",
-    "hours": "Hours",
-    "minutes": "Minutes",
-    "seconds": "Seconds"
-  },
-  "date_formats": {
-    "month_day_year": "%B %d, %Y"
-  },
-  "footer": {
-    "socials": {
-      "title": "View {{ shop_name }} on {{ social }}",
-      "rss": "RSS"
-    },
-    "country": "Country",
-    "language": "Language",
-    "update": "Update",
-    "powered_by": "Powered by"
+  "slideshow": {
+    "previous": "Previous",
+    "next": "Next",
+    "scroll_down": "Scroll down"
   },
   "store_availability": {
     "general": {
@@ -611,12 +616,45 @@
       "miles": "mi"
     }
   },
-  "slideshow": {
-    "previous": "Previous",
-    "next": "Next",
-    "scroll_down": "Scroll down"
-  },
   "video": {
     "play_bg_video": "Play background video"
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "No Slider"
+    },
+    "Newsletter": {
+      "err_msg_default": "Can’t send email. Please try again later.",
+      "success_msg_default": "Thanks for subscribing"
+    },
+    "IconListV2": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconList": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconListHoz": {
+      "icons_not_found": "Icons not found"
+    },
+    "Product": {
+      "product_not_found": "Product not found"
+    },
+    "ProductList": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Product Not Found"
+    },
+    "ProductVariants": {
+      "please_select": "Please select an option"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>HURRY!<\/mark> LET BUY NOW"
+    },
+    "Breadcrumb": {
+      "home": "Home"
+    }
   }
 }

@@ -24,14 +24,14 @@
         "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-0": {
           "type": "subheading",
           "settings": {
-            "text": "<p>Welcome to</p>",
+            "text": "<p>Welcome to<\/p>",
             "size": 100
           }
         },
         "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-1": {
           "type": "heading",
           "settings": {
-            "text": "<p>Contact</p>",
+            "text": "<p>Contact<\/p>",
             "size": 180,
             "heading_highlight_type": "italics",
             "highlight_color": "rgba(0,0,0,0)"
@@ -40,7 +40,7 @@
         "template--18952593998145__59699d9d-c66c-4bd5-a248-64f1b1587cd5-16831285413c69ee80-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand, describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Share information about your brand, describe a product, share announcements, or welcome customers to your store.<\/p>",
             "size": 100
           }
         },
@@ -49,7 +49,7 @@
           "disabled": true,
           "settings": {
             "button_1_text": "Shop All",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify:\/\/collections\/all",
             "button_1_color": "btn--white",
             "button_1_style": "btn--solid-border",
             "button_1_size": "btn--small",
@@ -84,21 +84,21 @@
           "type": "locations",
           "settings": {
             "title": "566 Emerson Street Palo Alto, California",
-            "working_time": "<p>Mon - Fri: 8am - 5pm</p><p>Sat: Closed</p><p>Sun: Closed</p>"
+            "working_time": "<p>Mon - Fri: 8am - 5pm<\/p><p>Sat: Closed<\/p><p>Sun: Closed<\/p>"
           }
         },
         "locations-1": {
           "type": "locations",
           "settings": {
             "title": "566 Emerson Street Palo Alto, California",
-            "working_time": "<p>Mon - Fri: 8am - 5pm</p><p>Sat: Closed</p><p>Sun: Closed</p>"
+            "working_time": "<p>Mon - Fri: 8am - 5pm<\/p><p>Sat: Closed<\/p><p>Sun: Closed<\/p>"
           }
         },
         "locations-2": {
           "type": "locations",
           "settings": {
             "title": "566 Emerson Street Palo Alto, California",
-            "working_time": "<p>Mon - Fri: 8am - 5pm</p><p>Sat: Closed</p><p>Sun: Closed</p>"
+            "working_time": "<p>Mon - Fri: 8am - 5pm<\/p><p>Sat: Closed<\/p><p>Sun: Closed<\/p>"
           }
         }
       },

@@ -19,7 +19,7 @@
           "settings": {
             "alignment": "text-left",
             "title": "Our Mission",
-            "footer_text": "<p>As the only self-care company founded by a toxicologist, we harness the natural power of Ocean & Earth to bring you safe, ethical, sustainable products. We deliver effective, plant-sourced skincare to help you achieve your skin and lifestyle goals.</p>",
+            "footer_text": "<p>As the only self-care company founded by a toxicologist, we harness the natural power of Ocean & Earth to bring you safe, ethical, sustainable products. We deliver effective, plant-sourced skincare to help you achieve your skin and lifestyle goals.<\/p>",
             "column_width": "25"
           }
         },
@@ -70,7 +70,7 @@
           "type": "logo_full",
           "settings": {
             "alignment": "text-center",
-            "image": "shopify://shop_images/Recurso_3_4x_1_3.png",
+            "image": "shopify:\/\/shop_images\/Recurso_3_4x_1_3.png",
             "logo_width": 25,
             "padding_top": 40
           }

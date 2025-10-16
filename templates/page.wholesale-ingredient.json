@@ -26,7 +26,7 @@
         "heading_X3bcWU": {
           "type": "heading",
           "settings": {
-            "title": "<p>Become a Stockist</p>",
+            "title": "<p>Become a Stockist<\/p>",
             "size": 160,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -38,7 +38,7 @@
         "text_rzxNeK": {
           "type": "text",
           "settings": {
-            "text": "<p>We partner with over 2000 stockists across North America and internationally. We offer samples, back bar sizes, free trainings, promotional support and more. Ready to add some color to your shelfie?</p>",
+            "text": "<p>We partner with over 2000 stockists across North America and internationally. We offer samples, back bar sizes, free trainings, promotional support and more. Ready to add some color to your shelfie?<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -48,7 +48,7 @@
           "type": "button",
           "settings": {
             "button_text": "Apply now",
-            "button_link": "/pages/skincare-quiz-earth-harbor",
+            "button_link": "\/pages\/skincare-quiz-earth-harbor",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -73,7 +73,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture.jpg",
+        "image": "shopify:\/\/shop_images\/Picture.jpg",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -90,7 +90,7 @@
         "heading_HnNjeE": {
           "type": "heading",
           "settings": {
-            "title": "<p>Built with Care, Crafted with Purpose</p>",
+            "title": "<p>Built with Care, Crafted with Purpose<\/p>",
             "size": 160,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -102,7 +102,7 @@
         "text_Lt8pdY": {
           "type": "text",
           "settings": {
-            "text": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Pioneers in grassroots values and adding magic to everyday rituals, Earth Harbor is artisan skincare for real life.</p>",
+            "text": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Pioneers in grassroots values and adding magic to everyday rituals, Earth Harbor is artisan skincare for real life.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -112,7 +112,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP WHOLESALE",
-            "button_link": "/pages/skincare-quiz-earth-harbor",
+            "button_link": "\/pages\/skincare-quiz-earth-harbor",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--large",
@@ -137,7 +137,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture2.jpg",
+        "image": "shopify:\/\/shop_images\/Picture2.jpg",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -156,18 +156,18 @@
         "text_alignment": "left",
         "images_width": 750,
         "images_offset": 60,
-        "image_1": "shopify://shop_images/Picture1.jpg",
+        "image_1": "shopify:\/\/shop_images\/Picture1.jpg",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/Picture_1beb1cf9-e336-44eb-94a5-ca38fde98029.jpg",
+        "image_2": "shopify:\/\/shop_images\/Picture_1beb1cf9-e336-44eb-94a5-ca38fde98029.jpg",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Sea the Difference: Our Ingredient Philosophy</p>",
+        "title": "<p>Sea the Difference: Our Ingredient Philosophy<\/p>",
         "heading_size": 110,
         "heading_highlight_type": "italics",
         "highlight_color": "#000000",
         "highlight_text_color": "#000000",
-        "description": "<p>At Earth Harbor, we believe that beauty should be truly clean, safe, and results-driven. Our products are carefully formulated with nature’s best ingredients and grounded in science. We use only what your skin needs and exclude what it doesn’t. Everything we create is designed to promote the long-term health of your skin and the planet—because clean beauty means a clean conscience.</p>",
+        "description": "<p>At Earth Harbor, we believe that beauty should be truly clean, safe, and results-driven. Our products are carefully formulated with nature’s best ingredients and grounded in science. We use only what your skin needs and exclude what it doesn’t. Everything we create is designed to promote the long-term health of your skin and the planet—because clean beauty means a clean conscience.<\/p>",
         "text_size": 100,
         "button_text": "",
         "button_link": "",
@@ -191,7 +191,7 @@
         "heading_aRKeXz": {
           "type": "heading",
           "settings": {
-            "title": "<p> Dive into Earth Harbor Wholesale Updates!</p>",
+            "title": "<p> Dive into Earth Harbor Wholesale Updates!<\/p>",
             "size": 160,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -203,7 +203,7 @@
         "text_FG7HDB": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up to receive exclusive updates on product launches, special promos, and restocks!</p>",
+            "text": "<p>Sign up to receive exclusive updates on product launches, special promos, and restocks!<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -213,7 +213,7 @@
           "type": "newsletter",
           "settings": {
             "newsletter_heading": "Subscribe to our newsletter",
-            "newsletter_text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "newsletter_text": "<p>Be the first to know about new collections and exclusive offers.<\/p>",
             "show_name_field": true,
             "button_text": "SUBSCRIBE",
             "button_color": "btn--black",
@@ -238,7 +238,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_b7f90868-c09c-45c2-aaee-e21863487ba6.jpg",
+        "image": "shopify:\/\/shop_images\/Picture_b7f90868-c09c-45c2-aaee-e21863487ba6.jpg",
         "block_bg_color": "#fff7f2",
         "text_color": "text-dark",
         "bg_color": "",
@@ -255,7 +255,7 @@
         "heading_HTJgVm": {
           "type": "heading",
           "settings": {
-            "title": "<p>We’re excited to partner with you!</p>",
+            "title": "<p>We’re excited to partner with you!<\/p>",
             "size": 160,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -267,7 +267,7 @@
         "text_xmjypd": {
           "type": "text",
           "settings": {
-            "text": "<p>Bring your customers clean beauty with purpose.</p>",
+            "text": "<p>Bring your customers clean beauty with purpose.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -277,7 +277,7 @@
           "type": "button",
           "settings": {
             "button_text": "APPLY NOW",
-            "button_link": "shopify://collections",
+            "button_link": "shopify:\/\/collections",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -302,7 +302,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_9c912c9e-55f0-48d7-b80d-39d7c0daab8c.jpg",
+        "image": "shopify:\/\/shop_images\/Picture_9c912c9e-55f0-48d7-b80d-39d7c0daab8c.jpg",
         "block_bg_color": "#fff7f2",
         "text_color": "text-dark",
         "bg_color": "",
