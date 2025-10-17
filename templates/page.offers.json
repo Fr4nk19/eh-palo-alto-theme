@@ -167,7 +167,7 @@
             "text": "",
             "text_size": 100,
             "button_text": "SHOP NOW",
-            "button_link": "",
+            "button_link": "https://earthharbor.com/a/bundles/build-your-own-bundle-5by5",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium",
@@ -263,7 +263,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP SETS",
-            "button_link": "",
+            "button_link": "shopify://collections/sets",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
