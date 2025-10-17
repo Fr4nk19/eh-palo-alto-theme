@@ -66,6 +66,7 @@
     "cart_icon": "bag",
     "enable_cart_notes": true,
     "empty_cart_buttons": "",
+    "free_shipping_limit": "50",
     "cart_custom_message_color": "text-dark",
     "enable_accept_terms": false,
     "upsells_height": 100,
@@ -158,6 +159,11 @@
       },
       "17174303574952363282": {
         "type": "shopify://apps/fondue-cashback-promotions/blocks/caseback-embed/dcfd972d-99c5-4526-b55b-2d76e990dec8",
+        "disabled": false,
+        "settings": {}
+      },
+      "8605505498557855500": {
+        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
         "disabled": false,
         "settings": {}
       }
