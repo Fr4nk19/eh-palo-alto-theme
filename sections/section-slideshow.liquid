@@ -475,7 +475,19 @@
                 </div>
               </div>
             {%- endif -%}
-
+            
+            {% if block.settings.sub-subheading %}
+             <h1 class="h1 slide__heading main-heading first-subheading">{{  block.settings.sub-subheading  }}</h1>
+              <style>
+                .first-subheading{
+                  color: {{ block.settings.first_sub_title_color }};
+                }
+                .first-subheading p{
+                  margin:0;
+                }
+              </style>
+            {% endif %}
+            
             {%- if subheading != blank -%}
               <div
                 class="slide__subheading"
@@ -503,6 +515,17 @@
               %}
             {%- endif -%}
 
+            {% if block.settings.title2 != blank%}
+              <h1 class="h1 slide__heading main-heading second_title second_title">{{  block.settings.title2 }}</h1>
+              <style>
+                .second_title{
+                  color: {{ block.settings.second_title_color }};
+                }
+                .second_title p{
+                  margin:0;
+                }
+              </style>
+            {% endif %}
             {%- if text != blank -%}
               <div
                 class="slide__text main-text"
@@ -906,6 +929,17 @@ span.text-highlight__break.aos-animate{
         },
         {
           "type": "text",
+          "id": "sub-subheading",
+          "label": "Subheading"
+        },
+        {
+          "type":"color",
+          "id": "first_sub_title_color",
+          "label": "First Sub Heading Color",
+          "default":"#000000"
+        },
+        {
+          "type": "text",
           "id": "subheading",
           "label": "Subheading"
         },
@@ -915,6 +949,19 @@ span.text-highlight__break.aos-animate{
           "label": "Heading",
           "default": "<p>Welcome to Palo Alto</p>",
           "info": "Highlight one or two key words in your heading by italicizing them, then choose the highlight option below."
+        },
+          {
+          "type": "richtext",
+          "id": "title2",
+          "label": "Heading 2",
+          "default": "<p>Welcome to Palo Alto</p>",
+          "info": "Highlight one or two key words in your heading by italicizing them, then choose the highlight option below."
+        },
+        {
+          "type":"color",
+          "id": "second_title_color",
+          "label": "Second Title Color",
+          "default":"#000000"
         },
         {
           "type": "range",
