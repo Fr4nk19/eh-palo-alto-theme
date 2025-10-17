@@ -22,12 +22,8 @@
             "text_position": "bottom-left",
             "text_alignment": "text-left",
             "text_color": "text-light",
-            "sub-subheading": "",
-            "first_sub_title_color": "#000000",
             "subheading": "Your Skin's Favorite Treat",
             "title": "<p>Free Full-Size<br/>AURORA Ampoule <br/>Orders $80+</p>",
-            "title2": "",
-            "second_title_color": "#000000",
             "heading_size": 150,
             "heading_highlight_type": "italics",
             "highlight_color": "#ffffff",
@@ -49,49 +45,10 @@
             "video_text": "",
             "video_link": ""
           }
-        },
-        "image_zCRY6B": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Desktop.jpg",
-            "image_mobile": "shopify://shop_images/Mobile_765abec2-bd1c-4e8a-a3a9-39e6b124f7fc.jpg",
-            "overlay_opacity": 10,
-            "content_width": 80,
-            "text_position": "bottom-left",
-            "text_alignment": "text-left",
-            "text_color": "text-dark",
-            "sub-subheading": "The",
-            "first_sub_title_color": "#000000",
-            "subheading": "Should've bought it sooner",
-            "title": "",
-            "title2": "<p>Cleanser</p>",
-            "second_title_color": "#000000",
-            "heading_size": 150,
-            "heading_highlight_type": "underline-hand-drawn",
-            "highlight_color": "#000000",
-            "highlight_text_color": "",
-            "text": "",
-            "text_size": 100,
-            "stacked_button": false,
-            "button_1_text": "Shop All",
-            "button_1_text_untagged": "Shop All",
-            "button_1_link": "shopify://products/sunshine-dew-antioxidant-cleansing-oil",
-            "button_1_link_untagged": "shopify://products/sunshine-dew-antioxidant-cleansing-oil",
-            "button_1_color": "btn--black",
-            "button_1_style": "btn--solid-border",
-            "button_1_size": "btn--medium",
-            "button_2_text": "",
-            "button_2_color": "btn--black",
-            "button_2_style": "btn--solid",
-            "button_2_size": "btn--medium",
-            "video_text": "",
-            "video_link": ""
-          }
         }
       },
       "block_order": [
-        "section-slideshow-0-block-0",
-        "image_zCRY6B"
+        "section-slideshow-0-block-0"
       ],
       "custom_css": [],
       "settings": {
