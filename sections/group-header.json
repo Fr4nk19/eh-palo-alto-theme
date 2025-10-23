@@ -205,7 +205,7 @@
         "custom_6kWKE7": {
           "type": "custom",
           "settings": {
-            "text": "<p>Fall is here! Glow with our Autumn Radiance Set with 25% OFF</p>",
+            "text": "Autumn Radiance Set with 25% OFF",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,
@@ -217,7 +217,7 @@
         "custom_GREg9C": {
           "type": "custom",
           "settings": {
-            "text": "<p>Get a FREE mini OBSCURA on orders $40+ and a FREE full-size AURORA on orders $80+</p>",
+            "text": "FREE mini OBSCURA orders $40+ &amp; FREE full-size AURORA orders $80+<p></p>",
             "target_url_enabled": false,
             "target_url": "",
             "target_referrer_enabled": false,

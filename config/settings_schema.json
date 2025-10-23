@@ -2259,21 +2259,20 @@
         "type": "inline_richtext",
         "id": "wholesale_apply_title",
         "label": "Apply title",
-        "default": "Looking to Become a Wholesale Partner?",
+        "default": "Looking to Become a Wholesale Partner?"
       },
       {
         "type": "url",
         "id": "wholesale_apply_url",
         "label": "Apply URL",
-        "info": "For redirecting to the wholesale apply/register page"
+        "info": "For redirecting to the wholesale apply\/register page"
       },
       {
         "type": "text",
         "id": "wholesale_apply_cta",
         "label": "Apply CTA label",
-        "default": "APPLY HERE",
-      },
+        "default": "APPLY HERE"
+      }
     ]
   }
-
 ]

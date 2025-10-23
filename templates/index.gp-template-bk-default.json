@@ -22,8 +22,12 @@
             "text_position": "bottom-left",
             "text_alignment": "text-left",
             "text_color": "text-light",
+            "sub-subheading": "",
+            "first_sub_title_color": "#000000",
             "subheading": "Your Skin's Favorite Treat",
             "title": "<p>Free Full-Size<br\/>AURORA Ampoule <br\/>Orders $80+<\/p>",
+            "title2": "",
+            "second_title_color": "#000000",
             "heading_size": 150,
             "heading_highlight_type": "italics",
             "highlight_color": "#ffffff",
@@ -33,9 +37,47 @@
             "stacked_button": false,
             "button_1_text": "SHOP NOW",
             "button_1_text_untagged": "DON'T MISS OUT",
-            "button_1_link": "shopify:\/\/collections\/all",
-            "button_1_link_untagged": "",
+            "button_1_link": "https:\/\/earthharbor.com\/collections\/all",
+            "button_1_link_untagged": "https:\/\/earthharbor.com\/collections\/all",
             "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "image_CTjeKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile_765abec2-bd1c-4e8a-a3a9-39e6b124f7fc.jpg",
+            "overlay_opacity": 10,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "sub-subheading": "The",
+            "first_sub_title_color": "#000000",
+            "subheading": "Should've bought it sooner",
+            "title": "",
+            "title2": "<p>Cleanser<\/p>",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "SHOP NOW",
+            "button_1_text_untagged": "Shop Now",
+            "button_1_link": "shopify:\/\/products\/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_link_untagged": "shopify:\/\/products\/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_color": "btn--black",
             "button_1_style": "btn--solid-border",
             "button_1_size": "btn--medium",
             "button_2_text": "",
@@ -48,7 +90,8 @@
         }
       },
       "block_order": [
-        "section-slideshow-0-block-0"
+        "section-slideshow-0-block-0",
+        "image_CTjeKp"
       ],
       "custom_css": [],
       "settings": {
@@ -311,7 +354,7 @@
           "type": "button",
           "settings": {
             "button_text": "TAKE THE QUIZ",
-            "button_link": "\/pages\/skincare-quiz-earth-harbor",
+            "button_link": "shopify:\/\/pages\/skin-quiz",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -664,7 +707,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "SHOP ALL",
-            "button_link": "shopify:\/\/collections\/bestsellers",
+            "button_link": "shopify:\/\/collections\/kits",
             "button_color": "btn--white",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -677,7 +720,7 @@
       "custom_css": [],
       "settings": {
         "custom_class": "featured-slider-sec",
-        "collection": "bestsellers",
+        "collection": "kits",
         "products_layout": "carousel",
         "number_of_products": 8,
         "products_per_row_on_desktop": 4,
@@ -1192,7 +1235,7 @@
         "press_N3gyfW": {
           "type": "press",
           "settings": {
-            "text": "<p>An enchanting blend of luxe botanicals with premium-quality all-natural ingredients.<\/p>",
+            "text": "<p>A comprehensive plant-based solution for all skin types.<\/p>",
             "link": "",
             "press_logo": "shopify:\/\/shop_images\/Recurso_4_3x_1.png",
             "logo_width": 120
@@ -1201,16 +1244,16 @@
         "press_ijQt8n": {
           "type": "press",
           "settings": {
-            "text": "<p>An enchanting blend of luxe botanicals with premium-quality all-natural ingredients.<\/p>",
+            "text": "<p>True beauty through nature. Earth Harbor delivers sensorial, scientific skincare with results you can see and feel.<\/p>",
             "link": "",
-            "press_logo": "shopify:\/\/shop_images\/allure-vector-logo_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Harper_s_Bazaar_Logo.jpg",
             "logo_width": 110
           }
         },
         "press_7GhkyR": {
           "type": "press",
           "settings": {
-            "text": "<p>An enchanting blend of luxe botanicals with premium-quality all-natural ingredients.<\/p>",
+            "text": "<p>Earth Harbor's unique approach to skincare makes their products optimally effective and profoundly holistic.<\/p>",
             "link": "",
             "press_logo": "shopify:\/\/shop_images\/Recurso_2_3x_1.png",
             "logo_width": 120

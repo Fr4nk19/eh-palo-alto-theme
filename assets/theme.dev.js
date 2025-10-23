@@ -18289,7 +18289,7 @@
           asNavFor: this.slider,
           prevNextButtons: false,
           adaptiveHeight: false,
-          pageDots: false,
+          pageDots: true,
           on: {
             ready: () => {
               const slides = this.container.querySelectorAll(selectors$f.logoSlide);

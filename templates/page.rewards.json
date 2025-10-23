@@ -35,7 +35,7 @@
         "heading_FCQzkN": {
           "type": "heading",
           "settings": {
-            "title": "<p>Mermaid Rewards<\/p>",
+            "title": "<p>Mermaid Rewards</p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -47,7 +47,7 @@
         "text_PrbJkW": {
           "type": "text",
           "settings": {
-            "text": "<p>Mermaid Rewards is your free, all-access pass to beach-beauty rewards. Every dollar spent earns a point that gets you closer to exclusive perks.  <\/p>",
+            "text": "<p>Mermaid Rewards is your free, all-access pass to beach-beauty rewards. Every dollar spent earns a point that gets you closer to exclusive perks.  </p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -57,7 +57,7 @@
           "type": "button",
           "settings": {
             "button_text": "JOIN NOW",
-            "button_link": "\/account\/register",
+            "button_link": "/account/register",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -69,7 +69,7 @@
         "text_Cq7Ram": {
           "type": "text",
           "settings": {
-            "text": "<p>Already a member? <a href=\"\/account\/login\" title=\"\/account\/login\">Sign in<\/a><\/p>",
+            "text": "<p>Already a member? <a href=\"/account/login\" title=\"/account/login\">Sign in</a></p>",
             "size": 80,
             "text_position": "center",
             "spacing_bottom": 12
@@ -94,7 +94,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify:\/\/shop_images\/6c3e04dd8eebb23ba15fcf74b4cfdfa5.png",
+        "image": "shopify://shop_images/6c3e04dd8eebb23ba15fcf74b4cfdfa5.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -112,8 +112,8 @@
           "type": "image",
           "settings": {
             "width": "50",
-            "image": "shopify:\/\/shop_images\/Group_3_1_1.png",
-            "custom_link": "\/account\/register",
+            "image": "shopify://shop_images/Group_3_1_1.png",
+            "custom_link": "/account/register",
             "custom_btn_text1": "JOIN NOW",
             "overlay_opacity": 0,
             "text_position": "center",
@@ -121,9 +121,9 @@
             "title": "So How Does This work?",
             "text": "",
             "button_1_text": "",
-            "button_1_link": "\/account\/register",
+            "button_1_link": "/account/register",
             "button_2_text": "",
-            "button_2_link": "shopify:\/\/collections\/under-25",
+            "button_2_link": "shopify://collections/under-25",
             "overlay_text_color": "text-dark"
           }
         },
@@ -131,7 +131,7 @@
           "type": "image",
           "settings": {
             "width": "50",
-            "image": "shopify:\/\/shop_images\/2906552b8107406790e189a03161f847_1.png",
+            "image": "shopify://shop_images/2906552b8107406790e189a03161f847_1.png",
             "custom_link": "",
             "custom_btn_text1": "",
             "overlay_opacity": 0,
@@ -182,54 +182,54 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/bag_1.png",
+            "icon_image": "shopify://shop_images/bag_1.png",
             "title": "Make a purchase",
-            "text": "<p>1 point per $1<\/p>"
+            "text": "<p>1 point per $1</p>"
           }
         },
         "text_bM8M8y": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/clarity_user-line.png",
+            "icon_image": "shopify://shop_images/clarity_user-line.png",
             "title": "Create an account",
-            "text": "<p>100 points<\/p>"
+            "text": "<p>100 points</p>"
           }
         },
         "text_pDnMC8": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/hugeicons_instagram_1.png",
+            "icon_image": "shopify://shop_images/hugeicons_instagram_1.png",
             "title": "Follow us on Instagram",
-            "text": "<p>15 points<\/p>"
+            "text": "<p>15 points</p>"
           }
         },
         "text_7K4cXd": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/friends_1.png",
+            "icon_image": "shopify://shop_images/friends_1.png",
             "title": "Refer friends",
-            "text": "<p>100 points<\/p>"
+            "text": "<p>100 points</p>"
           }
         },
         "text_G77Akq": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/proicons_cake.png",
+            "icon_image": "shopify://shop_images/proicons_cake.png",
             "title": "Happy Birthday",
-            "text": "<p>100 points<\/p>"
+            "text": "<p>100 points</p>"
           }
         },
         "text_t6QR9Q": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/mail_1.png",
+            "icon_image": "shopify://shop_images/mail_1.png",
             "title": "Leave a review via email",
-            "text": "<p>50 points<\/p>"
+            "text": "<p>50 points</p>"
           }
         }
       },
@@ -241,6 +241,7 @@
         "text_G77Akq",
         "text_t6QR9Q"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "custom_class": "earn-points-sec",
@@ -277,7 +278,7 @@
           "type": "subheading",
           "disabled": true,
           "settings": {
-            "text": "<p>Subheading<\/p>",
+            "text": "<p>Subheading</p>",
             "size": 100,
             "margin_bottom": 16
           }
@@ -286,7 +287,7 @@
           "type": "heading",
           "disabled": true,
           "settings": {
-            "text": "<p>Our Story<\/p>",
+            "text": "<p>Our Story</p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -297,7 +298,7 @@
           "type": "button",
           "settings": {
             "button_text": "JOIN NOW",
-            "button_link": "\/account\/register",
+            "button_link": "/account/register",
             "button_color": "btn--primary",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -306,7 +307,7 @@
         "text_g9Htmt": {
           "type": "text",
           "settings": {
-            "text": "<p>Already a member? <a href=\"\/account\/login\" title=\"\/account\/login\">Sign in<\/a><\/p>",
+            "text": "<p>Already a member? <a href=\"/account/login\" title=\"/account/login\">Sign in</a></p>",
             "size": 80
           }
         }
@@ -317,6 +318,7 @@
         "button_hpiVAk",
         "text_g9Htmt"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "custom_class": "earn-point-btn-sec",
@@ -336,36 +338,36 @@
           "type": "text",
           "settings": {
             "icon_name": "truck",
-            "icon_image": "shopify:\/\/shop_images\/si_money-line.png",
+            "icon_image": "shopify://shop_images/si_money-line.png",
             "title": "$5 Voucher",
-            "text": "<p>100 Points<\/p>"
+            "text": "<p>100 Points</p>"
           }
         },
         "text_TDDN9f": {
           "type": "text",
           "settings": {
             "icon_name": "check",
-            "icon_image": "shopify:\/\/shop_images\/si_money-line.png",
+            "icon_image": "shopify://shop_images/si_money-line.png",
             "title": "$15 Voucher",
-            "text": "<p>200 Points<\/p>"
+            "text": "<p>200 Points</p>"
           }
         },
         "text_UecWzF": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/si_money-line.png",
+            "icon_image": "shopify://shop_images/si_money-line.png",
             "title": "$25 Voucher",
-            "text": "<p>300 Points<\/p>"
+            "text": "<p>300 Points</p>"
           }
         },
         "text_dpKDh9": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify:\/\/shop_images\/si_money-line.png",
+            "icon_image": "shopify://shop_images/si_money-line.png",
             "title": "$50 Voucher",
-            "text": "<p>500 Points<\/p>"
+            "text": "<p>500 Points</p>"
           }
         }
       },
@@ -375,6 +377,7 @@
         "text_UecWzF",
         "text_dpKDh9"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "custom_class": "rewards-sec",
@@ -404,6 +407,11 @@
         "padding_bottom": 60
       }
     },
+    "rewards_QggzKC": {
+      "type": "rewards",
+      "name": "Rewards",
+      "settings": {}
+    },
     "section_accordions_6PhQ8r": {
       "type": "section-accordions",
       "blocks": {
@@ -411,63 +419,63 @@
           "type": "text",
           "settings": {
             "title": "Do you have a rewards program?",
-            "text": "<p>Yes! Check it out here: <a href=\"https:\/\/earthharbor.com\/pages\/rewards-1\" title=\"https:\/\/earthharbor.com\/pages\/rewards-1\"><strong>MERMAID REWARDS<\/strong><\/a><\/p>"
+            "text": "<p>Yes! Check it out here: <a href=\"https://earthharbor.com/pages/rewards-1\" title=\"https://earthharbor.com/pages/rewards-1\"><strong>MERMAID REWARDS</strong></a></p>"
           }
         },
         "text_awjhyr": {
           "type": "text",
           "settings": {
             "title": "How do I login in my Mermaid Rewards account?",
-            "text": "<p>Go to our Rewards page (found under \"Rewards\" in the main navigation bar). This will take you to the Rewards portal, where you'll see \"Already a member? Sign in\" below the \"Join Now\" button. Click it to log in. If you don’t have an account yet, click \"Join Now\" to create one.<\/p>"
+            "text": "<p>Go to our Rewards page (found under \"Rewards\" in the main navigation bar). This will take you to the Rewards portal, where you'll see \"Already a member? Sign in\" below the \"Join Now\" button. Click it to log in. If you don’t have an account yet, click \"Join Now\" to create one.</p>"
           }
         },
         "text_hmEbih": {
           "type": "text",
           "settings": {
             "title": "How do I earn Mermaid Points?",
-            "text": "<p>There are a shipload of ways to earn Mermaid Points! Start by signing up for Mermaid Rewards to earn 100 points. Then, earn points by purchasing products (1 point per $1 spent), following Earth Harbor on Instagram (15 points), referring friends (100 points), leaving a review via email (50 points), and adding your birthday for a reward present (100 points). <br\/><br\/>These actions help you accumulate points that can be redeemed for rewards. For more details, visit the Mermaid Rewards page.<br\/><\/p><p><strong>Note<\/strong>: To earn points, you must complete actions within the \"Earn Points\" section of the Rewards portal (not the informational \"Earn Points\" list on the Rewards page). To access the portal, go to the Rewards page, sign in under \"Already a member? Sign in\", and then navigate to the \"Earn Points\" section inside the Rewards portal.<\/p>"
+            "text": "<p>There are a shipload of ways to earn Mermaid Points! Start by signing up for Mermaid Rewards to earn 100 points. Then, earn points by purchasing products (1 point per $1 spent), following Earth Harbor on Instagram (15 points), referring friends (100 points), leaving a review via email (50 points), and adding your birthday for a reward present (100 points). <br/><br/>These actions help you accumulate points that can be redeemed for rewards. For more details, visit the Mermaid Rewards page.<br/></p><p><strong>Note</strong>: To earn points, you must complete actions within the \"Earn Points\" section of the Rewards portal (not the informational \"Earn Points\" list on the Rewards page). To access the portal, go to the Rewards page, sign in under \"Already a member? Sign in\", and then navigate to the \"Earn Points\" section inside the Rewards portal.</p>"
           }
         },
         "text_y98bA4": {
           "type": "text",
           "settings": {
             "title": "How do I apply my Mermaid Points to my purchase?",
-            "text": "<p>To apply your Mermaid Points, use the rewards code at checkout. <br\/>If you haven’t received the code via email, log in to your Rewards account by going to our Rewards page and selecting \"Already a member? Sign in.\"<br\/>Then, go to the \"Rewards\" section under the portal and select the voucher you're eligible for. Your code will appear on the screen and be sent to your email. Enter this code at checkout as a discount code.<br\/>Note: This code cannot be combined with other promotional codes.<\/p>"
+            "text": "<p>To apply your Mermaid Points, use the rewards code at checkout. <br/>If you haven’t received the code via email, log in to your Rewards account by going to our Rewards page and selecting \"Already a member? Sign in.\"<br/>Then, go to the \"Rewards\" section under the portal and select the voucher you're eligible for. Your code will appear on the screen and be sent to your email. Enter this code at checkout as a discount code.<br/>Note: This code cannot be combined with other promotional codes.</p>"
           }
         },
         "text_CaMRQ9": {
           "type": "text",
           "settings": {
             "title": "I can’t log in into my account",
-            "text": "<p>If you’re unable to sign in because you forgot your password, please reset it by selecting \"Forgot your password?\" on the Rewards sign-in page. An automated email will be sent to the email address on file with a link to reset your password. Once reset, you can sign in as usual. <\/p><p>If you’re still having trouble, please contact us at <a href=\"mailto:hello@earthharbor.com\" target=\"_blank\" title=\"contact earthharbor.com\"><strong>hello@earthharbor.com<\/strong><\/a>.<br\/>If you're having trouble finding where to sign in, go to our Rewards page (found under \"Rewards\" in the main navigation bar). Once on the Rewards page, click on \"Already a member? Sign in\" right below the \"Join now\" button.<\/p>"
+            "text": "<p>If you’re unable to sign in because you forgot your password, please reset it by selecting \"Forgot your password?\" on the Rewards sign-in page. An automated email will be sent to the email address on file with a link to reset your password. Once reset, you can sign in as usual. </p><p>If you’re still having trouble, please contact us at <a href=\"mailto:hello@earthharbor.com\" target=\"_blank\" title=\"contact earthharbor.com\"><strong>hello@earthharbor.com</strong></a>.<br/>If you're having trouble finding where to sign in, go to our Rewards page (found under \"Rewards\" in the main navigation bar). Once on the Rewards page, click on \"Already a member? Sign in\" right below the \"Join now\" button.</p>"
           }
         },
         "text_LPKKnc": {
           "type": "text",
           "settings": {
             "title": "How do I join Mermaid Rewards?",
-            "text": "<p>Simply go to our Rewards page (found under \"Rewards\" in the main navigation bar). Once there, click \"Join Now\" and enter your email address, create a password, and check your inbox for a confirmation email from us. After confirming your account, you can log in and start earning rewards!<\/p>"
+            "text": "<p>Simply go to our Rewards page (found under \"Rewards\" in the main navigation bar). Once there, click \"Join Now\" and enter your email address, create a password, and check your inbox for a confirmation email from us. After confirming your account, you can log in and start earning rewards!</p>"
           }
         },
         "text_R4AVkk": {
           "type": "text",
           "settings": {
             "title": "How can I check my Mermaid Points balance?",
-            "text": "<p><strong>Sign In:<\/strong> To view your current Mermaid Points balance, go to our Rewards page (found under \"Rewards\" in the main navigation bar). Then, click on \"Already a member? Sign in\" and log in to your account. <br\/><strong>Next<\/strong>: Your points balance will appear in the Rewards portal above the \"Earn Points\" section (not the informational \"Earn Points\" list on the Rewards page) or it can be viewed at the bottom of the portal page under the \"History” section.<\/p>"
+            "text": "<p><strong>Sign In:</strong> To view your current Mermaid Points balance, go to our Rewards page (found under \"Rewards\" in the main navigation bar). Then, click on \"Already a member? Sign in\" and log in to your account. <br/><strong>Next</strong>: Your points balance will appear in the Rewards portal above the \"Earn Points\" section (not the informational \"Earn Points\" list on the Rewards page) or it can be viewed at the bottom of the portal page under the \"History” section.</p>"
           }
         },
         "text_8MTGkb": {
           "type": "text",
           "settings": {
             "title": "Do Mermaid Points expire?",
-            "text": "<p>Mermaid Points are valid for 12 months from the date of the last qualifying purchase. Each qualifying purchase will automatically extend the expiration date of all unused points in a Mermaid Rewards account for 12 months from the month of the qualifying purchase. If the Mermaid Rewards account has no qualifying purchase activity within a 12-month period, all points in the account will expire.<\/p>"
+            "text": "<p>Mermaid Points are valid for 12 months from the date of the last qualifying purchase. Each qualifying purchase will automatically extend the expiration date of all unused points in a Mermaid Rewards account for 12 months from the month of the qualifying purchase. If the Mermaid Rewards account has no qualifying purchase activity within a 12-month period, all points in the account will expire.</p>"
           }
         },
         "text_Xihcc6": {
           "type": "text",
           "settings": {
             "title": "I performed an action that I’m supposed to get points for but my points aren't showing up.",
-            "text": "<p><strong>Firstly, make sure you have an account! <\/strong>Sign up on our <strong>Rewards<\/strong> page if you haven’t already.<br\/>If you already have an account, please note that it may take up to <strong>24 hours<\/strong> for your point balance to update. If you're still experiencing issues after that time, contact us at <strong>hello@earthharbor.com<\/strong>.<br\/><br\/><strong>Note<\/strong>: To earn points, complete actions in the <strong>\"Earn Points\"<\/strong> section inside the <strong>Rewards Portal<\/strong> (not the informational \"Earn Points\" list on the Rewards page). To access it, click <strong>\"Rewards\"<\/strong> in the navigation bar and sign in under <strong>\"Already a member? Sign in.\"<\/strong><\/p>"
+            "text": "<p><strong>Firstly, make sure you have an account! </strong>Sign up on our <strong>Rewards</strong> page if you haven’t already.<br/>If you already have an account, please note that it may take up to <strong>24 hours</strong> for your point balance to update. If you're still experiencing issues after that time, contact us at <strong>hello@earthharbor.com</strong>.<br/><br/><strong>Note</strong>: To earn points, complete actions in the <strong>\"Earn Points\"</strong> section inside the <strong>Rewards Portal</strong> (not the informational \"Earn Points\" list on the Rewards page). To access it, click <strong>\"Rewards\"</strong> in the navigation bar and sign in under <strong>\"Already a member? Sign in.\"</strong></p>"
           }
         }
       },
@@ -511,6 +519,7 @@
     "section_icons_row_83Bpjg",
     "section_text_BWGRM8",
     "section_icons_row_Mk6iM6",
+    "rewards_QggzKC",
     "section_accordions_6PhQ8r"
   ]
 }

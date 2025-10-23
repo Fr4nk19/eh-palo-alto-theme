@@ -3526,3 +3526,45 @@ div[data-buy-it-now] {
   gap: 3px;
   flex-wrap: wrap;
 }
+
+.lion-rules-list, .lion-rewards-list  {
+  background: #F4EFEB !important;
+}
+
+
+.press .flickity-page-dots {
+  display: flex;
+  justify-content: center;
+}
+
+/* Product list current badge */
+
+.current-product__indicator {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.current-product__indicator span.current-product__indicator-label {
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #808080;
+    background: rgba(239, 239, 239, 0.20);
+    color: #808080;
+    text-align: center;
+    font-family: Chivo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    /* 83.333% */
+}
+
+.products-list__nav .products-list__nav__button.h2 {
+  text-decoration: none;
+  --underline-thickness: 0;
+}
+
+.products-list__nav .products-list__nav__button.h2 > span:not(.current-product__indicator) {
+  --underline-thickness: var(--BORDER-WIDTH);
+}

@@ -24,9 +24,9 @@
       "type": "hero-image",
       "name": "Hero Image",
       "settings": {
-        "banner_image": "shopify://shop_images/IMG_6301.png",
-        "logo1": "shopify://shop_images/whole-foods-market-1_1.png",
-        "logo12": "shopify://shop_images/Recurso_3_4x_2.png",
+        "banner_image": "shopify:\/\/shop_images\/IMG_6301.png",
+        "logo1": "shopify:\/\/shop_images\/whole-foods-market-1_1.png",
+        "logo12": "shopify:\/\/shop_images\/Recurso_3_4x_2.png",
         "title_hero": "The Sea-to-Shelf Tour",
         "description": "Experience our products live—find out when we’ll be near you.",
         "label_cta": "SEE LOCATIONS",
@@ -40,7 +40,7 @@
       ],
       "name": "Imagen con enlace simple",
       "settings": {
-        "image": "shopify://shop_images/Group_7.png",
+        "image": "shopify:\/\/shop_images\/Group_7.png",
         "link": "#events",
         "open_new_tab": false,
         "alt_text": "",
@@ -236,8 +236,8 @@
       "name": "Events Schedule",
       "settings": {
         "id_section": "events",
-        "logo1": "shopify://shop_images/whole-foods-market-1_1.png",
-        "logo2": "shopify://shop_images/Recurso_3_4x_2.png"
+        "logo1": "shopify:\/\/shop_images\/whole-foods-market-1_1.png",
+        "logo2": "shopify:\/\/shop_images\/Recurso_3_4x_2.png"
       }
     },
     "text_section_x3BVwa": {
@@ -245,7 +245,7 @@
       "name": "Text Section",
       "settings": {
         "title_section": "Stop by select stores this October to:",
-        "content_section": "<ul><li>Try our sea-powered skincare IRL</li><li>Chat with our skin experts</li><li>Grab free deluxe samples</li><li>Show this page at our booth—first 5 win a full-size gem!</li></ul>"
+        "content_section": "<ul><li>Try our sea-powered skincare IRL<\/li><li>Chat with our skin experts<\/li><li>Grab free deluxe samples<\/li><li>Show this page at our booth—first 5 win a full-size gem!<\/li><\/ul>"
       }
     }
   },

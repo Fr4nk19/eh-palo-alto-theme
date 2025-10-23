@@ -118,13 +118,13 @@
                     endif
                   when 'product'
                     assign product_handle = block.settings.product
-                    assign product = all_products[product_handle]
+                    assign product_block = all_products[product_handle]
 
-                    if product != empty
+                    if product_block != empty
                       assign hover_scale = ' hover-scale'
-                      assign heading = product.title | strip_html | escape
+                      assign heading = product_block.title | strip_html | escape
                       if single_block
-                        assign button_link = product.url
+                        assign button_link = product_block.url
                       endif
                     else
                       assign heading = 'homepage.onboarding.product_title' | t
@@ -154,6 +154,16 @@
                 {% endif %}
               >
                 <span>{{ heading }}</span> <span class="custom_subheading_text">{{ block.settings.sub_heading }}</span>
+                {% if product_block.id == product.id and section.settings.current_label != blank  %}
+                    <span class="current-product__indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="6" viewBox="0 0 28 6" fill="none">
+                        <path d="M2.02656e-05 2.66663C2.01368e-05 4.13939 1.19393 5.33329 2.66669 5.33329C4.13945 5.33329 5.33335 4.13939 5.33335 2.66663C5.33335 1.19387 4.13945 -4.06408e-05 2.66669 -4.07696e-05C1.19393 -4.08983e-05 2.03943e-05 1.19387 2.02656e-05 2.66663ZM2.66669 3.16663L27.6667 3.16663L27.6667 2.16663L2.66669 2.16663L2.66669 3.16663Z" fill="#808080"/>
+                      </svg>
+                      <span class="current-product__indicator-label">
+                        {{ section.settings.current_label }}
+                      </span>
+                    </span>
+                {% endif %}
               </a>
             {%- endfor -%}
           </div>
@@ -873,6 +883,13 @@
       "id": "custom_class",
       "label": "Add Class",
       "info":"For Developer Use Only"
+    },
+    {
+      "type": "text",
+      "id": "current_label",
+      "label": "Current tag label",
+      "info": "Text of the 'current' tag",
+      "default": "Current"
     },
     {
       "type": "text",

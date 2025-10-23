@@ -44,12 +44,10 @@
             "padding_bottom": 20
           }
         },
-        "inventory_countdown": {
-          "type": "inventory_countdown",
+        "recharge_subscriptions_subscription_widget_6rybbk": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
-            "max_inventory": 10,
-            "hide_inventory_count": false,
-            "padding_bottom": 20
+            "product": "{{product}}"
           }
         },
         "form": {
@@ -57,7 +55,7 @@
           "settings": {
             "show_labels": true,
             "show_quantity": true,
-            "show_payment_button": true,
+            "show_payment_button": false,
             "enable_subscriptions_selectors": true,
             "padding_bottom": 20
           }
@@ -254,15 +252,6 @@
             "bg_color": "#ffffff",
             "padding_bottom": 20
           }
-        },
-        "text_6inEb9": {
-          "type": "text",
-          "settings": {
-            "text_class": "",
-            "title": "<p>Give more details about the product</p>",
-            "text_alignment": "left",
-            "padding_bottom": 20
-          }
         }
       },
       "block_order": [
@@ -270,7 +259,7 @@
         "okendo_star_rating_JGWjfm",
         "description",
         "custom_code_D7YGUm",
-        "inventory_countdown",
+        "recharge_subscriptions_subscription_widget_6rybbk",
         "form",
         "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
         "icon_row_p8UNfw",
@@ -282,8 +271,7 @@
         "product_accordion_YQbhHb",
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
         "upsell",
-        "icon_row_EAN9nN",
-        "text_6inEb9"
+        "icon_row_EAN9nN"
       ],
       "custom_css": [
         ".product__description.rte p {font-size: 14.4px;}"
@@ -411,6 +399,7 @@
       "name": "Products list",
       "settings": {
         "custom_class": "",
+        "current_label": "Current",
         "title": "RECOMMENDED RITUAL",
         "heading_size": 100,
         "button_color": "btn--black",

@@ -32,7 +32,7 @@
           "type": "description",
           "settings": {
             "enable_full_width": false,
-            "show_read_more": true,
+            "show_read_more": false,
             "padding_bottom": 20
           }
         },
@@ -46,9 +46,10 @@
         },
         "inventory_countdown": {
           "type": "inventory_countdown",
+          "disabled": true,
           "settings": {
             "max_inventory": 10,
-            "hide_inventory_count": false,
+            "hide_inventory_count": true,
             "padding_bottom": 20
           }
         },
@@ -101,11 +102,11 @@
             "icon_name_1": "none",
             "icon_color_1": "",
             "icon_width_1": 20,
-            "icon_text_1": "✓ Free US shipping $35+",
+            "icon_text_1": "✓ Free US shipping $50+",
             "icon_name_2": "none",
             "icon_color_2": "#041010",
             "icon_width_2": 20,
-            "icon_text_2": "✓ Easy free 90-day returns",
+            "icon_text_2": "✓ Easy free 30-day returns",
             "icon_name_3": "none",
             "icon_color_3": "",
             "icon_width_3": 20,
@@ -256,9 +257,7 @@
         "upsell": {
           "type": "upsell",
           "settings": {
-            "product_list": [
-              "tidal-rose-seaweed-hydration-mist"
-            ],
+            "product_list": "{{ product.metafields.custom.you_may_also_like_product.value }}",
             "padding_bottom": 20
           }
         },
@@ -275,7 +274,7 @@
             "icon_color_2": "",
             "icon_image_2": "shopify://shop_images/ph_drop-light.png",
             "icon_width_2": 20,
-            "icon_text_2": "Toxicologist Formulated",
+            "icon_text_2": "Toxicologist Audited",
             "icon_name_3": "scientific",
             "icon_color_3": "",
             "icon_image_3": "shopify://shop_images/circum_beaker-1.png",
@@ -284,7 +283,7 @@
             "icon_name_4": "flower",
             "icon_color_4": "",
             "icon_width_4": 20,
-            "icon_text_4": "AllergyTested",
+            "icon_text_4": "Sensitive Skin Safe",
             "alignment": "left",
             "bg_color": "#ffffff",
             "padding_bottom": 20
@@ -480,7 +479,7 @@
           "settings": {
             "product": "horizon-ceramide-recovery-serum",
             "title": "4. Moisturize",
-            "sub_heading": "Its place in your routine",
+            "sub_heading": "",
             "product_description": "",
             "button_text": "SHOP NOW",
             "show_second_image": false,
@@ -524,6 +523,7 @@
       "name": "Products list",
       "settings": {
         "custom_class": "",
+        "current_label": "Its place in your routine",
         "title": "",
         "heading_size": 100,
         "button_color": "btn--black",
@@ -745,6 +745,29 @@
         "gradient": "",
         "section_width": "wrapper--full",
         "add_gutter": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_accordions_faqs_E9zzz8": {
+      "type": "section-accordions-faqs",
+      "name": "Product FAQs",
+      "settings": {
+        "custom_class": "faq-sec",
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "subheading": "{{ product.title }}",
+        "title": "FAQs",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "text": "",
+        "tabs_bg_color": "#f4efeb",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "#333333",
+        "width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -1101,29 +1124,6 @@
         "padding_bottom": 60
       }
     },
-    "section_accordions_faqs_E9zzz8": {
-      "type": "section-accordions-faqs",
-      "name": "Product FAQs",
-      "settings": {
-        "custom_class": "faq-sec",
-        "layout": "two-columns",
-        "show_accordion_divider": false,
-        "line_thickness": "normal",
-        "subheading": "{{ product.title }}",
-        "title": "FAQs",
-        "type_style": "font-heading",
-        "heading_size": 120,
-        "text": "",
-        "tabs_bg_color": "#f4efeb",
-        "bg_color": "",
-        "gradient": "",
-        "text_color": "text-dark",
-        "border_color": "#333333",
-        "width": "wrapper",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "section_marquee_YH47XE": {
       "type": "section-marquee",
       "blocks": {
@@ -1138,7 +1138,7 @@
         "text_xUGPaM": {
           "type": "text",
           "settings": {
-            "text": "<p>We Love The Planet</p>",
+            "text": "<p>Real Results</p>",
             "text_color": "#2595b3",
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -1225,7 +1225,7 @@
         "text_CqGaQE": {
           "type": "text",
           "settings": {
-            "text": "<p>We Love The Planet</p>",
+            "text": "<p>Clean Ingredients</p>",
             "text_color": "#e3c7b2",
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -1381,12 +1381,12 @@
     "section_icons_row_JkQddy",
     "section_image_with_text_UzD3Mz",
     "section_ingredients_BLRaQq",
+    "section_accordions_faqs_E9zzz8",
     "icons",
     "section_feature_icons_hLAEJh",
     "section_image_with_text_gnk74w",
     "section_before_after_y4hL4P",
     "tabs",
-    "section_accordions_faqs_E9zzz8",
     "section_marquee_YH47XE",
     "related",
     "1739264588f46eb127"
