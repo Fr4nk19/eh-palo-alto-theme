@@ -1,0 +1,39 @@
+{{ 'custom-freegift-landing.css' | asset_url | stylesheet_tag }}
+
+<div class="heading-wrapper">
+  <div class="heading">
+    {{ section.settings.title }} 
+    </div>
+    <div class="subheading">
+      {{ section.settings.subtitle }}
+    </div>
+</div>
+<div class="klaviyo-form-custom">
+  <div class="klaviyo-form-WnNTiz"></div>
+</div>
+
+
+{% schema %} 
+  {
+    "name": "Landing Free Gift Form",
+    "tag": "section",
+    "class": "freegift-form",
+    "settings": [
+      {
+        "type": "inline_richtext", 
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "subtitle",
+        "label": "Subtitle"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Free Gift Form"
+      }
+    ] 
+  }
+{% endschema %}

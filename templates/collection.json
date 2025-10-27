@@ -57,7 +57,7 @@
         "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "<p>{{ collection.title }}</p>",
+            "text": "<p>{{ collection.title }}</p>{{ collection.description }}",
             "size": 100,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
@@ -129,7 +129,7 @@
         "96343c36-f832-4740-8cd6-2a90dcf9e4d9"
       ],
       "settings": {
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "enable_sorting": true,
         "enable_filters": false,
         "filters_layout": "open",

@@ -321,7 +321,7 @@
       ],
       "settings": {
         "custom_class": "best-seller-sec",
-        "collection": "sets",
+        "collection": "mini-sets",
         "products_layout": "carousel",
         "number_of_products": 8,
         "products_per_row_on_desktop": 4,

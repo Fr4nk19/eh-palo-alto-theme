@@ -15,7 +15,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "subheading": "breadcrumbs",
+            "subheading": "none",
             "title_size": 100,
             "price_size": 100,
             "bold_price": false,
@@ -544,7 +544,7 @@
           "type": "text",
           "settings": {
             "icon_name": "leaf",
-            "icon_image": "shopify://shop_images/Recurso_1_1_1.png",
+            "icon_image": "shopify://shop_images/Icon01.png",
             "title": "Cleanest Ingredients",
             "text": "<p>100% nature-identical</p>"
           }
@@ -553,7 +553,7 @@
           "type": "text",
           "settings": {
             "icon_name": "oven-safe",
-            "icon_image": "shopify://shop_images/Recurso_4_2_1.png",
+            "icon_image": "shopify://shop_images/Recurso_4_2_339aafc3-2f42-4e4d-bc6f-12241e268545.png",
             "title": "Artisan Crafted",
             "text": "<p>in-house lab small batches</p>"
           }
@@ -562,7 +562,7 @@
           "type": "text",
           "settings": {
             "icon_name": "eco-friendly",
-            "icon_image": "shopify://shop_images/Group_2_1.png",
+            "icon_image": "shopify://shop_images/Group_117.png",
             "title": "1% Donated",
             "text": "<p>to ocean conservation</p>"
           }
@@ -571,7 +571,7 @@
           "type": "text",
           "settings": {
             "icon_name": "heart",
-            "icon_image": "shopify://shop_images/Recurso_5_2_1.png",
+            "icon_image": "shopify://shop_images/Recurso_5_2_abbb5e35-1216-4533-9449-d8a9583a2a21.png",
             "title": "Ethical Pioneers",
             "text": "<p>built on passion and purpose</p>"
           }

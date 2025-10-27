@@ -37,8 +37,8 @@
             "stacked_button": false,
             "button_1_text": "SHOP SALE",
             "button_1_text_untagged": "Shop Sale",
-            "button_1_link": "shopify://products/sunshine-dew-antioxidant-cleansing-oil",
-            "button_1_link_untagged": "shopify://products/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_link": "shopify://collections/serums",
+            "button_1_link_untagged": "shopify://collections/serums",
             "button_1_color": "btn--black",
             "button_1_style": "btn--solid-border",
             "button_1_size": "btn--medium",
@@ -52,6 +52,7 @@
         },
         "section-slideshow-0-block-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IMG_6560.png",
             "image_mobile": "shopify://shop_images/IMG_6561.jpg",
@@ -90,6 +91,7 @@
         },
         "image_CTjeKp": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop.jpg",
             "image_mobile": "shopify://shop_images/Mobile_765abec2-bd1c-4e8a-a3a9-39e6b124f7fc.jpg",
@@ -462,6 +464,7 @@
         },
         "press_qNVfP8": {
           "type": "press",
+          "disabled": true,
           "settings": {
             "text": "",
             "link": "",

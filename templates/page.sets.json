@@ -119,7 +119,7 @@
       "name": "Featured collection",
       "settings": {
         "custom_class": "sets-collection-sec",
-        "collection": "sets",
+        "collection": "mini-sets",
         "products_layout": "grid",
         "number_of_products": 8,
         "products_per_row_on_desktop": 4,
@@ -166,7 +166,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "shopify://collections/35-off-sets",
+            "button_link": "shopify://collections/full-size-sets",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -179,7 +179,7 @@
       "name": "Featured collection",
       "settings": {
         "custom_class": "sets-collection-sec",
-        "collection": "35-off-sets",
+        "collection": "full-size-sets",
         "products_layout": "grid",
         "number_of_products": 8,
         "products_per_row_on_desktop": 4,

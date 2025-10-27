@@ -57,24 +57,16 @@
         "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "<p>{{ collection.title }}<\/p>",
+            "text": "<p>{{ collection.title }}</p>",
             "size": 100,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
             "highlight_text_color": "#000000"
           }
-        },
-        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ collection.title }}<\/p>",
-            "size": 100
-          }
         }
       },
       "block_order": [
-        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1",
-        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1"
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1"
       ],
       "settings": {
         "custom_class": "",
@@ -110,15 +102,15 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Picture_27.png",
+            "image": "shopify://shop_images/Picture_27.png",
             "position": 5,
             "width": "half",
-            "title": "<p>Shop Our Bestsellers<\/p>",
+            "title": "<p>Shop the Perfect Gift</p>",
             "heading_size": 100,
             "heading_highlight_type": "circle",
             "highlight_color": "#fbcaff",
             "highlight_text_color": "#ffffff",
-            "content": "Gems your skin (and the planet) will love.",
+            "content": "From mini sets to must-haves under $25",
             "text_size": 100,
             "text_color": "text-light",
             "text_position": "bottom-left",
@@ -126,7 +118,7 @@
             "overlay_opacity": 15,
             "bg_color": "#f5f4f1",
             "button_text": "",
-            "button_link": "shopify:\/\/collections\/bestsellers",
+            "button_link": "https://earthharbor.com/collections/gifts-1",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--small"

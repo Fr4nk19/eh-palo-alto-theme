@@ -42,7 +42,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/cleansers",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -101,7 +101,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/toners",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -160,7 +160,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/moisturizers",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -219,7 +219,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/serums",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -278,7 +278,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/sunscreen",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -337,7 +337,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/exfoliants",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -396,7 +396,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/hair-body",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -455,7 +455,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/kits",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -467,13 +467,13 @@
       ],
       "settings": {
         "custom_class": "best-seller-sec",
-        "collection": "sets",
+        "collection": "kits",
         "products_layout": "carousel",
         "number_of_products": 8,
         "products_per_row_on_desktop": 4,
         "columns_mobile": "2",
         "text_alignment": "text-left",
-        "title": "<p>Sets & Kits</p>",
+        "title": "<p>Sets</p>",
         "heading_size": 170,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
@@ -514,7 +514,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/accessories-tools",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -573,7 +573,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/refills-plastic-free",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"

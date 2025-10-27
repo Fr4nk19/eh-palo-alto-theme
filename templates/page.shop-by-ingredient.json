@@ -42,7 +42,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/retinol",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -102,7 +102,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/hyaluronic-acid",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -162,7 +162,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/vitamin-c",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -222,7 +222,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/niacinamide",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -282,7 +282,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/peptides",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -342,7 +342,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/ceramides",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -402,7 +402,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/acids",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -462,7 +462,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/enzymes",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -522,7 +522,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/prebiotics",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -582,7 +582,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/spf",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"

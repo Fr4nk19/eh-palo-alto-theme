@@ -42,7 +42,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/breakouts-acne",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -102,7 +102,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/dry-and-rough-skin",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -162,7 +162,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/fine-lines-wrinkles",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -222,7 +222,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/pores-oil-control",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -282,7 +282,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/dullness-uneven-tone",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
@@ -342,7 +342,7 @@
             "overlay_opacity": 0,
             "bg_color": "#d3d3d3",
             "button_text": "",
-            "button_link": "",
+            "button_link": "shopify://collections/redness-sensitivity",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--medium"
