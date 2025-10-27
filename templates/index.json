@@ -12,6 +12,44 @@
     "section-slideshow-0": {
       "type": "section-slideshow",
       "blocks": {
+        "image_EcCaVm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Hero-Desktop_6fee54ab-c86c-4924-9658-1dc1f0fb812d.jpg",
+            "image_mobile": "shopify://shop_images/Hero-Mobile_8ee4f488-8d54-4266-9944-062c0fd99cc6.jpg",
+            "overlay_opacity": 10,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "sub-subheading": "",
+            "first_sub_title_color": "#000000",
+            "subheading": "Trick or Treatment",
+            "title": "",
+            "title2": "<p>20% OFF<br/>Treatments</p>",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "SHOP SALE",
+            "button_1_text_untagged": "Shop Sale",
+            "button_1_link": "shopify://products/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_link_untagged": "shopify://products/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
         "section-slideshow-0-block-0": {
           "type": "image",
           "settings": {
@@ -90,6 +128,7 @@
         }
       },
       "block_order": [
+        "image_EcCaVm",
         "section-slideshow-0-block-0",
         "image_CTjeKp"
       ],
@@ -917,6 +956,7 @@
       "custom_css": [],
       "settings": {
         "custom_class": "new-arrivals-sec",
+        "current_label": "Current",
         "title": "NEW ARRIVALS",
         "heading_size": 100,
         "button_color": "btn--black",
