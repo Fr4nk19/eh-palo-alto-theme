@@ -55,13 +55,13 @@
         },
         "recharge_subscriptions_subscription_widget_NyJajz": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
         },
         "recharge_subscriptions_subscription_widget_v2_BJBch8": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
-          "disabled": true,
           "settings": {}
         },
         "form": {
@@ -440,7 +440,7 @@
         "product_3BCdgj": {
           "type": "product",
           "settings": {
-            "product": "tidal-rose-crystal-hydration-toner-refill",
+            "product": "tidal-rose-seaweed-hydration-mist",
             "title": "2. Tone",
             "sub_heading": "",
             "product_description": "",
@@ -555,7 +555,7 @@
             "icon_name": "oven-safe",
             "icon_image": "shopify://shop_images/Recurso_4_2_1.png",
             "title": "Artisan Crafted",
-            "text": "<p>In-house lab small batches</p>"
+            "text": "<p>in-house lab small batches</p>"
           }
         },
         "text_FeeQLN": {
@@ -564,7 +564,7 @@
             "icon_name": "eco-friendly",
             "icon_image": "shopify://shop_images/Group_2_1.png",
             "title": "1% Donated",
-            "text": "<p>to forest conservation</p>"
+            "text": "<p>to ocean conservation</p>"
           }
         },
         "text_BzYiCb": {

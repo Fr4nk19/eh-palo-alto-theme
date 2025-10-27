@@ -74,9 +74,9 @@
         "height": "seven-fifty-height",
         "enable_mobile_height": true,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/banner_offers.jpg",
-        "image_mobile": "shopify://shop_images/mobile_offers.jpg",
-        "overlay_opacity": 10,
+        "image": "shopify://shop_images/Offers_-_Hero.jpg",
+        "image_mobile": "shopify://shop_images/Offers-mobile_hero.jpg",
+        "overlay_opacity": 15,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
         "enable_card_scrolling": false,
@@ -108,7 +108,7 @@
           "settings": {
             "icon_name": "check",
             "icon_image": "shopify://shop_images/ph_seal-check-thin_1.png",
-            "title": "Suscribe & Save",
+            "title": "Subscribe & Save",
             "text": "<p>Get 10% off & never run out of your faves</p>"
           }
         },
@@ -118,7 +118,7 @@
             "icon_name": "eco-friendly",
             "icon_image": "shopify://shop_images/material-symbols-light_box-outline-sharp.png",
             "title": "Free Shipping",
-            "text": "<p>Orders $50+ and all Suscribe & Save orders</p>"
+            "text": "<p>Orders $50+ and all Subscribe & Save orders</p>"
           }
         }
       },
@@ -199,7 +199,7 @@
           "settings": {
             "gclass": "",
             "image": "shopify://shop_images/Picture_30.png",
-            "title": "Free deluxe gift orders $60+",
+            "title": "Free deluxe gift orders $80+",
             "heading_size": 120,
             "text": "",
             "text_size": 100,
@@ -234,7 +234,7 @@
         "bg_color": "",
         "gradient": "",
         "color_borders": "#000000",
-        "layout_mobile": "carousel",
+        "layout_mobile": "stacked",
         "width": "wrapper",
         "padding_top": 64,
         "padding_bottom": 64
@@ -264,7 +264,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP SETS",
-            "button_link": "shopify://collections/sets",
+            "button_link": "https://earthharbor.com/pages/sets",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -309,7 +309,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "SHOP ALL",
-            "button_link": "shopify://collections/sets",
+            "button_link": "https://earthharbor.com/pages/sets",
             "button_color": "btn--white",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -335,14 +335,14 @@
         "text": "",
         "text_size": 100,
         "button_position": "top",
-        "button_text": "Shop Now",
+        "button_text": "",
         "button_color": "btn--black",
         "button_style": "btn--text",
         "button_size": "btn--medium",
         "bg_color": "",
         "enable_slider_mobile": true,
         "width": "wrapper--full-padded",
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 48
       }
     },
@@ -453,7 +453,7 @@
             "button_1_style": "btn--solid",
             "button_1_size": "btn--small",
             "button_2_text": "Already a member? Sign in",
-            "button_2_link": "",
+            "button_2_link": "https://earthharbor.com/account/login",
             "button_2_color": "btn--black",
             "button_2_style": "btn--text",
             "button_2_size": "btn--small"
@@ -526,7 +526,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP REFILLS",
-            "button_link": "shopify://collections/refills",
+            "button_link": "https://earthharbor.com/collections/refills-plastic-free",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
