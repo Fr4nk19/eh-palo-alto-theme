@@ -381,7 +381,7 @@
             "title": "10% off with subscription",
             "text": "Never run out of your favorites.",
             "button_1_text": "Shop Now",
-            "button_1_link": "#",
+            "button_1_link": "shopify://collections/all",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-dark"

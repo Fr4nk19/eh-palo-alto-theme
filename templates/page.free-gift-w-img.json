@@ -20,17 +20,18 @@
         "padding_bottom": 60
       }
     },
-    "custom_freegift_form_XKVfDV": {
-      "type": "custom-freegift-form",
-      "name": "Free Gift Form",
+    "custom_free_gift_w_img_3bVftU": {
+      "type": "custom-free-gift-w-img",
+      "name": "Free Gift with Image",
       "settings": {
-        "title": "Unlock Your <em>Free</em> Skincare Favorite",
-        "subtitle": "<p>We’ve set aside something special just for you.<br/> It’s 100% free—just pay $6.99 shipping.<br/><br/>But first, let us know where to send it…</p>"
+        "image": "shopify://shop_images/free-gift.webp",
+        "title": "Unlock Your <em>Free</em> Skincare Gem",
+        "subtitle": "<p>Sail away with your free full size treasure—simply cover $6.99 shipping.</p><p>But first, let us know where to send it…</p>"
       }
     }
   },
   "order": [
     "main",
-    "custom_freegift_form_XKVfDV"
+    "custom_free_gift_w_img_3bVftU"
   ]
 }
