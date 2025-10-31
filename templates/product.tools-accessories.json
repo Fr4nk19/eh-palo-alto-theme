@@ -15,7 +15,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "subheading": "breadcrumbs",
+            "subheading": "none",
             "title_size": 100,
             "price_size": 100,
             "bold_price": false,
@@ -44,11 +44,9 @@
             "padding_bottom": 20
           }
         },
-        "recharge_subscriptions_subscription_widget_ddQ8CQ": {
-          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
-          }
+        "recharge_subscriptions_subscription_widget_v2_M34CkF": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {}
         },
         "form": {
           "type": "form",
@@ -254,7 +252,7 @@
         "okendo_star_rating_JGWjfm",
         "description",
         "custom_code_D7YGUm",
-        "recharge_subscriptions_subscription_widget_ddQ8CQ",
+        "recharge_subscriptions_subscription_widget_v2_M34CkF",
         "form",
         "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
         "icon_row_p8UNfw",
@@ -282,6 +280,188 @@
         "bg_color": "",
         "gradient": "",
         "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_marquee_ACwGLg": {
+      "type": "section-marquee",
+      "blocks": {
+        "image_wCfaHL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/icon_flower_deep_blue.svg",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_Get4nb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Real Results</p>",
+            "text_color": "#2595b3",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_axVitn": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/We_Love_The_Planet_2_1.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_iYzbVJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/flower_icon_b3b6577d-b9b5-441d-8476-79f252d63a9d.svg",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_iUmNRf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Recyclable Packaging</p>",
+            "text_color": "#72d3d6",
+            "heading_highlight_type": "highlight-color",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_aAhBTz": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/recyclable-img.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_TtGzN6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/icon_flower_velvet_pink.svg",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_gnJcgn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Refill Options</p>",
+            "text_color": "#f2b2be",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_R6CGbX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/icon_flower_sand.svg",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_RbTmYC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clean Ingredients</p>",
+            "text_color": "#e3c7b2",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_P7HC8M": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/6line_flower_1_3.png",
+            "link": "",
+            "image_width": 30
+          }
+        },
+        "image_LrkQtP": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/refil-options.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_je4wjD": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/6line_flower_1_3.png",
+            "link": "",
+            "image_width": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_wCfaHL",
+        "text_Get4nb",
+        "image_axVitn",
+        "image_iYzbVJ",
+        "text_iUmNRf",
+        "image_aAhBTz",
+        "image_TtGzN6",
+        "text_gnJcgn",
+        "image_R6CGbX",
+        "text_RbTmYC",
+        "image_P7HC8M",
+        "image_LrkQtP",
+        "image_je4wjD"
+      ],
+      "custom_css": [
+        ".text-highlight__break {font-size: 40px; letter-spacing: 0.97px;}"
+      ],
+      "settings": {
+        "custom_class": "marquee-sec",
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_font": "space_mono_n4",
+        "text_size": 150,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -733,6 +913,7 @@
         "image_bFkYML",
         "image_feYiJN"
       ],
+      "disabled": true,
       "custom_css": [
         ".announcement figure {width: 100%; height: 32px;}",
         ".announcement__text .announcement__block:nth-child(even) figure {width: 32px; height: 32px;}",
@@ -830,6 +1011,7 @@
   },
   "order": [
     "main",
+    "section_marquee_ACwGLg",
     "overlapping-images-0",
     "section_icons_row_JkQddy",
     "section_image_with_text_UzD3Mz",

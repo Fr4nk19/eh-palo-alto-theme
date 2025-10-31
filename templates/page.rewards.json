@@ -69,7 +69,7 @@
         "text_Cq7Ram": {
           "type": "text",
           "settings": {
-            "text": "<p>Already a member? <a href=\"/account/login\" title=\"/account/login\">Sign in</a></p>",
+            "text": "<p><a href=\"/account/login\" title=\"/account/login\">Already a member? Sign in</a></p>",
             "size": 80,
             "text_position": "center",
             "spacing_bottom": 12

@@ -52,18 +52,35 @@
           {%- assign link_title = sub_link.title | strip_html | escape -%}
           {%- assign link_title_lowercase = sub_link.title | downcase | strip_html | escape -%}
 
+
           {%- capture link_image_markup -%}
-            {%- render 'header-link-image' with enable: show_links_images, link: sub_link, aspect_ratio: links_images_aspect_ratio -%}
-            {% if link.type == 'http_link' or link.type != 'page_link' %}
+            {%- assign _image_rendered = false -%}
+          
+            {%- if link.type != 'page_link' -%}
               {%- for block_img in section.blocks -%}
-                {% assign block_img_pos = block_img.settings.position_submenu | times: 1 %}
-                {% assign block_link_pos = block_img.settings.position | times: 1 %}
-                
+                {%- assign block_img_pos = block_img.settings.position_submenu | times: 1 -%}
+                {%- assign block_link_pos = block_img.settings.position | times: 1 -%}
+          
                 {%- if block_link_pos == index_link and block_img_pos == sublink_position -%}
-                  {%- render 'header-link-image' with enable: section.settings.show_images, link: link, aspect_ratio: section.settings.image_aspect_ratio, block_image: block_img.settings.image -%}
+                  {%- render 'header-link-image'
+                    with enable: section.settings.show_images,
+                    link: sub_link,
+                    aspect_ratio: section.settings.image_aspect_ratio,
+                    block_image: block_img.settings.image
+                  -%}
+                  {%- assign _image_rendered = true -%}
+                  {%- break -%}
                 {%- endif -%}
               {%- endfor -%}
-            {% endif %}
+            {%- endif -%}
+          
+            {%- unless _image_rendered -%}
+              {%- render 'header-link-image'
+                with enable: show_links_images,
+                link: sub_link,
+                aspect_ratio: links_images_aspect_ratio
+              -%}
+            {%- endunless -%}
           {%- endcapture -%}
 
           <li class="mobile-menu__item mobile-menu__item--level-2{% if sub_link.levels == 1 %} mobile-menu__item--has-items{% endif %}{% if sub_link.active %} mobile-menu__item--active{% endif %}" {% if sub_link.levels == 1 %}aria-haspopup="true"{% endif %}>
@@ -72,7 +89,7 @@
                 <div class="mobile-navlink__image">
                   {{- link_image_markup -}}
                 </div>
-              {%- endif -%}
+              {%- endif -%} 
 
               <span>
                 {{- link_title -}}

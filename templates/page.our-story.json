@@ -503,7 +503,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/about",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_Ki76Fe": {
@@ -514,7 +514,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/ingredient-philosophy",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_cyfc7D": {
@@ -525,7 +525,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/sustainability",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_zEEUkA": {
@@ -536,7 +536,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/ea-gives-back",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_CEwXHf": {
@@ -547,7 +547,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/skincare-quiz-routine",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         }
       },
