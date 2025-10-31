@@ -44,11 +44,9 @@
             "padding_bottom": 20
           }
         },
-        "recharge_subscriptions_subscription_widget_ddQ8CQ": {
-          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
-          }
+        "recharge_subscriptions_subscription_widget_v2_M34CkF": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {}
         },
         "form": {
           "type": "form",
@@ -254,7 +252,7 @@
         "okendo_star_rating_JGWjfm",
         "description",
         "custom_code_D7YGUm",
-        "recharge_subscriptions_subscription_widget_ddQ8CQ",
+        "recharge_subscriptions_subscription_widget_v2_M34CkF",
         "form",
         "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
         "icon_row_p8UNfw",

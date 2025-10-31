@@ -505,7 +505,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/our-story",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_47TTHH": {
@@ -516,7 +516,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/ingredient-philosophy",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_QKfrqt": {
@@ -527,7 +527,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/sustainability",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_KNGzAj": {
@@ -538,7 +538,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/ea-gives-back",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         },
         "image_xzrcEH": {
@@ -549,7 +549,7 @@
             "text_size": 75,
             "button_text": "",
             "button_link": "shopify://pages/skincare-quiz-routine",
-            "link_target_blank": true
+            "link_target_blank": false
           }
         }
       },
@@ -589,7 +589,7 @@
             "text": "<p>Welcome to Your Skin’s Paradise</p>",
             "size": 135,
             "heading_highlight_type": "underline-hand-drawn",
-            "highlight_color": "#000",
+            "highlight_color": "#000000",
             "highlight_text_color": ""
           }
         },
