@@ -1,0 +1,140 @@
+{{ 'custom-freegift-landing.css' | asset_url | stylesheet_tag }}
+
+{% comment %} <div class="image">
+  {% if section.settings.image %}
+    <img 
+      src="{{ section.settings.image | image_url: width: 1300 }}" 
+      alt="{{ section.settings.image.alt | escape }}"
+      loading="lazy"
+      width="650px"
+      height="auto"
+    >
+  {% endif %}
+</div> {% endcomment %}
+ 
+<div class="free-gift-wrapper">
+  <div class="image">
+    {% if section.settings.image %}
+      {% assign img = section.settings.image %}
+      <img
+        src="{{ img | image_url: width: 1300 }}"
+        srcset="
+          {{ img | image_url: width: 375 }} 375w,
+          {{ img | image_url: width: 650 }} 650w,
+          {{ img | image_url: width: 900 }} 900w,
+          {{ img | image_url: width: 1300 }} 1300w"
+        sizes="(min-width: 768px) 650px, 100vw"
+        alt="{{ img.alt | escape }}"
+        loading="lazy"
+        width="650"
+        height="{{ 650 | divided_by: img.aspect_ratio | round }}"
+        decoding="async"
+      >
+    {% endif %}
+  </div>
+
+  <div class="content">
+    <div class="heading">
+      {% if section.settings.image_title %}
+        <img src="{{ section.settings.image_title | image_url: width: 590 }}" alt="{{ section.settings.image_title.alt | escape }}" width="" height="50px" decoding="async">
+      {% endif %}
+      {{ section.settings.title }}
+    </div>
+
+    <div class="benefits">
+      <div class="heading-benefits">
+        {{ section.settings.heading_benefits }}
+      </div>
+      <ul class="benefit-list">
+        {% for block in section.blocks %}
+          <li class="benefit">
+            {{ block.settings.benefit }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    {%- assign product = all_products[section.settings.product] -%}
+
+    <div class="checkout-gift-container">
+      {% if product %}
+        {% assign variant = product.selected_or_first_available_variant %}
+        {% if product.available and variant %}
+          <a href="/cart/{{ variant.id }}:1" class="btn btn--checkout">
+            Checkout
+          </a>
+        {% else %}
+          <button class="btn btn--checkout" disabled>
+            SOLD OUT
+          </button>
+        {% endif %}
+      {% else %}
+        <p style="color: red;">⚠️ Product handle inválido o no configurado</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Free Gift Success w Image",
+  "tag": "section",
+  "class": "freegift-success-with-img",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_title",
+      "label": "Image Title",
+      "info": "SVG"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "JPG 920x864px"
+    },
+    {
+      "type": "header",
+      "content": "Free Product"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Benefits"
+    },
+    {
+      "type": "text",
+      "id": "heading_benefits",
+      "label": "Benefits heading",
+      "default": "Why You’ll Love It:"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "benefit",
+          "label": "Benefit"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free Gift Success with Image"
+    }
+  ]
+}
+{% endschema %}

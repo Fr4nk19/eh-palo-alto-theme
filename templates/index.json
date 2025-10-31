@@ -15,6 +15,45 @@
         "image_EcCaVm": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Gifts_under_25_banner_-_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/Gifts_under_25_banner_-_Mobile.jpg",
+            "overlay_opacity": 10,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "sub-subheading": "",
+            "first_sub_title_color": "#000000",
+            "subheading": "The Perfect Gift",
+            "title": "",
+            "title2": "<p>Gifts under $25</p>",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "SHOP SALE",
+            "button_1_text_untagged": "Shop Sale",
+            "button_1_link": "shopify://collections/gifts-1",
+            "button_1_link_untagged": "shopify://collections/gifts-1",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "image_fmDDab": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
             "image": "shopify://shop_images/Hero-Desktop_6fee54ab-c86c-4924-9658-1dc1f0fb812d.jpg",
             "image_mobile": "shopify://shop_images/Hero-Mobile_8ee4f488-8d54-4266-9944-062c0fd99cc6.jpg",
             "overlay_opacity": 10,
@@ -131,6 +170,7 @@
       },
       "block_order": [
         "image_EcCaVm",
+        "image_fmDDab",
         "section-slideshow-0-block-0",
         "image_CTjeKp"
       ],
