@@ -12,10 +12,20 @@
     "main": {
       "type": "product",
       "blocks": {
+        "text_6inEb9": {
+          "type": "text",
+          "name": "Product Badge",
+          "settings": {
+            "text_class": "",
+            "title": "<p>{{ product.metafields.custom.badge.value }}</p>",
+            "text_alignment": "left",
+            "padding_bottom": 20
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
-            "subheading": "breadcrumbs",
+            "subheading": "none",
             "title_size": 100,
             "price_size": 100,
             "bold_price": false,
@@ -55,13 +65,13 @@
         },
         "recharge_subscriptions_subscription_widget_NyJajz": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
         },
         "recharge_subscriptions_subscription_widget_v2_BJBch8": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
-          "disabled": true,
           "settings": {}
         },
         "form": {
@@ -288,19 +298,10 @@
             "bg_color": "#ffffff",
             "padding_bottom": 20
           }
-        },
-        "text_6inEb9": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text_class": "",
-            "title": "<p>Give more details about the product</p>",
-            "text_alignment": "left",
-            "padding_bottom": 20
-          }
         }
       },
       "block_order": [
+        "text_6inEb9",
         "title",
         "okendo_star_rating_JGWjfm",
         "description",
@@ -321,8 +322,7 @@
         "product_accordion_YQbhHb",
         "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
         "upsell",
-        "icon_row_EAN9nN",
-        "text_6inEb9"
+        "icon_row_EAN9nN"
       ],
       "custom_css": [],
       "settings": {
@@ -440,7 +440,7 @@
         "product_3BCdgj": {
           "type": "product",
           "settings": {
-            "product": "tidal-rose-crystal-hydration-toner-refill",
+            "product": "tidal-rose-seaweed-hydration-mist",
             "title": "2. Tone",
             "sub_heading": "",
             "product_description": "",
@@ -544,7 +544,7 @@
           "type": "text",
           "settings": {
             "icon_name": "leaf",
-            "icon_image": "shopify://shop_images/Recurso_1_1_1.png",
+            "icon_image": "shopify://shop_images/Icon01.png",
             "title": "Cleanest Ingredients",
             "text": "<p>100% nature-identical</p>"
           }
@@ -553,25 +553,25 @@
           "type": "text",
           "settings": {
             "icon_name": "oven-safe",
-            "icon_image": "shopify://shop_images/Recurso_4_2_1.png",
+            "icon_image": "shopify://shop_images/Recurso_4_2_339aafc3-2f42-4e4d-bc6f-12241e268545.png",
             "title": "Artisan Crafted",
-            "text": "<p>In-house lab small batches</p>"
+            "text": "<p>in-house lab small batches</p>"
           }
         },
         "text_FeeQLN": {
           "type": "text",
           "settings": {
             "icon_name": "eco-friendly",
-            "icon_image": "shopify://shop_images/Group_2_1.png",
+            "icon_image": "shopify://shop_images/Group_117.png",
             "title": "1% Donated",
-            "text": "<p>to forest conservation</p>"
+            "text": "<p>to ocean conservation</p>"
           }
         },
         "text_BzYiCb": {
           "type": "text",
           "settings": {
             "icon_name": "heart",
-            "icon_image": "shopify://shop_images/Recurso_5_2_1.png",
+            "icon_image": "shopify://shop_images/Recurso_5_2_abbb5e35-1216-4533-9449-d8a9583a2a21.png",
             "title": "Ethical Pioneers",
             "text": "<p>built on passion and purpose</p>"
           }
@@ -745,29 +745,6 @@
         "gradient": "",
         "section_width": "wrapper--full",
         "add_gutter": true,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "section_accordions_faqs_E9zzz8": {
-      "type": "section-accordions-faqs",
-      "name": "Product FAQs",
-      "settings": {
-        "custom_class": "faq-sec",
-        "layout": "two-columns",
-        "show_accordion_divider": false,
-        "line_thickness": "normal",
-        "subheading": "{{ product.title }}",
-        "title": "FAQs",
-        "type_style": "font-heading",
-        "heading_size": 120,
-        "text": "",
-        "tabs_bg_color": "#f4efeb",
-        "bg_color": "",
-        "gradient": "",
-        "text_color": "text-dark",
-        "border_color": "#333333",
-        "width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -1030,6 +1007,29 @@
         "add_gutter": true,
         "padding_top": 32,
         "padding_bottom": 32
+      }
+    },
+    "section_accordions_faqs_E9zzz8": {
+      "type": "section-accordions-faqs",
+      "name": "Product FAQs",
+      "settings": {
+        "custom_class": "faq-sec",
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "subheading": "{{ product.title }}",
+        "title": "FAQs",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "text": "",
+        "tabs_bg_color": "#f4efeb",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "#333333",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "tabs": {
@@ -1381,11 +1381,11 @@
     "section_icons_row_JkQddy",
     "section_image_with_text_UzD3Mz",
     "section_ingredients_BLRaQq",
-    "section_accordions_faqs_E9zzz8",
     "icons",
     "section_feature_icons_hLAEJh",
     "section_image_with_text_gnk74w",
     "section_before_after_y4hL4P",
+    "section_accordions_faqs_E9zzz8",
     "tabs",
     "section_marquee_YH47XE",
     "related",

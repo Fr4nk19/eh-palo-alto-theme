@@ -543,8 +543,8 @@ body[class*="template--wholesale"] .index_overlap_images .main-text.rte p {
   }
 }
 
-.products-list-section .products-list__item .oke-sr {
-  --oke-stars-foregroundColor: #041010;
+.products-list-section .products-list__item .oke-sr, .template-product .product-single__details .oke-sr {
+  --oke-stars-foregroundColor: #041010; 
 }
 
 /* End Home featured Product */
@@ -3531,18 +3531,13 @@ div[data-buy-it-now] {
   background: #F4EFEB !important;
 }
 
-
-.press .flickity-page-dots {
-  display: flex;
-  justify-content: center;
-}
-
 /* Product list current badge */
 
 .current-product__indicator {
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
+    opacity: 1!important;
 }
 
 .current-product__indicator span.current-product__indicator-label {
@@ -3557,7 +3552,7 @@ div[data-buy-it-now] {
     font-style: normal;
     font-weight: 400;
     line-height: 10px;
-    /* 83.333% */
+    opacity: 1!important;
 }
 
 .products-list__nav .products-list__nav__button.h2 {
@@ -3567,4 +3562,133 @@ div[data-buy-it-now] {
 
 .products-list__nav .products-list__nav__button.h2 > span:not(.current-product__indicator) {
   --underline-thickness: var(--BORDER-WIDTH);
+}
+
+/*** Rewards ***/
+.lion-rules-list  {
+  grid-template-columns: repeat(auto-fit, minmax(422px, 1fr)) !important;
+  background: unset !important;
+}
+
+.lion-rule-item {
+  border-bottom: solid 1px #D9D9D9;
+}
+
+.lion-action-button  {
+  border-radius: 50px !important;
+  text-transform: uppercase;
+  font-size: 12px !important;
+}
+
+.lion-rule-item__title {
+  color: #838383 !important;
+}
+
+.lion-integrated-page-section__heading-text {
+  color: #041010 !important;
+}
+
+.lion-integrated-page-section__heading-text::before, .lion-integrated-page-section__heading-text::after {
+  content: unset !important;
+}
+
+#loyaltylion .lion-icon__rule--purchase {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("purchase.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-icon__rule--signup {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("user.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-icon__rule--instagram-follow {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("ig.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-icon__rule--referral {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("friends.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-icon__rule--birthday {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("bday.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-icon__rule--custom  {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("review.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-icon__reward--cart-discount-voucher {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: unset !important;
+  background-image: url("voucher.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#loyaltylion .lion-rule-item__content {
+  min-height: 160px !important;
+  /* padding: unset !important; */
+}
+
+.lion-rewards-list {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  max-width: 92%;
+  margin: auto;
+}
+
+#loyaltylion .lion-reward-item__content {
+  border-right: solid 1px #BCBAB6;
+  border-radius: unset;
+  background-color: unset;
+}
+
+#loyaltylion .lion-rewards-list .lion-reward-item:last-child .lion-reward-item__content {
+  border-right: unset;
+}
+
+
+
+
+
+@media screen and (max-width: 990px) {
+  .lion-rules-list  {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
