@@ -1,0 +1,17 @@
+{% assign easylockdownLocationsCan = '' | split: ',' %}{% assign easylockdownLocationsCannot = '' | split: ',' %}{% assign easylockdownPasswordItems = '' | split: ',' %}
+{% assign easylockdownNow = 'now' | date:'%s' | times: 1 %}{% assign easylockdownNowWeekDay = easylockdownNow | date:'%u' %}{% assign easylockdownNowMonthDay = easylockdownNow | date:'%d' %}{% assign easylockdownNowHM = easylockdownNow | date:'%H%M' | times: 1 %}{% if customer %}{% assign easylockdownPlacedOrder = customer.orders.first.created_at | date:'%s' %}{% assign easylockdownOldestPlacedOrder = customer.orders.last.created_at | date:'%s' %}{% assign easylockdownDateDifference = easylockdownNow | minus: easylockdownPlacedOrder %}{% endif %}
+{% for t in customer.tags %}
+{% assign tag = t | downcase %}
+{% if tag == 'wholesale' %}{% assign elcTag1 = true %}{% endif %}
+{% endfor %}
+{% assign easylockdownSearchException = false %}
+{% unless easylockdownSearchException %}
+{% if easylockdown_filter_search.object_type == 'product' %}
+{% if easylockdown_filter_search.id == 8319786909940 or easylockdown_filter_search.id == 8342955753716 or easylockdown_filter_search.id == 1556557037652 or easylockdown_filter_search.id == 3611868233812 or easylockdown_filter_search.id == 7985009131764 or easylockdown_filter_search.id == 7817516417268 or easylockdown_filter_search.id == 660453785627 or easylockdown_filter_search.id == 660525350939 or easylockdown_filter_search.id == 667829370907 or easylockdown_filter_search.id == 658054316059 or easylockdown_filter_search.id == 1564987981908 or easylockdown_filter_search.id == 660487372827 or easylockdown_filter_search.id == 6623720800453 or easylockdown_filter_search.id == 667763539995 or easylockdown_filter_search.id == 8106716004596 or easylockdown_filter_search.id == 1570420490324 or easylockdown_filter_search.id == 6648754241733 or easylockdown_filter_search.id == 1500741107796 or easylockdown_filter_search.id == 1570420785236 or easylockdown_filter_search.id == 6948574888133 or easylockdown_filter_search.id == 3611910930516 or easylockdown_filter_search.id == 3679018451028 or easylockdown_filter_search.id == 3679019040852 or easylockdown_filter_search.id == 667838021659 or easylockdown_filter_search.id == 660447395867 or easylockdown_filter_search.id == 1564998205524 or easylockdown_filter_search.id == 1556522369108 or easylockdown_filter_search.id == 1570416558164 or easylockdown_filter_search.id == 1556395851860 or easylockdown_filter_search.id == 7452070478068 or easylockdown_filter_search.id == 8250245382388 or easylockdown_filter_search.id == 3611928264788 or easylockdown_filter_search.id == 3618895036500 or easylockdown_filter_search.id == 7868664611060 or easylockdown_filter_search.id == 7597891944692 or easylockdown_filter_search.id == 6948513415365 or easylockdown_filter_search.id == 674589311003 or easylockdown_filter_search.id == 667793719323 or easylockdown_filter_search.id == 6066073764037 or easylockdown_filter_search.id == 4563919274068 or easylockdown_filter_search.id == 1475238756436 or easylockdown_filter_search.id == 5966281244869 or easylockdown_filter_search.id == 3612593094740 or easylockdown_filter_search.id == 667750498331 or easylockdown_filter_search.id == 660531183643 %}
+{% if customer %}
+{% assign easylockdownContinue = true %}{% unless elcTag1 %}{% assign easylockdownContinue = false %}{% endunless %}
+{% if easylockdownContinue %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endif %}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endunless %}

@@ -35,7 +35,7 @@
         "heading_TJJyrB": {
           "type": "heading",
           "settings": {
-            "title": "<p>Meet Ali Perry-Hatch, MPH</p>",
+            "title": "<p>Meet Ali Perry-Hatch, MPH<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -47,7 +47,7 @@
         "text_dtHJRN": {
           "type": "text",
           "settings": {
-            "text": "<p>Toxicologist, Herbalist, and Beach Wanderer</p>",
+            "text": "<p>Toxicologist, Herbalist, and Beach Wanderer<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -70,7 +70,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_13.png",
+        "image": "shopify:\/\/shop_images\/Picture_13.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -87,7 +87,7 @@
         "heading_NqdgUt": {
           "type": "heading",
           "settings": {
-            "title": "<p>Coastal Roots and a Career in Science</p>",
+            "title": "<p>Coastal Roots and a Career in Science<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -99,7 +99,7 @@
         "text_iHTCfJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Growing up on St. Simons Island, Georgia, I was surrounded by the natural beauty of the sea and coastal living. As a child, I experimented with marsh mud masks and sea salt sprays, unknowingly planting the seeds of Earth Harbor long before it became a reality. Years later, as a published, award-winning researcher specializing in environmental health and toxicology, I traveled the world studying how toxins affect our health and the environment. My work focused on uncovering natural alternatives that could transform wellness while protecting the planet, laying the foundation for what Earth Harbor would become.</p>",
+            "text": "<p>Growing up on St. Simons Island, Georgia, I was surrounded by the natural beauty of the sea and coastal living. As a child, I experimented with marsh mud masks and sea salt sprays, unknowingly planting the seeds of Earth Harbor long before it became a reality. Years later, as a published, award-winning researcher specializing in environmental health and toxicology, I traveled the world studying how toxins affect our health and the environment. My work focused on uncovering natural alternatives that could transform wellness while protecting the planet, laying the foundation for what Earth Harbor would become.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -121,7 +121,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_14.png",
+        "image": "shopify:\/\/shop_images\/Picture_14.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -138,7 +138,7 @@
         "heading_xPcDWd": {
           "type": "heading",
           "settings": {
-            "title": "<p>Treehouse Beginnings</p>",
+            "title": "<p>Treehouse Beginnings<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -150,7 +150,7 @@
         "text_eppAFe": {
           "type": "text",
           "settings": {
-            "text": "<p>Earth Harbor began in the heart of my off-the-grid treehouse kitchen—the tiny, sustainable home where my husband and I lived while embracing a mindful lifestyle. But the journey to Earth Harbor wasn’t a straightforward one.</p>",
+            "text": "<p>Earth Harbor began in the heart of my off-the-grid treehouse kitchen—the tiny, sustainable home where my husband and I lived while embracing a mindful lifestyle. But the journey to Earth Harbor wasn’t a straightforward one.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -172,7 +172,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/fa557da6a26b1c6d41013c1e51613819.png",
+        "image": "shopify:\/\/shop_images\/fa557da6a26b1c6d41013c1e51613819.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -189,7 +189,7 @@
         "heading_rwmEgh": {
           "type": "heading",
           "settings": {
-            "title": "<p>From Adversity to a New Purpose</p>",
+            "title": "<p>From Adversity to a New Purpose<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -201,7 +201,7 @@
         "text_MDcqy3": {
           "type": "text",
           "settings": {
-            "text": "<p>After a near-fatal car accident left me disabled, I found myself facing both physical and mental challenges that reshaped how I viewed health, healing, and the way we care for ourselves. At a time when recovery felt impossible, I discovered I was pregnant with my miracle baby boy. These life-altering experiences made me rethink everything, especially the products I was using on my body and their impact on the planet. I knew I had to take clean living to the next level.</p>",
+            "text": "<p>After a near-fatal car accident left me disabled, I found myself facing both physical and mental challenges that reshaped how I viewed health, healing, and the way we care for ourselves. At a time when recovery felt impossible, I discovered I was pregnant with my miracle baby boy. These life-altering experiences made me rethink everything, especially the products I was using on my body and their impact on the planet. I knew I had to take clean living to the next level.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -223,7 +223,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_15.png",
+        "image": "shopify:\/\/shop_images\/Picture_15.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -240,7 +240,7 @@
         "heading_DehQe7": {
           "type": "heading",
           "settings": {
-            "title": "<p>Creating What Didn’t Exist</p>",
+            "title": "<p>Creating What Didn’t Exist<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -252,7 +252,7 @@
         "text_GqLtmz": {
           "type": "text",
           "settings": {
-            "text": "<p>Frustrated by the lack of skincare that met my strict standards—effective, science-rooted, natural, ethical, sustainable, safe for sensitive skin, and versatile enough for everyday life—I decided to create my own. Many natural products lacked the rigorous testing and long-term stability needed to ensure both safety and efficacy. I wanted skincare that delivered real results and was simple enough to fit seamlessly into daily routines. Working out of my little treehouse kitchen, I blended marine botanicals and plant-based ingredients, putting a decade of home herbalism practice and my graduate degree in toxicology to work crafting formulas that reflected my vision.</p>",
+            "text": "<p>Frustrated by the lack of skincare that met my strict standards—effective, science-rooted, natural, ethical, sustainable, safe for sensitive skin, and versatile enough for everyday life—I decided to create my own. Many natural products lacked the rigorous testing and long-term stability needed to ensure both safety and efficacy. I wanted skincare that delivered real results and was simple enough to fit seamlessly into daily routines. Working out of my little treehouse kitchen, I blended marine botanicals and plant-based ingredients, putting a decade of home herbalism practice and my graduate degree in toxicology to work crafting formulas that reflected my vision.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -274,7 +274,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/8244d6665807c84ea6ae9f4daf65b5a3.png",
+        "image": "shopify:\/\/shop_images\/8244d6665807c84ea6ae9f4daf65b5a3.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -291,7 +291,7 @@
         "heading_KBAaBa": {
           "type": "heading",
           "settings": {
-            "title": "<p>Farmers’ Markets and Big Dreams</p>",
+            "title": "<p>Farmers’ Markets and Big Dreams<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -303,7 +303,7 @@
         "text_jbUHwr": {
           "type": "text",
           "settings": {
-            "text": "<p>Starting Earth Harbor was both exhilarating and daunting. With just $2,000 I had worked hard to save, no outside connections, and student loans still looming, I began selling my first products at local farmers’ markets. Those early days were a labor of love, built on determination and the belief that skincare should do more than feel good—it should make a real difference.</p>",
+            "text": "<p>Starting Earth Harbor was both exhilarating and daunting. With just $2,000 I had worked hard to save, no outside connections, and student loans still looming, I began selling my first products at local farmers’ markets. Those early days were a labor of love, built on determination and the belief that skincare should do more than feel good—it should make a real difference.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -325,7 +325,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/881a5259387512386be2d390ef6a90e5.png",
+        "image": "shopify:\/\/shop_images\/881a5259387512386be2d390ef6a90e5.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -342,7 +342,7 @@
         "heading_j3QQQX": {
           "type": "heading",
           "settings": {
-            "title": "<p>A Self-Funded Success Story</p>",
+            "title": "<p>A Self-Funded Success Story<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -354,7 +354,7 @@
         "text_UfnaKd": {
           "type": "text",
           "settings": {
-            "text": "<p>What started as a small dream has grown into something far greater than I ever imagined. Earth Harbor remains a completely self-funded and grassroots small family business, a testament to the fact that the world truly wanted what we had to offer: proven, plant-based skincare that’s ethical, joyful, and impactful—for both your skin and the planet.</p>",
+            "text": "<p>What started as a small dream has grown into something far greater than I ever imagined. Earth Harbor remains a completely self-funded and grassroots small family business, a testament to the fact that the world truly wanted what we had to offer: proven, plant-based skincare that’s ethical, joyful, and impactful—for both your skin and the planet.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -376,7 +376,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/a332cc7b6c66c21ef498decae12ca051.png",
+        "image": "shopify:\/\/shop_images\/a332cc7b6c66c21ef498decae12ca051.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -393,7 +393,7 @@
         "heading_aWxmHX": {
           "type": "heading",
           "settings": {
-            "title": "<p>A Journey Reflected in Every Product</p>",
+            "title": "<p>A Journey Reflected in Every Product<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -405,7 +405,7 @@
         "text_CeHWYB": {
           "type": "text",
           "settings": {
-            "text": "<p>Every Earth Harbor product reflects this journey—from my childhood curiosity to my scientific expertise, my love for the ocean, and my commitment to a better future for all.</p>",
+            "text": "<p>Every Earth Harbor product reflects this journey—from my childhood curiosity to my scientific expertise, my love for the ocean, and my commitment to a better future for all.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -414,13 +414,13 @@
         "signature_image_Px8Tbr": {
           "type": "signature-image",
           "settings": {
-            "signature_image": "shopify://shop_images/68ff83765232b12744acbdc32e4565d8.png"
+            "signature_image": "shopify:\/\/shop_images\/68ff83765232b12744acbdc32e4565d8.png"
           }
         },
         "subheading_KDXBVp": {
           "type": "subheading",
           "settings": {
-            "signature_image": "shopify://shop_images/68ff83765232b12744acbdc32e4565d8.png",
+            "signature_image": "shopify:\/\/shop_images\/68ff83765232b12744acbdc32e4565d8.png",
             "subheading": "Earth Harbor Founder + CEO",
             "size": 75,
             "text_position": "center",
@@ -445,7 +445,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_16.png",
+        "image": "shopify:\/\/shop_images\/Picture_16.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -462,7 +462,7 @@
         "heading_pLP7WJ": {
           "type": "heading",
           "settings": {
-            "text": "<p>Dive Deeper into Earth Harbor</p>",
+            "text": "<p>Dive Deeper into Earth Harbor<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -472,7 +472,7 @@
         "text_LXe6GU": {
           "type": "text",
           "settings": {
-            "text": "<p>Explore the values and expertise that shape us:</p>",
+            "text": "<p>Explore the values and expertise that shape us:<\/p>",
             "size": 100
           }
         }
@@ -498,55 +498,55 @@
         "image_QajQpr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA4.jpg",
+            "image": "shopify:\/\/shop_images\/CTA4.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/about",
+            "button_link": "shopify:\/\/pages\/about",
             "link_target_blank": false
           }
         },
         "image_Ki76Fe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA_1.png",
+            "image": "shopify:\/\/shop_images\/CTA_1.png",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/ingredient-philosophy",
+            "button_link": "shopify:\/\/pages\/ingredient-philosophy",
             "link_target_blank": false
           }
         },
         "image_cyfc7D": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA.jpg",
+            "image": "shopify:\/\/shop_images\/CTA.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/sustainability",
+            "button_link": "shopify:\/\/pages\/sustainability",
             "link_target_blank": false
           }
         },
         "image_zEEUkA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA-1.jpg",
+            "image": "shopify:\/\/shop_images\/CTA-1.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/ea-gives-back",
+            "button_link": "shopify:\/\/pages\/ea-gives-back",
             "link_target_blank": false
           }
         },
         "image_CEwXHf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA-2.jpg",
+            "image": "shopify:\/\/shop_images\/CTA-2.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/skincare-quiz-routine",
+            "button_link": "shopify:\/\/pages\/skincare-quiz-routine",
             "link_target_blank": false
           }
         }
@@ -584,7 +584,7 @@
         "heading_Jkdin4": {
           "type": "heading",
           "settings": {
-            "text": "<p>Shop Earth Harbor</p>",
+            "text": "<p>Shop Earth Harbor<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -594,7 +594,7 @@
         "text_hcqCnb": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover your new skincare favorites—pure, ocean-friendly, and radiant.<br/><br/></p>",
+            "text": "<p>Discover your new skincare favorites—pure, ocean-friendly, and radiant.<br\/><br\/><\/p>",
             "size": 100
           }
         },
@@ -602,7 +602,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/all",
+            "button_link": "shopify:\/\/collections\/all",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium"

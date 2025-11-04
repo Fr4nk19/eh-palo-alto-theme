@@ -24,9 +24,9 @@
       "type": "custom-free-gift-w-img",
       "name": "Free Gift with Image",
       "settings": {
-        "image": "shopify://shop_images/free-gift.webp",
-        "title": "Unlock Your <em>Free</em> Skincare Gem",
-        "subtitle": "<p>Sail away with your free full size treasure—simply cover $6.99 shipping.</p><p>But first, let us know where to send it…</p>"
+        "image": "shopify:\/\/shop_images\/free-gift.webp",
+        "title": "Unlock Your <em>Free<\/em> Skincare Gem",
+        "subtitle": "<p>Sail away with your free full size treasure—simply cover $6.99 shipping.<\/p><p>But first, let us know where to send it…<\/p>"
       }
     }
   },

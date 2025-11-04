@@ -24,8 +24,8 @@
       "type": "custom-freegift-form",
       "name": "Free Gift Form",
       "settings": {
-        "title": "Unlock Your <em>Free</em> Skincare Favorite",
-        "subtitle": "<p>We’ve set aside something special just for you.<br/> It’s 100% free—just pay $6.99 shipping.<br/><br/>But first, let us know where to send it…</p>"
+        "title": "Unlock Your <em>Free<\/em> Skincare Favorite",
+        "subtitle": "<p>We’ve set aside something special just for you.<br\/> It’s 100% free—just pay $6.99 shipping.<br\/><br\/>But first, let us know where to send it…<\/p>"
       }
     }
   },

@@ -26,14 +26,14 @@
         "subheading_VCmmkL": {
           "type": "subheading",
           "settings": {
-            "text": "<p>OFFERS</p>",
+            "text": "<p>OFFERS<\/p>",
             "size": 100
           }
         },
         "heading_wTxFFz": {
           "type": "heading",
           "settings": {
-            "text": "<p>Shop, Save, Repeat</p>",
+            "text": "<p>Shop, Save, Repeat<\/p>",
             "size": 180,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -43,7 +43,7 @@
         "text_LkYQKU": {
           "type": "text",
           "settings": {
-            "text": "<p>Get more back when you shop Earth Harbor.</p>",
+            "text": "<p>Get more back when you shop Earth Harbor.<\/p>",
             "size": 100
           }
         },
@@ -52,7 +52,7 @@
           "settings": {
             "stacked_button": false,
             "button_1_text": "SHOP ALL",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify:\/\/collections\/all",
             "button_1_color": "btn--primary",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--medium",
@@ -74,8 +74,8 @@
         "height": "seven-fifty-height",
         "enable_mobile_height": true,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/Offers_-_Hero.jpg",
-        "image_mobile": "shopify://shop_images/Offers-mobile_hero.jpg",
+        "image": "shopify:\/\/shop_images\/Offers_-_Hero.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Offers-mobile_hero.jpg",
         "overlay_opacity": 15,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
@@ -98,27 +98,27 @@
           "type": "text",
           "settings": {
             "icon_name": "truck",
-            "icon_image": "shopify://shop_images/Group.png",
+            "icon_image": "shopify:\/\/shop_images\/Group.png",
             "title": "Mermaid Rewards",
-            "text": "<p>Earn points every time you shop<br/><br/></p>"
+            "text": "<p>Earn points every time you shop<br\/><br\/><\/p>"
           }
         },
         "text_REthhA": {
           "type": "text",
           "settings": {
             "icon_name": "check",
-            "icon_image": "shopify://shop_images/ph_seal-check-thin_1.png",
+            "icon_image": "shopify:\/\/shop_images\/ph_seal-check-thin_1.png",
             "title": "Subscribe & Save",
-            "text": "<p>Get 10% off & never run out of your faves</p>"
+            "text": "<p>Get 10% off & never run out of your faves<\/p>"
           }
         },
         "text_awM8Cm": {
           "type": "text",
           "settings": {
             "icon_name": "eco-friendly",
-            "icon_image": "shopify://shop_images/material-symbols-light_box-outline-sharp.png",
+            "icon_image": "shopify:\/\/shop_images\/material-symbols-light_box-outline-sharp.png",
             "title": "Free Shipping",
-            "text": "<p>Orders $50+ and all Subscribe & Save orders</p>"
+            "text": "<p>Orders $50+ and all Subscribe & Save orders<\/p>"
           }
         }
       },
@@ -162,13 +162,13 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/offers_section.jpg",
+            "image": "shopify:\/\/shop_images\/offers_section.jpg",
             "title": "Save 25% when you build a set",
             "heading_size": 120,
             "text": "",
             "text_size": 100,
             "button_text": "SHOP NOW",
-            "button_link": "https://earthharbor.com/a/bundles/build-your-own-bundle-5by5",
+            "button_link": "https:\/\/earthharbor.com\/a\/bundles\/build-your-own-bundle-5by5",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium",
@@ -180,7 +180,7 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Picture_29.png",
+            "image": "shopify:\/\/shop_images\/Picture_29.png",
             "title": "Save 10% off all subscription orders",
             "heading_size": 120,
             "text": "",
@@ -198,7 +198,7 @@
           "type": "text_block",
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/Picture_30.png",
+            "image": "shopify:\/\/shop_images\/Picture_30.png",
             "title": "Free deluxe gift orders $80+",
             "heading_size": 120,
             "text": "",
@@ -221,7 +221,7 @@
       "settings": {
         "custom_class": "offer-on-now-sec",
         "title": "Offers on Now",
-        "sub_heading": "<p>Don't miss out on our latest savings.</p>",
+        "sub_heading": "<p>Don't miss out on our latest savings.<\/p>",
         "heading_size": 120,
         "align_text": "text-center",
         "columns": 3,
@@ -246,7 +246,7 @@
         "heading_zfTUGX": {
           "type": "heading",
           "settings": {
-            "text": "<p>Save on Sets</p>",
+            "text": "<p>Save on Sets<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -256,7 +256,7 @@
         "text_g3ai8h": {
           "type": "text",
           "settings": {
-            "text": "<p>The best products at the best prices.</p>",
+            "text": "<p>The best products at the best prices.<\/p>",
             "size": 100
           }
         },
@@ -264,7 +264,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP SETS",
-            "button_link": "https://earthharbor.com/pages/sets",
+            "button_link": "https:\/\/earthharbor.com\/pages\/sets",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -293,10 +293,10 @@
         "promo_EYXd6R": {
           "type": "promo",
           "settings": {
-            "image": "shopify://shop_images/96b85e578acad2b94feb1117dadd6e59abef6912.jpg",
+            "image": "shopify:\/\/shop_images\/96b85e578acad2b94feb1117dadd6e59abef6912.jpg",
             "position": 1,
             "width": "auto",
-            "title": "<p>Real results</p>",
+            "title": "<p>Real results<\/p>",
             "heading_size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -309,7 +309,7 @@
             "overlay_opacity": 10,
             "bg_color": "#d3d3d3",
             "button_text": "SHOP ALL",
-            "button_link": "https://earthharbor.com/pages/sets",
+            "button_link": "https:\/\/earthharbor.com\/pages\/sets",
             "button_color": "btn--white",
             "button_style": "btn--solid",
             "button_size": "btn--medium"
@@ -353,7 +353,7 @@
           "type": "image",
           "settings": {
             "width": "50",
-            "image": "shopify://shop_images/image-card-discount.png",
+            "image": "shopify:\/\/shop_images\/image-card-discount.png",
             "custom_link": "",
             "custom_btn_text1": "",
             "overlay_opacity": 10,
@@ -362,7 +362,7 @@
             "title": "Get $15 off your first order",
             "text": "Your skin will thank you.",
             "button_1_text": "Let's Text",
-            "button_1_link": "https://ctrk.klclick.com/l/01K7FJ5CATW7YPXM4PB7JE4E5Z_3",
+            "button_1_link": "https:\/\/ctrk.klclick.com\/l\/01K7FJ5CATW7YPXM4PB7JE4E5Z_3",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-dark"
@@ -372,7 +372,7 @@
           "type": "image",
           "settings": {
             "width": "50",
-            "image": "shopify://shop_images/7991e68448364f5b24e609e4ae5bd5e5473e3024.jpg",
+            "image": "shopify:\/\/shop_images\/7991e68448364f5b24e609e4ae5bd5e5473e3024.jpg",
             "custom_link": "",
             "custom_btn_text1": "",
             "overlay_opacity": 10,
@@ -381,7 +381,7 @@
             "title": "10% off with subscription",
             "text": "Never run out of your favorites.",
             "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify:\/\/collections\/all",
             "button_2_text": "",
             "button_2_link": "",
             "overlay_text_color": "text-dark"
@@ -422,14 +422,14 @@
         "subheading_wLAK7p": {
           "type": "subheading",
           "settings": {
-            "text": "<p>rewards</p>",
+            "text": "<p>rewards<\/p>",
             "size": 100
           }
         },
         "heading_EEeWzQ": {
           "type": "heading",
           "settings": {
-            "text": "<p>Mermaid Rewards</p>",
+            "text": "<p>Mermaid Rewards<\/p>",
             "size": 180,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -439,7 +439,7 @@
         "text_b3YJtG": {
           "type": "text",
           "settings": {
-            "text": "<p>Earn points for every dollar you spend.</p>",
+            "text": "<p>Earn points for every dollar you spend.<\/p>",
             "size": 100
           }
         },
@@ -448,12 +448,12 @@
           "settings": {
             "stacked_button": true,
             "button_1_text": "GET REWARDS",
-            "button_1_link": "shopify://pages/rewards-1",
+            "button_1_link": "shopify:\/\/pages\/rewards-1",
             "button_1_color": "btn--black",
             "button_1_style": "btn--solid",
             "button_1_size": "btn--small",
             "button_2_text": "Already a member? Sign in",
-            "button_2_link": "https://earthharbor.com/account/login",
+            "button_2_link": "https:\/\/earthharbor.com\/account\/login",
             "button_2_color": "btn--black",
             "button_2_style": "btn--text",
             "button_2_size": "btn--small"
@@ -473,7 +473,7 @@
         "height": "six-fifty-height",
         "enable_mobile_height": true,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/e3adf6c636c97deb210bc41338c8784f0f01379f.jpg",
+        "image": "shopify:\/\/shop_images\/e3adf6c636c97deb210bc41338c8784f0f01379f.jpg",
         "overlay_opacity": 30,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
@@ -504,7 +504,7 @@
         "heading_PQMPR3": {
           "type": "heading",
           "settings": {
-            "title": "<p>Get 5<strong>%</strong> Off Refills +</p><p>Plastic-Free</p>",
+            "title": "<p>Get 5<strong>%<\/strong> Off Refills +<\/p><p>Plastic-Free<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -516,7 +516,7 @@
         "text_wh7dgj": {
           "type": "text",
           "settings": {
-            "text": "<p>Save money and love the planet.</p>",
+            "text": "<p>Save money and love the planet.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -526,7 +526,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP REFILLS",
-            "button_link": "https://earthharbor.com/collections/refills-plastic-free",
+            "button_link": "https:\/\/earthharbor.com\/collections\/refills-plastic-free",
             "button_color": "btn--black",
             "button_style": "btn--solid",
             "button_size": "btn--small",
@@ -552,7 +552,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_31.png",
+        "image": "shopify:\/\/shop_images\/Picture_31.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",

@@ -1262,7 +1262,7 @@
                       assign items_on_row_remaining = columns
                     -%}
 
-                    {%- for product in collection.products -%}{%- for promo in promos_array -%}
+                    {%- for product in collection.products -%}{% comment %}EasylockdownFilterBegin{% endcomment %}{% capture easylockdownFilter %}{% render 'easylockdown_filter_collection' with product, easylockdownRender: true, easylockdownItemSelectorOff: easylockdownItemSelectorOff %}{% endcapture %}{% assign easylockdownFilter = easylockdownFilter | strip %}{% if easylockdownFilter == 'continue' %}{% continue %}{% else %}{{ easylockdownFilter }}{% endif %}{% comment %}EasylockdownFilterEnd{% endcomment %}{%- for promo in promos_array -%}
   {%- liquid
     if promo == ''
       continue

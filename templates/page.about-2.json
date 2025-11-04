@@ -24,7 +24,7 @@
         "heading_LdmpYw": {
           "type": "heading",
           "settings": {
-            "title": "<p>Where Ocean Meets Earth, Science Meets Nature</p>",
+            "title": "<p>Where Ocean Meets Earth, Science Meets Nature<\/p>",
             "size": 130,
             "text_position": "center",
             "heading_highlight_type": "circle",
@@ -36,7 +36,7 @@
         "text_kjEQ4x": {
           "type": "text",
           "settings": {
-            "text": "<p>At Earth Harbor, we believe great skincare shouldn’t just work—it should make a difference. As the only skincare brand founded by a toxicologist, we combine my science-backed expertise with the transformative power of ocean and earth. Every product is artisan-crafted in-house, using clinically effective Ocean + Earth Actives and 100% nature-identical ingredients, so you get real results that are kind to your skin and the planet.</p><p>Ocean Blessings,</p>",
+            "text": "<p>At Earth Harbor, we believe great skincare shouldn’t just work—it should make a difference. As the only skincare brand founded by a toxicologist, we combine my science-backed expertise with the transformative power of ocean and earth. Every product is artisan-crafted in-house, using clinically effective Ocean + Earth Actives and 100% nature-identical ingredients, so you get real results that are kind to your skin and the planet.<\/p><p>Ocean Blessings,<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -45,7 +45,7 @@
         "signature_image_nXL8C7": {
           "type": "signature-image",
           "settings": {
-            "signature_image": "shopify://shop_images/68ff83765232b12744acbdc32e4565d8.png"
+            "signature_image": "shopify:\/\/shop_images\/68ff83765232b12744acbdc32e4565d8.png"
           }
         },
         "subheading_pnCL93": {
@@ -82,7 +82,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_17.png",
+        "image": "shopify:\/\/shop_images\/Picture_17.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -100,54 +100,54 @@
           "type": "text",
           "settings": {
             "icon_name": "leaf",
-            "icon_image": "shopify://shop_images/Earth_Harbor_Leaf_Icon_60dccd9b-8ab1-4ec8-ad27-e843abac8b40.svg",
+            "icon_image": "shopify:\/\/shop_images\/Earth_Harbor_Leaf_Icon_60dccd9b-8ab1-4ec8-ad27-e843abac8b40.svg",
             "title": "Clinically Effective Ocean + Earth Actives",
-            "text": "<p>Powered by marine botanicals and 100% nature-identical ingredients for transformative results you can trust.</p>"
+            "text": "<p>Powered by marine botanicals and 100% nature-identical ingredients for transformative results you can trust.<\/p>"
           }
         },
         "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-1": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Earth_Harbor_Eco_Lab_Icon_3d192766-e917-4de2-90c6-76ea14069dd0.svg",
+            "icon_image": "shopify:\/\/shop_images\/Earth_Harbor_Eco_Lab_Icon_3d192766-e917-4de2-90c6-76ea14069dd0.svg",
             "title": "Artisan-Crafted In-House",
-            "text": "<p>Every product is created in our certified lab with precision and authenticity, ensuring unmatched quality.</p>"
+            "text": "<p>Every product is created in our certified lab with precision and authenticity, ensuring unmatched quality.<\/p>"
           }
         },
         "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-2": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Earth_Harbor_Droplet_Icon_b716ba7e-0a3f-489c-a94e-c0fd96bc8855.svg",
+            "icon_image": "shopify:\/\/shop_images\/Earth_Harbor_Droplet_Icon_b716ba7e-0a3f-489c-a94e-c0fd96bc8855.svg",
             "title": "Founded by a Toxicologist",
-            "text": "<p>The only skincare brand led by a toxicologist, bringing unparalleled expertise and scientific rigor to every formula.</p>"
+            "text": "<p>The only skincare brand led by a toxicologist, bringing unparalleled expertise and scientific rigor to every formula.<\/p>"
           }
         },
         "text_6QMGGi": {
           "type": "text",
           "settings": {
             "icon_name": "check",
-            "icon_image": "shopify://shop_images/Earth_Harbor_Check_Icon_55b27ec4-76a0-434f-90af-7f21e34632cb.svg",
+            "icon_image": "shopify:\/\/shop_images\/Earth_Harbor_Check_Icon_55b27ec4-76a0-434f-90af-7f21e34632cb.svg",
             "title": "Sensitive Skin Safe + Dermatologist Tested",
-            "text": "<p>Thoughtfully formulated to meet the highest standards of gentleness, safety, and effectiveness for all skin types.</p>"
+            "text": "<p>Thoughtfully formulated to meet the highest standards of gentleness, safety, and effectiveness for all skin types.<\/p>"
           }
         },
         "text_pgXkgW": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Earth_Harbor_Vegan_Icon_b6d3d89f-6a2c-460d-be9f-eeb6cae69d34.svg",
+            "icon_image": "shopify:\/\/shop_images\/Earth_Harbor_Vegan_Icon_b6d3d89f-6a2c-460d-be9f-eeb6cae69d34.svg",
             "title": "Beyond Clean Beauty",
-            "text": "<p>We redefine natural skincare with globally recognized formulations that exceed the strictest clean beauty standards.</p>"
+            "text": "<p>We redefine natural skincare with globally recognized formulations that exceed the strictest clean beauty standards.<\/p>"
           }
         },
         "text_PnGwj7": {
           "type": "text",
           "settings": {
             "icon_name": "flower",
-            "icon_image": "shopify://shop_images/Earth_Harbor_Flower_Icon_65c486d0-a86c-4476-a964-249dc8bf003a.svg",
+            "icon_image": "shopify:\/\/shop_images\/Earth_Harbor_Flower_Icon_65c486d0-a86c-4476-a964-249dc8bf003a.svg",
             "title": "Authentically Down-to-Earth",
-            "text": "<p>Real skincare for real people, blending simplicity, joy, and proven results into every product.</p>"
+            "text": "<p>Real skincare for real people, blending simplicity, joy, and proven results into every product.<\/p>"
           }
         }
       },
@@ -208,18 +208,18 @@
         "text_alignment": "left",
         "images_width": 750,
         "images_offset": 60,
-        "image_1": "shopify://shop_images/Picture_18.png",
+        "image_1": "shopify:\/\/shop_images\/Picture_18.png",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/Picture_19.png",
+        "image_2": "shopify:\/\/shop_images\/Picture_19.png",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Built with Care, Crafted with Purpose</p>",
+        "title": "<p>Built with Care, Crafted with Purpose<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "description": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Rooted in grassroots values and a commitment to serious sustainability, Earth Harbor is skincare you can trust and feel good about every day.</p>",
+        "description": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Rooted in grassroots values and a commitment to serious sustainability, Earth Harbor is skincare you can trust and feel good about every day.<\/p>",
         "text_size": 100,
         "button_text": "",
         "button_link": "",
@@ -245,7 +245,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/1ftp_EnvironmentalPartner_Horizontal_Black_1.png",
+            "press_logo": "shopify:\/\/shop_images\/1ftp_EnvironmentalPartner_Horizontal_Black_1.png",
             "logo_width": 150
           }
         },
@@ -254,7 +254,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/Screenshot_27_1.png",
+            "press_logo": "shopify:\/\/shop_images\/Screenshot_27_1.png",
             "logo_width": 150
           }
         },
@@ -263,7 +263,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/climate-neutral-logo-brandlogos.net_t5avaql7k_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/climate-neutral-logo-brandlogos.net_t5avaql7k_1_1.png",
             "logo_width": 150
           }
         },
@@ -272,7 +272,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/plastic_neutral_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/plastic_neutral_1_1.png",
             "logo_width": 150
           }
         },
@@ -281,7 +281,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/pngwing.com-1_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/pngwing.com-1_1_1.png",
             "logo_width": 150
           }
         },
@@ -290,7 +290,7 @@
           "settings": {
             "text": "",
             "link": "",
-            "press_logo": "shopify://shop_images/PACT_LOGO-01_1_1.png",
+            "press_logo": "shopify:\/\/shop_images\/PACT_LOGO-01_1_1.png",
             "logo_width": 150
           }
         }
@@ -328,7 +328,7 @@
         "heading_QrgPMR": {
           "type": "heading",
           "settings": {
-            "text": "<p>Dive Deeper into Earth Harbor</p>",
+            "text": "<p>Dive Deeper into Earth Harbor<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -338,7 +338,7 @@
         "text_NwQdcQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Explore the values and expertise that shape us:</p>",
+            "text": "<p>Explore the values and expertise that shape us:<\/p>",
             "size": 100
           }
         }
@@ -370,7 +370,7 @@
           "disabled": true,
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/CTA.png",
+            "image": "shopify:\/\/shop_images\/CTA.png",
             "title": "",
             "heading_size": 120,
             "text": "",
@@ -389,7 +389,7 @@
           "disabled": true,
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/CTA_1.png",
+            "image": "shopify:\/\/shop_images\/CTA_1.png",
             "title": "",
             "heading_size": 120,
             "text": "",
@@ -408,7 +408,7 @@
           "disabled": true,
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/CTA_2.png",
+            "image": "shopify:\/\/shop_images\/CTA_2.png",
             "title": "",
             "heading_size": 120,
             "text": "",
@@ -427,7 +427,7 @@
           "disabled": true,
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/CTA_3.png",
+            "image": "shopify:\/\/shop_images\/CTA_3.png",
             "title": "",
             "heading_size": 120,
             "text": "",
@@ -446,7 +446,7 @@
           "disabled": true,
           "settings": {
             "gclass": "",
-            "image": "shopify://shop_images/CTA_4.png",
+            "image": "shopify:\/\/shop_images\/CTA_4.png",
             "title": "",
             "heading_size": 120,
             "text": "",
@@ -500,55 +500,55 @@
         "image_649cmj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA.png",
+            "image": "shopify:\/\/shop_images\/CTA.png",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/our-story",
+            "button_link": "shopify:\/\/pages\/our-story",
             "link_target_blank": false
           }
         },
         "image_47TTHH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA_1.png",
+            "image": "shopify:\/\/shop_images\/CTA_1.png",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/ingredient-philosophy",
+            "button_link": "shopify:\/\/pages\/ingredient-philosophy",
             "link_target_blank": false
           }
         },
         "image_QKfrqt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA.jpg",
+            "image": "shopify:\/\/shop_images\/CTA.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/sustainability",
+            "button_link": "shopify:\/\/pages\/sustainability",
             "link_target_blank": false
           }
         },
         "image_KNGzAj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA-1.jpg",
+            "image": "shopify:\/\/shop_images\/CTA-1.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/ea-gives-back",
+            "button_link": "shopify:\/\/pages\/ea-gives-back",
             "link_target_blank": false
           }
         },
         "image_xzrcEH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CTA-2.jpg",
+            "image": "shopify:\/\/shop_images\/CTA-2.jpg",
             "text": "",
             "text_size": 75,
             "button_text": "",
-            "button_link": "shopify://pages/skincare-quiz-routine",
+            "button_link": "shopify:\/\/pages\/skincare-quiz-routine",
             "link_target_blank": false
           }
         }
@@ -586,7 +586,7 @@
         "heading_X3GxRK": {
           "type": "heading",
           "settings": {
-            "text": "<p>Welcome to Your Skin’s Paradise</p>",
+            "text": "<p>Welcome to Your Skin’s Paradise<\/p>",
             "size": 135,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -596,7 +596,7 @@
         "text_F3aYFT": {
           "type": "text",
           "settings": {
-            "text": "<p>Where science meets nature and results speak for themselves. Crafted with the ocean’s power and the earth’s wisdom, our products are self-care gems—designed to nurture your skin and protect the planet, every day.</p>",
+            "text": "<p>Where science meets nature and results speak for themselves. Crafted with the ocean’s power and the earth’s wisdom, our products are self-care gems—designed to nurture your skin and protect the planet, every day.<\/p>",
             "size": 100
           }
         },
@@ -605,7 +605,7 @@
           "settings": {
             "stacked_button": false,
             "button_1_text": "Shop All",
-            "button_1_link": "shopify://collections/all",
+            "button_1_link": "shopify:\/\/collections\/all",
             "button_1_color": "btn--white",
             "button_1_style": "btn--solid-border",
             "button_1_size": "btn--medium",
@@ -627,7 +627,7 @@
         "height": "original-height",
         "enable_mobile_height": false,
         "mobile_height": "four-fifty-height-mobile",
-        "image": "shopify://shop_images/welcome2.jpg",
+        "image": "shopify:\/\/shop_images\/welcome2.jpg",
         "overlay_opacity": 10,
         "transition": "zoom-out",
         "enable_zoom_animation": true,
@@ -649,7 +649,7 @@
         "heading_mh6CUk": {
           "type": "heading",
           "settings": {
-            "text": "<p>Welcome to Your Skin’s Paradise</p>",
+            "text": "<p>Welcome to Your Skin’s Paradise<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -659,7 +659,7 @@
         "text_bYcTtn": {
           "type": "text",
           "settings": {
-            "text": "<p>Where science meets nature and results speak for themselves. Crafted with the ocean’s power and the earth’s wisdom, our products are self-care gems—designed to nurture your skin and protect the planet, every day.</p>",
+            "text": "<p>Where science meets nature and results speak for themselves. Crafted with the ocean’s power and the earth’s wisdom, our products are self-care gems—designed to nurture your skin and protect the planet, every day.<\/p>",
             "size": 100
           }
         }
@@ -690,10 +690,10 @@
         "promo_dydwaY": {
           "type": "promo",
           "settings": {
-            "image": "shopify://shop_images/15e11f45d63edb30d902320d01d10133.png",
+            "image": "shopify:\/\/shop_images\/15e11f45d63edb30d902320d01d10133.png",
             "position": 1,
             "width": "auto",
-            "title": "<p>Real results</p>",
+            "title": "<p>Real results<\/p>",
             "heading_size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -730,12 +730,12 @@
         "products_per_row_on_desktop": 4,
         "columns_mobile": "2",
         "text_alignment": "text-left",
-        "title": "<p>Shop Now</p>",
+        "title": "<p>Shop Now<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "text": "<p>Our most-loved gems.</p>",
+        "text": "<p>Our most-loved gems.<\/p>",
         "text_size": 100,
         "button_position": "top",
         "button_text": "",

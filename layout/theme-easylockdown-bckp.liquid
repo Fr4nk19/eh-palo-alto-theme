@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js no-touch page-loading" lang="{{ request.locale.iso_code }}">
-<head>
-{% comment %}ElHeadStart{% endcomment %}{% unless request.design_mode %}{% comment %}EasylockdownHeadBegin{% endcomment %}{% capture elhRender %}{% render 'easylockdown_head', easylockdownRender: true, easylockdownOnlySpecialPriceSelector: easylockdownOnlySpecialPriceSelector, easylockdownCustomPriceSelector: easylockdownCustomPriceSelector %}{% endcapture %}{% assign elhRender = elhRender | split: '--elhResults--'%}{{ elhRender[0] }}{% comment %}EasylockdownHeadEnd{% endcomment %}{% endunless %}{% comment %}ElHeadEnd{% endcomment %}<meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 <link rel="canonical" href="{{ canonical_url }}">
@@ -232,9 +231,9 @@
 {%- endif -%}
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 <script src="{{ 'theme-custom.js' | asset_url }}" defer="defer"></script>
-{% comment %} <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+<script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 
 {%- if request.design_mode -%}
@@ -276,7 +275,7 @@ template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
   {% sections 'group-overlay' %}
 
   <main id="MainContent" class="main-content" data-main>
-    {% comment %}ElBodyStart{% endcomment %}{% unless request.design_mode %}{% comment %}{{ content_for_layout }}{% endcomment %}{% render 'easylockdown_body', content_for_layout: content_for_layout, elhDefines: elhRender[1] %}{% else %} {{ content_for_layout }} {% endunless %}{% comment %}ElBodyEnd{% endcomment %}
+    {{ content_for_layout }}
   </main>
   <div class="custom-ingredients_popup">
     {% render 'ingredients_popup' %}

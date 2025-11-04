@@ -3692,3 +3692,11 @@ div[data-buy-it-now] {
     grid-template-columns: 1fr 1fr !important;
   }
 }
+
+
+/*** Press slider dots ***/
+
+.press .flickity-page-dots {
+  display: flex;
+  justify-content: center;
+}

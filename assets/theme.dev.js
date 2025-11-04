@@ -7946,7 +7946,7 @@
 
     let sections$B = {};
 
-    class ProductAddForm {3
+    class ProductAddForm {
       constructor(container) {
         this.container = container;
         this.product = this.container.querySelector(selectors$U.product);
@@ -8112,7 +8112,6 @@
         this.productForm.element.setAttribute(attributes$E.variantTitle, titleText);
       }
 
-      //Atc button price and text
       updateAddToCartState(formState) {
         const variant = formState.variant;
         const priceWrapper = this.container.querySelectorAll(selectors$U.priceWrapper);
@@ -8313,7 +8312,6 @@
         }
       }
 
-      //Cart bar
       checkLiveCartInfo(formState) {
         const state = formState ? formState : this.productForm.getFormState();
         const variant = state.variant;
@@ -8463,7 +8461,6 @@
         }
       }
 
-      //price
       updateProductPrices(formState) {
         const variant = formState.variant;
         const plan = formState.plan;
@@ -9817,10 +9814,6 @@
       flickityEnabled: '.flickity-enabled',
       noscript: 'noscript',
       qtySelect: '[data-quantity-select]',
-      qtyMessage:'[data-qty-message]',
-      qtyMessageDefault: '[data-qty-message-default]',
-      qtyProgress: '[data-qty-progress]',
-      leftToAdd: '[data-left-to-add]',
     };
 
     const classes$I = {
@@ -9877,16 +9870,9 @@
         }
 
         this.init();
-        // window.__cart = this;
-        // console.info('[CartDrawer] instancia disponible en window.__cart');
-
-        try { globalThis.__cart = this; } catch (e) { window.__cart = this; }
-        console.info('[CartDrawer] instancia disponible en __cart');
       }
 
       init() {
-        this.updateQtyProgress = this.updateQtyProgress.bind(this);
-        this.getWholesaleEligibleItemCount = this.getWholesaleEligibleItemCount.bind(this);
         // DOM Elements
         this.cartToggleButtons = document.querySelectorAll(selectors$Q.cartDrawerToggle);
         this.cartPage = document.querySelector(selectors$Q.cartPage);
@@ -9953,132 +9939,8 @@
           this.renderPairProducts();
         }
 
-        // Wholesale qty message
-        this.hydrateQtyMessage();
-        // this.bindQtyHandlers();
-        this.setupQtyObserver()
-
-        const delegateOn = this.cartDrawerBody || this.cartPage || document;
-
-        // Cuando el number input emite 'input' (se dispara al clickear +/-)
-        delegateOn.addEventListener('input', (e) => {
-          if (!e.target.matches(selectors$Q.qtyInput)) return;
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-
-        // Ya si quieres dejar también 'change' está bien:
-        delegateOn.addEventListener('change', (e) => {
-          if (!e.target.matches(selectors$Q.qtyInput)) return;
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-
-
         document.addEventListener('theme:popup:open', this.closeCartDrawer);
       }
-
-      hydrateQtyMessage() {
-        this.cartQtyMessage = document.querySelectorAll(selectors$Q.qtyMessage);
-        this.cartWholesaleQtyLimit = this.cartQtyMessage.length
-          ? parseInt(this.cartQtyMessage[0].getAttribute('data-qty-limit') || '0', 10)
-          : 0;
-      }
-
-      setupQtyObserver() {
-        if (this.qtyObserver) this.qtyObserver.disconnect();
-        if (!this.itemsHolder) return;
-      
-        this.qtyObserver = new MutationObserver(() => {
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-      
-        this.qtyObserver.observe(this.itemsHolder, {
-          childList: true,
-          subtree: true,
-          attributes: true,
-          attributeFilter: ['value'], // 👈 detecta cambios de value en inputs
-        });
-      }
-      
-
-      getWholesaleEligibleItemCount() {
-        if (!this.cart) return 0;
-        // const root = this.cart || this.itemsHolder || document;
-        // const inputs = Array.from(root.querySelectorAll(selectors$Q.qtyInput));
-        const inputs = Array.from(this.cart.querySelectorAll(selectors$Q.qtyInput));
-        return inputs.reduce((total, input) => {
-          const itemEl =
-            input.closest(selectors$Q.item) ||
-            input.closest('[data-cart-item]') ||
-            input.closest('.cart-item');
-      
-          const isExcluded =
-            (itemEl && itemEl.getAttribute('data-wholesale-excluded') === 'true') ||
-            (input.getAttribute && input.getAttribute('data-wholesale-excluded') === 'true');
-      
-          let qty = parseInt(input.value || input.getAttribute('value') || '0', 10);
-          if (isNaN(qty)) qty = 0;
-      
-          return isExcluded ? total : total + qty;
-        }, 0);
-      }
-      
-      debugger;
-      updateQtyProgress() {
-        debugger;
-        if (!this.cartQtyMessage || !this.cartQtyMessage.length) return;
-      
-        const limit = parseInt(this.cartWholesaleQtyLimit || 0, 10);
-        const eligible = this.getWholesaleEligibleItemCount();   // 👈 ahora usamos el nuevo conteo
-        const left = Math.max(limit - eligible, 0);
-        const percent = limit > 0 ? Math.min((eligible / limit) * 100, 100) : 0;
-      
-        this.cartQtyMessage.forEach((message) => {
-          const defaultEl = message.querySelector(selectors$Q.qtyMessageDefault);
-          const bars = message.querySelectorAll(selectors$Q.qtyProgress);
-      
-          // Escribe el número en TODOS los spans posibles
-          message.querySelectorAll(selectors$Q.leftToAdd).forEach((n) => (n.textContent = left));
-        });
-      
-        // Fallback global por si el span está fuera del bloque
-        document.querySelectorAll(selectors$Q.leftToAdd).forEach((n) => (n.textContent = left));
-      
-        this.cartQtyMessage.forEach((message) => {
-          const defaultEl = message.querySelector(selectors$Q.qtyMessageDefault);
-          const bars = message.querySelectorAll(selectors$Q.qtyProgress);
-      
-          message.classList.toggle(classes$I.success, eligible >= limit);
-          if (defaultEl) defaultEl.classList.toggle(classes$I.isHidden, eligible >= limit);
-      
-          bars.forEach((bar, i) => {
-            bar.classList.toggle(classes$I.isHidden, limit > 0 && eligible >= limit);
-            bar.style.setProperty('--progress-width', `${percent}%`);
-            if (i === 0) bar.setAttribute(attributes$A.value, percent);
-          });
-        });
-      }
-      
-      
-      bindQtyHandlers() {
-        // Delegación para cambios en qty (inputs y botones +/- si existen)
-        const delegateOn = this.cartDrawerBody || this.cartPage || document;
-      
-        delegateOn.addEventListener('change', (e) => {
-          if (!e.target.matches(selectors$Q.qtyInput)) return;
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-      
-        delegateOn.addEventListener('click', (e) => {
-          const btn = e.target.closest('[data-quantity-button]');
-          if (!btn) return;
-          setTimeout(() => this.updateQtyProgress(), 0);
-        });
-      
-        // Si tu tema emite eventos personalizados:
-        document.addEventListener('theme:cart:change', () => this.updateQtyProgress());
-        document.addEventListener('theme:cart:updated', () => this.updateQtyProgress());
-      }
-      
 
       /**
        * Assign cart constructor arguments on page load or after cart drawer is loaded
@@ -10093,7 +9955,6 @@
         this.buttonHolder = document.querySelector(selectors$Q.buttonHolder);
         this.itemsHolder = document.querySelector(selectors$Q.itemsHolder);
         this.cartItemsQty = document.querySelector(selectors$Q.cartItemsQty);
-        this.cartWholesaleQty = document.querySelector(selectors$Q.leftToAdd);
         this.itemsWrapper = document.querySelector(selectors$Q.itemsWrapper);
         this.items = document.querySelectorAll(selectors$Q.item);
         this.cartTotal = document.querySelector(selectors$Q.cartTotal);
@@ -10138,9 +9999,6 @@
         this.items?.forEach((item) => {
           this.cartUpdateEvent(item);
         });
-        if (this.cartQtyMessage && this.cartQtyMessage.length > 0) {
-          this.updateQtyProgress();
-        }
       }
 
       /**
@@ -10159,7 +10017,6 @@
             item
           );
         });
-        updateQtyProgress()
       }
 
       /**
@@ -10740,10 +10597,6 @@
         // Bind cart update event
         this.initCartUpdate();
 
-        this.hydrateQtyMessage();
-        this.setupQtyObserver();   
-        requestAnimationFrame(() => this.updateQtyProgress());
-
         // Bind cart events
         this.cartEvents();
 
@@ -11015,16 +10868,6 @@
           this.updateProgress();
         }
 
-        this.hydrateQtyMessage();
-        // requestAnimationFrame(() => this.updateQtyProgress());
-        requestAnimationFrame(() => {
-          this.updateQtyProgress();      // 1er tick (cuando el DOM ya pintó)
-          setTimeout(() => this.updateQtyProgress(), 0); // 2do micro-tick por si qty/value llega tarde
-        });
-        // if (this.cartQtyMessage && this.cartQtyMessage.length > 0) {
-          
-        // }
-
         this.cartToggleButtons.forEach((button) => {
           button.classList.remove(classes$I.cartItems);
 
@@ -11089,8 +10932,6 @@
         if (!this.cart) return 0;
         return Array.from(this.cart.querySelectorAll(selectors$Q.qtyInput)).reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
       }
-
-      
 
       /**
        * Check for items in the cart
@@ -11212,33 +11053,6 @@
         if (this.cartItemsQty) {
           this.cartItemsQty.textContent = itemsQty === 1 ? `${itemsQty} ${oneItemText}` : `${itemsQty} ${manyItemsText}`;
         }
-
-        const limit = parseInt(this.cartWholesaleQtyLimit || 0, 10);
-        if (limit > 0) {
-          const eligible = this.getWholesaleEligibleItemCount();
-          const left = Math.max(limit - eligible, 0);
-          const percent = Math.min((eligible / limit) * 100, 100);
-
-          // 1) Número en el/los spans
-          document.querySelectorAll(selectors$Q.leftToAdd).forEach((node) => {
-            node.textContent = left;
-          });
-
-          // 2) Estado del mensaje (default/success) dentro de cada bloque de qty
-          document.querySelectorAll(selectors$Q.qtyMessage).forEach((message) => {
-            const defaultEl = message.querySelector(selectors$Q.qtyMessageDefault);
-            message.classList.toggle(classes$I.success, eligible >= limit);
-            if (defaultEl) defaultEl.classList.toggle(classes$I.isHidden, eligible >= limit);
-          });
-
-          // 3) Progreso visual (si lo usas)
-          document.querySelectorAll(selectors$Q.qtyProgress).forEach((bar, i) => {
-            bar.classList.toggle(classes$I.isHidden, eligible >= limit);
-            bar.style.setProperty('--progress-width', `${percent}%`);
-            if (i === 0) bar.setAttribute(attributes$A.value, percent);
-          });
-        }
-        // 🔼🔼🔼 FIN NUEVO
       }
 
       observeAdditionalCheckoutButtons() {
@@ -15905,7 +15719,7 @@
 
         if (this.flkty[sliderId] === undefined || !this.flkty[sliderId].isActive) {
           this.flkty[sliderId] = new Flickity(slider, {
-            pageDots: false,
+            pageDots: true,
             cellSelector: selectors$r.sliderItem,
             cellAlign: 'left',
             groupCells: true,

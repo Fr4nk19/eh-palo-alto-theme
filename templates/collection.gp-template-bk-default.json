@@ -57,7 +57,7 @@
         "heading_bnkxMJ": {
           "type": "heading",
           "settings": {
-            "text": "<p>{{ collection.title }}</p>",
+            "text": "<p>{{ collection.title }}<\/p>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -94,7 +94,7 @@
         "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "<p>{{ collection.title }}</p>",
+            "text": "<p>{{ collection.title }}<\/p>",
             "size": 100,
             "heading_highlight_type": "italics",
             "highlight_color": "#d43747",
@@ -140,10 +140,10 @@
           "type": "promo",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/Picture_27.png",
+            "image": "shopify:\/\/shop_images\/Picture_27.png",
             "position": 5,
             "width": "half",
-            "title": "<p>Shop the Perfect Gift</p>",
+            "title": "<p>Shop the Perfect Gift<\/p>",
             "heading_size": 100,
             "heading_highlight_type": "circle",
             "highlight_color": "#fbcaff",
@@ -156,7 +156,7 @@
             "overlay_opacity": 15,
             "bg_color": "#f5f4f1",
             "button_text": "",
-            "button_link": "https://earthharbor.com/collections/gifts-1",
+            "button_link": "https:\/\/earthharbor.com\/collections\/gifts-1",
             "button_color": "btn--white",
             "button_style": "btn--solid-border",
             "button_size": "btn--small"
