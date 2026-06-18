@@ -6,12 +6,12 @@
 <div id="popularSearches-{{ unique }}" class="popular-searches{% if settings.nav_caps_toplevel %} caps{% endif %}{{ classes }}" data-popular-searches data-scroll-lock-scrollable>
   <div class="popular-searches__wrapper">
     {%- if popular_searches_menu != blank -%}
-      <div class="predictive-search__group" role="group" aria-labelledby="predictiveSearchPopularSearches-{{ unique }}">
+      <div class="predictive-search__group" aria-labelledby="predictiveSearchPopularSearches-{{ unique }}">
         <p id="predictiveSearchPopularSearches-{{ unique }}" class="predictive-search__heading label-typography">
           <span>{{ 'general.search.popular_searches' | t }}</span>
         </p>
 
-        <div class="predictive-search__list" role="listbox">
+        <div class="predictive-search__list" role="list">
           {%- for link in popular_searches_menu.links limit: suggestions_terms_limit -%}
             <div class="predictive-search__item" id="popularSearchesMenuItem-{{ forloop.index }}-{{ unique }}" role="option" aria-selected="false">
               <a href="{{ link.url }}" class="predictive-search__link" tabindex="-1" data-popular-searches-link>{{ link.title }}</a>

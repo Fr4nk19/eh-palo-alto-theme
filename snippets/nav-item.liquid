@@ -78,35 +78,67 @@
   endif
 -%}
 
-<div class="{{ classes }}"
-  data-nav-item
-  {% if grandparent %}
-    role="navigation"
-  {% endif %}
+<div class="{{ classes }}" data-nav-item>
+  {%- comment -%} For expandable items we render a button so it doesn't navigate; the button is the disclosure trigger {%- endcomment -%}
   {% if expands %}
-    role="button"
+  <button
+    type="button"
+    data-top-link
+    class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %}"
     aria-haspopup="true"
     aria-expanded="false"
-    data-hover-disclosure-toggle="dropdown-{{ key }}"
     aria-controls="dropdown-{{ key }}"
-  {% else %}
-    data-hover-disclosure-toggle
-  {% endif %}>
-  <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %}">
+    data-hover-disclosure-toggle="dropdown-{{ key }}"
+  >
+
     <span class="navtext">
       {{ link_title }}
+
       {% if template.suffix contains 'wholesale' %}
         {{ 'icon-wholesale-chevron.svg' | inline_asset_content }}
       {% endif %}
+
+      <svg
+        class="nav-arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 640"
+        width="12"
+        height="12"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill="currentColor"
+          d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
+        />
+      </svg>
+
     </span>
+
     {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
-      <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
+      <span class="navtext__custom-badge">
+        {{ custom_badge_text }}
+      </span>
     {%- endif -%}
-  </a>
+
+  </button>
+
+{% else %}
+    <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %}">
+      <span class="navtext">
+        {{ link_title }}
+        {% if template.suffix contains 'wholesale' %}
+          {{ 'icon-wholesale-chevron.svg' | inline_asset_content }}
+        {% endif %}
+      </span>
+      {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
+        <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
+      {%- endif -%}
+    </a>
+  {% endif %}
   {%- if expands -%}
     <div class="header__dropdown"
       data-hover-disclosure
-      role="combobox"
       id="dropdown-{{ key }}">
       <div class="header__dropdown__wrapper">
         <div class="header__dropdown__inner">

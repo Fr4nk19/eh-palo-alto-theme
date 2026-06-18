@@ -14,7 +14,7 @@
   endif
 -%}
 
-<div id="cart-drawer" class="cart-drawer cv-h" data-cart-drawer>
+<div id="cart-drawer" class="cart-drawer cv-h" data-cart-drawer role="dialog" aria-modal="true">
   <template data-cart-drawer-template>
     {% if settings.cart_custom_message_text != blank %}
       <div class="cart-message cart-message--custom {{ settings.cart_custom_message_color }}" data-cart-bar>
@@ -157,6 +157,8 @@
           {% endif %}>
           {%- render 'cart-line-items', part: 'upsell-items', aos_anchor: '#cartUpsellHolder' -%}
         </div>
+
+        {%- render 'cart-recommended-products' -%}
 
         <div class="cart-notes{% if cart_items_size == 0 %} hidden{% endif %}" data-cart-notes-holder>
           {%- if settings.enable_cart_notes or settings.enable_gift_notes -%}
@@ -447,4 +449,310 @@
 </div>
 
 <script>window.WHOLESALE_QTY = {{ settings.wholesale_qty | default: 0 | json }};</script>
+
+<script>
+/* ── Cart Recommended Products ── */
+(function () {
+  'use strict';
+
+  var recState = { productId: null };
+  var PER_PAGE = 3;
+
+  /* ────────────────────────────────────────────
+     Load recommendations via Shopify section API
+  ──────────────────────────────────────────── */
+  function loadRecommendations() {
+    var holder = document.getElementById('cartRecommendations');
+    if (!holder) return;
+
+    var productId = holder.getAttribute('data-product-id');
+    if (!productId || productId === recState.productId) return;
+    recState.productId = productId;
+
+    var limit  = holder.getAttribute('data-rec-limit') || 10;
+    var slider = holder.querySelector('[data-rec-slider]');
+    var dotsEl = holder.querySelector('[data-rec-dots]');
+    if (!slider) return;
+
+    var url = '/recommendations/products?product_id=' + productId +
+              '&limit=' + limit + '&section_id=cart-recommendations';
+
+    fetch(url)
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        var doc    = new DOMParser().parseFromString(html, 'text/html');
+        var slides = doc.querySelectorAll('.cart-rec__slide');
+
+        if (!slides.length) {
+          /* Shopify had no signals (e.g. incognito) — fall back to collection */
+          collectionFallback(holder, slider, dotsEl);
+          return;
+        }
+
+        slides.forEach(function (s) { slider.appendChild(document.adoptNode(s)); });
+
+        /* Double rAF ensures the browser has laid out the new nodes
+           before Flickity measures cell widths */
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            if (typeof window.Flickity !== 'undefined') {
+              tryFlickity(slider, dotsEl, slides.length);
+            } else {
+              initScrollDots(slider, dotsEl, slides.length);
+            }
+          });
+        });
+      })
+      .catch(function (e) {
+        console.warn('[Cart Rec]', e);
+        if (holder) holder.style.display = 'none';
+      });
+  }
+
+  /* ────────────────────────────────────────────
+     Flickity (preferred)
+  ──────────────────────────────────────────── */
+  function tryFlickity(slider, dotsEl, slideCount) {
+    try {
+      var flkty = new window.Flickity(slider, {
+        cellAlign    : 'left',
+        contain      : true,
+        pageDots     : false,
+        prevNextButtons: false,
+        wrapAround   : false,
+        groupCells   : '100%',
+        accessibility: true,
+      });
+
+      var cellW   = flkty.cells.length ? flkty.cells[0].size.outerWidth : 0;
+      var visible = cellW ? Math.max(1, Math.round(flkty.size.width / cellW)) : PER_PAGE;
+      var pages   = Math.ceil(slideCount / visible);
+
+      if (pages > 1 && dotsEl) {
+        var dots = makeDots(dotsEl, pages);
+        dotsEl.addEventListener('click', function (e) {
+          var b = e.target.closest('.cart-rec__dot');
+          if (b) flkty.select(parseInt(b.dataset.page, 10) * visible);
+        });
+        flkty.on('select', function () {
+          var active = Math.floor(flkty.selectedIndex / visible);
+          dots.forEach(function (d, i) { d.classList.toggle('is-selected', i === active); });
+        });
+      }
+    } catch (e) {
+      console.warn('[Cart Rec] Flickity failed, CSS scroll fallback:', e);
+      initScrollDots(slider, dotsEl, slideCount);
+    }
+  }
+
+  /* ────────────────────────────────────────────
+     CSS scroll-snap fallback + dots
+  ──────────────────────────────────────────── */
+  function initScrollDots(slider, dotsEl, slideCount) {
+    var pages = Math.ceil(slideCount / PER_PAGE);
+    if (pages <= 1 || !dotsEl) return;
+
+    var dots = makeDots(dotsEl, pages);
+
+    /* Dot click → scroll to page */
+    dotsEl.addEventListener('click', function (e) {
+      var b = e.target.closest('.cart-rec__dot');
+      if (!b) return;
+      var page    = parseInt(b.dataset.page, 10);
+      var slideW  = slider.scrollWidth / slideCount;
+      slider.scrollTo({ left: page * slideW * PER_PAGE, behavior: 'smooth' });
+    });
+
+    /* Scroll → update dots */
+    slider.addEventListener('scroll', function () {
+      var slideW = slider.scrollWidth / slideCount;
+      var page   = Math.min(Math.round(slider.scrollLeft / (slideW * PER_PAGE)), pages - 1);
+      dots.forEach(function (d, i) { d.classList.toggle('is-selected', i === page); });
+    }, { passive: true });
+  }
+
+  /* ────────────────────────────────────────────
+     Dot button builder (shared)
+  ──────────────────────────────────────────── */
+  function makeDots(container, count) {
+    container.innerHTML = '';
+    var list = [];
+    for (var i = 0; i < count; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Page ' + (i + 1));
+      b.className = 'cart-rec__dot' + (i === 0 ? ' is-selected' : '');
+      b.dataset.page = i;
+      container.appendChild(b);
+      list.push(b);
+    }
+    return list;
+  }
+
+  /* ────────────────────────────────────────────
+     Add to cart AJAX handler
+  ──────────────────────────────────────────── */
+  function addRecToCart(btn) {
+    var variantId = btn.getAttribute('data-variant-id');
+    if (!variantId || btn.classList.contains('is-loading')) return;
+
+    btn.classList.add('is-loading');
+    btn.disabled = true;
+
+    fetch('/cart/add.js', {
+      method : 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
+      body   : JSON.stringify({ id: parseInt(variantId, 10), quantity: 1 }),
+    })
+    .then(function (r) {
+      if (!r.ok) return r.json().then(function (e) { throw e; });
+      return r.json();
+    })
+    .then(function () {
+      btn.classList.remove('is-loading');
+      btn.classList.add('is-success');
+
+      /* Update cart count badges from /cart.js */
+      return fetch('/cart.js').then(function (r) { return r.json(); }).then(function (cart) {
+        document.querySelectorAll('[data-cart-count]').forEach(function (el) {
+          el.textContent = cart.item_count;
+        });
+        document.querySelectorAll('[data-cart-items-qty]').forEach(function (el) {
+          var label = cart.item_count === 1 ? '1 item' : cart.item_count + ' items';
+          el.textContent = label;
+        });
+
+        /* Notify theme to refresh cart drawer content */
+        ['cart:refresh', 'cart:build', 'theme:cart:add'].forEach(function (name) {
+          document.dispatchEvent(new CustomEvent(name, { bubbles: true, detail: { count: cart.item_count } }));
+        });
+      });
+    })
+    .then(function () {
+      /* Fade out & remove this slide (product is now in cart) */
+      var slide = btn.closest('.cart-rec__slide');
+      if (slide) {
+        slide.style.transition = 'opacity 0.35s';
+        slide.style.opacity    = '0';
+        setTimeout(function () { slide.remove(); }, 380);
+      }
+      setTimeout(function () {
+        btn.classList.remove('is-success');
+        btn.disabled = false;
+      }, 2000);
+    })
+    .catch(function (err) {
+      console.warn('[Cart Rec ATC]', err);
+      btn.classList.remove('is-loading');
+      btn.disabled = false;
+    });
+  }
+
+  /* ────────────────────────────────────────────
+     Collection fallback (no Shopify rec signals)
+  ──────────────────────────────────────────── */
+  function collectionFallback(holder, slider, dotsEl) {
+    var handle    = holder.getAttribute('data-collection-handle');
+    var cartIds   = (holder.getAttribute('data-cart-ids') || '').split(',').filter(Boolean);
+    var btnClasses = holder.getAttribute('data-btn-classes') || '';
+
+    if (!handle) { holder.style.display = 'none'; return; }
+
+    fetch('/collections/' + handle + '/products.json?limit=12')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        var products = (data.products || []).filter(function (p) {
+          return p.available && cartIds.indexOf(String(p.id)) === -1;
+        }).slice(0, 10);
+
+        if (!products.length) { holder.style.display = 'none'; return; }
+
+        products.forEach(function (p) {
+          slider.appendChild(buildSlide(p, btnClasses));
+        });
+
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            if (typeof window.Flickity !== 'undefined') {
+              tryFlickity(slider, dotsEl, products.length);
+            } else {
+              initScrollDots(slider, dotsEl, products.length);
+            }
+          });
+        });
+      })
+      .catch(function () { holder.style.display = 'none'; });
+  }
+
+  function buildSlide(p, btnClasses) {
+    var url       = '/products/' + p.handle;
+    var rawSrc    = p.images && p.images[0] ? p.images[0].src : '';
+    var imgSrc    = rawSrc.replace(/(\.(jpg|jpeg|png|gif|webp))(\?.*)?$/i, '_300x$1');
+    var multiVar  = p.variants && p.variants.length > 1;
+    var variantId = p.variants && p.variants[0] ? p.variants[0].id : null;
+
+    var imgHtml     = imgSrc ? '<img class="cart-rec__img" src="' + imgSrc + '" alt="' + esc(p.title) + '" loading="lazy" width="300">' : '';
+    var variantHtml = multiVar ? '<p class="cart-rec__meta">' + p.variants.length + ' shades</p>' : '';
+
+    var btnHtml;
+    if (!multiVar && variantId) {
+      btnHtml = '<button type="button" class="cart-rec__btn ' + btnClasses + '" data-variant-id="' + variantId + '" data-add-rec-to-cart>'
+              + '<hover-button></hover-button>'
+              + '<span class="cart-rec__btn-text">Shop Now</span>'
+              + '<svg class="cart-rec__btn-spinner" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle></svg>'
+              + '</button>';
+    } else {
+      btnHtml = '<a class="cart-rec__btn ' + btnClasses + '" href="' + url + '">'
+              + '<hover-button></hover-button>'
+              + '<span class="cart-rec__btn-text">Shop Now</span>'
+              + '</a>';
+    }
+
+    var slide = document.createElement('div');
+    slide.className = 'cart-rec__slide';
+    slide.innerHTML = '<a class="cart-rec__image-wrap" href="' + url + '" tabindex="-1" aria-hidden="true">' + imgHtml + '</a>'
+                    + '<div class="cart-rec__body">'
+                    + '<p class="cart-rec__title"><a href="' + url + '">' + esc(p.title) + '</a></p>'
+                    + variantHtml
+                    + btnHtml
+                    + '</div>';
+    return slide;
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  /* ── Delegate add-to-cart clicks ── */
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-add-rec-to-cart]');
+    if (b) addRecToCart(b);
+  });
+
+  /* ── Watch for cart drawer template clone ── */
+  document.addEventListener('DOMContentLoaded', function () {
+    var drawer = document.querySelector('[data-cart-drawer]');
+    if (!drawer) return;
+
+    if (document.getElementById('cartRecommendations')) loadRecommendations();
+
+    new MutationObserver(function () {
+      if (document.getElementById('cartRecommendations')) loadRecommendations();
+    }).observe(drawer, { childList: true, subtree: true });
+  });
+
+  /* ── Re-init after cart update ── */
+  document.addEventListener('cart:updated', function () {
+    recState.productId = null;
+    var holder = document.getElementById('cartRecommendations');
+    if (!holder) return;
+    var slider = holder.querySelector('[data-rec-slider]');
+    var dotsEl = holder.querySelector('[data-rec-dots]');
+    if (slider) { try { window.Flickity.data(slider).destroy(); } catch (e) {} slider.innerHTML = ''; }
+    if (dotsEl) dotsEl.innerHTML = '';
+    holder.style.display = '';
+    loadRecommendations();
+  });
+})();
+</script>
 

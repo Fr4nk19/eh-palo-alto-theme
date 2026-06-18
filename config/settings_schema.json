@@ -695,6 +695,18 @@
         "default": "wipe"
       },
       {
+        "type": "checkbox",
+        "id": "show_quick_buy_always",
+        "label": "Always show Quick Buy button",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_nav_always",
+        "label": "Always show carousel navigation buttons",
+        "default": false
+      },
+      {
         "type": "header",
         "content": "Cutline"
       },
@@ -2204,6 +2216,28 @@
         "max": 200,
         "step": 5,
         "unit": "%"
+      }
+    ]
+  },
+  {
+    "name": "Descuento General",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "general_discount_enabled",
+        "label": "Activar descuento general",
+        "default": false,
+        "info": "Activa el cálculo visual del descuento en el frontend. Asegúrate de tener un descuento automático configurado en Shopify con el mismo porcentaje."
+      },
+      {
+        "type": "range",
+        "id": "general_discount_percent",
+        "label": "Porcentaje de descuento",
+        "min": 0,
+        "max": 90,
+        "step": 1,
+        "unit": "%",
+        "default": 0
       }
     ]
   },

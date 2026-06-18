@@ -64,23 +64,92 @@
   endif
 -%}
 
-{%- if product.price_varies -%}
-  {{- 'products.general.from_text_html' | t: price: product_price_min -}}
-{%- else -%}
-  {%- if on_sale -%}
-    <span class="{{ price_class }}">{{ product_price }}</span>
+{%- comment -%} ---- DESCUENTO GENERAL ---- {%- endcomment -%}
+{%- liquid
+  assign gd_enabled = settings.general_discount_enabled
+  assign gd_percent = settings.general_discount_percent | default: 0 | plus: 0
 
+  assign gd_base_price = product_price_value
+  if on_sale and product_compare_at_price > 0
+    assign gd_base_price = product_compare_at_price
+  endif
+
+  assign gd_active = false
+  if gd_enabled and gd_percent > 0 and gd_base_price > 0
+    assign gd_active = true
+  endif
+-%}
+{%- if gd_active -%}
+  {%- liquid
+    assign gd_factor = 100 | minus: gd_percent
+    assign gd_discounted = gd_base_price | times: gd_factor | divided_by: 100
+
+    if product.price_varies
+      assign gd_min = 999999999
+      for v in product.variants
+        assign v_base = v.price
+        if v.compare_at_price > v.price
+          assign v_base = v.compare_at_price
+        endif
+        assign v_disc = v_base | times: gd_factor | divided_by: 100
+        if v_disc < gd_min
+          assign gd_min = v_disc
+        endif
+      endfor
+      if settings.currency_code_enable
+        assign gd_min_formatted = gd_min | money_with_currency
+      else
+        assign gd_min_formatted = gd_min | money
+      endif
+    endif
+  -%}
+
+  {%- if product.price_varies -%}
+    {{- 'products.general.from_text_html' | t: price: gd_min_formatted -}}
+  {%- else -%}
+    <span class="{{ price_class }}">
+      {%- if settings.currency_code_enable -%}
+        {{- gd_discounted | money_with_currency -}}
+      {%- else -%}
+        {{- gd_discounted | money -}}
+      {%- endif -%}
+    </span>
     <s>
       {%- if settings.currency_code_enable -%}
-        {{- product_compare_at_price | money_with_currency -}}
+        {{- gd_base_price | money_with_currency -}}
       {%- else -%}
-        {{- product_compare_at_price | money -}}
+        {{- gd_base_price | money -}}
       {%- endif -%}
     </s>
+  {%- endif -%}
+  <div class="product__price--off product__price-badge-discount">-{{ gd_percent }}%</div>
+{%- else -%}
+  {%- if product.price_varies -%}
+    {{- 'products.general.from_text_html' | t: price: product_price_min -}}
   {%- else -%}
-    {{- product_price -}}
+    {%- if on_sale -%}
+      <span class="{{ price_class }}" aria-label="Sale price">
+        <span class="sr-only">Sale price: </span>
+          {{ product_price }}
+      </span>
+
+      <s >
+       
+        {%- if settings.currency_code_enable -%}
+          {{- product_compare_at_price | money_with_currency -}}
+        {%- else -%}
+          {{- product_compare_at_price | money -}}
+        {%- endif -%}
+      </s>
+    {%- else -%}
+      <span >
+        <span class="sr-only"> Regular Price: </span>
+          {{- product_price -}}
+      </span>
+    {%- endif -%}
   {%- endif -%}
 {%- endif -%}
+{%- comment -%} ---- /DESCUENTO GENERAL ---- {%- endcomment -%}
 
 {%- if current_variant.unit_price_measurement or product.price_varies and product_unit_price_min_value != '' -%}
   {%- capture separator_and_unit -%}

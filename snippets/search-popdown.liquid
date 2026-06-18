@@ -95,13 +95,13 @@
                 {%- render 'icon-search' -%}
               </button>
 
-              <button type="button" class="search-popdown__close" title="{{ 'general.accessibility.close' | t }}" data-popdown-close>
+              <button type="button" class="search-popdown__close" aria-label="Close" data-popdown-close>
                 {%- render 'icon-close' -%}
               </button>
             </div>
           </div>
 
-          <div id="searchResults-{{ unique }}" class="search-popdown__results">
+          <div id="searchResults-{{ unique }}" class="search-popdown__results" tabindex="-1">
             {%- if settings.enable_predictive_search -%}
               <div class="predictive-search" data-predictive-search-results data-scroll-lock-scrollable>
                 <div class="predictive-search__loading-state">
@@ -133,7 +133,7 @@
 <search-popdown class="{{ search_popdown_classes }}" {{ search_popdown_attributes }}>
   {%- if has_details -%}
     <details>
-      <summary class="search-popdown__toggle{{ summary_classes }}" aria-haspopup="dialog" data-popdown-toggle title="{{ 'general.accessibility.open_search_bar' | t }}">
+      <summary class="search-popdown__toggle{{ summary_classes }}" aria-haspopup="dialog" data-popdown-toggle aria-label="search">
         {%- if header_icons_as_text -%}
           <span class="icon-search navtext{% if settings.nav_caps_toplevel %} caps{% endif %}">{{ 'layout.navigation.search' | t }}</span>
         {%- else -%}

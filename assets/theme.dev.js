@@ -7946,7 +7946,7 @@
 
     let sections$B = {};
 
-    class ProductAddForm {3
+    class ProductAddForm {
       constructor(container) {
         this.container = container;
         this.product = this.container.querySelector(selectors$U.product);
@@ -8112,7 +8112,6 @@
         this.productForm.element.setAttribute(attributes$E.variantTitle, titleText);
       }
 
-      //Atc button price and text
       updateAddToCartState(formState) {
         const variant = formState.variant;
         const priceWrapper = this.container.querySelectorAll(selectors$U.priceWrapper);
@@ -8313,7 +8312,6 @@
         }
       }
 
-      //Cart bar
       checkLiveCartInfo(formState) {
         const state = formState ? formState : this.productForm.getFormState();
         const variant = state.variant;
@@ -8463,7 +8461,6 @@
         }
       }
 
-      //price
       updateProductPrices(formState) {
         const variant = formState.variant;
         const plan = formState.plan;
@@ -9817,10 +9814,6 @@
       flickityEnabled: '.flickity-enabled',
       noscript: 'noscript',
       qtySelect: '[data-quantity-select]',
-      qtyMessage:'[data-qty-message]',
-      qtyMessageDefault: '[data-qty-message-default]',
-      qtyProgress: '[data-qty-progress]',
-      leftToAdd: '[data-left-to-add]',
     };
 
     const classes$I = {
@@ -9877,16 +9870,9 @@
         }
 
         this.init();
-        // window.__cart = this;
-        // console.info('[CartDrawer] instancia disponible en window.__cart');
-
-        try { globalThis.__cart = this; } catch (e) { window.__cart = this; }
-        console.info('[CartDrawer] instancia disponible en __cart');
       }
 
       init() {
-        this.updateQtyProgress = this.updateQtyProgress.bind(this);
-        this.getWholesaleEligibleItemCount = this.getWholesaleEligibleItemCount.bind(this);
         // DOM Elements
         this.cartToggleButtons = document.querySelectorAll(selectors$Q.cartDrawerToggle);
         this.cartPage = document.querySelector(selectors$Q.cartPage);
@@ -9953,132 +9939,8 @@
           this.renderPairProducts();
         }
 
-        // Wholesale qty message
-        this.hydrateQtyMessage();
-        // this.bindQtyHandlers();
-        this.setupQtyObserver()
-
-        const delegateOn = this.cartDrawerBody || this.cartPage || document;
-
-        // Cuando el number input emite 'input' (se dispara al clickear +/-)
-        delegateOn.addEventListener('input', (e) => {
-          if (!e.target.matches(selectors$Q.qtyInput)) return;
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-
-        // Ya si quieres dejar también 'change' está bien:
-        delegateOn.addEventListener('change', (e) => {
-          if (!e.target.matches(selectors$Q.qtyInput)) return;
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-
-
         document.addEventListener('theme:popup:open', this.closeCartDrawer);
       }
-
-      hydrateQtyMessage() {
-        this.cartQtyMessage = document.querySelectorAll(selectors$Q.qtyMessage);
-        this.cartWholesaleQtyLimit = this.cartQtyMessage.length
-          ? parseInt(this.cartQtyMessage[0].getAttribute('data-qty-limit') || '0', 10)
-          : 0;
-      }
-
-      setupQtyObserver() {
-        if (this.qtyObserver) this.qtyObserver.disconnect();
-        if (!this.itemsHolder) return;
-      
-        this.qtyObserver = new MutationObserver(() => {
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-      
-        this.qtyObserver.observe(this.itemsHolder, {
-          childList: true,
-          subtree: true,
-          attributes: true,
-          attributeFilter: ['value'], // 👈 detecta cambios de value en inputs
-        });
-      }
-      
-
-      getWholesaleEligibleItemCount() {
-        if (!this.cart) return 0;
-        // const root = this.cart || this.itemsHolder || document;
-        // const inputs = Array.from(root.querySelectorAll(selectors$Q.qtyInput));
-        const inputs = Array.from(this.cart.querySelectorAll(selectors$Q.qtyInput));
-        return inputs.reduce((total, input) => {
-          const itemEl =
-            input.closest(selectors$Q.item) ||
-            input.closest('[data-cart-item]') ||
-            input.closest('.cart-item');
-      
-          const isExcluded =
-            (itemEl && itemEl.getAttribute('data-wholesale-excluded') === 'true') ||
-            (input.getAttribute && input.getAttribute('data-wholesale-excluded') === 'true');
-      
-          let qty = parseInt(input.value || input.getAttribute('value') || '0', 10);
-          if (isNaN(qty)) qty = 0;
-      
-          return isExcluded ? total : total + qty;
-        }, 0);
-      }
-      
-      debugger;
-      updateQtyProgress() {
-        debugger;
-        if (!this.cartQtyMessage || !this.cartQtyMessage.length) return;
-      
-        const limit = parseInt(this.cartWholesaleQtyLimit || 0, 10);
-        const eligible = this.getWholesaleEligibleItemCount();   // 👈 ahora usamos el nuevo conteo
-        const left = Math.max(limit - eligible, 0);
-        const percent = limit > 0 ? Math.min((eligible / limit) * 100, 100) : 0;
-      
-        this.cartQtyMessage.forEach((message) => {
-          const defaultEl = message.querySelector(selectors$Q.qtyMessageDefault);
-          const bars = message.querySelectorAll(selectors$Q.qtyProgress);
-      
-          // Escribe el número en TODOS los spans posibles
-          message.querySelectorAll(selectors$Q.leftToAdd).forEach((n) => (n.textContent = left));
-        });
-      
-        // Fallback global por si el span está fuera del bloque
-        document.querySelectorAll(selectors$Q.leftToAdd).forEach((n) => (n.textContent = left));
-      
-        this.cartQtyMessage.forEach((message) => {
-          const defaultEl = message.querySelector(selectors$Q.qtyMessageDefault);
-          const bars = message.querySelectorAll(selectors$Q.qtyProgress);
-      
-          message.classList.toggle(classes$I.success, eligible >= limit);
-          if (defaultEl) defaultEl.classList.toggle(classes$I.isHidden, eligible >= limit);
-      
-          bars.forEach((bar, i) => {
-            bar.classList.toggle(classes$I.isHidden, limit > 0 && eligible >= limit);
-            bar.style.setProperty('--progress-width', `${percent}%`);
-            if (i === 0) bar.setAttribute(attributes$A.value, percent);
-          });
-        });
-      }
-      
-      
-      bindQtyHandlers() {
-        // Delegación para cambios en qty (inputs y botones +/- si existen)
-        const delegateOn = this.cartDrawerBody || this.cartPage || document;
-      
-        delegateOn.addEventListener('change', (e) => {
-          if (!e.target.matches(selectors$Q.qtyInput)) return;
-          requestAnimationFrame(() => this.updateQtyProgress());
-        });
-      
-        delegateOn.addEventListener('click', (e) => {
-          const btn = e.target.closest('[data-quantity-button]');
-          if (!btn) return;
-          setTimeout(() => this.updateQtyProgress(), 0);
-        });
-      
-        // Si tu tema emite eventos personalizados:
-        document.addEventListener('theme:cart:change', () => this.updateQtyProgress());
-        document.addEventListener('theme:cart:updated', () => this.updateQtyProgress());
-      }
-      
 
       /**
        * Assign cart constructor arguments on page load or after cart drawer is loaded
@@ -10093,7 +9955,6 @@
         this.buttonHolder = document.querySelector(selectors$Q.buttonHolder);
         this.itemsHolder = document.querySelector(selectors$Q.itemsHolder);
         this.cartItemsQty = document.querySelector(selectors$Q.cartItemsQty);
-        this.cartWholesaleQty = document.querySelector(selectors$Q.leftToAdd);
         this.itemsWrapper = document.querySelector(selectors$Q.itemsWrapper);
         this.items = document.querySelectorAll(selectors$Q.item);
         this.cartTotal = document.querySelector(selectors$Q.cartTotal);
@@ -10138,9 +9999,6 @@
         this.items?.forEach((item) => {
           this.cartUpdateEvent(item);
         });
-        if (this.cartQtyMessage && this.cartQtyMessage.length > 0) {
-          this.updateQtyProgress();
-        }
       }
 
       /**
@@ -10159,7 +10017,6 @@
             item
           );
         });
-        updateQtyProgress()
       }
 
       /**
@@ -10740,10 +10597,6 @@
         // Bind cart update event
         this.initCartUpdate();
 
-        this.hydrateQtyMessage();
-        this.setupQtyObserver();   
-        requestAnimationFrame(() => this.updateQtyProgress());
-
         // Bind cart events
         this.cartEvents();
 
@@ -11015,16 +10868,6 @@
           this.updateProgress();
         }
 
-        this.hydrateQtyMessage();
-        // requestAnimationFrame(() => this.updateQtyProgress());
-        requestAnimationFrame(() => {
-          this.updateQtyProgress();      // 1er tick (cuando el DOM ya pintó)
-          setTimeout(() => this.updateQtyProgress(), 0); // 2do micro-tick por si qty/value llega tarde
-        });
-        // if (this.cartQtyMessage && this.cartQtyMessage.length > 0) {
-          
-        // }
-
         this.cartToggleButtons.forEach((button) => {
           button.classList.remove(classes$I.cartItems);
 
@@ -11089,8 +10932,6 @@
         if (!this.cart) return 0;
         return Array.from(this.cart.querySelectorAll(selectors$Q.qtyInput)).reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
       }
-
-      
 
       /**
        * Check for items in the cart
@@ -11212,33 +11053,6 @@
         if (this.cartItemsQty) {
           this.cartItemsQty.textContent = itemsQty === 1 ? `${itemsQty} ${oneItemText}` : `${itemsQty} ${manyItemsText}`;
         }
-
-        const limit = parseInt(this.cartWholesaleQtyLimit || 0, 10);
-        if (limit > 0) {
-          const eligible = this.getWholesaleEligibleItemCount();
-          const left = Math.max(limit - eligible, 0);
-          const percent = Math.min((eligible / limit) * 100, 100);
-
-          // 1) Número en el/los spans
-          document.querySelectorAll(selectors$Q.leftToAdd).forEach((node) => {
-            node.textContent = left;
-          });
-
-          // 2) Estado del mensaje (default/success) dentro de cada bloque de qty
-          document.querySelectorAll(selectors$Q.qtyMessage).forEach((message) => {
-            const defaultEl = message.querySelector(selectors$Q.qtyMessageDefault);
-            message.classList.toggle(classes$I.success, eligible >= limit);
-            if (defaultEl) defaultEl.classList.toggle(classes$I.isHidden, eligible >= limit);
-          });
-
-          // 3) Progreso visual (si lo usas)
-          document.querySelectorAll(selectors$Q.qtyProgress).forEach((bar, i) => {
-            bar.classList.toggle(classes$I.isHidden, eligible >= limit);
-            bar.style.setProperty('--progress-width', `${percent}%`);
-            if (i === 0) bar.setAttribute(attributes$A.value, percent);
-          });
-        }
-        // 🔼🔼🔼 FIN NUEVO
       }
 
       observeAdditionalCheckoutButtons() {
@@ -11376,7 +11190,20 @@
           left: 0,
           behavior: 'smooth',
         });
+
+        // focus after scroll
+        setTimeout(() => {
+          const target = document.getElementById('skiptocontent');
+
+          if (target) {
+            target.setAttribute('tabindex', '-1');
+            target.focus();
+          }
+       
+        }, 400);
       });
+
+
       document.addEventListener(
         'scroll',
         throttle(() => {
@@ -13520,6 +13347,23 @@
         this.updateSVGClipPathIDs();
       }
 
+      // Ensure static announcement slides are accessible only when visible
+      setStaticAria() {
+        if (!this.slides || this.slides.length === 0) return;
+        this.slides.forEach((el, i) => {
+          const isVisible = !el.classList.contains('is-hidden') && !el.classList.contains('mobile') && !el.classList.contains('desktop');
+          if (isVisible) {
+            el.removeAttribute('aria-hidden');
+            el.setAttribute('aria-live', 'polite');
+            el.setAttribute('tabindex', '0');
+          } else {
+            el.setAttribute('aria-hidden', 'true');
+            el.removeAttribute('aria-live');
+            el.removeAttribute('tabindex');
+          }
+        });
+      }
+
       /**
        * Delete announcement which has a target referrer attribute and it is not contained in page URL
        */
@@ -13578,7 +13422,10 @@
             pageDots: false,
             prevNextButtons: sliderArrows,
             wrapAround: true,
-            autoPlay: parseInt(this.slider.getAttribute(attributes$t.speed), 10),
+            // Announcement should be static for accessibility (no autoplay)
+            autoPlay: false,
+            selectedAttraction: 0.012,
+            friction: 0.18,
             on: {
               ready: () => {
                 setTimeout(() => {
@@ -13590,13 +13437,41 @@
                       },
                     })
                   );
+                  // Set initial aria-hidden state: only the selected cell should be exposed
+                  if (this.flkty && this.flkty.cells && this.flkty.cells.length) {
+                    this.flkty.cells.forEach((cell, i) => {
+                      const el = cell.element;
+                      if (i === this.flkty.selectedIndex) {
+                        el.removeAttribute('aria-hidden');
+                        el.setAttribute('aria-live', 'polite');
+                        el.setAttribute('tabindex', '0');
+                      } else {
+                        el.setAttribute('aria-hidden', 'true');
+                        el.removeAttribute('aria-live');
+                        el.removeAttribute('tabindex');
+                      }
+                    });
+                  }
                 }, 10);
               },
               change: (index) => {
+                // Toggle aria-hidden so only the active slide is readable
                 this.flkty.cells.forEach((slide, i) => {
-                  slide.element.querySelectorAll(selectors$G.textHighlight).forEach((highlight) => {
+                  const el = slide.element;
+                  // Manage text highlight triggers as before
+                  el.querySelectorAll(selectors$G.textHighlight).forEach((highlight) => {
                     highlight.setTriggerAttribute(Boolean(i === index));
                   });
+
+                  if (i === index) {
+                    el.removeAttribute('aria-hidden');
+                    el.setAttribute('aria-live', 'polite');
+                    el.setAttribute('tabindex', '0');
+                  } else {
+                    el.setAttribute('aria-hidden', 'true');
+                    el.removeAttribute('aria-live');
+                    el.removeAttribute('tabindex');
+                  }
                 });
               },
             },
@@ -13607,6 +13482,8 @@
         this.slider.addEventListener('slider-is-loaded', () => {
           this.initTickers();
           this.updateSVGClipPathIDs();
+          // Also run aria update for non-slider static announcements
+          this.setStaticAria();
         });
       }
 
@@ -13813,14 +13690,19 @@
         this.body = document.body;
         this.header = el.closest(selectors$F.header);
         this.key = this.disclosure.id;
-        this.trigger = document.querySelector(`[${attributes$s.disclosureToggle}='${this.key}']`);
-        this.link = this.trigger.querySelector(selectors$F.link);
-        this.grandparent = this.trigger.classList.contains(classes$x.grandparent);
-        this.background = document.querySelector(selectors$F.headerBackground);
-        this.trigger.setAttribute(attributes$s.ariaHasPopup, true);
-        this.trigger.setAttribute(attributes$s.ariaExpanded, false);
-        this.trigger.setAttribute(attributes$s.ariaControls, this.key);
-        this.dropdown = this.trigger.querySelector(selectors$F.disclosureWrappper);
+          // Find the trigger (may be a parent node or the button inside the nav item)
+          this.trigger = document.querySelector(`[${attributes$s.disclosureToggle}='${this.key}']`);
+          // The nav item wrapper (menu__item) that should receive the is-visible class
+          this.navItem = this.trigger ? this.trigger.closest(selectors$F.navItem) : this.disclosure.closest(selectors$F.navItem);
+          this.grandparent = this.navItem ? this.navItem.classList.contains(classes$x.grandparent) : false;
+          this.background = document.querySelector(selectors$F.headerBackground);
+          if (this.trigger) {
+            this.trigger.setAttribute(attributes$s.ariaHasPopup, true);
+            this.trigger.setAttribute(attributes$s.ariaExpanded, false);
+            this.trigger.setAttribute(attributes$s.ariaControls, this.key);
+          }
+          // dropdown is the disclosure element passed in
+          this.dropdown = this.disclosure;
         this.setBackgroundHeightEvent = () => this.setBackgroundHeight();
 
         this.connectHoverToggle();
@@ -13851,23 +13733,33 @@
         document.addEventListener('theme:resize', this.setBackgroundHeightEvent);
 
         // Set accessibility and classes
-        this.trigger.setAttribute(attributes$s.ariaExpanded, true);
-        this.trigger.classList.add(classes$x.isVisible);
+        if (this.trigger) this.trigger.setAttribute(attributes$s.ariaExpanded, true);
+        if (this.navItem) this.navItem.classList.add(classes$x.isVisible);
         this.header.classList.add(classes$x.headerMenuOpened);
-        if (this.trigger.classList.contains(classes$x.grandparent)) {
+        if (this.navItem && this.navItem.classList.contains(classes$x.grandparent)) {
           this.body.classList.add(classes$x.megamenuOpened);
         }
         this.updateHeaderHover();
+        // close when clicking outside
+        this.outsideClickHandler = (event) => {
+          if (!this.navItem || this.navItem.contains(event.target)) return;
+          this.hideDisclosure();
+        };
+        document.addEventListener('click', this.outsideClickHandler);
       }
 
       hideDisclosure() {
         this.background.style.removeProperty('--header-background-height');
         document.removeEventListener('theme:resize', this.setBackgroundHeightEvent);
 
-        this.trigger.classList.remove(classes$x.isVisible);
-        this.trigger.setAttribute(attributes$s.ariaExpanded, false);
+        if (this.navItem) this.navItem.classList.remove(classes$x.isVisible);
+        if (this.trigger) this.trigger.setAttribute(attributes$s.ariaExpanded, false);
         this.header.classList.remove(classes$x.headerMenuOpened);
         this.body.classList.remove(classes$x.megamenuOpened);
+        if (this.outsideClickHandler) {
+          document.removeEventListener('click', this.outsideClickHandler);
+          this.outsideClickHandler = null;
+        }
       }
 
       updateHeaderHover() {
@@ -13915,21 +13807,51 @@
       }
 
       connectHoverToggle() {
-        this.trigger.addEventListener('mouseenter', () => this.showDisclosure());
-        this.link.addEventListener('focus', () => this.showDisclosure());
+        if (!this.trigger) return;
 
-        this.trigger.addEventListener('mouseleave', () => this.hideDisclosure());
-        this.trigger.addEventListener('focusout', (event) => {
-          const inMenu = this.trigger.contains(event.relatedTarget);
+        // Click to toggle
+        this.trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          const isOpen = this.navItem && this.navItem.classList.contains(classes$x.isVisible);
+          if (isOpen) {
+            this.hideDisclosure();
+          } else {
+            // Hide other active nav items
+            const activeNavItems = this.header.querySelectorAll(`${selectors$F.navItem}.${classes$x.isVisible}`);
 
-          if (!inMenu) {
+            if (activeNavItems.length > 0) {
+              activeNavItems.forEach((item) => {
+                if (item !== this.navItem) {
+                  item.dispatchEvent(new Event('mouseleave', {bubbles: true}));
+                }
+              });
+            }
+
+            this.showDisclosure();
+          }
+        });
+
+        // Keyboard activation: Enter/Space toggles; Escape closes
+        this.trigger.addEventListener('keydown', (e) => {
+          if (e.code === theme.keyboardKeys.ENTER || e.code === theme.keyboardKeys.SPACE) {
+            e.preventDefault();
+            const isOpen = this.navItem && this.navItem.classList.contains(classes$x.isVisible);
+            if (isOpen) this.hideDisclosure(); else this.showDisclosure();
+          }
+          if (e.code === theme.keyboardKeys.ESCAPE) {
             this.hideDisclosure();
           }
         });
+
+        // Close when focus moves outside the nav item
+        this.trigger.addEventListener('focusout', (event) => {
+          const inMenu = this.navItem && this.navItem.contains(event.relatedTarget);
+          if (!inMenu) this.hideDisclosure();
+        });
+
+        // Allow Escape key inside the dropdown to close
         this.disclosure.addEventListener('keyup', (event) => {
-          if (event.code !== theme.keyboardKeys.ESCAPE) {
-            return;
-          }
+          if (event.code !== theme.keyboardKeys.ESCAPE) return;
           this.hideDisclosure();
         });
       }
@@ -15905,7 +15827,7 @@
 
         if (this.flkty[sliderId] === undefined || !this.flkty[sliderId].isActive) {
           this.flkty[sliderId] = new Flickity(slider, {
-            pageDots: false,
+            pageDots: true,
             cellSelector: selectors$r.sliderItem,
             cellAlign: 'left',
             groupCells: true,

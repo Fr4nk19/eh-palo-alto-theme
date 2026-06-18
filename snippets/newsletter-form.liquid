@@ -60,10 +60,11 @@
               class="input-group__field input-group__field--name"
               value="{% if customer %}{{ customer.name }}{% endif %}"
               placeholder="{{ placeholder_name }}"
+              aria-label="{{ placeholder_name }}"
               name="contact[first_name]"
               autocorrect="off"
               autocapitalize="off"
-              aria-label="{{ placeholder_name }}"
+              required
               {% if form.errors contains 'name' %}
                 aria-invalid="true"
               {% endif %}>
@@ -78,7 +79,7 @@
               name="contact[first_name]"
               autocorrect="off"
               autocapitalize="off"
-              aria-label="{{ placeholder_first_name }}"
+              required
               {% if form.errors contains 'name' %}
                 aria-invalid="true"
               {% endif %}>
@@ -92,7 +93,7 @@
               name="contact[last_name]"
               autocorrect="off"
               autocapitalize="off"
-              aria-label="{{ placeholder_last_name }}"
+              required
               {% if form.errors contains 'name' %}
                 aria-invalid="true"
               {% endif %}>
@@ -104,10 +105,11 @@
           class="input-group__field input-group__field--email"
           value="{% if customer %}{{ customer.email }}{% endif %}"
           placeholder="{{ 'general.newsletter_form.email' | t }}"
+          aria-label="{{ 'general.newsletter_form.email' | t }}"
           name="contact[email]"
           autocorrect="off"
           autocapitalize="off"
-          aria-label="{{ 'general.newsletter_form.email' | t }}"
+          required
           {% if form.errors contains 'email' %}
             aria-invalid="true"
           {% endif %}
@@ -116,7 +118,7 @@
     </div>
 
     <div class="input-group__item input-group__item--btn{% if btn_width %} input-group__item--btn-width{% endif %}">
-      <button type="submit" name="subscribe" id="SubscribeSubmit--{{ unique }}" class="{{ button_class }}"{% if is_popup %} data-newsletter-submit{% endif %}>
+      <button type="submit" aria-label="Subscribe, after successful submission the page will be refreshed" name="subscribe" id="SubscribeSubmit--{{ unique }}" class="{{ button_class }}"{% if is_popup %} data-newsletter-submit{% endif %}>
         <hover-button></hover-button>
         {%- if button_text != blank -%}
           {{- button_text -}}

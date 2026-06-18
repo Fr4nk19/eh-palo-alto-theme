@@ -1,3 +1,4 @@
+{% include 'shogun-content-handler' %}
 <!doctype html>
 <html class="no-js no-touch page-loading" lang="{{ request.locale.iso_code }}">
 <head><meta charset="utf-8">
@@ -98,6 +99,8 @@
 
 {%- comment -%} CSS {%- endcomment -%}
 {{- 'theme.css' | asset_url | stylesheet_tag -}}
+{{- 'accessibility.css' | asset_url | stylesheet_tag -}}
+
 {{- 'custom.css' | asset_url | stylesheet_tag -}}
 
 {%- liquid
@@ -231,10 +234,11 @@
 {%- endif -%}
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 <script src="{{ 'theme-custom.js' | asset_url }}" defer="defer"></script>
-{% comment %} <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+<script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+ <script src="{{ 'accessibility.js' | asset_url }}" defer="defer"></script>
 
 {%- if request.design_mode -%}
   <script
@@ -257,6 +261,8 @@
 {%- endcomment -%}
 
 {{ content_for_header }}
+
+  {% render 'shogun-head' %}
 </head>{%- capture body_classes -%}
 template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
 {% if customer %} customer-logged-in{% endif %}
@@ -269,7 +275,10 @@ template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
 {%- assign body_classes = body_classes | strip_newlines | strip -%}<body id="{{ page_title | handle }}" class="{{ body_classes }} template--{{ template.suffix }} template-name--{{ template.name }} page--{{ page.handle }}">
   {%- render 'loading' -%}
 
-  <a class="in-page-link skip-link" data-skip-content href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+  <div id="skiptocontent" role="region" aria-label="Keyboard Navigation links" tabindex="-1">
+    <a class="in-page-link skip-link" data-skip-content href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <a class="in-page-link skip-link" id="go_to_accessibility"href="https://earthharbor.com/pages/accessibility-statement-for-earth-harbor">Go to accessibility statement</a>
+  </div>
 
   {% sections 'group-header' %}
   {% sections 'group-overlay' %}
@@ -288,10 +297,10 @@ template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
   {%- render 'zoom-pswp', template_index: 1 -%}
 
   {%- if settings.show_scroll_to_top -%}
-    <button type="button" class="btn btn--primary btn--solid btn--scroll-top" data-scroll-top-button aria-label="{{ 'general.accessibility.scroll_to_top' | t }}">
+    <a role="button" href="#go_to_accessibility" class="btn btn--primary btn--solid btn--scroll-top" data-scroll-top-button aria-label="{{ 'general.accessibility.scroll_to_top' | t }}">
       <hover-button></hover-button>
       {% render 'icon-select' %}
-    </button>
+    </a>
   {%- endif -%}
   <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
   {%- comment -%}

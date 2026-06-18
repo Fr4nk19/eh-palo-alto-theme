@@ -9,7 +9,7 @@
           <a class="list-collections__item__outer" href="{{ block.settings.collection_link.url }}">
             <div class="collection-title">{{ block.settings.collection_title }}</div>
             <div class="list-collections_image">
-            <img src="{{ block.settings.collection_image | img_url:'master' }}" width="" height="">
+            <img src="{{ block.settings.collection_image | img_url:'master' }}" alt="{{ block.settings.collection_image.alt | escape }}" width="" height="">
             </div>
           </a>
         </div>

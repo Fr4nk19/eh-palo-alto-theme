@@ -1,3 +1,4 @@
+{% include 'shogun-content-handler' %}
 {% comment %}
 	GEMPAGES BUILDER (https://apps.shopify.com/gempages)
 
@@ -264,6 +265,8 @@
 {%- endcomment -%}
 
 {{ content_for_header }}
+
+  {% render 'shogun-head' %}
 </head>{%- capture body_classes -%}
 template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
 {% if customer %} customer-logged-in{% endif %}

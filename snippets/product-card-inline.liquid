@@ -163,7 +163,7 @@
     <div class="{{ image_container_class }}" style="--aspect-ratio: {{ image_aspect_ratio }};">
       <a class="product__media__holder"
         href="{{ product.url | within: collection }}"
-        aria-label="{{ product.title | strip_html | escape }}"
+        
         data-grid-link
       >
         {%- if product.media.size > 0 -%}
@@ -234,7 +234,7 @@
               </template>
             {%- endif -%}
 
-            <span class="visually-hidden">{{ image.alt | default: product.title | strip_html | escape }}</span>
+            {% comment %} <span class="visually-hidden">{{ image.alt | default: product.title | strip_html | escape }}</span> {% endcomment %}
           </deferred-loading>
         {%- else -%}
           <div class="product__media__image">
@@ -253,7 +253,7 @@
         {%- endif -%}
 
         {%- if product_grid_hover == 'slideshow' and product.media.size > 1 -%}
-          <div class="product__media__hover product__media__hover--{{ product_grid_hover_animation }} product__media__slider" data-hover-slideshow-holder>
+          <div class=" product__media__hover product__media__hover--{{ product_grid_hover_animation }} product__media__slider" data-hover-slideshow-holder>
             {%- for media in product.media limit: 4 -%}
               {%- if media != featured_media -%}
                 {%- assign image = media.preview_image -%}
@@ -280,7 +280,7 @@
         {%- elsif product_grid_hover == 'image' and product.media[1].preview_image != blank -%}
           {%- assign image = product.media[1].preview_image -%}
           <deferred-loading
-            class="product__media__hover product__media__hover--{{ product_grid_hover_animation }}"
+            class=" product__media__hover product__media__hover--{{ product_grid_hover_animation }}"
             {% if has_colors %} data-deferred-container="[data-product-block]" data-deferred-triggers="[data-deferred-trigger-element]"{% endif %}
           >
             {%- render 'image-fill',

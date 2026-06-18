@@ -555,7 +555,7 @@
             {% if section.settings.signature_image != blank %}
           <!-- custom image schema -->
             <div class="custom_signature_image">
-              <img src="{{ section.settings.signature_image | img_url:'master' }}" width='' height=''>
+              <img src="{{ section.settings.signature_image | img_url:'master' }}" alt="{{ block.settings.signature_image_alt | default: 'Signature' | escape }}" width='' height=''>
             </div>
             <!-- custom image schema -->
             {% endif %}

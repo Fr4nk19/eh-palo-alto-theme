@@ -57,7 +57,7 @@
         "heading_bnkxMJ": {
           "type": "heading",
           "settings": {
-            "text": "<p>{{ collection.title }}</p>",
+            "text": "<h1>{{ collection.title }}</h1>",
             "size": 100,
             "heading_highlight_type": "underline-hand-drawn",
             "highlight_color": "#000000",
@@ -139,7 +139,7 @@
         "96343c36-f832-4740-8cd6-2a90dcf9e4d9": {
           "type": "promo",
           "settings": {
-            "collection": "",
+            "collection": "gifts-1",
             "image": "shopify://shop_images/Picture_27.png",
             "position": 5,
             "width": "half",

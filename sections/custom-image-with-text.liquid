@@ -353,7 +353,7 @@
               {% if block.settings.signature_image != blank %}
                 <!-- custom image schema -->
                   <div class="custom_signature_image show_as_content_element_{{ block.settings.show_as_content_element }}  size_{{ block.settings.image_height }} position_{{ block.settings.image_position }}" {% if block.settings.show_as_content_element %} {{ block.shopify_attributes }} {% endif %}>
-                    <img src="{{ block.settings.signature_image | img_url:'master' }}" width='' height=''>
+                    <img src="{{ block.settings.signature_image | img_url:'master' }}" alt="{{ block.settings.signature_image_alt | default: 'Signature' | escape }}" width='' height=''>
                   </div>
                   <!-- custom image schema -->
                   {% endif %}

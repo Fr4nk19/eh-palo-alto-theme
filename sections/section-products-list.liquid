@@ -78,7 +78,7 @@
   <div class="{{ section_width }}" data-overflow-container>
     <div class="products-list__container" data-overflow-frame>
       {%- unless section.settings.title == blank -%}
-        <h2
+        <p
           class="products-list__heading subheading-text"
           {% if animations_enabled %}
             data-aos="fade-up"
@@ -88,7 +88,7 @@
           {% endif %}
         >
           {{ section.settings.title }}
-        </h2>
+        </p>
       {%- endunless -%}
 
       {%- if section.blocks.size > 0 -%}
@@ -153,7 +153,7 @@
                   {%- assign animation_delay = animation_delay | plus: 50 -%}
                 {% endif %}
               >
-                <span>{{ heading }}</span> <span class="custom_subheading_text">{{ block.settings.sub_heading }}</span>
+                <h2><span>{{ heading }}</span></h2> <span class="custom_subheading_text">{{ block.settings.sub_heading }}</span>
                 {% if product_block.id == product.id and section.settings.current_label != blank  %}
                     <span class="current-product__indicator">
                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="6" viewBox="0 0 28 6" fill="none">
@@ -375,7 +375,7 @@
                       data-aos-anchor="{{ animation_anchor }}"
                       data-aos-delay="{{ animation_delay_content }}"
                     {% endif %}>
-                    <a class="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}" href="{{ product_url }}">
+                    <a aria-label= "  {{- button_text -}}  - {{ heading }}" class="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}" href="{{ product_url }}">
                       <hover-button></hover-button>
                       {{- button_text -}}
                     </a>
@@ -568,6 +568,7 @@
                               class="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}"
                               href="{{ button_link }}"
                               data-product-link
+                              aria-label="  {{- button_text -}}  - {{ product_title }}"
                             >
                               <hover-button></hover-button>
                               {{- button_text -}}
@@ -639,7 +640,7 @@
                     endif
                   -%}
 
-                  <div class="products-list__item__aside">
+                  <div class="sh products-list__item__aside">
                     <div
                       class="products-list__item__images{% if show_second_image %} products-list__item__images--overlap{% endif %}"
                       data-product-single-media-group
@@ -792,7 +793,7 @@
                     </div>
                   </div>
 
-                  <div class="products-list__item__contents">
+                  <div class="sh products-list__item__contents">
                     <div class="products-list__item__content">
                       {%- comment -%} Star Rating {%- endcomment -%}
                         {% if product.metafields.okendo.summaryData.reviewCount > 0 or product.metafields.okendo.ReviewCount > 0 %}
@@ -848,6 +849,7 @@
                           <a
                             class="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}"
                             href="{{ button_link }}"
+                            aria-label="  {{- button_text -}} - {{ product_title }}"
                           >
                             <hover-button></hover-button>
                             {{- button_text -}}

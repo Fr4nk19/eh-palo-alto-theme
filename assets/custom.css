@@ -129,7 +129,7 @@ header span.navtext__custom-badge {
 }
 .home-icon-sec .wrapper {
   width: 100%;
-  max-width: 980px;
+  max-width: 1177px;
 }
 /* Home Icon Sec End */
 
@@ -170,7 +170,7 @@ header span.navtext__custom-badge {
   margin-block: 20px 48px;
 }
 .where_to_begin .main-buttons__item a.btn {
-  background-color: #2fbbdc;
+  background-color: #1A8199;
   min-width: 200px;
   font-size: 12.8px;
   padding-block: 12px;
@@ -249,19 +249,19 @@ header span.navtext__custom-badge {
   scale: 1.06;
 }
 .home-shop-by-benefit-sec .item-1 .collection-title {
-  background-color: #f2b2be;
+  background-color: #E46C82;
 }
 .home-shop-by-benefit-sec .item-2 .collection-title {
-  background-color: #dd9ba7;
+  background-color: #D17A8A;
 }
 .home-shop-by-benefit-sec .item-3 .collection-title {
-  background-color: #e3c7b2;
+  background-color: #C2885B;
 }
 .home-shop-by-benefit-sec .item-4 .collection-title {
-  background-color: #72d3d6;
+  background-color: #30A2A6;
 }
 .home-shop-by-benefit-sec .item-5 .collection-title {
-  background-color: #2fbbdc;
+  background-color: #209FBC;
 }
 .home-shop-by-benefit-sec .item-6 .collection-title {
   background-color: #2595b3;
@@ -391,7 +391,7 @@ body[class*="template--wholesale"] .index_overlap_images .main-text.rte p {
 /* Home New Arrivals Sec End */
 
 /* Find Us Sec Start */
-.find-us-sec h4.press__heading {
+.find-us-sec h2.press__heading {
   font-size: 14px;
   letter-spacing: 0.35px;
 }
@@ -1475,7 +1475,7 @@ footer .social-sharing-wrapper svg {
   line-height: 15px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #838383;
+  color: #757575 !important;
 }
 .quiz-where-to-begin-sec .image-with-text__heading span.text-highlight__break {
   font-size: 40px;
@@ -1621,22 +1621,22 @@ footer .social-sharing-wrapper svg {
   scale: 1.06;
 }
 .skincare-shop-by-sec .main-blue-bg .collection-title {
-  background-color: #2fbbdc;
+  background-color: #209FBC ;
 }
 .skincare-shop-by-sec .velvet-pink-bg .collection-title {
-  background-color: #dd9ba7;
+  background-color: #D17A8A;
 }
 .skincare-shop-by-sec .sand-bg .collection-title {
-  background-color: #e3c7b2;
+  background-color: #C2885B;
 }
 .skincare-shop-by-sec .teal-bg .collection-title {
-  background-color: #72d3d6;
+  background-color: #30A2A6;
 }
 .skincare-shop-by-sec .pale-silver-bg .collection-title {
-  background-color: #d1c3b3;
+  background-color: #A88E71;
 }
 .skincare-shop-by-sec .soft-pink-bg .collection-title {
-  background-color: #f2b2be;
+  background-color: #E46C82;
 }
 /* Shop By Sec End */
 
@@ -1703,7 +1703,7 @@ footer .social-sharing-wrapper svg {
   line-height: 15px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #838383;
+  color: #757575;
 }
 .our-story-main-sec .image-with-text__heading.h2 {
   font-size: 40px;
@@ -3691,4 +3691,123 @@ div[data-buy-it-now] {
   .lion-rules-list  {
     grid-template-columns: 1fr 1fr !important;
   }
+}
+
+
+/*** Press slider dots ***/
+
+.press .flickity-page-dots {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Free gift section v2 */
+
+.freegift-form-img.version-2 {
+  padding-inline: 70px;
+}
+
+.freegift-form-img.version-2 .free-gift-section .free-gift-wrapper--form {
+  gap: 15px;
+  padding-block: 1rem;
+}
+
+.free-gift-section .free-gift-wrapper--form .klaviyo-form-custom {
+  padding: 0;
+}
+
+.free-gift-section .free-gift-wrapper--form .subheading,
+.free-gift-section .free-gift-wrapper--form .subheading p,
+.free-gift-wrapper--success .success-body {
+  font-family: 'Chivo';
+  letter-spacing: 0px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.free-gift-section .free-gift-wrapper--form .subheading strong,
+.success-body strong {
+  font-weight: 600;
+}
+
+.free-gift-wrapper--form  .form__heading {
+  font-family: Chivo;
+  font-size: 12.8px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.free-gift-wrapper--success .checkout-gift-container {
+  margin-block: 28px;
+}
+
+.button__bottom-text {
+  font-family: Chivo;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.free-gift-wrapper--form .heading,
+.free-gift-wrapper--form .heading p,
+.free-gift-wrapper--form .heading,
+.free-gift-wrapper--form .heading p,
+.free-gift-wrapper--success .heading p {
+  font-family: 'museo-sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+.free-gift-wrapper--form .heading p {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.free-gift-wrapper--form .heading strong {
+  font-weight: 700;
+}
+
+.free-gift-wrapper--form img,
+.free-gift-wrapper--success img {
+  border-radius: 8px;
+}
+
+@media screen and (max-width:480px){
+  .slide__text__wrapper.backdrop--radial {
+      padding-bottom: 0;
+      padding-top: 135px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .free-gift-wrapper--form .heading,
+  .free-gift-wrapper--form .heading p,
+  .free-gift-wrapper--form .heading,
+  .free-gift-wrapper--form .heading p,
+  .free-gift-wrapper--success .heading p {
+    font-size: 40px;
+  }
+}
+div#fg-gift-thumbnail-title {
+    display: none;
+}
+div#sca-gift-thumbnail {
+    display: none;
+}
+
+/* Descuento General Badge */
+.product__price-badge-discount {
+  flex-shrink: 0;
+  padding: 3px 9px;
+  border-radius: var(--RADIUS-BADGE);
+  background-color: var(--saving-bg);
+  color: var(--saving-text);
+  font-size: calc(0.75rem * var(--adjust-body) * var(--FONT-ADJUST-BADGES));
+  margin-top: 4px;
 }

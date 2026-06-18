@@ -176,8 +176,24 @@
                 {%- liquid
                   assign has_products = true
 
-                  if product.price == 0
+                  assign _gd_on = settings.general_discount_enabled
+                  assign _gd_pct = settings.general_discount_percent | default: 0 | plus: 0
+                  assign _gd_base = product.price
+                  if product.compare_at_price > product.price
+                    assign _gd_base = product.compare_at_price
+                  endif
+
+                  if product.price == 0 and _gd_base == 0
                     assign product_price = 'products.product.free' | t
+                  elsif _gd_on and _gd_pct > 0 and _gd_base > 0
+                    assign _gd_disc = _gd_base | times: 100 | minus: _gd_base | times: _gd_pct | divided_by: 100
+                    assign _gd_factor = 100 | minus: _gd_pct
+                    assign _gd_disc = _gd_base | times: _gd_factor | divided_by: 100
+                    if currency_code_enable
+                      assign product_price = _gd_disc | money_with_currency
+                    else
+                      assign product_price = _gd_disc | money
+                    endif
                   elsif currency_code_enable
                     assign product_price = product.price | money_with_currency
                   else

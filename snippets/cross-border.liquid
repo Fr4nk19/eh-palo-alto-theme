@@ -27,7 +27,7 @@
         <h2 class="visually-hidden" id="country-heading-{{ section.id }}">{{ 'footer.country' | t }}</h2>
 
         <popout-select class="select-popout select-popout--country">
-          <button type="button" class="select-popout__toggle" aria-expanded="false" aria-controls="country-list" aria-describedby="country-heading" data-popout-toggle>
+          <button type="button" class="select-popout__toggle" aria-expanded="false" aria-controls="country-list"  data-popout-toggle>
             {%- if show_country_flag -%}
               {{ localization.country | image_url: width: 40 | image_tag: loading: 'lazy', class: 'select-popout__flag' }}
             {%- endif -%}

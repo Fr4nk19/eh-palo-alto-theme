@@ -477,7 +477,7 @@
             {%- endif -%}
             
             {% if block.settings.sub-subheading %}
-             <h1 class="h1 slide__heading main-heading first-subheading">{{  block.settings.sub-subheading  }}</h1>
+             <p class="h1 slide__heading main-heading first-subheading">{{  block.settings.sub-subheading  }}</p>
               <style>
                 .first-subheading{
                   color: {{ block.settings.first_sub_title_color }};
@@ -516,7 +516,7 @@
             {%- endif -%}
 
             {% if block.settings.title2 != blank%}
-              <h1 class="h1 slide__heading main-heading second_title second_title">{{  block.settings.title2 }}</h1>
+              <h2 class="h1 slide__heading main-heading second_title second_title">{{  block.settings.title2 }}</h2>
               <style>
                 .second_title{
                   color: {{ block.settings.second_title_color }};
@@ -552,7 +552,7 @@
                       {% endif %}
                     >
                       <a
-                        class="slide__btn btn {{ button_1_color }} {{ button_1_style }} {{ button_1_size }} {{ button_1_advanced_class }}"
+                        aria-label="{{- button_1_text_untagged | escape -}}" class="slide__btn btn {{ button_1_color }} {{ button_1_style }} {{ button_1_size }} {{ button_1_advanced_class }}"
                         href="{{ button_1_link_untagged }}"
                         {% if forloop.index > 1 %}
                           tabindex="-1" 

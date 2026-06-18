@@ -21,6 +21,6 @@
   </button>
 {%- endcapture -%}
 
-<div class="pagination" data-pagination>
+<div class="pagination" role="navigation" aria-label="pagination" data-pagination>
   {{- paginate | default_pagination | replace: '&laquo; Previous', icon_previous | replace: 'Next &raquo;', icon_next -}}
 </div>

@@ -649,22 +649,49 @@
                     {% if price_style != blank %}
                       {{- price_style -}}
                     {% endif %}
+                    data-gd-enabled="{{ settings.general_discount_enabled }}"
+                    data-gd-percent="{{ settings.general_discount_percent | default: 0 }}"
                   >
+                    {%- liquid
+                      assign gd_on = settings.general_discount_enabled
+                      assign gd_pct = settings.general_discount_percent | default: 0 | plus: 0
+                    -%}
                     {%- unless product == blank -%}
-                      <span
-                        data-product-price 
-                        class="product__price--regular{% if current_variant.compare_at_price > current_variant.price %} product__price--sale{% endif %}{% if bold_price %} product__price--bold{% endif %}"
-                      >
+                      {%- if gd_on and gd_pct > 0 -%}
                         {%- liquid
-                          if current_variant.price == 0
-                            echo 'products.product.free' | t
-                          elsif currency_code_enable
-                            echo current_variant.price | money_with_currency
-                          else
-                            echo current_variant.price | money
+                          assign gd_factor = 100 | minus: gd_pct
+                          assign gd_base_pdp = current_variant.price
+                          if current_variant.compare_at_price > current_variant.price
+                            assign gd_base_pdp = current_variant.compare_at_price
                           endif
+                          assign gd_disc_pdp = gd_base_pdp | times: gd_factor | divided_by: 100
                         -%}
-                      </span>
+                        <span
+                          data-product-price
+                          class="product__price--regular product__price--sale{% if bold_price %} product__price--bold{% endif %}"
+                        >
+                          {%- if currency_code_enable -%}
+                            {{- gd_disc_pdp | money_with_currency -}}
+                          {%- else -%}
+                            {{- gd_disc_pdp | money -}}
+                          {%- endif -%}
+                        </span>
+                      {%- else -%}
+                        <span
+                          data-product-price
+                          class="product__price--regular{% if current_variant.compare_at_price > current_variant.price %} product__price--sale{% endif %}{% if bold_price %} product__price--bold{% endif %}"
+                        >
+                          {%- liquid
+                            if current_variant.price == 0
+                              echo 'products.product.free' | t
+                            elsif currency_code_enable
+                              echo current_variant.price | money_with_currency
+                            else
+                              echo current_variant.price | money
+                            endif
+                          -%}
+                        </span>
+                      {%- endif -%}
                     {%- else -%}
                       <span id="ProductPrice" class="product__price--regular{% if bold_price %} product__price--bold{% endif %}">
                         {%- liquid
@@ -677,17 +704,28 @@
                       </span>
                     {%- endunless -%}
 
-                    <s data-compare-price class="product__price--compare{% if bold_price %} product__price--bold{% endif %}">
-                      {%- liquid
-                        if current_variant.compare_at_price
-                          if currency_code_enable
-                            echo current_variant.compare_at_price | money_with_currency
-                          else
-                            echo current_variant.compare_at_price | money
+                    <s data-compare-price class="product__price--compare{% if bold_price %} product__price--bold{% endif %}"{% unless gd_on and gd_pct > 0 %} {% endunless %}>
+                      {%- if gd_on and gd_pct > 0 -%}
+                        {%- if currency_code_enable -%}
+                          {{- gd_base_pdp | money_with_currency -}}
+                        {%- else -%}
+                          {{- gd_base_pdp | money -}}
+                        {%- endif -%}
+                      {%- else -%}
+                        {%- liquid
+                          if current_variant.compare_at_price
+                            if currency_code_enable
+                              echo current_variant.compare_at_price | money_with_currency
+                            else
+                              echo current_variant.compare_at_price | money
+                            endif
                           endif
-                        endif
-                      -%}
+                        -%}
+                      {%- endif -%}
                     </s>
+                    {%- if gd_on and gd_pct > 0 -%}
+                      <div class="product__price--off product__price-badge-discount">-{{ gd_pct }}%</div>
+                    {%- endif -%}
 
                     {%- liquid
                       assign units = product.variants | map: 'unit_price' | compact
@@ -744,22 +782,37 @@
                     {% if price_style != blank %}
                       {{- price_style -}}
                     {% endif %}
+                    data-gd-enabled="{{ settings.general_discount_enabled }}"
+                    data-gd-percent="{{ settings.general_discount_percent | default: 0 }}"
                   >
                     {%- unless product == blank -%}
-                      <span
-                        data-product-price 
-                        class="product__price--regular{% if current_variant.compare_at_price > current_variant.price %} product__price--sale{% endif %}{% if bold_price %} product__price--bold{% endif %}"
-                      >
-                        {%- liquid
-                          if current_variant.price == 0
-                            echo 'products.product.free' | t
-                          elsif currency_code_enable
-                            echo current_variant.price | money_with_currency
-                          else
-                            echo current_variant.price | money
-                          endif
-                        -%}
-                      </span>
+                      {%- if gd_on and gd_pct > 0 -%}
+                        <span
+                          data-product-price
+                          class="product__price--regular product__price--sale{% if bold_price %} product__price--bold{% endif %}"
+                        >
+                          {%- if currency_code_enable -%}
+                            {{- gd_disc_pdp | money_with_currency -}}
+                          {%- else -%}
+                            {{- gd_disc_pdp | money -}}
+                          {%- endif -%}
+                        </span>
+                      {%- else -%}
+                        <span
+                          data-product-price
+                          class="product__price--regular{% if current_variant.compare_at_price > current_variant.price %} product__price--sale{% endif %}{% if bold_price %} product__price--bold{% endif %}"
+                        >
+                          {%- liquid
+                            if current_variant.price == 0
+                              echo 'products.product.free' | t
+                            elsif currency_code_enable
+                              echo current_variant.price | money_with_currency
+                            else
+                              echo current_variant.price | money
+                            endif
+                          -%}
+                        </span>
+                      {%- endif -%}
                     {%- else -%}
                       <span id="ProductPrice" class="product__price--regular{% if bold_price %} product__price--bold{% endif %}">
                         {%- liquid
@@ -773,16 +826,27 @@
                     {%- endunless -%}
 
                     <s data-compare-price class="product__price--compare{% if bold_price %} product__price--bold{% endif %}">
-                      {%- liquid
-                        if current_variant.compare_at_price
-                          if currency_code_enable
-                            echo current_variant.compare_at_price | money_with_currency
-                          else
-                            echo current_variant.compare_at_price | money
+                      {%- if gd_on and gd_pct > 0 -%}
+                        {%- if currency_code_enable -%}
+                          {{- gd_base_pdp | money_with_currency -}}
+                        {%- else -%}
+                          {{- gd_base_pdp | money -}}
+                        {%- endif -%}
+                      {%- else -%}
+                        {%- liquid
+                          if current_variant.compare_at_price
+                            if currency_code_enable
+                              echo current_variant.compare_at_price | money_with_currency
+                            else
+                              echo current_variant.compare_at_price | money
+                            endif
                           endif
-                        endif
-                      -%}
+                        -%}
+                      {%- endif -%}
                     </s>
+                    {%- if gd_on and gd_pct > 0 -%}
+                      <div class="product__price--off product__price-badge-discount">-{{ gd_pct }}%</div>
+                    {%- endif -%}
 
                     {%- liquid
                       assign units = product.variants | map: 'unit_price' | compact
@@ -1782,7 +1846,7 @@
               {{ sold_out_text }}
             {%- endif -%}
 
-            {%- if settings.atc_show_product_price -%}
+            {% comment %} {%- if settings.atc_show_product_price -%}
               <span data-product-price  class="product__price--regular">
                 {%- liquid
                   if current_variant.price == 0
@@ -1806,7 +1870,7 @@
                   endif
                 -%}
               </s>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
           </span>
 
           <em class="loader loader--line"><em class="loader-indeterminate"></em></em>
@@ -3255,22 +3319,37 @@
       {% if price_style != blank %}
         {{- price_style -}}
       {% endif %}
+      data-gd-enabled="{{ settings.general_discount_enabled }}"
+      data-gd-percent="{{ settings.general_discount_percent | default: 0 }}"
     >
       {%- unless product == blank -%}
-        <span
-          data-product-price 
-          class="product__price--regular{% if current_variant.compare_at_price > current_variant.price %} product__price--sale{% endif %}{% if bold_price %} product__price--bold{% endif %}"
-        >
-          {%- liquid
-            if current_variant.price == 0
-              echo 'products.product.free' | t
-            elsif currency_code_enable
-              echo current_variant.price | money_with_currency
-            else
-              echo current_variant.price | money
-            endif
-          -%}
-        </span>
+        {%- if gd_on and gd_pct > 0 -%}
+          <span
+            data-product-price
+            class="product__price--regular product__price--sale{% if bold_price %} product__price--bold{% endif %}"
+          >
+            {%- if currency_code_enable -%}
+              {{- gd_disc_pdp | money_with_currency -}}
+            {%- else -%}
+              {{- gd_disc_pdp | money -}}
+            {%- endif -%}
+          </span>
+        {%- else -%}
+          <span
+            data-product-price
+            class="product__price--regular{% if current_variant.compare_at_price > current_variant.price %} product__price--sale{% endif %}{% if bold_price %} product__price--bold{% endif %}"
+          >
+            {%- liquid
+              if current_variant.price == 0
+                echo 'products.product.free' | t
+              elsif currency_code_enable
+                echo current_variant.price | money_with_currency
+              else
+                echo current_variant.price | money
+              endif
+            -%}
+          </span>
+        {%- endif -%}
       {%- else -%}
         <span id="ProductPrice" class="product__price--regular{% if bold_price %} product__price--bold{% endif %}">
           {%- liquid
@@ -3284,16 +3363,27 @@
       {%- endunless -%}
 
       <s data-compare-price class="product__price--compare{% if bold_price %} product__price--bold{% endif %}">
-        {%- liquid
-          if current_variant.compare_at_price
-            if currency_code_enable
-              echo current_variant.compare_at_price | money_with_currency
-            else
-              echo current_variant.compare_at_price | money
+        {%- if gd_on and gd_pct > 0 -%}
+          {%- if currency_code_enable -%}
+            {{- gd_base_pdp | money_with_currency -}}
+          {%- else -%}
+            {{- gd_base_pdp | money -}}
+          {%- endif -%}
+        {%- else -%}
+          {%- liquid
+            if current_variant.compare_at_price
+              if currency_code_enable
+                echo current_variant.compare_at_price | money_with_currency
+              else
+                echo current_variant.compare_at_price | money
+              endif
             endif
-          endif
-        -%}
+          -%}
+        {%- endif -%}
       </s>
+      {%- if gd_on and gd_pct > 0 -%}
+        <div class="product__price--off product__price-badge-discount">-{{ gd_pct }}%</div>
+      {%- endif -%}
 
       {%- liquid
         assign units = product.variants | map: 'unit_price' | compact
@@ -4257,6 +4347,35 @@
     return yes && !excluded && forced;
   };
 
+  /* ---- Descuento General (frontend-only) ---- */
+  const gdEnabled = (wrap) => wrap.getAttribute('data-gd-enabled') === 'true';
+  const gdPct = (wrap) => {
+    const v = parseFloat(wrap.getAttribute('data-gd-percent') || '0');
+    return Number.isFinite(v) && v > 0 ? v : 0;
+  };
+
+  const repaintGD = (wrap, v) => {
+    if (!wrap || !gdEnabled(wrap)) return;
+    const pct = gdPct(wrap);
+    if (pct <= 0) return;
+
+    const priceEl = wrap.querySelector(SEL.price);
+    const compareEl = wrap.querySelector(SEL.compare);
+    if (!priceEl) return;
+
+    const base = (v?.compare_at_price > 0 ? v.compare_at_price : v?.price) || 0;
+    if (!Number.isFinite(base) || base <= 0) return;
+
+    const discounted = Math.max(0, Math.round(base * (100 - pct) / 100));
+    priceEl.classList.add('product__price--sale');
+    priceEl.textContent = discounted === 0 ? (window.theme?.strings?.free || 'Free') : money(discounted);
+
+    if (compareEl) {
+      compareEl.classList.remove('hidden');
+      compareEl.textContent = money(base);
+    }
+  };
+
   const pctOf = (wrap) => {
     const v = parseFloat(wrap.getAttribute('data-wholesale-percent') || '0');
     return Number.isFinite(v) && v >= 0 ? v : 0;
@@ -4308,7 +4427,10 @@
 
   const repaintAll = (v = null, root = document) => {
     const variant = v || currentVariant();
-    root.querySelectorAll(SEL.wrapper).forEach(w => repaintOne(w, variant));
+    root.querySelectorAll(SEL.wrapper).forEach(w => {
+      repaintOne(w, variant);
+      repaintGD(w, variant);
+    });
   };
 
   // Ejecutar DESPUÉS de que el tema pinte: rAF + micro demoran

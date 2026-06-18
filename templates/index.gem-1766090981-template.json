@@ -1,0 +1,1582 @@
+{
+  "sections": {
+    "section-slideshow-0": {
+      "type": "section-slideshow",
+      "blocks": {
+        "image_EmEw4e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_02.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_02_mobile.jpg",
+            "overlay_opacity": 15,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "sub-subheading": "",
+            "first_sub_title_color": "#000000",
+            "subheading": "24 Days Of Sea-Crets",
+            "title": "",
+            "title2": "<p>Stocking Stuffers 20% OFF<\/p>",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "Little Treasures, Big Savings",
+            "text_size": 110,
+            "stacked_button": false,
+            "button_1_text": "Shop Stocking Stuffers",
+            "button_1_text_untagged": "Shop Stocking Stuffers",
+            "button_1_link": "https:\/\/earthharbor.com\/collections\/stocking-stuffers-1",
+            "button_1_link_untagged": "https:\/\/earthharbor.com\/collections\/stocking-stuffers-1",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "image_yRwYdd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gifts_under_25_banner_-_Desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Gifts_under_25_banner_-_Mobile.jpg",
+            "overlay_opacity": 10,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "sub-subheading": "",
+            "first_sub_title_color": "#000000",
+            "subheading": "Holiday Season",
+            "title": "",
+            "title2": "<p>Gifts under $25<\/p>",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "CHOOSE GEMS",
+            "button_1_text_untagged": "CHOOSE GEMS",
+            "button_1_link": "shopify:\/\/collections\/gifts-1",
+            "button_1_link_untagged": "shopify:\/\/collections\/gifts-1",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "section-slideshow-0-block-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6560.png",
+            "image_mobile": "shopify:\/\/shop_images\/IMG_6561.jpg",
+            "overlay_opacity": 10,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-light",
+            "sub-subheading": "",
+            "first_sub_title_color": "#000000",
+            "subheading": "Your Skin's Favorite Treat",
+            "title": "<p>Free Full-Size<br\/>AURORA Ampoule <br\/>Orders $80+<\/p>",
+            "title2": "",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "SHOP NOW",
+            "button_1_text_untagged": "DON'T MISS OUT",
+            "button_1_link": "https:\/\/earthharbor.com\/collections\/all",
+            "button_1_link_untagged": "https:\/\/earthharbor.com\/collections\/all",
+            "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "image_CTjeKp": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile_765abec2-bd1c-4e8a-a3a9-39e6b124f7fc.jpg",
+            "overlay_opacity": 10,
+            "content_width": 80,
+            "text_position": "bottom-left",
+            "text_alignment": "text-left",
+            "text_color": "text-dark",
+            "sub-subheading": "The",
+            "first_sub_title_color": "#000000",
+            "subheading": "Should've bought it sooner",
+            "title": "",
+            "title2": "<p>Cleanser<\/p>",
+            "second_title_color": "#000000",
+            "heading_size": 150,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "SHOP NOW",
+            "button_1_text_untagged": "Shop Now",
+            "button_1_link": "shopify:\/\/products\/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_link_untagged": "shopify:\/\/products\/sunshine-dew-antioxidant-cleansing-oil",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--medium",
+            "button_2_text": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--medium",
+            "video_text": "",
+            "video_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_EmEw4e",
+        "image_yRwYdd",
+        "section-slideshow-0-block-0",
+        "image_CTjeKp"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "home-banner-slider",
+        "slide_height": "full-height",
+        "enable_mobile_height": true,
+        "mobile_slide_height": "four-fifty-height-mobile",
+        "show_nav_dots": true,
+        "show_nav_arrows": false,
+        "show_arrow_down": false,
+        "autoplay": true,
+        "duration": 4,
+        "transition": "zoom-out",
+        "enable_zoom_animation": false,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "color_heading": "#ffffff",
+        "font_size_subhead": 50
+      }
+    },
+    "section_text_KMDfPE": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_TWcKkz": {
+          "type": "subheading",
+          "settings": {
+            "text": "<h6><strong>Down-to-Earth from Sea to Skin<\/strong><\/h6>",
+            "size": 120,
+            "margin_bottom": 16
+          }
+        },
+        "heading_n7kz3j": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>Sea the difference<\/strong>: Purely natural, artisan skincare for real life & <strong>real results<\/strong>.<\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#2fbbdc",
+            "highlight_text_color": ""
+          }
+        },
+        "text_6TfVtL": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "size": 100
+          }
+        },
+        "button_UanGnb": {
+          "type": "button",
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "shopify:\/\/pages\/about",
+            "button_color": "btn--black",
+            "button_style": "btn--outline",
+            "button_size": "btn--medium"
+          }
+        },
+        "button_XFw983": {
+          "type": "button",
+          "settings": {
+            "button_text": "SHOP ALL",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_TWcKkz",
+        "heading_n7kz3j",
+        "text_6TfVtL",
+        "button_UanGnb",
+        "button_XFw983"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "home-banner-bottom-text",
+        "text_position": "center",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 52,
+        "padding_bottom": 80
+      }
+    },
+    "section-icons-row-0": {
+      "type": "section-icons-row",
+      "blocks": {
+        "section-icons-row-0-block-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_1_1.png",
+            "title": "",
+            "text": "<p>Clean Ingredients<\/p>"
+          }
+        },
+        "text_8Pxeex": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "icon_image": "shopify:\/\/shop_images\/derm_tested.png",
+            "title": "",
+            "text": "<p>Derm Tested<\/p>"
+          }
+        },
+        "section-icons-row-0-block-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_5_2.png",
+            "title": "",
+            "text": "<p>Proven Actives<\/p>"
+          }
+        },
+        "section-icons-row-0-block-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "icon_image": "shopify:\/\/shop_images\/OBJECTS.png",
+            "title": "",
+            "text": "<p>Sensitivity Tested<\/p>"
+          }
+        },
+        "text_nzGM3B": {
+          "type": "text",
+          "settings": {
+            "icon_name": "clock",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_4_2.png",
+            "title": "",
+            "text": "<p>Crafted In-House<\/p>"
+          }
+        },
+        "text_34wTkD": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "icon_image": "shopify:\/\/shop_images\/Group_1_2.png",
+            "title": "",
+            "text": "<p>Ethical Pioneers<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section-icons-row-0-block-0",
+        "text_8Pxeex",
+        "section-icons-row-0-block-1",
+        "section-icons-row-0-block-2",
+        "text_nzGM3B",
+        "text_34wTkD"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "home-icon-sec",
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 4,
+        "icons_width": 85,
+        "show_vertical_borders": false,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "heading_size": 100,
+        "text_size": 90,
+        "bg_color": "#f4efeb",
+        "gradient": "",
+        "text_color": "#66645e",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "section-collection-0": {
+      "type": "section-collection",
+      "blocks": {
+        "section-collection-0-block-0": {
+          "type": "promo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gift3.jpg",
+            "position": 1,
+            "width": "auto",
+            "title": "<p>Give Glow<\/p>",
+            "heading_size": 100,
+            "heading_highlight_type": "circle",
+            "highlight_color": "rgba(0,0,0,0)",
+            "highlight_text_color": "#ffffff",
+            "content": "Thoughtful, sea-inspired skincare for everyone on your list.",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f7f7f7",
+            "button_text": "SHOP ALL",
+            "button_link": "https:\/\/earthharbor.com\/collections\/gifts-1",
+            "button_color": "btn--white",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "section-collection-0-block-0"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "featured-slider-sec",
+        "collection": "gifts-1",
+        "products_layout": "carousel",
+        "number_of_products": 7,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Gifts<\/p>",
+        "heading_size": 170,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "text": "<p>A selection of gifts under $25<\/p>",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--medium",
+        "bg_color": "",
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "section_image_with_text_TMD3nG": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "heading_4cxiK9": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Not Sure Where to Begin?<\/p>",
+            "size": 160,
+            "text_position": "left",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "spacing_bottom": 12
+          }
+        },
+        "text_i8aNMx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dive into your best skin yet! Take our Skin Quiz to discover the perfect skincare gems for your unique ritual.<\/p>",
+            "size": 100,
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        },
+        "button_XV7myF": {
+          "type": "button",
+          "settings": {
+            "button_text": "TAKE THE QUIZ",
+            "button_link": "shopify:\/\/pages\/skin-quiz",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_4cxiK9",
+        "text_i8aNMx",
+        "button_XV7myF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "where_to_begin",
+        "show_accordion_divider": true,
+        "increase_border_radius": false,
+        "section_height": "six-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "two-fifty-height-mobile",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/where_to_begin.jpg",
+        "block_bg_color": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "section_press_qDXeYP": {
+      "type": "section-press",
+      "blocks": {
+        "press_jaUTVj": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/1ftp_EnvironmentalPartner_Horizontal_Black_1.png",
+            "logo_width": 150
+          }
+        },
+        "press_raQdQC": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/climate-neutral-logo-brandlogos.net_t5avaql7k_1_1.png",
+            "logo_width": 150
+          }
+        },
+        "press_qNVfP8": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/platic_free_logo.svg",
+            "logo_width": 80
+          }
+        },
+        "press_cFefgW": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/pngwing.com-1_1_1.png",
+            "logo_width": 150
+          }
+        },
+        "press_G8dmyj": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Screenshot_27_1.png",
+            "logo_width": 150
+          }
+        },
+        "press_FAgHdW": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/pact_logo.svg",
+            "logo_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "press_jaUTVj",
+        "press_raQdQC",
+        "press_qNVfP8",
+        "press_cFefgW",
+        "press_G8dmyj",
+        "press_FAgHdW"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "main_index_press_logo",
+        "title": "",
+        "show_quotations": true,
+        "show_rounded_corners": false,
+        "logo_opacity": 100,
+        "autoplay": true,
+        "duration": 3,
+        "bg_color": "",
+        "gradient": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 86,
+        "padding_bottom": 86
+      }
+    },
+    "section_list_collection_tx3byV": {
+      "type": "section-list-collection",
+      "blocks": {
+        "collection_6BA3L4": {
+          "type": "collection",
+          "settings": {
+            "collection": "hydrating",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_21.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_8J4CBK": {
+          "type": "collection",
+          "settings": {
+            "collection": "healthy-aging",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_35.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_CfcMtG": {
+          "type": "collection",
+          "settings": {
+            "collection": "balancing",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_2.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_AkD3dr": {
+          "type": "collection",
+          "settings": {
+            "collection": "brightening",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_3.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_JmajEU": {
+          "type": "collection",
+          "settings": {
+            "collection": "pore-refining",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_4.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_4mjMzE": {
+          "type": "collection",
+          "settings": {
+            "collection": "soothing",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_5.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_6BA3L4",
+        "collection_8J4CBK",
+        "collection_CfcMtG",
+        "collection_AkD3dr",
+        "collection_JmajEU",
+        "collection_4mjMzE"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "custom_class": "index_collection_list",
+        "title": "Shop by Benefit",
+        "heading_size": 150,
+        "layout": "carousel",
+        "alignment": "center",
+        "collections_per_row": 6,
+        "columns_mobile": "2",
+        "image_shape": "square",
+        "image_aspect_ratio": 1.5,
+        "enable_product_count": false,
+        "text_size": 130,
+        "overlay_text": false,
+        "enable_slider_mobile": false,
+        "section_bg_color": "",
+        "gradient": "",
+        "section_text_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "custom_collection_THeAiq": {
+      "type": "custom-collection",
+      "blocks": {
+        "collection_list_fjCG4c": {
+          "type": "collection-list",
+          "settings": {
+            "gclass": "item-1",
+            "collection_link": "dry-rough-skin",
+            "collection_title": "Hydrating",
+            "collection_image": "shopify:\/\/shop_images\/Image_8_5ea26b17-5396-46eb-8336-e671dcb2ccc5.png"
+          }
+        },
+        "collection_list_NJawWQ": {
+          "type": "collection-list",
+          "settings": {
+            "gclass": "item-2",
+            "collection_link": "fine-lines-wrinkles",
+            "collection_title": "Healthy Aging",
+            "collection_image": "shopify:\/\/shop_images\/Image_9_18411060-bdac-4f66-9d98-219b23a9d595.png"
+          }
+        },
+        "collection_list_7XW8q3": {
+          "type": "collection-list",
+          "settings": {
+            "gclass": "item-3",
+            "collection_link": "breakouts-acne",
+            "collection_title": "Balancing",
+            "collection_image": "shopify:\/\/shop_images\/Image_10_f5f6d4c0-d4ef-4621-8afe-ce5252c76590.png"
+          }
+        },
+        "collection_list_cEqTCg": {
+          "type": "collection-list",
+          "settings": {
+            "gclass": "item-4",
+            "collection_link": "dullness-uneven-tone",
+            "collection_title": "Brightening",
+            "collection_image": "shopify:\/\/shop_images\/Image_11.png"
+          }
+        },
+        "collection_list_mdpb9i": {
+          "type": "collection-list",
+          "settings": {
+            "gclass": "item-5",
+            "collection_link": "pores-oil-control",
+            "collection_title": "Pore-Refining",
+            "collection_image": "shopify:\/\/shop_images\/Image_12_12e6f574-eda6-4973-9d87-2d26e301f903.png"
+          }
+        },
+        "collection_list_EwyKcp": {
+          "type": "collection-list",
+          "settings": {
+            "gclass": "item-6",
+            "collection_link": "redness-sensitivity",
+            "collection_title": "Soothing",
+            "collection_image": "shopify:\/\/shop_images\/Image_13_5f2216b1-476f-409d-8ee1-16e2221582a2.png"
+          }
+        }
+      },
+      "block_order": [
+        "collection_list_fjCG4c",
+        "collection_list_NJawWQ",
+        "collection_list_7XW8q3",
+        "collection_list_cEqTCg",
+        "collection_list_mdpb9i",
+        "collection_list_EwyKcp"
+      ],
+      "settings": {
+        "custom_class": "home-shop-by-benefit-sec",
+        "title": "<p>Shop by Benefit<\/p>"
+      }
+    },
+    "section-overlapping-images-0": {
+      "type": "section-overlapping-images",
+      "custom_css": [],
+      "settings": {
+        "custom_class": "index_overlap_images",
+        "text_position": "right",
+        "text_alignment": "center",
+        "images_width": 750,
+        "images_offset": 30,
+        "image_1": "shopify:\/\/shop_images\/Picture.png",
+        "image_link_1": "",
+        "image_2": "shopify:\/\/shop_images\/Picture_1.png",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "subheading": "",
+        "title": "<p>Our Grassroots Story<\/p>",
+        "heading_size": 110,
+        "heading_highlight_type": "italics",
+        "highlight_color": "#000000",
+        "highlight_text_color": "#000000",
+        "description": "<p>I’m Ali Perry-Hatch, MPH: toxicologist + herbalist. I created Earth Harbor out of my treehouse kitchen & we got our start in farmers' markets. My biggest struggle with having a natural lifestyle was finding a comprehensive range of premium beauty products that was versatile and that lived up to my strict standards.<\/p>",
+        "text_size": 100,
+        "signature_image": "shopify:\/\/shop_images\/68ff83765232b12744acbdc32e4565d8.png",
+        "button_text": "LEARN MORE",
+        "button_link": "shopify:\/\/pages\/about",
+        "button_color": "btn--black",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--medium",
+        "video_text": "",
+        "video_link": "",
+        "bg_color": "#ffffff",
+        "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%)",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 100,
+        "padding_bottom": 60
+      }
+    },
+    "section_collection_jmdHm8": {
+      "type": "section-collection",
+      "blocks": {
+        "promo_jfrYMn": {
+          "type": "promo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8acad2b94feb1117dadd6e59abef6912.webp",
+            "position": 1,
+            "width": "auto",
+            "title": "<p>Real Results<\/p>",
+            "heading_size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "content": "Effective skincare essentials",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#d3d3d3",
+            "button_text": "SHOP ALL",
+            "button_link": "shopify:\/\/collections\/bestsellers",
+            "button_color": "btn--white",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "promo_jfrYMn"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "best-seller-sec",
+        "collection": "bestsellers",
+        "products_layout": "carousel",
+        "number_of_products": 7,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Best sellers<\/p>",
+        "heading_size": 100,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "<p>Our most-loved gems.<\/p>",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--medium",
+        "bg_color": "",
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "section_columns_EfUWTF": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_6ipBYn": {
+          "type": "text_block",
+          "settings": {
+            "gclass": "",
+            "image": "shopify:\/\/shop_images\/product_card_before_after_1.png",
+            "title": "",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--medium",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_jdJLfQ": {
+          "type": "text_block",
+          "settings": {
+            "gclass": "",
+            "image": "shopify:\/\/shop_images\/product_card_before_after_2.png",
+            "title": "",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--medium",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_m7tR9p": {
+          "type": "text_block",
+          "settings": {
+            "gclass": "",
+            "image": "shopify:\/\/shop_images\/product_card_before_after_3.png",
+            "title": "",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--medium",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_nxgKxq": {
+          "type": "text_block",
+          "settings": {
+            "gclass": "",
+            "image": "shopify:\/\/shop_images\/product_card_before_after_4.png",
+            "title": "",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--medium",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_tdrwyG": {
+          "type": "text_block",
+          "settings": {
+            "gclass": "",
+            "image": "shopify:\/\/shop_images\/product_card_before_after_5.png",
+            "title": "",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--medium",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_cUemT7": {
+          "type": "text_block",
+          "settings": {
+            "gclass": "",
+            "image": "shopify:\/\/shop_images\/product_card_before_after_6.png",
+            "title": "",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--medium",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_6ipBYn",
+        "text_block_jdJLfQ",
+        "text_block_m7tR9p",
+        "text_block_nxgKxq",
+        "text_block_tdrwyG",
+        "text_block_cUemT7"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "result-obsessed-sec",
+        "title": "Down to Earth, Results Obsessed",
+        "sub_heading": "",
+        "heading_size": 120,
+        "align_text": "text-left",
+        "columns": 3,
+        "columns_mobile": "2",
+        "show_images": true,
+        "show_borders": false,
+        "equalize_height": false,
+        "desktop_aspect_ratio": 0.8,
+        "mobile_aspect_ratio": 0.8,
+        "bg_color": "",
+        "gradient": "",
+        "color_borders": "#000000",
+        "layout_mobile": "carousel",
+        "width": "wrapper",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "section_products_list_gJkt3q": {
+      "type": "section-products-list",
+      "blocks": {
+        "product_VzWVwV": {
+          "type": "product",
+          "settings": {
+            "product": "seas-the-day-kit",
+            "title": "",
+            "sub_heading": "",
+            "product_description": "<p>Whether you’re searching for the perfect holiday gift or ready to indulge in a little self-love, the Seas the Day Kit has everything you need for radiant, feel-good skincare.Enjoy a simple 3-step ritual that feels like a spa day — refresh, brighten, and unwind, day in and day out.<\/p>",
+            "button_text": "Shop Now",
+            "show_second_image": false,
+            "image_1": "shopify:\/\/shop_images\/Set_Highlight.png",
+            "show_circle": true,
+            "hide_on_mobile": true,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "Holiday Gift Idea • Full Set •",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        }
+      },
+      "block_order": [
+        "product_VzWVwV"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "new-arrivals-sec",
+        "current_label": "Current",
+        "title": "THE PERFECT GIFT",
+        "heading_size": 100,
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--medium",
+        "image_aspect_ratio": 1,
+        "bg_color": "",
+        "gradient": "",
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 0
+      }
+    },
+    "section_press_DM9EaD": {
+      "type": "section-press",
+      "blocks": {
+        "press_K6zpmj": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/ulta_6dd30cbf-bddf-4fc1-97d3-27d5e17d7331_240x240_1.png",
+            "logo_width": 100
+          }
+        },
+        "press_ngyQNy": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/wfm_da32c781-4e34-40e9-9848-d89bdb8770d1_240x240_1.png",
+            "logo_width": 100
+          }
+        },
+        "press_heG6yR": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Sprouts_Logo_1C_Black-640x166_1_1.png",
+            "logo_width": 130
+          }
+        },
+        "press_jtfGNM": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/thrive_240x240_1.png",
+            "logo_width": 130
+          }
+        },
+        "press_HxWitr": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/beuaty_heroes_1_1.png",
+            "logo_width": 130
+          }
+        },
+        "press_zN4R4w": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Frame_146.png",
+            "logo_width": 130
+          }
+        },
+        "press_rP8xV6": {
+          "type": "press",
+          "settings": {
+            "text": "",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Grove-wordmark_1_1.png",
+            "logo_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "press_K6zpmj",
+        "press_ngyQNy",
+        "press_heG6yR",
+        "press_jtfGNM",
+        "press_HxWitr",
+        "press_zN4R4w",
+        "press_rP8xV6"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "find-us-sec",
+        "title": "find us at",
+        "show_quotations": true,
+        "show_rounded_corners": false,
+        "logo_opacity": 100,
+        "autoplay": true,
+        "duration": 3,
+        "bg_color": "",
+        "gradient": "",
+        "width": "wrapper--narrow",
+        "padding_top": 30,
+        "padding_bottom": 48
+      }
+    },
+    "section_grid_cwjJEM": {
+      "type": "section-grid",
+      "blocks": {
+        "image_DeFE73": {
+          "type": "image",
+          "settings": {
+            "width": "33.33",
+            "image": "shopify:\/\/shop_images\/58dc60fe827e6bd3f1211bf959465e20.png",
+            "custom_link": "",
+            "custom_btn_text1": "",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "HOLIDAY GIFTS",
+            "title": "UNDER $25",
+            "text": "",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections\/gifts-1",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-dark"
+          }
+        },
+        "image_qK8Hfy": {
+          "type": "image",
+          "settings": {
+            "width": "66.66",
+            "image": "shopify:\/\/shop_images\/Nymph_Nectar_promo.jpg",
+            "custom_link": "",
+            "custom_btn_text1": "",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "GIFT WITH PURCHASE",
+            "title": "MINI NYMPH NECTAR",
+            "text": "Orders $60+",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "image_DeFE73",
+        "image_qK8Hfy"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "offers-sec",
+        "desktop_height": "two-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "two-fifty-height-mobile",
+        "heading_size": 130,
+        "text_size": 100,
+        "button_1_color": "btn--black",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--medium",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--medium",
+        "section_bg_color": "",
+        "gradient": "",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "section-testimonials-with-images-0": {
+      "type": "section-testimonials-with-images",
+      "blocks": {
+        "section-testimonials-with-images-0-block-5": {
+          "type": "image",
+          "settings": {
+            "star_rating": 0,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/Product_Card_38.png",
+            "aspect_ratio": 0.8,
+            "heading": "",
+            "text_size": 125,
+            "customer_name": "",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-4": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "heading": "I love Mermaid Milk",
+            "text_size": 125,
+            "text": "<p>My skin feels much softer and supple. This is a great product!<\/p>",
+            "customer_name": "Barbara",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-1": {
+          "type": "image",
+          "settings": {
+            "star_rating": 0,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/Siren_Silk_Review.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "",
+            "text_size": 125,
+            "customer_name": "",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "heading": "Amazing",
+            "text_size": 125,
+            "text": "<p>The only moisturizer I will use! It has a subtle smell, dries quickly, and goes  on like silk. Great for sensitive skin, I even put it on my kids cheeks  in the winter.<\/p>",
+            "customer_name": "Kaitilin",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-3": {
+          "type": "image",
+          "settings": {
+            "star_rating": 0,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/Sunshine_Dew_Review.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "",
+            "text_size": 125,
+            "customer_name": "",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "heading": "Gentle cleanser",
+            "text_size": 125,
+            "text": "<p>I find that this is a gentle, but effective cleanser for my skin.  I  really appreciate that it does a good job of cleansing my face without  stripping my naturel oils.<\/p>",
+            "customer_name": "Vicky R.",
+            "subheading": ""
+          }
+        },
+        "image_HNLNDB": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "star_rating": 0,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/Product_Card_8.png",
+            "aspect_ratio": 0.8,
+            "heading": "",
+            "text_size": 125,
+            "customer_name": "",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "testimonial_CGFcgB": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "heading": "Gentle cleanser",
+            "text_size": 125,
+            "text": "<p>I find that this is a gentle, but effective cleanser for my skin.  I  really appreciate that it does a good job of cleansing my face without  stripping my naturel oils.<\/p>",
+            "customer_name": "Vicky R.",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "section-testimonials-with-images-0-block-5",
+        "section-testimonials-with-images-0-block-4",
+        "section-testimonials-with-images-0-block-1",
+        "section-testimonials-with-images-0-block-0",
+        "section-testimonials-with-images-0-block-3",
+        "section-testimonials-with-images-0-block-2",
+        "image_HNLNDB",
+        "testimonial_CGFcgB"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "testimonial-sec",
+        "subheading": "",
+        "subheading_size": 100,
+        "title": "Loved by over 10,000+ merpals",
+        "heading_size": 140,
+        "text_alignment": "text-left",
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "testimonial_block_color": "#f4efeb",
+        "star_color": "",
+        "testimonial_text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 48
+      }
+    },
+    "section_press_fRVGGn": {
+      "type": "section-press",
+      "blocks": {
+        "press_N3gyfW": {
+          "type": "press",
+          "settings": {
+            "text": "<p>A comprehensive plant-based solution for all skin types.<\/p>",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Recurso_4_3x_1.png",
+            "logo_width": 120
+          }
+        },
+        "press_ijQt8n": {
+          "type": "press",
+          "settings": {
+            "text": "<p>True beauty through nature. Earth Harbor delivers sensorial, scientific skincare with results you can see and feel.<\/p>",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Harper_s_Bazaar_Logo.jpg",
+            "logo_width": 110
+          }
+        },
+        "press_7GhkyR": {
+          "type": "press",
+          "settings": {
+            "text": "<p>Earth Harbor's unique approach to skincare makes their products optimally effective and profoundly holistic.<\/p>",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Recurso_2_3x_1.png",
+            "logo_width": 120
+          }
+        },
+        "press_VVThpU": {
+          "type": "press",
+          "settings": {
+            "text": "<p>An enchanting blend of luxe botanicals with premium-quality all-natural ingredients.<\/p>",
+            "link": "",
+            "press_logo": "shopify:\/\/shop_images\/Recurso_5_3x_1.png",
+            "logo_width": 120
+          }
+        }
+      },
+      "block_order": [
+        "press_N3gyfW",
+        "press_ijQt8n",
+        "press_7GhkyR",
+        "press_VVThpU"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "press-logo-sec",
+        "title": "Press",
+        "show_quotations": true,
+        "show_rounded_corners": false,
+        "logo_opacity": 100,
+        "autoplay": false,
+        "duration": 4,
+        "bg_color": "",
+        "gradient": "",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 80
+      }
+    },
+    "section_collection_tpgHH6": {
+      "type": "section-collection",
+      "blocks": {
+        "promo_37wqbc": {
+          "type": "promo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/67e06c929df3886b95ba08d48dd23440.webp",
+            "position": 1,
+            "width": "auto",
+            "title": "<p>Elevate Your Ritual<\/p>",
+            "heading_size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "content": "Curated sets, effortless savings.",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#d3d3d3",
+            "button_text": "Shop All",
+            "button_link": "https:\/\/earthharbor.com\/pages\/sets",
+            "button_color": "btn--white",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "promo_37wqbc"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "featured-slider-sec",
+        "collection": "kits",
+        "products_layout": "carousel",
+        "number_of_products": 7,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Save on Sets<\/p>",
+        "heading_size": 100,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "<p>Thoughtfully curated skincare sets for every routine.<\/p>",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--medium",
+        "bg_color": "",
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "section_list_collection_ELWThw": {
+      "type": "section-list-collection",
+      "blocks": {
+        "collection_8tdnYU": {
+          "type": "collection",
+          "settings": {
+            "collection": "cleansers",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_28.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_eVnxHg": {
+          "type": "collection",
+          "settings": {
+            "collection": "toners",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_29.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_f8XW8F": {
+          "type": "collection",
+          "settings": {
+            "collection": "serums",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_30.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_RUWWyU": {
+          "type": "collection",
+          "settings": {
+            "collection": "moisturizers",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_32.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_ULjfm9": {
+          "type": "collection",
+          "settings": {
+            "collection": "spf",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_33.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_EWEWG8": {
+          "type": "collection",
+          "settings": {
+            "collection": "kits",
+            "custom_collection_image": "shopify:\/\/shop_images\/Product_Card_34.png",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_8tdnYU",
+        "collection_eVnxHg",
+        "collection_f8XW8F",
+        "collection_RUWWyU",
+        "collection_ULjfm9",
+        "collection_EWEWG8"
+      ],
+      "custom_css": [],
+      "settings": {
+        "custom_class": "shop-by-category-sec",
+        "title": "Shop by Category",
+        "heading_size": 60,
+        "layout": "grid",
+        "alignment": "center",
+        "collections_per_row": 6,
+        "columns_mobile": "2",
+        "image_shape": "square",
+        "image_aspect_ratio": 1.5,
+        "enable_product_count": false,
+        "text_size": 130,
+        "overlay_text": false,
+        "enable_slider_mobile": false,
+        "section_bg_color": "",
+        "gradient": "",
+        "section_text_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "section-newsletter-0": {
+      "type": "section-newsletter",
+      "custom_css": [],
+      "settings": {
+        "custom_class": "newsletter-sec",
+        "flex_align": "align--middle-split",
+        "text_color": "text-dark",
+        "title": "Sign up for exclusive deals and early access to new products",
+        "text": "",
+        "extra_fields": "name",
+        "button_text": "",
+        "bg_color": "",
+        "gradient": "",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "section-slideshow-0",
+    "section_text_KMDfPE",
+    "section-icons-row-0",
+    "section-collection-0",
+    "section_image_with_text_TMD3nG",
+    "section_press_qDXeYP",
+    "section_list_collection_tx3byV",
+    "custom_collection_THeAiq",
+    "section-overlapping-images-0",
+    "section_collection_jmdHm8",
+    "section_columns_EfUWTF",
+    "section_products_list_gJkt3q",
+    "section_press_DM9EaD",
+    "section_grid_cwjJEM",
+    "section-testimonials-with-images-0",
+    "section_press_fRVGGn",
+    "section_collection_tpgHH6",
+    "section_list_collection_ELWThw",
+    "section-newsletter-0"
+  ]
+}

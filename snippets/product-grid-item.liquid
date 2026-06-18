@@ -16,6 +16,15 @@
     {% render 'product-grid-item', product: product, carousel: carousel, animation: animation, animation_delay: animation_delay, image_aspect_ratio_setting: image_aspect_ratio_setting %}
 {%- endcomment -%}
 
+{% if settings.show_quick_buy_always %}
+  <style>
+    .product-grid-item__image .btn-quick-buy {
+      opacity: 1;
+      transform: translate(0);
+    }
+  </style>
+{% endif %}
+
 {%- liquid
   assign heading_style = settings.heading_style
   assign enable_filters = section.settings.enable_filters
@@ -163,8 +172,8 @@
          {% else %}
            {{ product.url | within: collection }}
          {% endif %}" 
-    aria-label="{{ product.title | strip_html | escape }}"{% if index > 1 %} tabindex="-1"{% endif %} data-grid-link>
-    {{- product.title | strip_html | escape -}}
+    {% if index > 1 %} tabindex="-1"{% endif %} data-grid-link>
+    <h2 class="product-grid-item__title">{{- product.title | strip_html | escape -}}</h2>
   </a>
   <span class="product-grid-item__subtitle">{{ product.metafields.custom.product_card_subtitle }}</span>
 {%- endcapture -%}
@@ -174,20 +183,14 @@
 {%- endcapture -%}
 
 {%- capture product_info_price -%}
-  <a class="product-grid-item__price price{% if settings.bold_price %} price--bold{% endif %}" 
-    href="{% if template.suffix contains 'wholesale' %}
-           {{ product.url | within: collection }}?from=wholesale
-         {% else %}
-           {{ product.url | within: collection }}
-         {% endif %}"
-    {% if index > 1 %} tabindex="-1"{% endif %} data-grid-link>
+  <div class="product-grid-item__price price{% if settings.bold_price %} price--bold{% endif %}">
     {% if template.suffix contains 'wholesale' and customer.tags contains settings.wholesale_tag %}
       {%- render 'price-wholesale', product: product -%}
     {% else %}
       {%- render 'product-price', product: product -%}
     {% endif %}
 
-  </a>
+  </div>
   {%- comment -%} Star Rating {%- endcomment -%}
   {% if product.metafields.okendo.summaryData.reviewCount > 0 or product.metafields.okendo.ReviewCount > 0 %}
   {% if product != blank %} 
@@ -289,7 +292,7 @@
          {% else %}
            {{ product.url | within: collection }}
          {% endif %}"
-        aria-label="{{ product.title | strip_html | escape }}"
+      
         data-grid-link
         {% if index > 1 %} tabindex="-1"{% endif %} >
         {%- if product.media.size > 0 -%}
@@ -357,7 +360,7 @@
               </template>
             {%- endif -%}
 
-            <span class="visually-hidden">{{ image.alt | default: product.title | strip_html | escape }}</span>
+            {% comment %} <span class="visually-hidden">{{ image.alt | default: product.title | strip_html | escape }}</span> {% endcomment %}
           </deferred-loading>
         {%- else -%}
           <div class="product__media__image">
@@ -375,7 +378,7 @@
         {%- endif -%}
 
         {%- if product_grid_hover == 'slideshow' and product.media.size > 1 -%}
-          <div class="product__media__hover product__media__hover--{{ product_grid_hover_animation }} product__media__slider" data-hover-slideshow-holder>
+          <div class="product__media__hover--{{ product_grid_hover_animation }} product__media__slider" data-hover-slideshow-holder>
             {%- for media in product.media limit: 4 -%}
               {%- if media != featured_media -%}
                 {%- assign image = media.preview_image -%}
@@ -401,10 +404,10 @@
         {%- elsif product_grid_hover == 'image' and product.media[1].preview_image != blank -%}
           {%- assign image = product.media[1].preview_image -%}
           <deferred-loading
-            class="product__media__hover product__media__hover--{{ product_grid_hover_animation }}"
+            class=" dd product__media__hover product__media__hover--{{ product_grid_hover_animation }}"
             {% if has_colors %} data-deferred-container="[data-product-block]" data-deferred-triggers="[data-deferred-trigger-element]"{% endif %}
           >
-            {%- render 'image-fill',
+            {%- render 'image-fill-hover',
               cover: image_cover,
               is_background: true,
               img_object: image,
@@ -557,7 +560,7 @@
             {%- form 'product', product, data-product-form: '', data-quickbuy-form: '', id: unique, class: 'quick__form' -%}
               <input type="hidden" name="quantity" value="1">
               <input type="hidden" name="id" value="{{ current_variant.id }}">
-              <button type="submit" name="add" class="btn-quick-buy {{ settings.button_style }}" data-add-to-cart data-atc-trigger{% if index > 1 %} tabindex="-1"{% endif %}>
+              <button type="submit" name="add" aria-label="Quick Add to cart" class="btn-quick-buy {{ settings.button_style }}" data-add-to-cart data-atc-trigger{% if index > 1 %} tabindex="-1"{% endif %}>
                 <span class="btn__inner">
                   {{ cart_icon }}
                   <span class="btn__text">{{ 'products.product.quick_view' | t }}</span>
@@ -579,7 +582,7 @@
               {% else %}
                 {{ product.url | within: collection }}
               {% endif %}"
-              aria-label="{{ 'products.product.quick_view' | t }}"
+              aria-label="{{ 'products.product.quick_view' | t }} button"
               data-handle="{{ product.handle }}"
               data-button-quick-view
               data-grid-link

@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -23,7 +14,7 @@
           }
         },
         "okendo_star_rating_JGWjfm": {
-          "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}"
           }
@@ -54,7 +45,7 @@
           }
         },
         "recharge_subscriptions_subscription_widget_v2_UHbH7P": {
-          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget-v2\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {}
         },
         "form": {
@@ -171,7 +162,7 @@
             "line_thickness": "normal",
             "accordion_heading": "Ingredients",
             "heading_style": "font-body",
-            "accordion_text": "<p>Key Active Ingredients:</p><ul><li><strong>5 Ceramide Complex</strong> • strengthens skin barrier + restores youthful skin function.</li><li><strong>Acai Phytosterols</strong> • fight against environmental damage + inflammation</li><li><strong>Blue Lotus Extract</strong> • powerfully rejuvenates + softens + plumps</li><li><strong>Rice Lipids</strong> • retains long-lasting moisture + support skin elasticity</li><li><strong>Mushroom Beta Glucan</strong> • reparative antioxidant + boosts collagen production + suppleness</li><li><strong>Kelp Probiotic</strong> • potent a quickly balances skin pH + microbiome</li></ul><p><strong>Full lngredient list      |      </strong><a href=\"/pages/ingredient-philosophy\" title=\"Ingredient Philosophy\"><strong>What we don’t use              </strong></a></p>",
+            "accordion_text": "<p>Key Active Ingredients:<\/p><ul><li><strong>5 Ceramide Complex<\/strong> • strengthens skin barrier + restores youthful skin function.<\/li><li><strong>Acai Phytosterols<\/strong> • fight against environmental damage + inflammation<\/li><li><strong>Blue Lotus Extract<\/strong> • powerfully rejuvenates + softens + plumps<\/li><li><strong>Rice Lipids<\/strong> • retains long-lasting moisture + support skin elasticity<\/li><li><strong>Mushroom Beta Glucan<\/strong> • reparative antioxidant + boosts collagen production + suppleness<\/li><li><strong>Kelp Probiotic<\/strong> • potent a quickly balances skin pH + microbiome<\/li><\/ul><p><strong>Full lngredient list      |      <\/strong><a href=\"\/pages\/ingredient-philosophy\" title=\"Ingredient Philosophy\"><strong>What we don’t use              <\/strong><\/a><\/p>",
             "accordion_page": "",
             "padding_bottom": 0
           }
@@ -188,7 +179,7 @@
             "line_thickness": "normal",
             "accordion_heading": "Standards",
             "heading_style": "font-body",
-            "accordion_text": "<p><strong>Our Commitment to Quality</strong></p><ul><li>100% Nature-Identical</li><li>No Harsh Synthetics</li><li>No Fillers, Only Actives</li><li>Clinically & Scientifically Proven</li><li>Dermatologist Tested</li><li>Certified Safe for Sensitive Skin</li><li>Non-Toxic (Toxicologist Audited)</li><li>Third-Party Safety & Stability Tested<br/></li></ul><p><strong>Clean & Ethical Practices</strong></p><ul><li>Ultra-Clean Ingredients</li><li>Free from Artificial Fragrances & Dyes</li><li>Traceable, Ethical, Premium Ingredients</li><li>Non-GMO Verified Ingredients</li><li>Sustainably Sourced & Verified</li><li>Cruelty-Free & Vegan Certified</li><li>European Union Certified<br/></li></ul><p><strong>Sustainability at Heart</strong></p><ul><li>Plastic Neutral Certified</li><li>Carbon Neutral Certified</li><li>Zero-Waste Refills</li><li>Ocean-Friendly</li><li>1% for the Planet Member</li><li>Reusable & Biodegradable Packaging<br/></li></ul><p><strong>Crafted with Care</strong></p><ul><li>Artisan Small Batches</li><li>In-House Lab Made</li><li>Herbalist-Chemist Formulated</li><li>Good Manufacturing Practices Certified<br/></li></ul><p><strong>Proudly Independent</strong></p><ul><li>Small Family Business</li><li>Woman-Owned</li><li>Independently Operated, Never Outsourced</li></ul>",
+            "accordion_text": "<p><strong>Our Commitment to Quality<\/strong><\/p><ul><li>100% Nature-Identical<\/li><li>No Harsh Synthetics<\/li><li>No Fillers, Only Actives<\/li><li>Clinically & Scientifically Proven<\/li><li>Dermatologist Tested<\/li><li>Certified Safe for Sensitive Skin<\/li><li>Non-Toxic (Toxicologist Audited)<\/li><li>Third-Party Safety & Stability Tested<br\/><\/li><\/ul><p><strong>Clean & Ethical Practices<\/strong><\/p><ul><li>Ultra-Clean Ingredients<\/li><li>Free from Artificial Fragrances & Dyes<\/li><li>Traceable, Ethical, Premium Ingredients<\/li><li>Non-GMO Verified Ingredients<\/li><li>Sustainably Sourced & Verified<\/li><li>Cruelty-Free & Vegan Certified<\/li><li>European Union Certified<br\/><\/li><\/ul><p><strong>Sustainability at Heart<\/strong><\/p><ul><li>Plastic Neutral Certified<\/li><li>Carbon Neutral Certified<\/li><li>Zero-Waste Refills<\/li><li>Ocean-Friendly<\/li><li>1% for the Planet Member<\/li><li>Reusable & Biodegradable Packaging<br\/><\/li><\/ul><p><strong>Crafted with Care<\/strong><\/p><ul><li>Artisan Small Batches<\/li><li>In-House Lab Made<\/li><li>Herbalist-Chemist Formulated<\/li><li>Good Manufacturing Practices Certified<br\/><\/li><\/ul><p><strong>Proudly Independent<\/strong><\/p><ul><li>Small Family Business<\/li><li>Woman-Owned<\/li><li>Independently Operated, Never Outsourced<\/li><\/ul>",
             "accordion_page": "",
             "padding_bottom": 20
           }
@@ -205,7 +196,7 @@
             "line_thickness": "normal",
             "accordion_heading": "Earth First",
             "heading_style": "font-body",
-            "accordion_text": "<p><strong>Packaging</strong><br/>Our glass containers are 100% recyclable, and closures use 50% PCR plastic (varies by availability). Boxes, inserts, and shipping materials are compostable, made with FSC-certified/recycled paper and soy-based ink. Every product also has a plastic-free option and zero-waste refills.<br/><br/><strong>How to recycle</strong><br/>For a zero-waste choice, get a refill—each comes in a glass bottle with an aluminum lid. Swap your old closure onto the new bottle, then recycle the empty glass and lid! If not refilling, wash, remove the label, and recycle the glass. Take apart closures and check local recycling guidelines—small pieces (like closure elements and label backing) can be recycled through <a href=\"https://www.pactcollective.org/\" title=\"https://www.pactcollective.org/\">PACT Collective</a> or be discarded. All boxes and shipping materials can be composted, reused, or recycled.<br/><br/><a href=\"/collections/refills-plastic-free\" title=\"Refills + Plastic-Free\"><strong>Plastic Free & Refill Option  </strong></a></p>",
+            "accordion_text": "<p><strong>Packaging<\/strong><br\/>Our glass containers are 100% recyclable, and closures use 50% PCR plastic (varies by availability). Boxes, inserts, and shipping materials are compostable, made with FSC-certified\/recycled paper and soy-based ink. Every product also has a plastic-free option and zero-waste refills.<br\/><br\/><strong>How to recycle<\/strong><br\/>For a zero-waste choice, get a refill—each comes in a glass bottle with an aluminum lid. Swap your old closure onto the new bottle, then recycle the empty glass and lid! If not refilling, wash, remove the label, and recycle the glass. Take apart closures and check local recycling guidelines—small pieces (like closure elements and label backing) can be recycled through <a href=\"https:\/\/www.pactcollective.org\/\" title=\"https:\/\/www.pactcollective.org\/\">PACT Collective<\/a> or be discarded. All boxes and shipping materials can be composted, reused, or recycled.<br\/><br\/><a href=\"\/collections\/refills-plastic-free\" title=\"Refills + Plastic-Free\"><strong>Plastic Free & Refill Option  <\/strong><\/a><\/p>",
             "accordion_page": "",
             "padding_bottom": 0
           }
@@ -217,7 +208,7 @@
             "icon_name": "support",
             "icon_width": 25,
             "title": "Need help with sizing?",
-            "text": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>",
+            "text": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
             "bg_color": "#f7f9fa",
             "text_color": "#000000",
             "padding_bottom": 20
@@ -238,17 +229,17 @@
             "custom_block": "textIcon-sec",
             "icon_name_1": "none",
             "icon_color_1": "",
-            "icon_image_1": "shopify://shop_images/ph_seal-check-thin.png",
+            "icon_image_1": "shopify:\/\/shop_images\/ph_seal-check-thin.png",
             "icon_width_1": 20,
             "icon_text_1": "Clinically Tested",
             "icon_name_2": "check",
             "icon_color_2": "",
-            "icon_image_2": "shopify://shop_images/ph_drop-light.png",
+            "icon_image_2": "shopify:\/\/shop_images\/ph_drop-light.png",
             "icon_width_2": 20,
             "icon_text_2": "Toxicologist Formulated",
             "icon_name_3": "scientific",
             "icon_color_3": "",
-            "icon_image_3": "shopify://shop_images/circum_beaker-1.png",
+            "icon_image_3": "shopify:\/\/shop_images\/circum_beaker-1.png",
             "icon_width_3": 20,
             "icon_text_3": "Dermatologist Tested",
             "icon_name_4": "flower",
@@ -308,18 +299,18 @@
         "text_alignment": "left",
         "images_width": 750,
         "images_offset": 60,
-        "image_1": "shopify://shop_images/Picture_4.png",
+        "image_1": "shopify:\/\/shop_images\/Picture_4.png",
         "image_link_1": "",
-        "image_2": "shopify://shop_images/Picture_5.png",
+        "image_2": "shopify:\/\/shop_images\/Picture_5.png",
         "image_link_2": "",
         "hide_image_2": false,
         "subheading": "",
-        "title": "<p>Horizon at-a-glance</p>",
+        "title": "<p>Horizon at-a-glance<\/p>",
         "heading_size": 100,
         "heading_highlight_type": "underline-hand-drawn",
         "highlight_color": "#000000",
         "highlight_text_color": "",
-        "description": "<p><strong>WHY YOU’LL LOVE IT</strong><br/>Strengthens Barrier — Deeply Hydrates — Restores — Softens — Comforts.<br/><br/><strong>MADE FOR </strong><br/>All skin types. Great for dry skin.</p><p><strong>HELPS WITH</strong><br/>Skin barrier, Suppleness, Fine lines & wrinkles, Hydration, Irritation.</p><p><strong>FYI</strong><br/>Milky gel texture feels light and absorbs quickly without making skin feel sticky.</p>",
+        "description": "<p><strong>WHY YOU’LL LOVE IT<\/strong><br\/>Strengthens Barrier — Deeply Hydrates — Restores — Softens — Comforts.<br\/><br\/><strong>MADE FOR <\/strong><br\/>All skin types. Great for dry skin.<\/p><p><strong>HELPS WITH<\/strong><br\/>Skin barrier, Suppleness, Fine lines & wrinkles, Hydration, Irritation.<\/p><p><strong>FYI<\/strong><br\/>Milky gel texture feels light and absorbs quickly without making skin feel sticky.<\/p>",
         "text_size": 100,
         "button_text": "",
         "button_link": "",
@@ -344,27 +335,27 @@
           "type": "text",
           "settings": {
             "icon_name": "leaf",
-            "icon_image": "shopify://shop_images/Recurso_1_1_1.png",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_1_1_1.png",
             "title": "Cleanest Ingredients",
-            "text": "<p>100% nature-identical</p>"
+            "text": "<p>100% nature-identical<\/p>"
           }
         },
         "text_Qacy6m": {
           "type": "text",
           "settings": {
             "icon_name": "oven-safe",
-            "icon_image": "shopify://shop_images/Recurso_4_2_1.png",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_4_2_1.png",
             "title": "Artisan Crafted",
-            "text": "<p>In-house lab small batches</p>"
+            "text": "<p>In-house lab small batches<\/p>"
           }
         },
         "text_FeeQLN": {
           "type": "text",
           "settings": {
             "icon_name": "eco-friendly",
-            "icon_image": "shopify://shop_images/Group_2_1.png",
+            "icon_image": "shopify:\/\/shop_images\/Group_2_1.png",
             "title": "1% Donated",
-            "text": "<p>to forest conservation</p>"
+            "text": "<p>to forest conservation<\/p>"
           }
         },
         "text_BzYiCb": {
@@ -372,7 +363,7 @@
           "settings": {
             "icon_name": "heart",
             "title": "Ethical Pioneers",
-            "text": "<p>built on passion and purpose</p>"
+            "text": "<p>built on passion and purpose<\/p>"
           }
         }
       },
@@ -426,7 +417,7 @@
         "heading_MbKqF4": {
           "type": "heading",
           "settings": {
-            "title": "<p>Proven natural actives</p>",
+            "title": "<p>Proven natural actives<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -438,7 +429,7 @@
         "text_HwNMYX": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>5 Ceramide Complex</strong> • strengthens skin barrier + restores youthful skin function.<br/><strong>Acai Phytosterols</strong> • fight against environmental damage + inflammation.<br/><strong>Blue Lotus Extract </strong>• powerfully rejuvenates + softens + plumps.<br/><strong>Rice Lipids </strong>• retains long-lasting moisture + support skin elasticity.<br/><strong>Mushroom Beta Glucan </strong>• reparative antioxidant + boosts collagen production + suppleness.<br/><strong>Kelp Probiotic </strong>• potent a quickly balances skin pH + microbiome.</p>",
+            "text": "<p><strong>5 Ceramide Complex<\/strong> • strengthens skin barrier + restores youthful skin function.<br\/><strong>Acai Phytosterols<\/strong> • fight against environmental damage + inflammation.<br\/><strong>Blue Lotus Extract <\/strong>• powerfully rejuvenates + softens + plumps.<br\/><strong>Rice Lipids <\/strong>• retains long-lasting moisture + support skin elasticity.<br\/><strong>Mushroom Beta Glucan <\/strong>• reparative antioxidant + boosts collagen production + suppleness.<br\/><strong>Kelp Probiotic <\/strong>• potent a quickly balances skin pH + microbiome.<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -476,7 +467,7 @@
         "layout": "inline",
         "image_location": "right",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_6.png",
+        "image": "shopify:\/\/shop_images\/Picture_6.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -494,56 +485,56 @@
           "type": "text",
           "settings": {
             "title": "How does Horizon compare to other ceramide serums?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "acordion-1": {
           "type": "text",
           "settings": {
             "title": "Is Horizon safe for sensitive skin?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "text_L9fY9N": {
           "type": "text",
           "settings": {
             "title": "Can I use Horizon if I have rosacea or eczema?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "text_749ahm": {
           "type": "text",
           "settings": {
             "title": "How long until I see results?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "acordion-2": {
           "type": "text",
           "settings": {
             "title": "Can I use Horizon with other skincare products or actives?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "d0defd0d-94c3-403c-bd36-dc2f140a104f": {
           "type": "text",
           "settings": {
             "title": "Do I use Horizon during the day or night?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "text_9tFmpd": {
           "type": "text",
           "settings": {
             "title": "How do the ceramides in Horizon Serum, Mermaid Moon Balm Cream, and Treasure Glazing Milk work together?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         },
         "text_3wyKMX": {
           "type": "text",
           "settings": {
             "title": "How often should I use Horizon for the best results?",
-            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+            "text": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.<\/p>"
           }
         }
       },
@@ -586,36 +577,36 @@
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Vector.svg",
+            "icon_image": "shopify:\/\/shop_images\/Vector.svg",
             "title": "Strengthens Barrier",
-            "text": "<p>Boosts skin's resilience</p>"
+            "text": "<p>Boosts skin's resilience<\/p>"
           }
         },
         "icon-1": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Vector_3.svg",
+            "icon_image": "shopify:\/\/shop_images\/Vector_3.svg",
             "title": "Deeply Hydrates",
-            "text": "<p>Locks in lasting moisture</p>"
+            "text": "<p>Locks in lasting moisture<\/p>"
           }
         },
         "icon-2": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Vector_1.svg",
+            "icon_image": "shopify:\/\/shop_images\/Vector_1.svg",
             "title": "Restores",
-            "text": "<p>Revives natural radiance</p>"
+            "text": "<p>Revives natural radiance<\/p>"
           }
         },
         "text_e8Jzjd": {
           "type": "text",
           "settings": {
             "icon_name": "none",
-            "icon_image": "shopify://shop_images/Vector_2.svg",
+            "icon_image": "shopify:\/\/shop_images\/Vector_2.svg",
             "title": "Softens",
-            "text": "<p>Leaves skin silky smooth</p>"
+            "text": "<p>Leaves skin silky smooth<\/p>"
           }
         }
       },
@@ -669,7 +660,7 @@
         "heading_3iaHjW": {
           "type": "heading",
           "settings": {
-            "title": "<p>Plant-based. Planet positive. Powerful results.</p>",
+            "title": "<p>Plant-based. Planet positive. Powerful results.<\/p>",
             "size": 120,
             "text_position": "center",
             "heading_highlight_type": "underline-hand-drawn",
@@ -681,7 +672,7 @@
         "text_8pTMwG": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>95%</strong> • Say overall skin health seems improved**<br/><strong>95%</strong> • Say skin is more smooth**<br/><strong>96%</strong> • Say skin is more hydrated*<br/><strong>85%</strong> • Say skin has improved moisture retention**<br/><strong>96%</strong> • Say skin feels softer to the touch*<br/><strong>86%</strong> • Say kin feels more confortable*</p><p></p><p>*based on a 10 minute consumer study of 21 participants ages 18-64<br/>** based on a 10 minute consumer study of 20 participants ages 18-64</p>",
+            "text": "<p><strong>95%<\/strong> • Say overall skin health seems improved**<br\/><strong>95%<\/strong> • Say skin is more smooth**<br\/><strong>96%<\/strong> • Say skin is more hydrated*<br\/><strong>85%<\/strong> • Say skin has improved moisture retention**<br\/><strong>96%<\/strong> • Say skin feels softer to the touch*<br\/><strong>86%<\/strong> • Say kin feels more confortable*<\/p><p><\/p><p>*based on a 10 minute consumer study of 21 participants ages 18-64<br\/>** based on a 10 minute consumer study of 20 participants ages 18-64<\/p>",
             "size": 100,
             "text_position": "center",
             "spacing_bottom": 12
@@ -704,7 +695,7 @@
         "layout": "inline",
         "image_location": "left",
         "image_width": "standard",
-        "image": "shopify://shop_images/Picture_7.png",
+        "image": "shopify:\/\/shop_images\/Picture_7.png",
         "block_bg_color": "",
         "text_color": "text-dark",
         "bg_color": "",
@@ -721,7 +712,7 @@
         "image_9e4WLk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/We_Love_The_Planet_2_1.png",
+            "image": "shopify:\/\/shop_images\/We_Love_The_Planet_2_1.png",
             "link": "",
             "image_width": 180
           }
@@ -729,7 +720,7 @@
         "image_6dY6MV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6line_flower_1_3.png",
+            "image": "shopify:\/\/shop_images\/6line_flower_1_3.png",
             "link": "",
             "image_width": 30
           }
@@ -737,7 +728,7 @@
         "image_Y9XGnq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/recyclable-img.png",
+            "image": "shopify:\/\/shop_images\/recyclable-img.png",
             "link": "",
             "image_width": 180
           }
@@ -745,7 +736,7 @@
         "image_hqfwtw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6line_flower_1_3.png",
+            "image": "shopify:\/\/shop_images\/6line_flower_1_3.png",
             "link": "",
             "image_width": 30
           }
@@ -753,7 +744,7 @@
         "image_bFkYML": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/refil-options.png",
+            "image": "shopify:\/\/shop_images\/refil-options.png",
             "link": "",
             "image_width": 180
           }
@@ -761,7 +752,7 @@
         "image_feYiJN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6line_flower_1_3.png",
+            "image": "shopify:\/\/shop_images\/6line_flower_1_3.png",
             "link": "",
             "image_width": 30
           }
@@ -848,7 +839,7 @@
       "type": "apps",
       "blocks": {
         "okendo_reviews_widget_wbJfi8": {
-          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}",
             "widget_type": "reviews_widget"

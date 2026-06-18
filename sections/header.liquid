@@ -217,14 +217,34 @@
     {%- endif -%}
   {%- endcapture -%}
 
+
+ {% if request.page_type == 'index' %}
   <h1 class="logo" data-logo data-takes-space>
-    {%- if logo_not_home_markup != blank or logo_markup != blank -%}
-      {{- logo_not_home_markup -}}
-      {{- logo_markup -}}
-    {%- else -%}
-      <a href="{{ routes.root_url }}" class="logo__text-link" data-logo-text-link>{{ shop.name }}</a>
-    {%- endif -%}
-  </h1><!-- /partials/site-nav.liquid -->
+{% else %}
+  <div class="logo" data-logo data-takes-space>
+{% endif %}
+
+  {%- if logo_not_home_markup != blank or logo_markup != blank -%}
+    {{- logo_not_home_markup -}}
+    {{- logo_markup -}}
+  {%- else -%}
+    <a 
+      href="{{ routes.root_url }}" 
+      class="logo__text-link"
+      data-logo-text-link
+      aria-label="{{ shop.name }}"
+    >
+      {{ shop.name }}
+    </a>
+  {%- endif -%}
+
+{% if request.page_type == 'index' %}
+  </h1>
+{% else %}
+  </div>
+{% endif %}
+
+<!-- /partials/site-nav.liquid -->
   {%- liquid
     assign header_icons_as_text = section.settings.header_icons_as_text
     assign highlight_item_color = section.settings.highlight_item_color
@@ -314,17 +334,19 @@
       </div>
     </div>
 
-    <div class="menu__items" data-takes-space>
+    <ul class="menu__items" data-takes-space>
       {%- for link in linklists[section.settings['main-menu']].links -%}
-        {%- render 'nav-item', link: link, index: forloop.index, link_hover_dot: link_hover_dot -%}
+        <li>
+          {%- render 'nav-item', link: link, index: forloop.index, link_hover_dot: link_hover_dot -%}
+        </li>
       {%- endfor -%}
-    </div>
+    </ul>
 
     <div
-      class="menu__item menu__item--icons{% if header_icons_as_text %} menu__item--texts{% endif %}{% if secondary_menu != blank %} menu__item--secondary{% endif %}"
-      data-nav-icons
-      data-takes-space
-    >
+       class="menu__item menu__item--icons{% if header_icons_as_text %} menu__item--texts{% endif %}{% if secondary_menu != blank %} menu__item--secondary{% endif %}"
+       data-nav-icons
+       data-takes-space
+      >
       {%- if secondary_menu != blank -%}
         <div class="menu__items menu__items--secondary">
           {%- for link in linklists[secondary_menu].links limit: 4 -%}
@@ -388,7 +410,8 @@
         </a>
       </div>
     </div>
-  </nav>
+
+  </nav>  
 
   <div class="mobile-menu" data-mobile-menu>
     {%- if section.settings.show_country_selector or section.settings.show_locale_selector -%}

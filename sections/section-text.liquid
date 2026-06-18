@@ -405,7 +405,10 @@
                       {%- assign animation_delay = animation_delay | plus: 150 -%}
                     {% endif %}
                     {{ block.shopify_attributes }}>
-                    <a href="{{ button_link | default: '#!' }}" class="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}">
+                    <a href="{{ button_link | default: '#!' }}" aria-label="  {{ button_text | escape }}
+    {% if title != blank %}
+      - {{ title | strip_html | escape }}
+    {% endif %}" class="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}">
                       <hover-button></hover-button>
                       {{- button_text -}}
                     </a>

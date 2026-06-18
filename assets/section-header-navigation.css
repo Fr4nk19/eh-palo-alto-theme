@@ -303,8 +303,9 @@
 
 .menu__items {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .menu__items--secondary {
@@ -402,7 +403,7 @@
   --text: var(--COLOR-TEXT);
   position: absolute;
   top: 100%;
-  background: transparent;
+  /* background: transparent; */
   line-height: 22px;
   margin: 0;
   text-align: left;

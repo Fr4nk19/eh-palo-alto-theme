@@ -245,8 +245,23 @@
                 if product != blank
                   assign image = product.featured_media.preview_image
                   assign heading = product.title | strip_html
-                  if product.price == 0
+                  assign _gd_on = settings.general_discount_enabled
+                  assign _gd_pct = settings.general_discount_percent | default: 0 | plus: 0
+                  assign _gd_base = product.price
+                  if product.compare_at_price > product.price
+                    assign _gd_base = product.compare_at_price
+                  endif
+
+                  if product.price == 0 and _gd_base == 0
                     assign price = 'products.product.free' | t
+                  elsif _gd_on and _gd_pct > 0 and _gd_base > 0
+                    assign _gd_factor = 100 | minus: _gd_pct
+                    assign _gd_disc = _gd_base | times: _gd_factor | divided_by: 100
+                    if currency_code_enable
+                      assign price = _gd_disc | money_with_currency
+                    else
+                      assign price = _gd_disc | money
+                    endif
                   elsif currency_code_enable
                     assign price = product.price | money_with_currency
                   else
@@ -432,15 +447,7 @@
           {%- if show_block -%}
             <div {{ item_attributes }}>
               <div class="mosaic__item__inner">
-                {%- if image_link -%}
-                  <a href="{{ button_1_link }}" class="mosaic__item__image__link">
-                {%- endif -%}
-
-                {%- if has_image -%}
-                  {{ item_image }}
-                {%- endif -%}
-
-                <div class="mosaic__item__content{% unless has_content %} no-content{% endunless %} {{ text_position_class }}{% if button_1_link == blank %} mosaic__item__content--nolink{% endif %}">
+                 <div class="mosaic__item__content{% unless has_content %} no-content{% endunless %} {{ text_position_class }}{% if button_1_link == blank %} mosaic__item__content--nolink{% endif %}">
                   <div
                     id="{{ content_inner_id }}"
                     class="mosaic__item__content-inner"
@@ -457,7 +464,7 @@
                     {%- endif -%}
 
                     {%- if heading != blank -%}
-                      <h3
+                      <h2
                         class="mosaic__item__heading h2"
                         {% if animations_enabled %}
                           data-aos="heading"
@@ -467,7 +474,7 @@
                         {% endif %}
                       >
                         {{ heading }}
-                      </h3>
+                      </h2>
                     {%- endif -%}
 
                     {%- if text != blank -%}
@@ -517,6 +524,14 @@
                     {%- endif -%}
                   </div>
                 </div>
+
+                {%- if image_link -%}
+                  <a href="{{ button_1_link }}" class="mosaic__item__image__link">
+                {%- endif -%}
+
+                {%- if has_image -%}
+                  {{ item_image }}
+                {%- endif -%}
 
                 {%- if image_link -%}
                   </a>
