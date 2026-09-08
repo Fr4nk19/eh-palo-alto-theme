@@ -1,0 +1,124 @@
+{{ 'custom-freegift-landing.css' | asset_url | stylesheet_tag }}
+
+<div class="heading">
+  {{ section.settings.title }} 
+</div>
+
+<div class="image">
+  {% if section.settings.image %}
+    <img 
+      src="{{ section.settings.image | image_url: width: 920 }}" 
+      alt="{{ section.settings.image.alt | escape }}"
+      loading="lazy"
+      width="460px"
+      height="auto"
+    >
+  {% endif %}
+</div>
+
+<div class="benefits">
+  <div class="heading-benefits">
+    {{ section.settings.heading_benefits }}
+  </div>
+  {% for block in section.blocks %}
+    <div class="benefit">
+      {{- 'icon-check.svg' | inline_asset_content -}}
+      {{ block.settings.benefit }}
+    </div>
+  {% endfor %}
+</div>
+
+{%- assign product = all_products[section.settings.product] -%}
+{%- assign variant = nil -%}
+{%- assign variant_id_number = section.settings.variant_id | plus: 0 -%}
+{%- for v in product.variants -%}
+  {%- if v.id == variant_id_number -%}
+    {%- assign variant = v -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="checkout-gift-container">
+  {% if variant %}
+    {% if variant.available %}
+      <a href="/cart/{{ variant.id }}:1" class="btn btn--checkout">
+        Checkout
+      </a>
+    {% else %}
+      <button class="btn btn--checkout" disabled>
+        SOLD OUT
+      </button>
+    {% endif %}
+  {% else %}
+    <p style="color: red;">⚠️ Variant ID not found</p>
+  {% endif %}
+</div>
+
+{% schema %} 
+{
+  "name": "Landing Free Gift Success",
+  "tag": "section",
+  "class": "freegift-success success-w-image",
+  "settings": [
+    {
+      "type": "inline_richtext", 
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "JPG 920x864px"
+    },
+    {
+      "type": "header",
+      "content": "Free Product"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "variant_id",
+      "label": "Variant ID",
+      "info": "This is the variant ID you can find in the product admin URL (e.g. https://yourstore.myshopify.com/admin/products/123456789/variants/987654321 → use 987654321)"
+    },
+    {
+      "type": "header",
+      "content": "Benefits"
+    },
+    {
+      "type": "text",
+      "id": "heading_benefits",
+      "label": "Benefits heading",
+      "default": "Why You’ll Love It:"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "benefit",
+          "label": "Benefit"
+        }
+      ]  
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free Gift Success"
+    }
+  ]
+}
+{% endschema %}

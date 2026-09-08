@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_QgRLPw": {
+      "type": "section-text",
+      "blocks": {
+        "heading_GhjDga": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Samples<\/p>",
+            "size": 50,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_TVx6M8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not sure which gems to get? We've got you covered. All new partners receive <br\/><strong>three free samples,<\/strong> just pay the shipping! Samples must be a mix of different products and are not for resale. <\/p>",
+            "size": 95
+          }
+        }
+      },
+      "block_order": [
+        "heading_GhjDga",
+        "text_TVx6M8"
+      ],
+      "name": "Text",
+      "settings": {
+        "custom_class": "wholesale",
+        "text_position": "center",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_collection_xmDAyk": {
+      "type": "section-collection",
+      "blocks": {
+        "promo_FtbNa8": {
+          "type": "promo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/samples.jpg",
+            "position": 1,
+            "width": "auto",
+            "title": "",
+            "heading_size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "",
+            "content": "",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "center",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#d3d3d3",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "promo_FtbNa8"
+      ],
+      "name": "Featured collection",
+      "settings": {
+        "custom_class": "",
+        "collection": "qa-wholesale",
+        "products_layout": "carousel",
+        "number_of_products": 8,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "",
+        "heading_size": 100,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--medium",
+        "bg_color": "",
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_text_QgRLPw",
+    "section_collection_xmDAyk"
+  ]
+}

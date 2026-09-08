@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "custom_image_with_text_PVWGHq": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "signature_image_LwXEB6": {
+          "type": "signature-image",
+          "settings": {
+            "signature_image": "shopify:\/\/shop_images\/Screenshot_2025-08-01_at_7.55.41_p.m..png",
+            "show_as_content_element": true,
+            "image_height": "small",
+            "image_position": "left"
+          }
+        },
+        "heading_qFRGWk": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Try our products in your store, risk-free<\/p>",
+            "size": 120,
+            "text_position": "left",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "spacing_bottom": 12
+          }
+        },
+        "champion_chip_wEmMne": {
+          "type": "champion-chip",
+          "settings": {
+            "label": "We're Top Shop!"
+          }
+        },
+        "text_WjH4Ug": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>50% off your first order (up to $150)*<\/li><li>1 year of free shipping with us*<\/li><li>60-day payment terms for elegible retailers<\/li><li>Free returns on your first order<\/li><\/ul>",
+            "size": 100,
+            "text_position": "left",
+            "spacing_bottom": 0,
+            "show_lists_as_checks": true
+          }
+        },
+        "button_WLjpX4": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop wholesale products",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--large",
+            "video_link": "",
+            "text_position": "left",
+            "spacing_bottom": 16
+          }
+        },
+        "text_YfaQ6t": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>*Available for retailers who are new to Faire<\/h6>",
+            "size": 100,
+            "text_position": "left",
+            "spacing_bottom": 12,
+            "show_lists_as_checks": false
+          }
+        }
+      },
+      "block_order": [
+        "signature_image_LwXEB6",
+        "heading_qFRGWk",
+        "champion_chip_wEmMne",
+        "text_WjH4Ug",
+        "button_WLjpX4",
+        "text_YfaQ6t"
+      ],
+      "name": "Custom Image with text",
+      "settings": {
+        "custom_class": "",
+        "show_accordion_divider": true,
+        "increase_border_radius": false,
+        "section_height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/faire-img.jpg",
+        "block_bg_color": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_image_with_text_PVWGHq"
+  ]
+}

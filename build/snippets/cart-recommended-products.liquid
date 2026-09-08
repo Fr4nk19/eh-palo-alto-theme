@@ -1,0 +1,53 @@
+{%- comment -%}
+  Cart Recommended Products
+  Renders a horizontal Flickity slider of recommended products inside the cart drawer.
+  Products are loaded via Shopify's Recommendations API using the first cart item as seed.
+  Supports more than 3 products through pagination dots + swipe/drag.
+
+  Usage (inside cart-drawer.liquid template):
+    {%- render 'cart-recommended-products' -%}
+
+  The JS initializer must be placed OUTSIDE the <template> tag in cart-drawer.liquid.
+{%- endcomment -%}
+
+{%- if cart.item_count > 0 -%}
+  {%- liquid
+    assign rec_product    = cart.items.first.product
+    assign rec_collection = rec_product.collections.first
+
+    assign button_style = settings.upsells_button_style | default: 'btn--solid-border'
+    assign button_color = settings.upsells_button_color | default: 'btn--secondary'
+    assign button_size  = settings.upsells_button_size  | default: 'btn--medium'
+    if button_style == 'btn--text'
+      assign button_advanced_class = 'btn--advanced'
+    else
+      assign button_advanced_class = 'btn--advanced btn--advanced-width-height btn--advanced-adaptive-width'
+    endif
+
+    assign cart_ids = ''
+    for item in cart.items
+      assign cart_ids = cart_ids | append: item.product_id | append: ','
+    endfor
+  -%}
+  <div
+    class="cart-recommendations"
+    id="cartRecommendations"
+    data-cart-recommendations
+    data-product-id="{{ rec_product.id }}"
+    data-rec-limit="10"
+    data-collection-handle="{{ rec_collection.handle }}"
+    data-cart-ids="{{ cart_ids | remove_last: ',' }}"
+    data-btn-classes="btn {{ button_style }} {{ button_size }} {{ button_color }} {{ button_advanced_class }}">
+
+    <div class="cart-recommendations__head">
+      <p class="cart-recommendations__title">
+        {{- 'cart.recommendations.title' | t | default: 'recommended products' -}}
+      </p>
+      <div class="cart-recommendations__dots" data-rec-dots aria-hidden="true"></div>
+    </div>
+
+    <div class="cart-recommendations__slider" data-rec-slider>
+      {%- comment -%} Slides injected via JS after recommendations API call {%- endcomment -%}
+    </div>
+  </div>
+{%- endif -%}

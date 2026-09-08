@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "custom_form_H46Jd6": {
+      "type": "custom-form",
+      "blocks": {
+        "hulk_form_builder_form_block_fATe6n": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "b1qEvhioh4tG81Y3x_Up1g",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#ffffff",
+            "input_border_radius": 8,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_fATe6n"
+      ],
+      "name": "Custom Form",
+      "settings": {}
+    },
+    "section_custom_html_VTj3zW": {
+      "type": "section-custom-html",
+      "name": "Custom code",
+      "settings": {
+        "custom_code": "<style>\n.form_generater_form_div .tab {\n    visibility: visible;\n    position: relative;\n    opacity: 1;\n    pointer-events: auto;\n\n}\n\n.form_generater_form_div {\n    margin: auto\n}\n<\/style>",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_7EKAhV": {
+      "type": "section-text",
+      "blocks": {
+        "text_6PwfB3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>By submitting this form, you agree to receive recurring email marketing messages (e.g. new product announcements and promotions) from Earth Harbor at the submitted email address. Consent is not a condition of any purchase. You can withdraw your consent at any time by clicking unsubscribe in any Earth Harbor email we send. View our Privacy Policy. Contact Earth Harbor at wholesale@earthharbor.com.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_6PwfB3"
+      ],
+      "name": "Text",
+      "settings": {
+        "custom_class": "",
+        "text_position": "center",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 24,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_form_H46Jd6",
+    "section_custom_html_VTj3zW",
+    "section_text_7EKAhV"
+  ]
+}

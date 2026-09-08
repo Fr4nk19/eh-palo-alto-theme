@@ -1,0 +1,40 @@
+{%- liquid
+  comment
+    Show product and collection images in mega menu
+  endcomment
+
+  assign aspect_ratio = aspect_ratio | default: 1
+  assign aspect_ratio = 1 | divided_by: aspect_ratio
+
+  if enable
+    assign link_image = ''
+    assign page_thumb = ''
+    if link.type == 'collection_link' or link.type == 'product_link'
+      assign link_image = link.object.featured_image
+
+      if link_image != blank
+        render 'image-fill', img_object: link_image, aspect_ratio: aspect_ratio, loading: 'lazy', fetchpriority: 'high'
+      endif
+    endif
+    if link.type == 'page_link'
+      assign page_thumb =  link.object.metafields.custom.menu_image_thumb.value
+      if page_thumb != blank
+        render 'image-fill', img_object: page_thumb, aspect_ratio: aspect_ratio, loading: 'lazy', fetchpriority: 'high'
+      endif
+    endif
+
+    if link.type == 'http_link'
+      assign page_thumb = block_image
+      if page_thumb != blank
+        render 'image-fill', img_object: page_thumb, aspect_ratio: aspect_ratio, loading: 'lazy', fetchpriority: 'high'
+      endif
+    endif
+    
+    if link.type == 'catalog_link'
+      assign page_thumb = block_image
+      if page_thumb != blank
+        render 'image-fill', img_object: page_thumb, aspect_ratio: aspect_ratio, loading: 'lazy', fetchpriority: 'high'
+      endif
+    endif
+  endif
+-%}

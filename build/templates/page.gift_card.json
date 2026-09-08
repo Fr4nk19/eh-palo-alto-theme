@@ -1,0 +1,411 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_XidNDX": {
+      "type": "section-text",
+      "blocks": {
+        "heading_LbzLEb": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>PRIVACY POLICY<\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_LbzLEb"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-head-sec",
+        "text_position": "center",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 56,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_qPQWq6": {
+      "type": "section-text",
+      "blocks": {
+        "text_FprRXE": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Effective Date: March 10, 2025<\/h3>",
+            "size": 100
+          }
+        },
+        "text_BWHppm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Earth Harbor Naturals, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, share, and protect your information when you visit our website, make a purchase, or interact with us.<br\/><br\/><\/p>",
+            "size": 100
+          }
+        },
+        "text_KXTkB7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1. Information We Collect<\/strong><\/p><p>We collect the following types of information:<\/p><ul><li><strong>Personal Information:<\/strong> Name, email, phone number, shipping and billing address, and payment details when you make a purchase or sign up for an account.<\/li><li><strong>Browsing Information:<\/strong> IP address, device type, browser type, and interactions with our website to improve your experience.<\/li><li><strong>Cookies and Tracking Technologies:<\/strong> We use cookies and similar technologies to personalize your experience, analyze website traffic, and improve our services.<br\/><\/li><\/ul>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_FprRXE",
+        "text_BWHppm",
+        "text_KXTkB7"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_gCtTwD": {
+      "type": "section-text",
+      "blocks": {
+        "text_cEbNMa": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>2. How We Use Your Information<\/strong><\/p><p>We use your information to:<\/p><ul><li>Process and fulfill orders, including shipping and payment processing.<\/li><li>Provide customer support and respond to inquiries.<\/li><li>Improve our website, services, and customer experience through analytics.<\/li><li>Send promotional messages and updates (with the option to opt out at any time).<\/li><\/ul><p>We will never use your data for purposes not described in this Privacy Policy.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_cEbNMa"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_cRBCTQ": {
+      "type": "section-text",
+      "blocks": {
+        "text_cRFKfJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>3. How We Share Your Information<\/strong><\/p><p>We do not sell your personal information. However, we may share it with trusted third parties that help us operate our business, including:<\/p><ul><li><strong>Payment Processors:<\/strong> To securely process transactions.<\/li><li><strong>Shipping Providers:<\/strong> To deliver your orders efficiently.<\/li><li><strong>Analytics & Marketing Partners:<\/strong> To understand website performance and customer behavior.<\/li><\/ul><p>We only share the minimum necessary information with these partners, and they are required to protect your data and use it only for the agreed-upon services.<br\/><\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_cRFKfJ"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_GWNwaW": {
+      "type": "section-text",
+      "blocks": {
+        "text_d8hbJW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>4. Cookies & Tracking Technologies<\/strong><\/p><p>We use cookies and similar tracking technologies to:<\/p><ul><li>Enhance website functionality and personalize your experience.<\/li><li>Analyze traffic and measure marketing effectiveness.<\/li><\/ul><p>You can <strong>manage or disable cookies<\/strong> through your browser settings.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_d8hbJW"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_X6nXhq": {
+      "type": "section-text",
+      "blocks": {
+        "text_d6CPa3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5. Your Rights & Choices<\/strong><\/p><p>Depending on where you live, you may have certain rights regarding your personal data. These rights may include:<\/p><ul><li><strong>Access:<\/strong> Request a copy of your personal information.<\/li><li><strong>Correction:<\/strong> Update or correct inaccurate details.<\/li><li><strong>Deletion: <\/strong>Request that we delete your personal data, subject to certain legal exceptions.<\/li><li><strong>Opt-Out:<\/strong> Unsubscribe from marketing emails or limit data collection for targeted advertising.<\/li><\/ul><p>To exercise these rights, contact us at <a href=\"mailto:hello@earthharbor.com.\" title=\"mailto:hello@earthharbor.com.\">hello@earthharbor.com.<\/a><\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_d6CPa3"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_Rqtjd3": {
+      "type": "section-text",
+      "blocks": {
+        "text_QBDeAK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>6. How We Protect Your Data<\/strong><\/p><p>We take appropriate security measures to protect your information, including:<\/p><ul><li>Encryption to safeguard data during transmission.<\/li><li>Firewalls & Secure Storage to prevent unauthorized access.<\/li><li>Access Controls to ensure only authorized personnel handle your data.<\/li><\/ul><p>While we take strong precautions, no online transmission is 100% secure. If you suspect a security issue, please contact us immediately.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_QBDeAK"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_rbDbcC": {
+      "type": "section-text",
+      "blocks": {
+        "text_hqezK4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>7. International Data Transfers<\/strong><\/p><p>If you access our website from outside the United States, your data may be transferred and processed in the U.S. We take steps to ensure your information is protected according to international standards.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_hqezK4"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_hnwpGQ": {
+      "type": "section-text",
+      "blocks": {
+        "text_9rwxxp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>8. Age Restriction<\/strong><\/p><p>Our website is <strong>not intended for individuals under the age of 18.<\/strong> If we learn that we have collected data from a minor, we will delete it.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_9rwxxp"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_YVfDXC": {
+      "type": "section-text",
+      "blocks": {
+        "text_7epgxH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>9. How Long We Keep Your DataWe retain personal data only for as long as necessary to:<\/strong><\/p><ul><li>Provide services and fulfill transactions.<\/li><li>Comply with legal, tax, and regulatory obligations.<\/li><li>Protect against fraud and security threats.<\/li><\/ul><p>When no longer needed, <strong>we securely delete or anonymize<\/strong> your data.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_7epgxH"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_CCeJdP": {
+      "type": "section-text",
+      "blocks": {
+        "text_kNfiA8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>10. Updates to This Privacy Policy<\/strong><\/p><p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a <strong>new effective date.<\/strong> We encourage you to review this page periodically.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_kNfiA8"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section_text_nAab9G": {
+      "type": "section-text",
+      "blocks": {
+        "text_NU6Cwe": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>11. Contact Us<\/strong><\/p><p>For any questions, concerns, or privacy-related requests, contact us at:<br\/><strong>Email:<\/strong> <a href=\"mailto:hello@earthharbor.com\" title=\"mailto:hello@earthharbor.com\">hello@earthharbor.com<\/a><\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_NU6Cwe"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "custom_class": "policy-content-sec",
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 56
+      }
+    },
+    "section_overlapping_images_rNEMqf": {
+      "type": "section-overlapping-images",
+      "name": "Overlapping images",
+      "settings": {
+        "custom_class": "gift-card-sec",
+        "text_position": "right",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_1": "shopify:\/\/shop_images\/Group_1_1.png",
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "subheading": "",
+        "title": "<p>Thank You! Claim your free gift now.<\/p>",
+        "heading_size": 100,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "description": "<ol><li>Add a 10 ml <a href=\"#\" title=\"#\"><strong>MARINA Brightening Concentrate<\/strong><\/a> to your cart and 1 other product, so your order totals <strong>$20+<\/strong>.<\/li><li>Use code <strong>FREEGLOW<\/strong><\/li><li>Sail into boosted radiance!<\/li><\/ol><p><\/p><p><a href=\"#\" title=\"#\">Can't do it now? <\/a>Free gift instructions were just sent to your email!<\/p>",
+        "text_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--medium",
+        "video_text": "",
+        "video_link": "",
+        "bg_color": "",
+        "gradient": "",
+        "animation": "vertical",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_text_XidNDX",
+    "section_text_qPQWq6",
+    "section_text_gCtTwD",
+    "section_text_cRBCTQ",
+    "section_text_GWNwaW",
+    "section_text_X6nXhq",
+    "section_text_Rqtjd3",
+    "section_text_rbDbcC",
+    "section_text_hnwpGQ",
+    "section_text_YVfDXC",
+    "section_text_CCeJdP",
+    "section_text_nAab9G",
+    "section_overlapping_images_rNEMqf"
+  ]
+}

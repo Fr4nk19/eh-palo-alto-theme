@@ -1,0 +1,316 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_rPhEMc": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "heading_X3bcWU": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Become a Stockist<\/p>",
+            "size": 160,
+            "text_position": "center",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "spacing_bottom": 12
+          }
+        },
+        "text_rzxNeK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We partner with over 2000 stockists across North America and internationally. We offer samples, back bar sizes, free trainings, promotional support and more. Ready to add some color to your shelfie?<\/p>",
+            "size": 100,
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        },
+        "button_fb4yb6": {
+          "type": "button",
+          "settings": {
+            "button_text": "Apply now",
+            "button_link": "\/pages\/skincare-quiz-earth-harbor",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_X3bcWU",
+        "text_rzxNeK",
+        "button_fb4yb6"
+      ],
+      "settings": {
+        "custom_class": "",
+        "show_accordion_divider": true,
+        "increase_border_radius": false,
+        "section_height": "six-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "four-fifty-height-mobile",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/Picture.jpg",
+        "block_bg_color": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "section_image_with_text_JxBFKr": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "heading_HnNjeE": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Built with Care, Crafted with Purpose<\/p>",
+            "size": 160,
+            "text_position": "center",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "spacing_bottom": 12
+          }
+        },
+        "text_Lt8pdY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We handle everything in-house to meet the highest global standards for safety, sustainability, and efficacy. Pioneers in grassroots values and adding magic to everyday rituals, Earth Harbor is artisan skincare for real life.<\/p>",
+            "size": 100,
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        },
+        "button_Ude4pJ": {
+          "type": "button",
+          "settings": {
+            "button_text": "SHOP WHOLESALE",
+            "button_link": "\/pages\/skincare-quiz-earth-harbor",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--large",
+            "video_link": "",
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_HnNjeE",
+        "text_Lt8pdY",
+        "button_Ude4pJ"
+      ],
+      "settings": {
+        "custom_class": "",
+        "show_accordion_divider": true,
+        "increase_border_radius": false,
+        "section_height": "six-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "four-fifty-height-mobile",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/Picture2.jpg",
+        "block_bg_color": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "section_overlapping_images_cCcRCN": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "custom_class": "index_overlap_images",
+        "text_position": "right",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_1": "shopify:\/\/shop_images\/Picture1.jpg",
+        "image_link_1": "",
+        "image_2": "shopify:\/\/shop_images\/Picture_1beb1cf9-e336-44eb-94a5-ca38fde98029.jpg",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "subheading": "",
+        "title": "<p>Sea the Difference: Our Ingredient Philosophy<\/p>",
+        "heading_size": 110,
+        "heading_highlight_type": "italics",
+        "highlight_color": "#000000",
+        "highlight_text_color": "#000000",
+        "description": "<p>At Earth Harbor, we believe that beauty should be truly clean, safe, and results-driven. Our products are carefully formulated with nature’s best ingredients and grounded in science. We use only what your skin needs and exclude what it doesn’t. Everything we create is designed to promote the long-term health of your skin and the planet—because clean beauty means a clean conscience.<\/p>",
+        "text_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--medium",
+        "video_text": "",
+        "video_link": "",
+        "bg_color": "#ffffff",
+        "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%)",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 100,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_NzzJcK": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "heading_aRKeXz": {
+          "type": "heading",
+          "settings": {
+            "title": "<p> Dive into Earth Harbor Wholesale Updates!<\/p>",
+            "size": 160,
+            "text_position": "center",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "spacing_bottom": 12
+          }
+        },
+        "text_FG7HDB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sign up to receive exclusive updates on product launches, special promos, and restocks!<\/p>",
+            "size": 100,
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        },
+        "newsletter_PDBQbg": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_heading": "Subscribe to our newsletter",
+            "newsletter_text": "<p>Be the first to know about new collections and exclusive offers.<\/p>",
+            "show_name_field": true,
+            "button_text": "SUBSCRIBE",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_aRKeXz",
+        "text_FG7HDB",
+        "newsletter_PDBQbg"
+      ],
+      "settings": {
+        "custom_class": "",
+        "show_accordion_divider": true,
+        "increase_border_radius": false,
+        "section_height": "four-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "four-fifty-height-mobile",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/Picture_b7f90868-c09c-45c2-aaee-e21863487ba6.jpg",
+        "block_bg_color": "#fff7f2",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "section_image_with_text_4WGJJF": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "heading_HTJgVm": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>We’re excited to partner with you!<\/p>",
+            "size": 160,
+            "text_position": "center",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "spacing_bottom": 12
+          }
+        },
+        "text_xmjypd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring your customers clean beauty with purpose.<\/p>",
+            "size": 100,
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        },
+        "button_KAB8hC": {
+          "type": "button",
+          "settings": {
+            "button_text": "APPLY NOW",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "text_position": "center",
+            "spacing_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_HTJgVm",
+        "text_xmjypd",
+        "button_KAB8hC"
+      ],
+      "settings": {
+        "custom_class": "",
+        "show_accordion_divider": true,
+        "increase_border_radius": false,
+        "section_height": "four-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "four-fifty-height-mobile",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/Picture_9c912c9e-55f0-48d7-b80d-39d7c0daab8c.jpg",
+        "block_bg_color": "#fff7f2",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "add_gutter": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_image_with_text_rPhEMc",
+    "section_image_with_text_JxBFKr",
+    "section_overlapping_images_cCcRCN",
+    "section_image_with_text_NzzJcK",
+    "section_image_with_text_4WGJJF"
+  ]
+}

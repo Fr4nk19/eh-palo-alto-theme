@@ -1,0 +1,251 @@
+{{ 'custom-freegift-landing.css' | asset_url | stylesheet_tag }}
+
+<div id="free-gift-{{ section.id }}" class="free-gift-section">
+  <div class="free-gift-wrapper free-gift-wrapper--form">
+    {% comment %}
+      <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image_alt_text }}" width="650px"
+      height="100%" />
+    {% endcomment %}
+    {% if section.settings.image != blank %}
+      {{ section.settings.image | image_url: width: section.settings.image.width | image_tag: width: 650 }}
+    
+    {% endif %}
+    <div class="content">
+      <div class="heading-wrapper">
+        <div class="heading">
+          {{ section.settings.title }}
+        </div>
+        <div class="subheading">
+          {{ section.settings.subtitle }}
+        </div>
+      </div>
+      <div class="klaviyo-form-custom">
+        {% if section.settings.form_title != blank %}
+          <h4 class="form__heading">{{ section.settings.form_title }}</h4>
+        {% endif %}
+        {% comment %} <div class="klaviyo-form-StfWjR"></div> {% endcomment %}
+        {{ section.settings.form_snippet }}
+      </div>
+      <div>
+        <p class="button__bottom-text">{{ section.settings.form_bottom_text }}</p>
+      </div>
+    </div>
+  </div>
+
+  {%- comment -%}
+    VIEW 2: Éxito (claim=success)
+    Aquí metes el layout / contenido de la página #2.
+  {%- endcomment -%}
+  <div class="free-gift-wrapper free-gift-wrapper--success" hidden>
+    <div class="image">
+        {% if section.settings.success_image %}
+        {% assign img = section.settings.success_image %}
+        <img
+            src="{{ img | image_url: width: 1300 }}"
+            srcset="
+            {{ img | image_url: width: 375 }} 375w,
+            {{ img | image_url: width: 650 }} 650w,
+            {{ img | image_url: width: 900 }} 900w,
+            {{ img | image_url: width: 1300 }} 1300w"
+            sizes="(min-width: 768px) 650px, 100vw"
+            alt="{{ img.alt | escape }}"
+            loading="lazy"
+            width="650"
+            height="auto"
+            decoding="async"
+        >
+        {% endif %}
+    </div>
+    <div class="content">
+      <div class="heading-wrapper">
+        <div class="heading">
+          {{ section.settings.success_title }}
+        </div>
+        <div class="subheading">
+          {{ section.settings.success_subtitle }}
+        </div>
+      </div>
+
+      <div class="success-body">
+        {{ section.settings.success_body }}
+      </div>
+
+      {%- assign product = all_products[section.settings.product] -%}
+
+        <div class="checkout-gift-container">
+        {% if product != blank %}
+            {% assign variant = product.selected_or_first_available_variant %}
+            {% if product.available and variant %}
+            <a href="/cart/{{ variant.id }}:1" class="btn btn--checkout">
+                Go to Checkout
+            </a>
+            {% else %}
+            <button class="btn btn--checkout" disabled>
+                SOLD OUT
+            </button>
+            {% endif %}
+        {% elsif section.settings.success_button != blank %}
+          <a href="{{ section.settings.success_button_url }}" class="btn">{{ section.settings.success_button }}</a>
+        {% else %}    
+            {% comment %} <p style="color: red;">⚠️ Product handle invalid or not configured</p> {% endcomment %}
+        {% endif %}
+        </div>
+
+        <div>
+            <p class="button__bottom-text">{{ section.settings.bottom_text }}</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var container = document.getElementById('free-gift-{{ section.id }}');
+    if (!container) return;
+
+    var params = new URLSearchParams(window.location.search);
+    var isClaimSuccess = params.get('claim') === 'success';
+
+    var formWrapper = container.querySelector('.free-gift-wrapper--form');
+    var successWrapper = container.querySelector('.free-gift-wrapper--success');
+
+    if (!formWrapper || !successWrapper) return;
+
+    if (isClaimSuccess) {
+      // Mostrar página #2
+      formWrapper.setAttribute('hidden', 'hidden');
+      successWrapper.removeAttribute('hidden');
+    } else {
+      // Mostrar página con formulario (default)
+      successWrapper.setAttribute('hidden', 'hidden');
+      formWrapper.removeAttribute('hidden');
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('klaviyoForms', function (event) {
+    // Opcional: filtra por ID del formulario
+    const TARGET_FORM_ID = event.detail.formId;
+
+    if (
+      event.detail.type === 'stepSubmit' &&
+      event.detail.formId === TARGET_FORM_ID
+    ) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Klaviyo manda stepSubmit y metaData.$step_name
+    /*
+    if (
+      event.detail.type === 'stepSubmit' &&
+      event.detail.formId === TARGET_FORM_ID &&
+      event.detail.metaData &&
+      event.detail.metaData.$step_name === 'Step 1'
+    ) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    */
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "Free Gift Form w/ Image",
+  "tag": "section",
+  "class": "freegift-form-img version-2",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Step 1 screen: Form"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+        "type": "text",
+        "id": "form_title",
+        "label": "Form title",
+        "default": "Share your e-mail below and claim your gift!"
+    },
+    {
+      "type": "html",
+      "id": "form_snippet",
+      "label": "Form snippet"
+    },
+    {
+        "type": "text",
+        "id": "form_bottom_text",
+        "label": "Form bottom text"
+    },
+    {
+      "type": "header",
+      "content": "Step 2 screen: Success"
+    },
+    {
+      "type": "image_picker",
+      "id": "success_image",
+      "label": "Image",
+      "info": "JPG 920x864px"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "Optional"
+    },
+    {
+      "type": "text",
+      "id": "success_button",
+      "label": "Success button label",
+      "visible_if": "{{ section.settings.product == blank }}",
+      "info": "It displays a different button when you don't include a product in the flow."
+    },
+    {
+      "type": "url",
+      "id": "success_button_url",
+      "label": "Success button URL",
+      "visible_if": "{{ section.settings.product == blank }}"
+    },
+    {
+      "type": "richtext",
+      "id": "success_title",
+      "label": "Success - Title"
+    },
+    {
+      "type": "richtext",
+      "id": "success_body",
+      "label": "Success body"
+    },
+    {
+        "type": "text",
+        "id": "bottom_text",
+        "label": "Bottom text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free Gift w/ Image v2"
+    }
+  ]
+}
+{% endschema %}
