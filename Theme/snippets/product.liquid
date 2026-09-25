@@ -158,17 +158,6 @@
     assign show_custom_badge_on_quick_view = settings.show_custom_badge
   endif
 
-  assign wholesale_show_qty = false
-  if customer and settings.wholesale_tag != blank and customer.tags contains settings.wholesale_tag
-    assign wholesale_show_qty = true
-  endif
-  if template.suffix contains 'wholesale'
-    assign wholesale_show_qty = true
-  endif
-  if wholesale_show_qty
-    assign show_quantity = true
-  endif
-
   assign hide_labels_class = ''
   unless show_labels
     assign hide_labels_class = ' variant__labels--hide'
@@ -914,9 +903,6 @@
 {%- when 'form' -%}
               {%- liquid
                 assign show_quantity = block.settings.show_quantity
-                if wholesale_show_qty
-                  assign show_quantity = true
-                endif
                 assign show_payment_button = block.settings.show_payment_button
                 assign enable_subscriptions_selectors = block.settings.enable_subscriptions_selectors
                 assign hide_labels_class = ''
@@ -1922,9 +1908,6 @@
   assign color_swatches_type = settings.color_swatches_type
   assign variants_style = settings.variants_style
   assign show_quantity = block.settings.show_quantity
-  if wholesale_show_qty
-    assign show_quantity = true
-  endif
   assign show_payment_button = false
   if block.settings.show_payment_button and settings.enable_accept_terms == false
     assign show_payment_button = true
@@ -4231,11 +4214,7 @@
         class="btn {{ atc_button_color }} {{ atc_button_style }} {{ atc_button_size }} btn--advanced btn--submit product__submit__add"
         data-add-to-cart>
         <hover-button></hover-button>
-        <span data-add-to-cart-text{% if settings.atc_show_product_price %} data-price-wrapper data-atc-button{% endif %}
-          data-wholesale="{% if customer and settings.wholesale_tag != blank and customer.tags contains settings.wholesale_tag %}true{% else %}false{% endif %}"
-          data-wholesale-excluded="{% if settings.wholesale_exclude_tag != blank and product.tags contains settings.wholesale_exclude_tag %}true{% else %}false{% endif %}"
-          data-wholesale-force="{{ settings.force_wholesale_discount }}"
-          data-wholesale-percent="{{ settings.wholesale_discount_percent | default: 0 }}">
+        <span data-add-to-cart-text{% if settings.atc_show_product_price %} data-price-wrapper data-atc-button{% endif %}>
           {%- if current_variant.available and product.tags contains '_preorder' -%}
             {{ 'products.product.preorder' | t }}
           {%- elsif current_variant.available -%}

@@ -1,0 +1,1186 @@
+{%- comment -%}
+  SIREN SILK Bio-Retinol Landing Page — Earth Harbor
+  File: sections/siren-silk-landing.liquid
+  Page template: templates/page.siren-silk.json
+  
+  All text, images, and repeatable blocks are editable
+  in the Shopify Theme Customizer (Online Store → Customize).
+{%- endcomment -%}
+
+{%- liquid
+  assign s            = section.settings
+  assign trust_badges = section.blocks | where: 'type', 'trust_badge'
+  assign ingredients  = section.blocks | where: 'type', 'ingredient'
+  assign comp_rows    = section.blocks | where: 'type', 'comparison_row'
+  assign reviews      = section.blocks | where: 'type', 'review'
+  assign risk_items   = section.blocks | where: 'type', 'risk_proof'
+  assign prod_sizes   = section.blocks | where: 'type', 'product_size'
+  assign cert_tags    = section.blocks | where: 'type', 'cert_tag'
+  assign sid          = section.id
+-%}
+
+<div class="ss-page" id="ss-{{ sid }}">
+
+  <!-- ═══ ANNOUNCEMENT BAR ═══ -->
+  <div class="ss-announce">{{ s.announce_text }}</div>
+
+  <!-- ═══ ① HERO ═══ -->
+  <section class="ss-hero">
+    <div class="ss-hero-inner">
+
+      <div class="ss-hero-content">
+        <span class="ss-script ss-hero-brand">{{ s.hero_brand }}</span>
+
+        <h1 class="ss-h1">
+          {{ s.hero_h1_line1 }}<br>
+          <em>{{ s.hero_h1_italic }}</em><br>
+          {{ s.hero_h1_line3 }}
+        </h1>
+
+        <p class="ss-hero-sub">{{ s.hero_subheading }}</p>
+
+        <div class="ss-rating">
+          <div class="ss-stars">
+            {%- for i in (1..5) -%}
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            {%- endfor -%}
+          </div>
+          <span>{{ s.hero_rating }}&nbsp;·&nbsp;<strong>{{ s.hero_review_count }} Reviews</strong></span>
+        </div>
+
+        <div class="ss-trust-badges">
+          {%- for block in trust_badges -%}
+            <span class="ss-tbadge" {{ block.shopify_attributes }}>
+              {%- case block.settings.icon -%}
+                {%- when 'check' -%}<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                {%- when 'lab' -%}<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                {%- when 'heart' -%}<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                {%- when 'refresh' -%}<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              {%- endcase -%}
+              {{ block.settings.label }}
+            </span>
+          {%- endfor -%}
+        </div>
+
+        <a href="{{ s.hero_cta_url }}" class="ss-btn">{{ s.hero_cta_text }}</a>
+        <p class="ss-btn-micro">{{ s.hero_cta_micro }}</p>
+      </div>
+
+      <div class="ss-hero-img-wrap">
+        {%- if s.hero_image != blank -%}
+          {{- s.hero_image | image_url: width: 1200 | image_tag:
+              loading: 'eager',
+              fetchpriority: 'high',
+              class: 'ss-hero-img',
+              alt: s.hero_image.alt | default: 'SIREN SILK Bio-Retinol Cream' -}}
+        {%- endif -%}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ ② VALIDATION + PIVOT ═══ -->
+  <div class="ss-wave-dn" aria-hidden="true">
+    <svg viewBox="0 0 1440 36" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0 18 Q360 0 720 18 Q1080 36 1440 18 L1440 36 L0 36 Z" fill="#F8F5F1"/></svg>
+  </div>
+  <section class="ss-validation">
+    <div class="ss-container ss-center">
+      <p class="ss-val-pain">{{ s.val_pain }}</p>
+      <p class="ss-val-sub">{{ s.val_sub }}</p>
+      <span class="ss-val-arrow">{{ s.val_arrow }}</span>
+    </div>
+  </section>
+  <div class="ss-wave-up" aria-hidden="true">
+    <svg viewBox="0 0 1440 36" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0 18 Q360 36 720 18 Q1080 0 1440 18 L1440 0 L0 0 Z" fill="#F8F5F1"/></svg>
+  </div>
+
+  <!-- ═══ ③ EDU + DIFFERENTIATION ═══ -->
+  <section class="ss-edu">
+    <div class="ss-container">
+
+      <div class="ss-edu-header">
+        <span class="ss-eyebrow">{{ s.edu_eyebrow }}</span>
+        <h2 class="ss-h2">{{ s.edu_heading }}</h2>
+      </div>
+
+      <!-- CALLOUT BOX -->
+      <div class="ss-callout">
+        {%- if s.texture_image != blank -%}
+          <div class="ss-callout-img-accent" aria-hidden="true">
+            {{- s.texture_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: '', class: 'ss-texture-img' -}}
+          </div>
+        {%- endif -%}
+        <div class="ss-callout-body">
+          <span class="ss-callout-tag">{{ s.callout_tag }}</span>
+          <h3 class="ss-callout-h">{{ s.callout_heading }}</h3>
+          <p>{{ s.callout_body }}</p>
+        </div>
+      </div>
+
+      <!-- PATHWAY COMPARISON -->
+      <div class="ss-pathway-grid">
+        <div class="ss-pathway ss-pathway-bad">
+          <span class="ss-pathway-tag">{{ s.pathway_bad_label }}</span>
+          {%- if s.pathway_bad_step1 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_bad_step1 }}</p></div>{%- endif -%}
+          {%- if s.pathway_bad_step2 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_bad_step2 }}</p></div>{%- endif -%}
+          {%- if s.pathway_bad_step3 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_bad_step3 }}</p></div>{%- endif -%}
+          {%- if s.pathway_bad_step4 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_bad_step4 }}</p></div>{%- endif -%}
+          <p class="ss-p-result">{{ s.pathway_bad_result }}</p>
+        </div>
+        <div class="ss-pathway ss-pathway-good">
+          <span class="ss-pathway-tag">{{ s.pathway_good_label }}</span>
+          {%- if s.pathway_good_step1 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_good_step1 }}</p></div>{%- endif -%}
+          {%- if s.pathway_good_step2 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_good_step2 }}</p></div>{%- endif -%}
+          {%- if s.pathway_good_step3 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_good_step3 }}</p></div>{%- endif -%}
+          {%- if s.pathway_good_step4 != blank -%}<div class="ss-p-step"><span class="ss-p-dot"></span><p>{{ s.pathway_good_step4 }}</p></div>{%- endif -%}
+          <p class="ss-p-result">{{ s.pathway_good_result }}</p>
+        </div>
+      </div>
+
+      <!-- INGREDIENT CARDS -->
+      <span class="ss-ing-label">{{ s.ing_section_label }}</span>
+      <div class="ss-ing-scroll" id="ss-ing-{{ sid }}">
+        {%- for block in ingredients -%}
+          <div class="ss-ing-card" {{ block.shopify_attributes }}>
+            <div class="ss-ing-icon">{{ block.settings.icon }}</div>
+            <p class="ss-ing-name">{{ block.settings.name }}</p>
+            <span class="ss-ing-role">{{ block.settings.role }}</span>
+            <p>{{ block.settings.description }}</p>
+            <span class="ss-ing-chip">{{ block.settings.chip }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="ss-scroll-dots" id="ss-dots-{{ sid }}" aria-hidden="true">
+        {%- for block in ingredients -%}
+          <span class="ss-sdot{% if forloop.first %} ss-sdot-on{% endif %}"></span>
+        {%- endfor -%}
+      </div>
+
+      <!-- COMPARISON TABLE -->
+      <div class="ss-table-wrap">
+        <table class="ss-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>{{ s.table_col_retinol }}</th>
+              <th class="ss-th-hl">{{ s.table_col_siren }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for block in comp_rows -%}
+              <tr {{ block.shopify_attributes }}>
+                <td class="ss-td-feat">{{ block.settings.feature }}</td>
+                <td>
+                  {%- if block.settings.retinol_positive -%}<span class="ss-ck">✓</span>{%- else -%}<span class="ss-cx">✗</span>{%- endif -%}
+                  {{ block.settings.retinol_value }}
+                </td>
+                <td class="ss-td-hl"><span class="ss-ck">✓</span> {{ block.settings.siren_value }}</td>
+              </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CERT STRIP -->
+      <div class="ss-cert-strip">
+        <span class="ss-cert-lbl">{{ s.cert_label }}</span>
+        <div class="ss-cert-tags">
+          {%- for block in cert_tags -%}
+            <span class="ss-ctag" {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+          {%- endfor -%}
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ ④ SOCIAL PROOF ═══ -->
+  <section class="ss-social">
+    <div class="ss-container">
+      <div class="ss-section-head ss-center">
+        <span class="ss-eyebrow">{{ s.social_eyebrow }}</span>
+        <h2 class="ss-h2">{{ s.social_heading }}</h2>
+      </div>
+      <div class="ss-reviews">
+        {%- for block in reviews -%}
+          <div class="ss-rcard" {{ block.shopify_attributes }}>
+            <div class="ss-rcard-stars">
+              {%- for i in (1..5) -%}
+                <svg width="13" height="13" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              {%- endfor -%}
+            </div>
+            <p class="ss-rcard-text">"{{ block.settings.text }}"</p>
+            <p class="ss-rcard-name">{{ block.settings.author }}</p>
+            <p class="ss-rcard-skin">{{ block.settings.skin_type }}</p>
+            <span class="ss-rcard-v">
+              <svg width="10" height="10" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Verified Purchase
+            </span>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ⑤ RISK REMOVAL ═══ -->
+  <section class="ss-risk">
+    <div class="ss-container ss-center">
+      <div class="ss-guarantee-circle">
+        <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      </div>
+      <h2 class="ss-h2">{{ s.risk_heading }}</h2>
+      <p class="ss-risk-sub">{{ s.risk_sub }}</p>
+      <div class="ss-risk-proof">
+        {%- for block in risk_items -%}
+          <span class="ss-rproof-item" {{ block.shopify_attributes }}>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            {{ block.settings.label }}
+          </span>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ⑥ OFFER ═══ -->
+  <section class="ss-offer" id="ss-offer-{{ sid }}">
+    <div class="ss-container">
+      <div class="ss-section-head ss-center">
+        <span class="ss-eyebrow">{{ s.offer_eyebrow }}</span>
+        <h2 class="ss-h2">{{ s.offer_heading }}</h2>
+        <p class="ss-offer-sub">{{ s.offer_sub }}</p>
+      </div>
+      <div class="ss-product-grid">
+        {%- for block in prod_sizes -%}
+          <div class="ss-pcard{% if block.settings.is_popular %} ss-pcard-pop{% endif %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.is_popular -%}
+              <span class="ss-pop-badge">{{ s.popular_badge_text }}</span>
+            {%- endif -%}
+            {%- if block.settings.product_image != blank -%}
+              <div class="ss-pcard-img">
+                {{- block.settings.product_image | image_url: width: 500 | image_tag:
+                    loading: 'lazy',
+                    class: 'ss-pimg',
+                    alt: block.settings.name -}}
+              </div>
+            {%- endif -%}
+            <p class="ss-psize">{{ block.settings.name }}</p>
+            <p class="ss-pdesc">{{ block.settings.description }}</p>
+            <div class="ss-price-row">
+              <span class="ss-price-lbl">{{ s.price_label_onetime }}</span>
+              <span class="ss-price-amt">{{ block.settings.price_onetime }}</span>
+            </div>
+            <div class="ss-price-row ss-price-sub">
+              <span class="ss-price-lbl">{{ s.price_label_sub }}</span>
+              <div class="ss-price-right">
+                <span class="ss-price-amt">{{ block.settings.price_sub }}</span>
+                <span class="ss-save-chip">{{ block.settings.save_label }}</span>
+              </div>
+            </div>
+            <a href="{{ block.settings.product_url }}" class="ss-btn ss-btn-mb">{{ block.settings.cta_onetime }}</a>
+            <a href="{{ block.settings.sub_url | default: block.settings.product_url }}" class="ss-btn ss-btn-ghost">{{ block.settings.cta_sub }}</a>
+          </div>
+        {%- endfor -%}
+      </div>
+      <p class="ss-offer-note">{{ s.offer_note }}</p>
+    </div>
+  </section>
+
+  <!-- ═══ ⑦ FINAL CTA ═══ -->
+  <section class="ss-final">
+    <div class="ss-container ss-center">
+      <span class="ss-eyebrow">{{ s.final_eyebrow }}</span>
+      <h2 class="ss-h2 ss-final-h">{{ s.final_heading }}</h2>
+      <p class="ss-final-sub">{{ s.final_sub }}</p>
+      <a href="{{ s.final_cta_url }}" class="ss-btn ss-btn-teal ss-btn-final">{{ s.final_cta_text }}</a>
+      <p class="ss-final-micro">{{ s.final_micro }}</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ═══════════ STYLES ═══════════ -->
+<style>
+#ss-{{ sid }} {
+  --ss-white:      #FFFFFF;
+  --ss-cream:      #F8F5F1;
+  --ss-ink:        #1C1A18;
+  --ss-ink-mid:    #4A4744;
+  --ss-ink-muted:  #7A7470;
+  --ss-teal:       #5ABCB4;
+  --ss-teal-deep:  #3D9E97;
+  --ss-teal-bg:    #EDF8F7;
+  --ss-coral:      #C97068;
+  --ss-coral-bg:   #FDF0EF;
+  --ss-coral-bdr:  #ECC5C2;
+  --ss-teal-bdr:   #B8E5E2;
+  --ss-border:     #E5DFD9;
+  --ss-r-sm:  8px; --ss-r-md: 16px; --ss-r-lg: 24px;
+  --ss-r-xl:  32px; --ss-r-full: 100px;
+  --ss-font-script: 'Dancing Script', cursive;
+  --ss-font-ui: 'DM Sans', system-ui, sans-serif;
+  font-family: var(--ss-font-ui);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+/* ── RESET ── */
+#ss-{{ sid }} *, #ss-{{ sid }} *::before, #ss-{{ sid }} *::after { box-sizing: border-box; margin: 0; padding: 0; }
+#ss-{{ sid }} img { max-width: 100%; display: block; }
+/* ── TYPE ── */
+#ss-{{ sid }} .ss-h1 { font-size: clamp(2rem, 8vw, 3.5rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.025em; color: var(--ss-ink); }
+#ss-{{ sid }} .ss-h1 em { font-style: italic; font-weight: 300; color: var(--ss-ink-mid); }
+#ss-{{ sid }} .ss-h2 { font-size: clamp(1.55rem, 4.5vw, 2.3rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.018em; color: var(--ss-ink); }
+#ss-{{ sid }} p { font-size: 1rem; line-height: 1.72; color: var(--ss-ink-muted); }
+#ss-{{ sid }} .ss-script { font-family: var(--ss-font-script); }
+#ss-{{ sid }} .ss-eyebrow { font-family: var(--ss-font-script); font-size: 1.05rem; color: var(--ss-teal); display: block; margin-bottom: 6px; }
+/* ── LAYOUT ── */
+#ss-{{ sid }} .ss-container { width: 100%; max-width: 480px; margin: 0 auto; padding: 0 22px; }
+#ss-{{ sid }} .ss-center { text-align: center; }
+/* ── ANNOUNCE ── */
+#ss-{{ sid }} .ss-announce { background: var(--ss-ink); color: white; text-align: center; padding: 10px 20px; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.05em; }
+/* ── BUTTONS ── */
+#ss-{{ sid }} .ss-btn { display: block; width: 100%; background: var(--ss-ink); color: white; font-family: var(--ss-font-ui); font-size: 0.95rem; font-weight: 600; letter-spacing: 0.01em; padding: 16px 28px; border-radius: var(--ss-r-full); border: none; cursor: pointer; text-decoration: none; text-align: center; transition: background 0.2s, transform 0.15s; }
+#ss-{{ sid }} .ss-btn:hover { background: var(--ss-teal-deep); transform: translateY(-1px); }
+#ss-{{ sid }} .ss-btn-ghost { background: transparent; color: var(--ss-ink-mid); border: 1.5px solid var(--ss-border); }
+#ss-{{ sid }} .ss-btn-ghost:hover { border-color: var(--ss-teal); background: transparent; color: var(--ss-teal-deep); transform: none; }
+#ss-{{ sid }} .ss-btn-teal { background: var(--ss-teal); }
+#ss-{{ sid }} .ss-btn-teal:hover { background: var(--ss-teal-deep); }
+#ss-{{ sid }} .ss-btn-mb { margin-bottom: 8px; }
+#ss-{{ sid }} .ss-btn-final { max-width: 320px; margin: 0 auto; }
+#ss-{{ sid }} .ss-btn-micro { font-size: 0.75rem; color: var(--ss-ink-muted); margin-top: 10px; }
+/* ── HERO ── */
+#ss-{{ sid }} .ss-hero { background: var(--ss-white); padding: 0; }
+#ss-{{ sid }} .ss-hero-inner { display: flex; flex-direction: column; }
+#ss-{{ sid }} .ss-hero-content { padding: 48px 22px 36px; text-align: center; order: 1; }
+#ss-{{ sid }} .ss-hero-img-wrap { order: 2; width: 100%; overflow: hidden; max-height: 480px; }
+#ss-{{ sid }} .ss-hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+#ss-{{ sid }} .ss-hero-brand { font-family: var(--ss-font-script); font-size: 1.15rem; color: var(--ss-teal); margin-bottom: 16px; display: block; }
+#ss-{{ sid }} .ss-hero-sub { font-size: 1.05rem; line-height: 1.6; color: var(--ss-ink-muted); max-width: 34ch; margin: 16px auto 26px; }
+/* ── STARS + RATING ── */
+#ss-{{ sid }} .ss-rating { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 22px; font-size: 0.83rem; color: var(--ss-ink-muted); }
+#ss-{{ sid }} .ss-stars { display: flex; gap: 2px; }
+#ss-{{ sid }} .ss-stars svg { color: var(--ss-teal); }
+#ss-{{ sid }} .ss-rating strong { color: var(--ss-ink); }
+/* ── TRUST BADGES ── */
+#ss-{{ sid }} .ss-trust-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; margin-bottom: 28px; }
+#ss-{{ sid }} .ss-tbadge { display: flex; align-items: center; gap: 5px; font-size: 0.75rem; font-weight: 500; color: var(--ss-ink-muted); }
+#ss-{{ sid }} .ss-tbadge svg { color: var(--ss-teal); flex-shrink: 0; }
+/* ── WAVES ── */
+#ss-{{ sid }} .ss-wave-dn { display: block; width: 100%; overflow: hidden; line-height: 0; background: var(--ss-white); }
+#ss-{{ sid }} .ss-wave-up { display: block; width: 100%; overflow: hidden; line-height: 0; background: var(--ss-cream); }
+#ss-{{ sid }} .ss-wave-dn svg, #ss-{{ sid }} .ss-wave-up svg { display: block; width: 100%; }
+/* ── VALIDATION ── */
+#ss-{{ sid }} .ss-validation { background: var(--ss-cream); padding: 32px 0 40px; }
+#ss-{{ sid }} .ss-val-pain { font-size: clamp(1.25rem, 4.5vw, 1.75rem); font-weight: 700; line-height: 1.25; color: var(--ss-ink); margin-bottom: 10px; }
+#ss-{{ sid }} .ss-val-sub { font-size: 0.95rem; color: var(--ss-ink-muted); }
+#ss-{{ sid }} .ss-val-arrow { display: inline-block; margin-top: 14px; font-size: 0.85rem; font-weight: 600; color: var(--ss-teal); }
+/* ── EDU ── */
+#ss-{{ sid }} .ss-edu { background: var(--ss-cream); padding: 52px 0 60px; }
+#ss-{{ sid }} .ss-edu-header { margin-bottom: 32px; }
+#ss-{{ sid }} .ss-edu-header .ss-h2 { margin-top: 4px; }
+/* ── CALLOUT ── */
+#ss-{{ sid }} .ss-callout { background: var(--ss-ink); border-radius: var(--ss-r-xl); padding: 32px 24px; margin-bottom: 32px; position: relative; overflow: hidden; }
+#ss-{{ sid }} .ss-callout::before { content: ''; position: absolute; top: -50px; right: -50px; width: 160px; height: 160px; background: var(--ss-teal); opacity: 0.1; border-radius: 50%; }
+#ss-{{ sid }} .ss-callout-img-accent { position: absolute; bottom: -10px; right: -10px; width: 100px; opacity: 0.18; pointer-events: none; }
+#ss-{{ sid }} .ss-texture-img { border-radius: 8px; }
+#ss-{{ sid }} .ss-callout-body { position: relative; z-index: 1; }
+#ss-{{ sid }} .ss-callout-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ss-teal); margin-bottom: 12px; display: block; }
+#ss-{{ sid }} .ss-callout-h { font-size: clamp(1.2rem, 3.5vw, 1.6rem); color: white; line-height: 1.3; margin-bottom: 12px; font-weight: 700; }
+#ss-{{ sid }} .ss-callout p { color: rgba(255,255,255,0.68); font-size: 0.9rem; line-height: 1.72; }
+/* ── PATHWAY ── */
+#ss-{{ sid }} .ss-pathway-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 32px; }
+#ss-{{ sid }} .ss-pathway { border-radius: var(--ss-r-md); padding: 18px 14px; }
+#ss-{{ sid }} .ss-pathway-bad { background: var(--ss-coral-bg); border: 1.5px solid var(--ss-coral-bdr); }
+#ss-{{ sid }} .ss-pathway-good { background: var(--ss-teal-bg); border: 1.5px solid var(--ss-teal-bdr); }
+#ss-{{ sid }} .ss-pathway-tag { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+#ss-{{ sid }} .ss-pathway-bad .ss-pathway-tag { color: var(--ss-coral); }
+#ss-{{ sid }} .ss-pathway-good .ss-pathway-tag { color: var(--ss-teal-deep); }
+#ss-{{ sid }} .ss-p-step { display: flex; align-items: flex-start; gap: 7px; margin-bottom: 7px; }
+#ss-{{ sid }} .ss-p-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 8px; }
+#ss-{{ sid }} .ss-pathway-bad .ss-p-dot { background: var(--ss-coral); }
+#ss-{{ sid }} .ss-pathway-good .ss-p-dot { background: var(--ss-teal); }
+#ss-{{ sid }} .ss-p-step p { font-size: 0.77rem; line-height: 1.5; color: var(--ss-ink); margin: 0; }
+#ss-{{ sid }} .ss-p-result { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(0,0,0,0.07); font-size: 0.77rem; font-weight: 700; line-height: 1.4; }
+#ss-{{ sid }} .ss-pathway-bad .ss-p-result { color: var(--ss-coral); }
+#ss-{{ sid }} .ss-pathway-good .ss-p-result { color: var(--ss-teal-deep); }
+/* ── INGREDIENTS ── */
+#ss-{{ sid }} .ss-ing-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ss-ink-muted); margin-bottom: 14px; display: block; }
+#ss-{{ sid }} .ss-ing-scroll { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 6px; margin: 0 -22px; padding-left: 22px; padding-right: 22px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+#ss-{{ sid }} .ss-ing-scroll::-webkit-scrollbar { display: none; }
+#ss-{{ sid }} .ss-ing-card { flex: 0 0 calc(82vw - 16px); max-width: 270px; background: white; border-radius: var(--ss-r-md); padding: 22px 18px; scroll-snap-align: start; border: 1.5px solid var(--ss-border); }
+#ss-{{ sid }} .ss-ing-icon { font-size: 1.8rem; margin-bottom: 10px; }
+#ss-{{ sid }} .ss-ing-name { font-family: var(--ss-font-script); font-size: 1.2rem; color: var(--ss-ink); margin-bottom: 3px; }
+#ss-{{ sid }} .ss-ing-role { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ss-teal); margin-bottom: 8px; display: block; }
+#ss-{{ sid }} .ss-ing-card p { font-size: 0.82rem; line-height: 1.65; margin-bottom: 12px; }
+#ss-{{ sid }} .ss-ing-chip { display: inline-block; background: var(--ss-teal-bg); color: var(--ss-teal-deep); font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: var(--ss-r-full); }
+/* ── SCROLL DOTS ── */
+#ss-{{ sid }} .ss-scroll-dots { display: flex; justify-content: center; gap: 6px; margin-top: 12px; }
+#ss-{{ sid }} .ss-sdot { width: 6px; height: 6px; border-radius: 50%; background: var(--ss-border); transition: all 0.2s; }
+#ss-{{ sid }} .ss-sdot-on { background: var(--ss-teal); width: 18px; border-radius: 3px; }
+/* ── TABLE ── */
+#ss-{{ sid }} .ss-table-wrap { margin-top: 32px; border-radius: var(--ss-r-md); overflow: hidden; border: 1.5px solid var(--ss-border); }
+#ss-{{ sid }} .ss-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+#ss-{{ sid }} .ss-table thead tr { background: var(--ss-ink); }
+#ss-{{ sid }} .ss-table thead th { padding: 12px 14px; text-align: left; font-weight: 600; font-size: 0.77rem; color: white; }
+#ss-{{ sid }} .ss-th-hl { background: var(--ss-teal) !important; }
+#ss-{{ sid }} .ss-table tbody tr:nth-child(odd) { background: white; }
+#ss-{{ sid }} .ss-table tbody tr:nth-child(even) { background: var(--ss-cream); }
+#ss-{{ sid }} .ss-table tbody td { padding: 11px 14px; color: var(--ss-ink-muted); border-bottom: 1px solid var(--ss-border); font-size: 0.79rem; line-height: 1.4; }
+#ss-{{ sid }} .ss-td-feat { color: var(--ss-ink) !important; font-weight: 500; }
+#ss-{{ sid }} .ss-td-hl { background: rgba(90,188,180,0.08) !important; color: var(--ss-teal-deep) !important; font-weight: 600; }
+#ss-{{ sid }} .ss-table tbody tr:last-child td { border-bottom: none; }
+#ss-{{ sid }} .ss-ck { color: var(--ss-teal); }
+#ss-{{ sid }} .ss-cx { color: var(--ss-coral); }
+/* ── CERT STRIP ── */
+#ss-{{ sid }} .ss-cert-strip { margin-top: 24px; padding: 18px; background: white; border-radius: var(--ss-r-md); border: 1.5px solid var(--ss-border); }
+#ss-{{ sid }} .ss-cert-lbl { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ss-ink-muted); text-align: center; margin-bottom: 10px; display: block; }
+#ss-{{ sid }} .ss-cert-tags { display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; }
+#ss-{{ sid }} .ss-ctag { font-size: 0.7rem; font-weight: 500; color: var(--ss-ink-muted); background: var(--ss-cream); padding: 4px 9px; border-radius: var(--ss-r-full); border: 1px solid var(--ss-border); }
+/* ── SOCIAL PROOF ── */
+#ss-{{ sid }} .ss-social { padding: 56px 0; background: var(--ss-white); }
+#ss-{{ sid }} .ss-section-head { margin-bottom: 28px; }
+#ss-{{ sid }} .ss-section-head .ss-h2 { margin-top: 4px; }
+#ss-{{ sid }} .ss-reviews { display: flex; flex-direction: column; gap: 12px; }
+#ss-{{ sid }} .ss-rcard { background: var(--ss-cream); border-radius: var(--ss-r-md); padding: 22px; border: 1.5px solid var(--ss-border); }
+#ss-{{ sid }} .ss-rcard-stars { display: flex; gap: 2px; margin-bottom: 10px; }
+#ss-{{ sid }} .ss-rcard-stars svg { color: var(--ss-teal); }
+#ss-{{ sid }} .ss-rcard-text { font-size: 0.88rem; line-height: 1.7; color: var(--ss-ink); font-style: italic; margin-bottom: 14px; }
+#ss-{{ sid }} .ss-rcard-name { font-size: 0.78rem; font-weight: 600; color: var(--ss-ink-mid); }
+#ss-{{ sid }} .ss-rcard-skin { font-size: 0.72rem; color: var(--ss-ink-muted); margin-top: 2px; }
+#ss-{{ sid }} .ss-rcard-v { display: inline-flex; align-items: center; gap: 4px; font-size: 0.67rem; color: var(--ss-teal-deep); font-weight: 600; margin-top: 8px; }
+/* ── RISK ── */
+#ss-{{ sid }} .ss-risk { background: var(--ss-cream); padding: 48px 0; }
+#ss-{{ sid }} .ss-guarantee-circle { width: 68px; height: 68px; border-radius: 50%; background: var(--ss-teal); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
+#ss-{{ sid }} .ss-guarantee-circle svg { color: white; }
+#ss-{{ sid }} .ss-risk .ss-h2 { margin-bottom: 10px; }
+#ss-{{ sid }} .ss-risk-sub { max-width: 38ch; margin: 0 auto 24px; }
+#ss-{{ sid }} .ss-risk-proof { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+#ss-{{ sid }} .ss-rproof-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--ss-ink-muted); }
+#ss-{{ sid }} .ss-rproof-item svg { color: var(--ss-teal); flex-shrink: 0; }
+/* ── OFFER ── */
+#ss-{{ sid }} .ss-offer { padding: 56px 0; background: var(--ss-white); }
+#ss-{{ sid }} .ss-offer-sub { font-size: 0.93rem; margin-top: 8px; }
+#ss-{{ sid }} .ss-product-grid { display: flex; flex-direction: column; gap: 14px; }
+#ss-{{ sid }} .ss-pcard { border-radius: var(--ss-r-md); border: 2px solid var(--ss-border); padding: 24px 20px; position: relative; }
+#ss-{{ sid }} .ss-pcard-pop { border-color: var(--ss-teal); }
+#ss-{{ sid }} .ss-pop-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--ss-teal); color: white; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; padding: 4px 14px; border-radius: var(--ss-r-full); white-space: nowrap; }
+#ss-{{ sid }} .ss-pcard-img { margin-bottom: 16px; border-radius: var(--ss-r-sm); overflow: hidden; background: var(--ss-cream); }
+#ss-{{ sid }} .ss-pimg { width: 100%; height: 220px; object-fit: cover; object-position: center; }
+#ss-{{ sid }} .ss-psize { font-family: var(--ss-font-script); font-size: 1.4rem; color: var(--ss-ink); margin-bottom: 4px; }
+#ss-{{ sid }} .ss-pdesc { font-size: 0.77rem; color: var(--ss-ink-muted); margin-bottom: 18px; }
+#ss-{{ sid }} .ss-price-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; padding: 0 2px; }
+#ss-{{ sid }} .ss-price-lbl { font-size: 0.77rem; color: var(--ss-ink-muted); }
+#ss-{{ sid }} .ss-price-amt { font-size: 1.05rem; font-weight: 700; color: var(--ss-ink); }
+#ss-{{ sid }} .ss-price-sub { background: var(--ss-teal-bg); border-radius: var(--ss-r-sm); padding: 8px 12px; margin-bottom: 20px; }
+#ss-{{ sid }} .ss-price-sub .ss-price-amt { color: var(--ss-teal-deep); }
+#ss-{{ sid }} .ss-price-right { display: flex; align-items: center; gap: 6px; }
+#ss-{{ sid }} .ss-save-chip { font-size: 0.68rem; font-weight: 700; color: var(--ss-teal-deep); background: rgba(90,188,180,0.18); padding: 2px 8px; border-radius: var(--ss-r-full); }
+#ss-{{ sid }} .ss-offer-note { text-align: center; margin-top: 22px; font-size: 0.8rem; color: var(--ss-ink-muted); line-height: 1.6; }
+/* ── FINAL CTA ── */
+#ss-{{ sid }} .ss-final { background: var(--ss-ink); padding: 64px 0; }
+#ss-{{ sid }} .ss-final .ss-eyebrow { color: var(--ss-teal); margin-bottom: 6px; }
+#ss-{{ sid }} .ss-final-h { color: white !important; max-width: 22ch; margin-left: auto; margin-right: auto; margin-bottom: 12px; }
+#ss-{{ sid }} .ss-final-sub { color: rgba(255,255,255,0.58); max-width: 36ch; margin: 0 auto 28px; }
+#ss-{{ sid }} .ss-final-micro { font-size: 0.75rem; color: rgba(255,255,255,0.38); margin-top: 14px; }
+
+/* ── RESPONSIVE: TABLET / DESKTOP ── */
+@media (min-width: 768px) {
+  #ss-{{ sid }} .ss-container { max-width: 980px; padding: 0 44px; }
+  /* Hero: split layout */
+  #ss-{{ sid }} .ss-hero-inner { flex-direction: row; min-height: 600px; align-items: stretch; }
+  #ss-{{ sid }} .ss-hero-content { order: 1; flex: 0 0 50%; padding: 72px 52px 72px 44px; text-align: left; display: flex; flex-direction: column; justify-content: center; }
+  #ss-{{ sid }} .ss-hero-img-wrap { order: 2; flex: 0 0 50%; max-height: none; }
+  #ss-{{ sid }} .ss-hero-img { height: 100%; max-height: none; }
+  #ss-{{ sid }} .ss-hero-sub { margin-left: 0; margin-right: 0; }
+  #ss-{{ sid }} .ss-rating { justify-content: flex-start; }
+  #ss-{{ sid }} .ss-trust-badges { justify-content: flex-start; }
+  #ss-{{ sid }} .ss-btn { width: auto; display: inline-block; }
+  #ss-{{ sid }} .ss-btn-final { display: inline-block; width: auto; }
+  /* Ingredient cards: grid */
+  #ss-{{ sid }} .ss-ing-scroll { display: grid; grid-template-columns: repeat(3,1fr); overflow-x: visible; margin: 0; padding: 0; }
+  #ss-{{ sid }} .ss-ing-card { flex: none; max-width: none; }
+  #ss-{{ sid }} .ss-scroll-dots { display: none; }
+  /* Reviews: row */
+  #ss-{{ sid }} .ss-reviews { flex-direction: row; }
+  #ss-{{ sid }} .ss-rcard { flex: 1; }
+  /* Products: row */
+  #ss-{{ sid }} .ss-product-grid { flex-direction: row; }
+  #ss-{{ sid }} .ss-pcard { flex: 1; }
+  /* Callout with image accent */
+  #ss-{{ sid }} .ss-callout { padding: 44px 40px; }
+  #ss-{{ sid }} .ss-callout-img-accent { width: 140px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ss-{{ sid }} .ss-btn { transition: none; }
+}
+
+/* ── THEME OVERRIDE: скидаємо відступи які тема додає до обгортки ── */
+.shopify-section:has(#ss-{{ sid }}) { margin: 0 !important; padding: 0 !important; }
+#ss-{{ sid }} .ss-page { margin: 0; }
+
+/* ── FIX: зменшуємо вертикальні відступи між секціями ── */
+#ss-{{ sid }} .ss-validation { padding: 28px 0 32px; }
+#ss-{{ sid }} .ss-edu        { padding: 40px 0 52px; }
+#ss-{{ sid }} .ss-social     { padding: 44px 0; }
+#ss-{{ sid }} .ss-risk       { padding: 36px 0; }
+#ss-{{ sid }} .ss-offer      { padding: 44px 0; }
+#ss-{{ sid }} .ss-final      { padding: 52px 0; }
+
+/* ── FIX: хвильові розділювачі — прибираємо зайвий простір ── */
+#ss-{{ sid }} .ss-wave-dn,
+#ss-{{ sid }} .ss-wave-up { margin: 0; line-height: 0; font-size: 0; display: block; }
+
+/* ── FIX: зображення в hero не розтягується надміру ── */
+#ss-{{ sid }} .ss-hero-img-wrap { max-height: 340px; }
+#ss-{{ sid }} .ss-hero-img { object-position: center 20%; }
+
+/* ── FIX: product image в картках менша висота на мобілці ── */
+#ss-{{ sid }} .ss-pimg { height: 180px; }
+
+</style>
+
+<!-- ═══════════ JAVASCRIPT ═══════════ -->
+<script>
+(function() {
+  var ingScroll = document.getElementById('ss-ing-{{ sid }}');
+  var dots = document.querySelectorAll('#ss-dots-{{ sid }} .ss-sdot');
+  if (!ingScroll || !dots.length) return;
+  ingScroll.addEventListener('scroll', function() {
+    var card = ingScroll.querySelector('.ss-ing-card');
+    if (!card) return;
+    var cardW = card.offsetWidth + 12;
+    var idx = Math.round(ingScroll.scrollLeft / cardW);
+    dots.forEach(function(d, i) { d.classList.toggle('ss-sdot-on', i === idx); });
+  }, { passive: true });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Siren Silk Landing",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "header",
+      "content": "📢 Announcement Bar"
+    },
+    {
+      "type": "text",
+      "id": "announce_text",
+      "label": "Announcement text",
+      "default": "Free US shipping on orders $50+  ·  Easy free 30-day returns"
+    },
+    {
+      "type": "header",
+      "content": "① Hero Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image (model / lifestyle shot)"
+    },
+    {
+      "type": "text",
+      "id": "hero_brand",
+      "label": "Brand name",
+      "default": "Earth Harbor"
+    },
+    {
+      "type": "text",
+      "id": "hero_h1_line1",
+      "label": "Heading — line 1",
+      "default": "You didn't fail retinol."
+    },
+    {
+      "type": "text",
+      "id": "hero_h1_italic",
+      "label": "Heading — italic line",
+      "default": "Retinol failed"
+    },
+    {
+      "type": "text",
+      "id": "hero_h1_line3",
+      "label": "Heading — line 3",
+      "default": "your skin."
+    },
+    {
+      "type": "textarea",
+      "id": "hero_subheading",
+      "label": "Subheading",
+      "default": "SIREN SILK delivers the renewal you were after — with bio-retinol your skin can actually keep."
+    },
+    {
+      "type": "text",
+      "id": "hero_rating",
+      "label": "Star rating",
+      "default": "4.9"
+    },
+    {
+      "type": "text",
+      "id": "hero_review_count",
+      "label": "Review count",
+      "default": "597"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_text",
+      "label": "CTA button text",
+      "default": "Try It Risk-Free — Starting at $26"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta_url",
+      "label": "CTA button link"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_micro",
+      "label": "CTA micro-copy (below button)",
+      "default": "No harsh commitment. Just better skin. ✨"
+    },
+    {
+      "type": "header",
+      "content": "② Validation Section"
+    },
+    {
+      "type": "text",
+      "id": "val_pain",
+      "label": "Pain statement",
+      "default": "The burning. The flaking. The \"why does my skin look worse?\""
+    },
+    {
+      "type": "text",
+      "id": "val_sub",
+      "label": "Sub-text",
+      "default": "If retinol has been on your never-again list — we get it."
+    },
+    {
+      "type": "text",
+      "id": "val_arrow",
+      "label": "Transition arrow text",
+      "default": "Here's what actually changed ↓"
+    },
+    {
+      "type": "header",
+      "content": "③ Education Section"
+    },
+    {
+      "type": "text",
+      "id": "edu_eyebrow",
+      "label": "Section eyebrow",
+      "default": "The science"
+    },
+    {
+      "type": "text",
+      "id": "edu_heading",
+      "label": "Section heading",
+      "default": "Same results. Completely different approach."
+    },
+    {
+      "type": "header",
+      "content": "— Callout Box"
+    },
+    {
+      "type": "image_picker",
+      "id": "texture_image",
+      "label": "Texture / accent image (callout corner)"
+    },
+    {
+      "type": "text",
+      "id": "callout_tag",
+      "label": "Callout label",
+      "default": "Important distinction"
+    },
+    {
+      "type": "textarea",
+      "id": "callout_heading",
+      "label": "Callout heading",
+      "default": "Bio-retinol is not a gentler version of retinol. It's not retinol at all."
+    },
+    {
+      "type": "textarea",
+      "id": "callout_body",
+      "label": "Callout body text",
+      "default": "Traditional retinol binds to skin receptors and forces cells to turn over faster than they naturally would. That aggressive override is exactly why sensitive skin reacts — it reads the signal as damage, not renewal. Bio-retinol works through a completely different pathway: no vitamin A, no retinoic acid, no forced turnover. Same destination. None of the fallout."
+    },
+    {
+      "type": "header",
+      "content": "— Pathway Comparison"
+    },
+    {
+      "type": "text",
+      "id": "pathway_bad_label",
+      "label": "Left column label",
+      "default": "Traditional Retinol"
+    },
+    {
+      "type": "text",
+      "id": "pathway_bad_step1",
+      "label": "Left — step 1",
+      "default": "Vitamin A derivative"
+    },
+    {
+      "type": "text",
+      "id": "pathway_bad_step2",
+      "label": "Left — step 2",
+      "default": "Forces rapid cell turnover"
+    },
+    {
+      "type": "text",
+      "id": "pathway_bad_step3",
+      "label": "Left — step 3",
+      "default": "Skin barrier disrupted"
+    },
+    {
+      "type": "text",
+      "id": "pathway_bad_step4",
+      "label": "Left — step 4",
+      "default": "Skin reads it as damage"
+    },
+    {
+      "type": "text",
+      "id": "pathway_bad_result",
+      "label": "Left — result line",
+      "default": "→ Peeling. Burning. Giving up."
+    },
+    {
+      "type": "text",
+      "id": "pathway_good_label",
+      "label": "Right column label",
+      "default": "SIREN SILK"
+    },
+    {
+      "type": "text",
+      "id": "pathway_good_step1",
+      "label": "Right — step 1",
+      "default": "Sea fennel extract"
+    },
+    {
+      "type": "text",
+      "id": "pathway_good_step2",
+      "label": "Right — step 2",
+      "default": "Signals natural renewal"
+    },
+    {
+      "type": "text",
+      "id": "pathway_good_step3",
+      "label": "Right — step 3",
+      "default": "Barrier actively supported"
+    },
+    {
+      "type": "text",
+      "id": "pathway_good_step4",
+      "label": "Right — step 4",
+      "default": "Skin responds, not reacts"
+    },
+    {
+      "type": "text",
+      "id": "pathway_good_result",
+      "label": "Right — result line",
+      "default": "→ Dewy. Calm. Actually works."
+    },
+    {
+      "type": "header",
+      "content": "— Ingredient Cards"
+    },
+    {
+      "type": "text",
+      "id": "ing_section_label",
+      "label": "Ingredients section label",
+      "default": "What's inside"
+    },
+    {
+      "type": "header",
+      "content": "— Comparison Table"
+    },
+    {
+      "type": "text",
+      "id": "table_col_retinol",
+      "label": "Table column 1 header",
+      "default": "Traditional Retinol"
+    },
+    {
+      "type": "text",
+      "id": "table_col_siren",
+      "label": "Table column 2 header",
+      "default": "SIREN SILK ✨"
+    },
+    {
+      "type": "header",
+      "content": "— Certifications Strip"
+    },
+    {
+      "type": "text",
+      "id": "cert_label",
+      "label": "Certifications strip label",
+      "default": "Our standards"
+    },
+    {
+      "type": "header",
+      "content": "④ Social Proof Section"
+    },
+    {
+      "type": "text",
+      "id": "social_eyebrow",
+      "label": "Eyebrow text",
+      "default": "Real skin. Real results."
+    },
+    {
+      "type": "text",
+      "id": "social_heading",
+      "label": "Heading",
+      "default": "No purge required."
+    },
+    {
+      "type": "header",
+      "content": "⑤ Risk Removal Section"
+    },
+    {
+      "type": "text",
+      "id": "risk_heading",
+      "label": "Heading",
+      "default": "Not sure? That's what the 30 days are for."
+    },
+    {
+      "type": "text",
+      "id": "risk_sub",
+      "label": "Sub-text",
+      "default": "Free returns. Even if the jar isn't empty. No questions asked."
+    },
+    {
+      "type": "header",
+      "content": "⑥ Offer / Pricing Section"
+    },
+    {
+      "type": "text",
+      "id": "offer_eyebrow",
+      "label": "Eyebrow",
+      "default": "Choose your size"
+    },
+    {
+      "type": "text",
+      "id": "offer_heading",
+      "label": "Heading",
+      "default": "Start tonight."
+    },
+    {
+      "type": "text",
+      "id": "offer_sub",
+      "label": "Sub-text",
+      "default": "Less than $1.55 a night. Gentler than anything you've tried before."
+    },
+    {
+      "type": "text",
+      "id": "popular_badge_text",
+      "label": "Popular badge label",
+      "default": "Most Popular"
+    },
+    {
+      "type": "text",
+      "id": "price_label_onetime",
+      "label": "One-time price label",
+      "default": "One-time"
+    },
+    {
+      "type": "text",
+      "id": "price_label_sub",
+      "label": "Subscribe & Save label",
+      "default": "Subscribe & Save"
+    },
+    {
+      "type": "text",
+      "id": "offer_note",
+      "label": "Offer note (below cards)",
+      "default": "Subscribe & Save = same formula, lower price, cancel anytime. · Free US shipping on orders $50+"
+    },
+    {
+      "type": "header",
+      "content": "⑦ Final CTA Section"
+    },
+    {
+      "type": "text",
+      "id": "final_eyebrow",
+      "label": "Eyebrow",
+      "default": "Your skin still wants the glow."
+    },
+    {
+      "type": "text",
+      "id": "final_heading",
+      "label": "Heading",
+      "default": "Give it a better way to get there. ✨"
+    },
+    {
+      "type": "textarea",
+      "id": "final_sub",
+      "label": "Sub-text",
+      "default": "You don't have to choose between results and comfort. Tonight is a good night to try again."
+    },
+    {
+      "type": "text",
+      "id": "final_cta_text",
+      "label": "CTA button text",
+      "default": "Try SIREN SILK Risk-Free — $26"
+    },
+    {
+      "type": "url",
+      "id": "final_cta_url",
+      "label": "CTA button link"
+    },
+    {
+      "type": "text",
+      "id": "final_micro",
+      "label": "Micro-copy below CTA",
+      "default": "Free 30-day returns · Ships in 2–3 days · Sensitive Skin Certified"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust_badge",
+      "name": "Trust Badge",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "check", "label": "✓ Checkmark" },
+            { "value": "lab",   "label": "🔬 Lab / Tested" },
+            { "value": "heart", "label": "♥ Heart / Vegan" },
+            { "value": "refresh","label": "↺ Returns / Cycle" }
+          ],
+          "default": "check"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Badge text",
+          "default": "Certified"
+        }
+      ]
+    },
+    {
+      "type": "ingredient",
+      "name": "Ingredient Card",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Emoji icon",
+          "default": "🌿"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient name",
+          "default": "Sea Fennel"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role / label",
+          "default": "Bio-Retinol Active"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Clinically shown to smooth fine lines and improve texture."
+        },
+        {
+          "type": "text",
+          "id": "chip",
+          "label": "Benefit chip text",
+          "default": "No purge. No fallout."
+        }
+      ]
+    },
+    {
+      "type": "comparison_row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature name",
+          "default": "Purge period"
+        },
+        {
+          "type": "text",
+          "id": "retinol_value",
+          "label": "Traditional retinol value",
+          "default": "4–8 weeks"
+        },
+        {
+          "type": "checkbox",
+          "id": "retinol_positive",
+          "label": "Retinol value is positive (✓ instead of ✗)?",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "siren_value",
+          "label": "SIREN SILK value",
+          "default": "None"
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Customer Review",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review text (no quotes needed)",
+          "default": "This is the first thing that made my skin look better — not worse — after the first week."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author name & age",
+          "default": "Sarah M., 38"
+        },
+        {
+          "type": "text",
+          "id": "skin_type",
+          "label": "Skin type",
+          "default": "Sensitive + Rosacea-prone"
+        }
+      ]
+    },
+    {
+      "type": "risk_proof",
+      "name": "Trust Point",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Trust point text",
+          "default": "Formulated by an herbalist-chemist"
+        }
+      ]
+    },
+    {
+      "type": "product_size",
+      "name": "Product Size Card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Size name",
+          "default": "The Starter"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Size description",
+          "default": "1 oz · Perfect for first-timers"
+        },
+        {
+          "type": "text",
+          "id": "price_onetime",
+          "label": "One-time price",
+          "default": "$26.00"
+        },
+        {
+          "type": "text",
+          "id": "price_sub",
+          "label": "Subscribe & Save price",
+          "default": "$23.40"
+        },
+        {
+          "type": "text",
+          "id": "save_label",
+          "label": "Save chip label",
+          "default": "Save 10%"
+        },
+        {
+          "type": "text",
+          "id": "cta_onetime",
+          "label": "One-time CTA text",
+          "default": "Add to Cart — $26"
+        },
+        {
+          "type": "text",
+          "id": "cta_sub",
+          "label": "Subscribe CTA text",
+          "default": "Subscribe — $23.40/mo"
+        },
+        {
+          "type": "url",
+          "id": "product_url",
+          "label": "Product page URL"
+        },
+        {
+          "type": "url",
+          "id": "sub_url",
+          "label": "Subscribe URL (leave blank to use product URL)"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_popular",
+          "label": "Show 'Most Popular' badge",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "cert_tag",
+      "name": "Certification Tag",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Certification text",
+          "default": "Dermatologist Tested"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Siren Silk Landing",
+      "blocks": [
+        { "type": "trust_badge", "settings": { "icon": "check",   "label": "Sensitive Skin Certified" } },
+        { "type": "trust_badge", "settings": { "icon": "lab",     "label": "Dermatologist Tested" } },
+        { "type": "trust_badge", "settings": { "icon": "heart",   "label": "Cruelty-Free & Vegan" } },
+        { "type": "trust_badge", "settings": { "icon": "refresh", "label": "Free 30-Day Returns" } },
+        { "type": "ingredient", "settings": { "icon": "🌿", "name": "Sea Fennel", "role": "Bio-Retinol Active", "description": "Clinically shown to smooth fine lines and improve texture — by working with your skin's renewal signals, not overriding them.", "chip": "No purge. No fallout." } },
+        { "type": "ingredient", "settings": { "icon": "🌾", "name": "Colloidal Oatmeal", "role": "Barrier Support", "description": "While bio-retinol works, oatmeal holds your barrier steady. Proven to reduce redness and lock in moisture. No vulnerability window.", "chip": "No worse before better." } },
+        { "type": "ingredient", "settings": { "icon": "🌼", "name": "Chamomile · Calendula · Aloe", "role": "Triple-Calm Complex", "description": "Overnight support that settles inflammation and restores balance. By morning: hydrated and even — not tight, not reactive.", "chip": "Calm skin by morning." } },
+        { "type": "comparison_row", "settings": { "feature": "Purge period",        "retinol_value": "4–8 weeks",   "retinol_positive": false, "siren_value": "None" } },
+        { "type": "comparison_row", "settings": { "feature": "Sensitive skin safe", "retinol_value": "Rarely",      "retinol_positive": false, "siren_value": "Yes" } },
+        { "type": "comparison_row", "settings": { "feature": "Hydrating night cream","retinol_value": "Often not",  "retinol_positive": false, "siren_value": "Deeply" } },
+        { "type": "comparison_row", "settings": { "feature": "Safe in pregnancy",    "retinol_value": "No",         "retinol_positive": false, "siren_value": "Yes" } },
+        { "type": "comparison_row", "settings": { "feature": "Visible results",      "retinol_value": "Months",     "retinol_positive": false, "siren_value": "From week 1" } },
+        { "type": "review", "settings": { "text": "I've tried The Ordinary, RoC, even prescription tretinoin. Every one wrecked my barrier. This is the first thing that made my skin look better — not worse — after the first week.", "author": "Sarah M., 38", "skin_type": "Sensitive + Rosacea-prone" } },
+        { "type": "review", "settings": { "text": "The retinol uglies are real and I've lived through them twice. Woke up with actual glow, zero flaking. Three weeks in and my fine lines look noticeably softer.", "author": "Jessica T., 43", "skin_type": "Dry + Mature skin" } },
+        { "type": "review", "settings": { "text": "My skin literally cannot tolerate retinol — contact dermatitis every time. I'd given up on anti-aging entirely. This changed that. Calm, hydrated, and real texture improvement.", "author": "Amanda K., 35", "skin_type": "Eczema-prone skin" } },
+        { "type": "risk_proof", "settings": { "label": "Formulated by an herbalist-chemist" } },
+        { "type": "risk_proof", "settings": { "label": "Small-batch, in-house made" } },
+        { "type": "risk_proof", "settings": { "label": "Third-party safety & stability tested" } },
+        { "type": "risk_proof", "settings": { "label": "Woman-owned, independently operated" } },
+        { "type": "product_size", "settings": { "name": "The Starter", "description": "1 oz · Perfect for first-timers", "price_onetime": "$26.00", "price_sub": "$23.40", "save_label": "Save 10%", "cta_onetime": "Add to Cart — $26", "cta_sub": "Subscribe — $23.40/mo", "is_popular": false } },
+        { "type": "product_size", "settings": { "name": "The Everyday", "description": "2 oz · Best value for consistent use", "price_onetime": "$46.00", "price_sub": "$41.40", "save_label": "Save 10%", "cta_onetime": "Add to Cart — $46", "cta_sub": "Subscribe — $41.40/mo", "is_popular": true } },
+        { "type": "cert_tag", "settings": { "label": "Dermatologist Tested" } },
+        { "type": "cert_tag", "settings": { "label": "Sensitive Skin Certified" } },
+        { "type": "cert_tag", "settings": { "label": "Toxicologist Audited" } },
+        { "type": "cert_tag", "settings": { "label": "No Artificial Fragrance" } },
+        { "type": "cert_tag", "settings": { "label": "No Harsh Synthetics" } },
+        { "type": "cert_tag", "settings": { "label": "EU Certified" } },
+        { "type": "cert_tag", "settings": { "label": "Cruelty-Free & Vegan" } },
+        { "type": "cert_tag", "settings": { "label": "Non-GMO" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

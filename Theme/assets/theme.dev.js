@@ -9750,8 +9750,6 @@
       cartDrawerEnabled: window.theme.settings.cartType === 'drawer',
       timers: {
         addProductTimeout: 1000,
-        rateLimitCooldown: 45000,
-        addLockRelease: 250,
       },
       animations: {
         data: 'data-aos',
@@ -9864,7 +9862,6 @@
     };
 
     let sections$A = {};
-    let cartDrawerInstance = null;
 
     class CartDrawer {
       constructor() {
@@ -9872,11 +9869,6 @@
           return;
         }
 
-        if (cartDrawerInstance) {
-          return cartDrawerInstance;
-        }
-
-        cartDrawerInstance = this;
         this.init();
       }
 
@@ -9929,8 +9921,6 @@
         this.cartDrawerEnabled = settings$4.cartDrawerEnabled;
         this.cartUpdateFailed = false;
         this.showCannotAddMoreInCart = false;
-        this.isAddingToCart = false;
-        this.cartAddRateLimitedUntil = 0;
 
         // Cart Events
         this.cartEvents();
@@ -10087,40 +10077,18 @@
           if (isButtonATC || getButtonATC) {
             event.preventDefault();
 
-            const button = isButtonATC ? clickedElement : getButtonATC;
-            if (button.querySelector('[data-wholesale="true"]') || button.closest('form')?.querySelector('[data-wholesale="true"]')) {
-              event.stopPropagation();
-            }
-
-            if (this.isAddingToCart) {
-              event.stopImmediatePropagation();
-              return;
-            }
-
-            if (this.isCartAddRateLimited()) {
-              event.stopImmediatePropagation();
-              this.button = button;
-              this.form = clickedElement.closest('form');
-              this.addToCartError({
-                message: 'Too many attempts',
-                description: 'Please try again in a few minutes',
-                status: 'too_many_requests',
-              });
-              return;
-            }
-
-            this.button = button;
+            this.button = isButtonATC ? clickedElement : getButtonATC;
             this.form = clickedElement.closest('form');
             this.recipientErrors = this.form?.getAttribute(attributes$A.recipientError) === 'true';
             this.formWrapper = this.button.closest(selectors$Q.formWrapper);
             const isVariantSoldOut = this.formWrapper?.classList.contains(classes$I.variantSoldOut);
-            const isButtonDisabled = this.button.hasAttribute(attributes$A.disabled) || this.button.disabled;
+            const isButtonDisabled = this.button.hasAttribute(attributes$A.disabled);
             const isQuickViewOnboarding = this.button.closest(selectors$Q.quickViewOnboarding);
             const hasDataAtcTrigger = this.button.hasAttribute(attributes$A.atcTrigger);
             const hasNotificationPopup = this.button.hasAttribute(attributes$A.notificationPopup);
             const hasFileInput = this.form?.querySelector('[type="file"]');
 
-            if (isButtonDisabled || hasFileInput || isQuickViewOnboarding || !this.form) return;
+            if (isButtonDisabled || hasFileInput || isQuickViewOnboarding) return;
 
             // Notification popup
             if (isVariantSoldOut && hasNotificationPopup) {
@@ -10146,7 +10114,6 @@
               this.showCannotAddMoreInCart = true;
             }
 
-            this.isAddingToCart = true;
             this.addToCart(formData);
 
             // Hook for cart/add.js event
@@ -10228,137 +10195,10 @@
        * @return  {Void}
        */
 
-      isCartAddRateLimited() {
-        return Date.now() < (this.cartAddRateLimitedUntil || 0);
-      }
-
-      isTooManyAttemptsError(data, httpStatus) {
-        const status = data?.status ?? httpStatus;
-        const message = String(data?.message || '').toLowerCase();
-        return status === 429 || status === 'too_many_requests' || message.includes('too many attempts');
-      }
-
-      releaseAddToCartLock() {
-        setTimeout(() => {
-          this.isAddingToCart = false;
-        }, settings$4.timers.addLockRelease);
-      }
-
-      findExistingCartLine(variantId) {
-        if (!variantId) return null;
-
-        const selector = `[data-cart-item][data-variant-id="${variantId}"]`;
-        const liveItem =
-          (this.cart && this.cart.querySelector(selector)) || document.querySelector(selector);
-
-        if (liveItem) return this.readCartLine(liveItem);
-
-        const template = document.querySelector(selectors$Q.cartDrawerTemplate);
-        const templateItem = template?.content?.querySelector(selector);
-        if (templateItem) return this.readCartLine(templateItem);
-
-        return null;
-      }
-
-      readCartLine(item) {
-        const key = item.getAttribute(attributes$A.item);
-        const lineIndex = parseInt(item.getAttribute(attributes$A.itemIndex) || '0', 10);
-        const qtyInput = item.querySelector(selectors$Q.qtyInput);
-        const currentQty = parseInt(qtyInput?.value || '0', 10);
-
-        return {
-          item,
-          key,
-          lineIndex,
-          currentQty: Number.isFinite(currentQty) ? currentQty : 0,
-        };
-      }
-
-      handleCartMutationResponse(httpStatus, json, ok) {
-        if (this.button) {
-          this.button.disabled = true;
-        }
-        this.addLoadingClass();
-
-        const rateLimited = this.isTooManyAttemptsError(json, httpStatus) || httpStatus === 429;
-        if (!ok || json.status || json.errors || rateLimited) {
-          const errorData = json.errors
-            ? {message: json.errors, description: json.errors, status: json.status || httpStatus}
-            : json.message
-              ? json
-              : {message: 'Too many attempts', description: 'Please try again in a few minutes', status: 'too_many_requests'};
-
-          if (rateLimited) {
-            this.cartAddRateLimitedUntil = Date.now() + settings$4.timers.rateLimitCooldown;
-          }
-
-          this.addToCartError(errorData);
-          this.removeLoadingClass();
-          if (!this.showCannotAddMoreInCart) return;
-        }
-
-        this.hideAddToCartErrorMessage();
-
-        if (this.cartDrawerEnabled) {
-          this.getCart();
-          if (this.showCannotAddMoreInCart) this.updateErrorText(this.variantTitle);
-          this.scrollToCartTop();
-        } else {
-          window.location = theme.routes.cart_url;
-        }
-      }
-
-      incrementExistingCartLine(existing, addQty) {
-        const data = {
-          line: existing.lineIndex,
-          quantity: existing.currentQty + addQty,
-        };
-
-        fetch(theme.routes.cart_change_url, {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json', Accept: 'application/json'},
-          body: JSON.stringify(data),
-        })
-          .then(async (response) => {
-            let json = {};
-            try {
-              json = await response.json();
-            } catch (error) {
-              json = {};
-            }
-            return {httpStatus: response.status, json, ok: response.ok};
-          })
-          .then(({httpStatus, json, ok}) => {
-            this.handleCartMutationResponse(httpStatus, json, ok);
-          })
-          .catch((error) => {
-            console.log(error);
-            if (this.button) {
-              this.button.classList.remove(classes$I.loading);
-              this.button.removeAttribute(attributes$A.disabled);
-              this.button.disabled = false;
-            }
-            this.removeLoadingClass();
-          })
-          .finally(() => {
-            this.releaseAddToCartLock();
-          });
-      }
-
       addToCart(data) {
         if (this.cartDrawerEnabled && this.button) {
           this.button.classList.add(classes$I.loading);
           this.button.setAttribute(attributes$A.disabled, true);
-          this.button.disabled = true;
-        }
-
-        const variantId = parseInt(data.get('id'), 10);
-        const addQty = parseInt(data.get('quantity') || '1', 10) || 1;
-        const existing = this.findExistingCartLine(variantId);
-
-        if (existing && existing.lineIndex > 0) {
-          this.incrementExistingCartLine(existing, addQty);
-          return;
         }
 
         fetch(theme.routes.cart_add_url, {
@@ -10369,30 +10209,28 @@
           },
           body: data,
         })
-          .then(async (response) => {
-            let json = {};
-            try {
-              json = await response.json();
-            } catch (error) {
-              json = {};
+          .then((response) => response.json())
+          .then((response) => {
+            this.button.disabled = true;
+            this.addLoadingClass();
+
+            if (response.status) {
+              this.addToCartError(response);
+              this.removeLoadingClass();
+              if (!this.showCannotAddMoreInCart) return;
             }
-            return {httpStatus: response.status, json, ok: response.ok};
-          })
-          .then(({httpStatus, json, ok}) => {
-            this.handleCartMutationResponse(httpStatus, json, ok);
-          })
-          .catch((error) => {
-            console.log(error);
-            if (this.button) {
-              this.button.classList.remove(classes$I.loading);
-              this.button.removeAttribute(attributes$A.disabled);
-              this.button.disabled = false;
+
+            this.hideAddToCartErrorMessage();
+
+            if (this.cartDrawerEnabled) {
+              this.getCart();
+              if (this.showCannotAddMoreInCart) this.updateErrorText(this.variantTitle);
+              this.scrollToCartTop();
+            } else {
+              window.location = theme.routes.cart_url;
             }
-            this.removeLoadingClass();
           })
-          .finally(() => {
-            this.releaseAddToCartLock();
-          });
+          .catch((error) => console.log(error));
       }
 
       /**
@@ -10599,14 +10437,12 @@
        */
 
       addToCartError(data) {
-        if (!this.button) return;
-
         const buttonQuickBuyForm = this.button.closest(selectors$Q.quickBuyForm);
         const buttonUpsellHolder = this.button.closest(selectors$Q.upsellHolder);
         const isFocusEnabled = !document.body.classList.contains(classes$I.noOutline);
         // holder: Product form containers or Upsell products in Cart form
         let holder = this.button.closest(selectors$Q.productForm) ? this.button.closest(selectors$Q.productForm) : this.button.closest(selectors$Q.upsellHolder);
-        let errorContainer = holder?.querySelector(selectors$Q.formErrorsContainer);
+        let errorContainer = holder.querySelector(selectors$Q.formErrorsContainer);
 
         // Upsell products in Cart form
         if (buttonUpsellHolder) {
@@ -10618,23 +10454,7 @@
         }
 
         this.button.classList.remove(classes$I.loading);
-
-        const rateLimited = this.isTooManyAttemptsError(data);
-        if (rateLimited) {
-          this.cartAddRateLimitedUntil = Date.now() + settings$4.timers.rateLimitCooldown;
-          this.button.setAttribute(attributes$A.disabled, true);
-          this.button.disabled = true;
-          const button = this.button;
-          setTimeout(() => {
-            if (!this.isCartAddRateLimited()) {
-              button.removeAttribute(attributes$A.disabled);
-              button.disabled = false;
-            }
-          }, settings$4.timers.rateLimitCooldown);
-        } else {
-          this.button.removeAttribute(attributes$A.disabled);
-          this.button.disabled = false;
-        }
+        this.button.removeAttribute(attributes$A.disabled);
 
         // Error message content
         const closeErrorButton = buttonQuickBuyForm
@@ -10654,8 +10474,6 @@
             .map(([key, value]) => `${value}`)
             .join('<br>');
         }
-
-        if (!errorContainer) return;
 
         errorContainer.innerHTML = `
       <div class="errors" data-error autofocus>
@@ -11346,8 +11164,7 @@
 
     const cartDrawer = {
       onLoad() {
-        sections$A[this.id] = window.cart || new CartDrawer();
-        window.cart = sections$A[this.id];
+        sections$A[this.id] = new CartDrawer();
       },
       onUnload() {
         if (typeof sections$A[this.id].unload === 'function') {
@@ -14148,7 +13965,7 @@
         this.handleBackgroundEvents();
 
         if (!document.querySelector(selectors$E.cartPage)) {
-          window.cart = window.cart || new CartDrawer();
+          window.cart = new CartDrawer();
         }
 
         document.body.addEventListener('touchstart', this.handleTouchstartEvent, {passive: true});

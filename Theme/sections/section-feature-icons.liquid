@@ -31,13 +31,16 @@
   assign icons_width = section.settings.icons_width
   assign layout_mobile = section.settings.layout_mobile
   assign has_subheading = false
-  assign blocks_size = section.blocks.size
+  assign feature_icons = product_content.feature_icons.value
+  assign feature_icons_size = feature_icons.size | default: 0
+  assign use_metafield_icons = false
 
-  assign blocks_size = 0
-
-  for item in product_content.feature_icons.value
-    assign blocks_size = blocks_size | plus: 1
-  endfor
+  if feature_icons_size > 0
+    assign use_metafield_icons = true
+    assign blocks_size = feature_icons_size
+  else
+    assign blocks_size = section.blocks.size
+  endif
 
   assign flex = false
   if columns > blocks_size
@@ -184,8 +187,6 @@
   {%- endif %}
 {%- endstyle -%}
 
-{% if product_content.feature_icons.value %}
-
 <section
   id="IconsRow--{{ section.id }}"
   class="{{ section_classes }} {{ section.settings.custom_class }}"
@@ -226,19 +227,31 @@
         </div>
       {%- endif -%}
 
-      {%- if product_content.feature_icons.value -%}
+      {%- if blocks_size > 0 -%}
         <div
           class="icons-row__slider{{ mobile_class }} text-{{ alignment }}{% if flex %} icons-row__slider--flex{% endif %} items--{{ columns }}"
           data-slider
           role="group"
         >
-          {%- for block in product_content.feature_icons.value -%}
+          {%- if use_metafield_icons -%}
+            {%- assign icon_items = feature_icons -%}
+          {%- else -%}
+            {%- assign icon_items = section.blocks -%}
+          {%- endif -%}
+          {%- for block in icon_items -%}
             {%- liquid
               assign index = forloop.index
-              assign title = block.feature_icon_title
-              assign text = block.feature_icon_text | metafield_tag
-              assign image = block.feature_icon_image.value
-              assign icon = block.settings.icon_name
+              if use_metafield_icons
+                assign title = block.feature_icon_title
+                assign text = block.feature_icon_text | metafield_tag
+                assign image = block.feature_icon_image.value
+                assign icon = 'none'
+              else
+                assign title = block.settings.title
+                assign text = block.settings.text
+                assign image = block.settings.icon_image
+                assign icon = block.settings.icon_name
+              endif
               assign retina_size = icons_width | times: 2
               assign image_widths = icons_width | append: ', ' | append: retina_size
               assign sizes = icons_width | append: 'px'
@@ -375,8 +388,6 @@
     </div>
   </div>
 </section>
-
-{% endif %}
 
 {% schema %}
 {

@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "siren_silk_main": {
+      "type": "siren-silk-landing",
+      "blocks": {
+        "tb1": { "type": "trust_badge", "settings": { "icon": "check",   "label": "Sensitive Skin Certified" } },
+        "tb2": { "type": "trust_badge", "settings": { "icon": "lab",     "label": "Dermatologist Tested" } },
+        "tb3": { "type": "trust_badge", "settings": { "icon": "heart",   "label": "Cruelty-Free & Vegan" } },
+        "tb4": { "type": "trust_badge", "settings": { "icon": "refresh", "label": "Free 30-Day Returns" } },
+        "ing1": { "type": "ingredient", "settings": { "icon": "🌿", "name": "Sea Fennel", "role": "Bio-Retinol Active", "description": "Clinically shown to smooth fine lines and improve texture — by working with your skin's renewal signals, not overriding them.", "chip": "No purge. No fallout." } },
+        "ing2": { "type": "ingredient", "settings": { "icon": "🌾", "name": "Colloidal Oatmeal", "role": "Barrier Support", "description": "While bio-retinol works, oatmeal holds your barrier steady. Proven to reduce redness and lock in moisture. No vulnerability window.", "chip": "No worse before better." } },
+        "ing3": { "type": "ingredient", "settings": { "icon": "🌼", "name": "Chamomile · Calendula · Aloe", "role": "Triple-Calm Complex", "description": "Overnight support that settles inflammation and restores balance. By morning: hydrated and even — not tight, not reactive.", "chip": "Calm skin by morning." } },
+        "cr1": { "type": "comparison_row", "settings": { "feature": "Purge period",         "retinol_value": "4–8 weeks",  "retinol_positive": false, "siren_value": "None" } },
+        "cr2": { "type": "comparison_row", "settings": { "feature": "Sensitive skin safe",  "retinol_value": "Rarely",     "retinol_positive": false, "siren_value": "Yes" } },
+        "cr3": { "type": "comparison_row", "settings": { "feature": "Hydrating night cream","retinol_value": "Often not",  "retinol_positive": false, "siren_value": "Deeply" } },
+        "cr4": { "type": "comparison_row", "settings": { "feature": "Safe in pregnancy",    "retinol_value": "No",         "retinol_positive": false, "siren_value": "Yes" } },
+        "cr5": { "type": "comparison_row", "settings": { "feature": "Visible results",      "retinol_value": "Months",     "retinol_positive": false, "siren_value": "From week 1" } },
+        "rv1": { "type": "review", "settings": { "text": "I've tried The Ordinary, RoC, even prescription tretinoin. Every one wrecked my barrier. This is the first thing that made my skin look better — not worse — after the first week.", "author": "Sarah M., 38", "skin_type": "Sensitive + Rosacea-prone" } },
+        "rv2": { "type": "review", "settings": { "text": "The retinol uglies are real and I've lived through them twice. Woke up with actual glow, zero flaking. Three weeks in and my fine lines look noticeably softer.", "author": "Jessica T., 43", "skin_type": "Dry + Mature skin" } },
+        "rv3": { "type": "review", "settings": { "text": "My skin literally cannot tolerate retinol — contact dermatitis every time. I'd given up on anti-aging entirely. This changed that. Calm, hydrated, and real texture improvement.", "author": "Amanda K., 35", "skin_type": "Eczema-prone skin" } },
+        "rp1": { "type": "risk_proof", "settings": { "label": "Formulated by an herbalist-chemist" } },
+        "rp2": { "type": "risk_proof", "settings": { "label": "Small-batch, in-house made" } },
+        "rp3": { "type": "risk_proof", "settings": { "label": "Third-party safety & stability tested" } },
+        "rp4": { "type": "risk_proof", "settings": { "label": "Woman-owned, independently operated" } },
+        "ps1": { "type": "product_size", "settings": { "name": "The Starter", "description": "1 oz · Perfect for first-timers", "price_onetime": "$26.00", "price_sub": "$23.40", "save_label": "Save 10%", "cta_onetime": "Add to Cart — $26", "cta_sub": "Subscribe — $23.40/mo", "is_popular": false } },
+        "ps2": { "type": "product_size", "settings": { "name": "The Everyday", "description": "2 oz · Best value for consistent use", "price_onetime": "$46.00", "price_sub": "$41.40", "save_label": "Save 10%", "cta_onetime": "Add to Cart — $46", "cta_sub": "Subscribe — $41.40/mo", "is_popular": true } },
+        "ct1": { "type": "cert_tag", "settings": { "label": "Dermatologist Tested" } },
+        "ct2": { "type": "cert_tag", "settings": { "label": "Sensitive Skin Certified" } },
+        "ct3": { "type": "cert_tag", "settings": { "label": "Toxicologist Audited" } },
+        "ct4": { "type": "cert_tag", "settings": { "label": "No Artificial Fragrance" } },
+        "ct5": { "type": "cert_tag", "settings": { "label": "No Harsh Synthetics" } },
+        "ct6": { "type": "cert_tag", "settings": { "label": "EU Certified" } },
+        "ct7": { "type": "cert_tag", "settings": { "label": "Cruelty-Free & Vegan" } },
+        "ct8": { "type": "cert_tag", "settings": { "label": "Non-GMO" } }
+      },
+      "block_order": [
+        "tb1","tb2","tb3","tb4",
+        "ing1","ing2","ing3",
+        "cr1","cr2","cr3","cr4","cr5",
+        "rv1","rv2","rv3",
+        "rp1","rp2","rp3","rp4",
+        "ps1","ps2",
+        "ct1","ct2","ct3","ct4","ct5","ct6","ct7","ct8"
+      ],
+      "settings": {}
+    }
+  },
+  "order": ["siren_silk_main"]
+}
